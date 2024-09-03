@@ -1,44 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Demo page</title>
   </head>
 
-
   <body>
     <style>
+      #contentContainer {
+        max-width: 700px;
+        margin: auto;
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 16px;
+        line-height: 20px;
+      }
 
-        #contentContainer {
-            max-width: 700px;
-            margin: auto;
-            font-family: Helvetica, Arial, sans-serif;
-            font-size: 16px;
-                line-height: 20px;
-        }
+      /*for toggler buttons */
+      .togglebutton {
+        border-radius: 5px;
+        font-weight: 400 !important;
+        background-color: #eeeeee;
+        padding: 7px 7px;
+        color: #696969 !important;
+        box-shadow: 0 0 7px 2px rgba(0, 0, 0, 0, 07);
+        cursor: pointer;
+        display: inline-block;
+        text-align: center;
+        height: 20px !important;
+        text-decoration: none;
+      }
+
+      .togglebutton:hover {
+        background-color: #bce3ff;
+        text-decoration: none;
+      }
+
+      .highlight {
+        background-color: #275e84 !important;
+        color: #ffffff !important;
+        font-weight: 600 !important;
+      }
+
+      .vis {
+        width: 100%;
+        height: 300px;
+        border: 1px solid darkgray;
+        margin: 10px 0px;
+      }
+
+      .callout {
+        border-left: 8px solid lightgray;
+        padding: 8px;
+        font-size: 14px;
+        background-color: #fbfbfb80;
+      }
+
+      .spacer {
+        margin-top: 50px;
+      }
     </style>
 
     <!--START-->
     <div id="contentContainer">
-        <h1>Provisional Birth and Death Data</h1>
+      <h1>Provisional Birth and Death Data</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.
+        Aliquam ni hendrerit urna. Pellentesque sit amet sapien tringilla, matus
+        ligula consectetur, ultrices maurls. Maecenas vitae mattis tellus. Nulam
+        quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna
+        interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum
+        sit amet.
+      </p>
+      <h2>Birth data</h2>
+      <h3>Births by demographics</h3>
+      <div class="choice">
+        <a id="" onclick="" tabindex="0" class="togglebutton highlight">Total</a>
+        <a id="" onclick="" tabindex="0" class="togglebutton">Maternal age</a>
+        <a id="" onclick="" tabindex="0" class="togglebutton">Borough</a>
+        <a id="" onclick="" tabindex="0" class="togglebutton">Race/ethnicity</a>
+      </div>
 
+      <div class="vis"></div>
+
+      <div class="callout">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.
+        Aliquam ni hendrerit urna. Maecenas vitae mattis tellus. Nulam quis
+        imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna
+        interdum eu.
+      </div>
+
+      <h3 class="spacer">Birth characteristics</h3>
+      <div class="choice">
+        <a id="" onclick="" tabindex="0" class="togglebutton highlight">Method</a>
+        <a id="" onclick="" tabindex="0" class="togglebutton">Term</a>
+        <a id="" onclick="" tabindex="0" class="togglebutton">Weight</a>
+        <a id="" onclick="" tabindex="0" class="togglebutton">Medicaid</a>
+        <a id="" onclick="" tabindex="0" class="togglebutton">Care characteristics</a>
+      </div>
+
+      <div class="vis"></div>
+
+      <h2 class="spacer">Death data</h2>
+      <h3>Infant mortality</h3>
+      <div class="choice">
+        <a id="" onclick="" tabindex="0" class="togglebutton highlight">Overall</a>
+        <a id="" onclick="" tabindex="0" class="togglebutton">Age</a>
+        <a id="" onclick="" tabindex="0" class="togglebutton">Borough</a>
+        <a id="" onclick="" tabindex="0" class="togglebutton">Race/ethnicity</a>
+      </div>
+
+      <div class="vis"></div>
+
+      <h3 class="spacer">Deaths by demographics and causes</h3>
+      <div class="choice">
+        <a id="" onclick="" tabindex="0" class="togglebutton highlight">Total</a>
+        <a id="" onclick="" tabindex="0" class="togglebutton">Age group</a>
+        <a id="" onclick="" tabindex="0" class="togglebutton">Sex</a>
+        <a id="" onclick="" tabindex="0" class="togglebutton">Cause</a>
+      </div>
+
+      <div class="vis"></div>
+
+      <h2 class="spacer">More resources</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.
+        Aliquam ni hendrerit urna. Pellentesque sit amet sapien tringilla, matus
+        ligula consectetur, ultrices maurls. Maecenas vitae mattis tellus. Nulam
+        quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna
+        interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum
+        sit amet.
+      </p>
     </div>
     <!--END-->
-
   </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
