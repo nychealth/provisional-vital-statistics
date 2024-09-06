@@ -1,4 +1,3 @@
-console.log("JS running");
 
 /*
  Stuff to do in here:
@@ -152,7 +151,6 @@ drawChart("#bbd", "Total births", "Number of births", false);
 const demogElements = document.querySelectorAll('.byDemog');
 demogElements.forEach((element) => {
   element.addEventListener('click', function() {
-    console.log('event listener running')
     demogElements.forEach(el => el.classList.remove('highlight'));
     this.classList.add('highlight');
   });
@@ -161,7 +159,6 @@ demogElements.forEach((element) => {
 const birthChar = document.querySelectorAll('.birthChar');
 birthChar.forEach((element) => {
   element.addEventListener('click', function() {
-    console.log('event listener running')
     birthChar.forEach(el => el.classList.remove('highlight'));
     this.classList.add('highlight');
   });
@@ -170,7 +167,6 @@ birthChar.forEach((element) => {
 const infantMort = document.querySelectorAll('.infantMort');
 infantMort.forEach((element) => {
   element.addEventListener('click', function() {
-    console.log('event listener running')
     infantMort.forEach(el => el.classList.remove('highlight'));
     this.classList.add('highlight');
   });
@@ -179,7 +175,6 @@ infantMort.forEach((element) => {
 const mort = document.querySelectorAll('.mort');
 mort.forEach((element) => {
   element.addEventListener('click', function() {
-    console.log('event listener running')
     mort.forEach(el => el.classList.remove('highlight'));
     this.classList.add('highlight');
   });
