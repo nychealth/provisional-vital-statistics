@@ -3,13 +3,14 @@ console.log("JS running");
 /*
  Stuff to do in here:
     - Add data to data file, one chart at a time
-    - Add event listeners to vary button highlight on click
     - Figure out padding so that the x-axis doesn't change based on label
     - Add variable tickSize to x-axis legend so that Q1 is emphasized
     - thicken stroke on hover
     - Remove actions before demoing
 */
 
+
+// MAIN CHART-DRAWING FUNCTION
 function drawChart(destination, metric, label, multi, tooltip) {
   /*
         Arguments:
@@ -142,4 +143,44 @@ function drawChart(destination, metric, label, multi, tooltip) {
   // vegaEmbed("#bbd",spec)
 }
 
+// INITIALIZE CHART DRAWS
 drawChart("#bbd", "Total births", "Number of births", false);
+
+
+
+// EVENT LISTENERS FOR EACH CHART SECTION
+const demogElements = document.querySelectorAll('.byDemog');
+demogElements.forEach((element) => {
+  element.addEventListener('click', function() {
+    console.log('event listener running')
+    demogElements.forEach(el => el.classList.remove('highlight'));
+    this.classList.add('highlight');
+  });
+});
+
+const birthChar = document.querySelectorAll('.birthChar');
+birthChar.forEach((element) => {
+  element.addEventListener('click', function() {
+    console.log('event listener running')
+    birthChar.forEach(el => el.classList.remove('highlight'));
+    this.classList.add('highlight');
+  });
+});
+
+const infantMort = document.querySelectorAll('.infantMort');
+infantMort.forEach((element) => {
+  element.addEventListener('click', function() {
+    console.log('event listener running')
+    infantMort.forEach(el => el.classList.remove('highlight'));
+    this.classList.add('highlight');
+  });
+});
+
+const mort = document.querySelectorAll('.mort');
+mort.forEach((element) => {
+  element.addEventListener('click', function() {
+    console.log('event listener running')
+    mort.forEach(el => el.classList.remove('highlight'));
+    this.classList.add('highlight');
+  });
+});
