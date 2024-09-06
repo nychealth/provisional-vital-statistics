@@ -75,7 +75,7 @@ function drawChart(destination, metric, label, multi, tooltip) {
           value: 0.5,
         },
         labelExpr:
-          "[quarter(datum.value) === 1 ? timeFormat(datum.value, '%Y') : 'Q' + quarter(datum.value)]",
+          "[quarter(datum.value) === 1 ? timeFormat(datum.value, '%Y') + ' Q' + quarter(datum.value) : 'Q' + quarter(datum.value)]",
       },
       axisY: { tickCount: 2 },
       legend: {
