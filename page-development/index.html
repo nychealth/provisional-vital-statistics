@@ -60,10 +60,24 @@
       .spacer {
         margin-top: 50px;
       }
+
+      #bbd {
+      border: 0px!important;
+    }
     </style>
 
     <!--START-->
     <div id="contentContainer">
+          <!-- Import vega dependencies that are compatible with IE11-->
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.6.11/core.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.8.7/polyfill.js"></script>
+          <script src="https://vega.github.io/vega/assets/promise.min.js"></script>
+          <script src="https://vega.github.io/vega/assets/symbol.min.js"></script>
+          <script src="https://vega.github.io/vega/assets/fetch.min.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/vega@5/build-es5/vega.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/vega-lite@4/build-es5/vega-lite.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/vega-embed@6/build-es5/vega-embed.js"></script>
+
       <h1>Provisional Birth and Death Data</h1>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.
@@ -76,13 +90,13 @@
       <h2>Birth data</h2>
       <h3>Births by demographics</h3>
       <div class="choice">
-        <a id="" onclick="" tabindex="0" class="togglebutton highlight">Total</a>
-        <a id="" onclick="" tabindex="0" class="togglebutton">Maternal age</a>
+        <a id="" onclick="drawChart('#bbd','Total births','Number of births',false)" tabindex="0" class="togglebutton highlight">Total</a>
+        <a id="" onclick="drawChart('#bbd','By maternal age','Births, by maternal age',true,'Age group')" tabindex="0" class="togglebutton">Maternal age</a>
         <a id="" onclick="" tabindex="0" class="togglebutton">Borough</a>
         <a id="" onclick="" tabindex="0" class="togglebutton">Race/ethnicity</a>
       </div>
 
-      <div class="vis"></div>
+      <div class="vis" id="bbd"></div>
 
       <div class="callout">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.
@@ -133,6 +147,9 @@
         sit amet.
       </p>
     </div>
+
+    <script src="charts.js" defer></script>
+
     <!--END-->
   </body>
 </html>
