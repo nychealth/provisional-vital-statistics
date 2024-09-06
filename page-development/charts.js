@@ -49,7 +49,7 @@ function drawChart(destination, metric, label, multi, tooltip) {
       subtitlePadding: 10,
       fontWeight: "normal",
       anchor: "start",
-      fontSize: 14,
+      fontSize: 12,
       font: "sans-serif",
       baseline: "top",
       dy: -10,
@@ -83,7 +83,7 @@ function drawChart(destination, metric, label, multi, tooltip) {
       },
     },
     data: {
-      url: "https://gist.githubusercontent.com/mmontesanonyc/f3a9644eadb36e2d00b71721b165d681/raw/3419dd6471561dd91f5a4e9c675e733b5db18f0f/ovs.csv",
+      url: "../data.csv",
     },
     transform: [
       { filter: `datum.metric === '${metric}'` },
