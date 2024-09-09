@@ -179,3 +179,113 @@ Jul 1 2023,By race,Unknown,224
 Oct 1 2023,By race,Unknown,250
 Jan 1 2024,By race,Unknown,241
 Apr 1 2024,By race,Unknown,199
+Jan 1 2022,By method,VBAC (%),2.92
+Apr 1 2022,By method,VBAC (%),2.86
+Jul 1 2022,By method,VBAC (%),2.72
+Oct 1 2022,By method,VBAC (%),3
+Jan 1 2023,By method,VBAC (%),2.92
+Apr 1 2023,By method,VBAC (%),2.79
+Jul 1 2023,By method,VBAC (%),2.83
+Oct 1 2023,By method,VBAC (%),2.76
+Jan 1 2024,By method,VBAC (%),2.81
+Apr 1 2024,By method,VBAC (%),2.8
+Jan 1 2022,By method,Vaginal (%),64.28
+Apr 1 2022,By method,Vaginal (%),64.76
+Jul 1 2022,By method,Vaginal (%),64.54
+Oct 1 2022,By method,Vaginal (%),64.48
+Jan 1 2023,By method,Vaginal (%),64.42
+Apr 1 2023,By method,Vaginal (%),64.69
+Jul 1 2023,By method,Vaginal (%),64.44
+Oct 1 2023,By method,Vaginal (%),64.51
+Jan 1 2024,By method,Vaginal (%),64.72
+Apr 1 2024,By method,Vaginal (%),64.37
+Jan 1 2022,By method,Cesarean (%),32.8
+Apr 1 2022,By method,Cesarean (%),32.38
+Jul 1 2022,By method,Cesarean (%),32.74
+Oct 1 2022,By method,Cesarean (%),32.52
+Jan 1 2023,By method,Cesarean (%),32.66
+Apr 1 2023,By method,Cesarean (%),32.52
+Jul 1 2023,By method,Cesarean (%),32.73
+Oct 1 2023,By method,Cesarean (%),32.73
+Jan 1 2024,By method,Cesarean (%),32.47
+Apr 1 2024,By method,Cesarean (%),32.83
+Jan 1 2022,By term,Very pre-term (%),1.36
+Apr 1 2022,By term,Very pre-term (%),1.47
+Jul 1 2022,By term,Very pre-term (%),1.49
+Oct 1 2022,By term,Very pre-term (%),1.43
+Jan 1 2023,By term,Very pre-term (%),1.43
+Apr 1 2023,By term,Very pre-term (%),1.32
+Jul 1 2023,By term,Very pre-term (%),1.33
+Oct 1 2023,By term,Very pre-term (%),1.41
+Jan 1 2024,By term,Very pre-term (%),1.45
+Apr 1 2024,By term,Very pre-term (%),1.43
+Jan 1 2022,By term,Pre-term (%),9.66
+Apr 1 2022,By term,Pre-term (%),9.27
+Jul 1 2022,By term,Pre-term (%),9.65
+Oct 1 2022,By term,Pre-term (%),9.67
+Jan 1 2023,By term,Pre-term (%),9.51
+Apr 1 2023,By term,Pre-term (%),9.32
+Jul 1 2023,By term,Pre-term (%),9.35
+Oct 1 2023,By term,Pre-term (%),9.57
+Jan 1 2024,By term,Pre-term (%),9.8
+Apr 1 2024,By term,Pre-term (%),9.22
+Jan 1 2022,By term,Term (%),90.34
+Apr 1 2022,By term,Term (%),90.73
+Jul 1 2022,By term,Term (%),90.35
+Oct 1 2022,By term,Term (%),90.33
+Jan 1 2023,By term,Term (%),90.49
+Apr 1 2023,By term,Term (%),90.68
+Jul 1 2023,By term,Term (%),90.65
+Oct 1 2023,By term,Term (%),90.43
+Jan 1 2024,By term,Term (%),90.2
+Apr 1 2024,By term,Term (%),90.78
+Jan 1 2022,By weight,Very low (%),1.29
+Apr 1 2022,By weight,Very low (%),1.38
+Jul 1 2022,By weight,Very low (%),1.37
+Oct 1 2022,By weight,Very low (%),1.36
+Jan 1 2023,By weight,Very low (%),1.35
+Apr 1 2023,By weight,Very low (%),1.29
+Jul 1 2023,By weight,Very low (%),1.25
+Oct 1 2023,By weight,Very low (%),1.36
+Jan 1 2024,By weight,Very low (%),1.37
+Apr 1 2024,By weight,Very low (%),1.43
+Jan 1 2022,By weight,Low (%),9.58
+Apr 1 2022,By weight,Low (%),8.88
+Jul 1 2022,By weight,Low (%),9.12
+Oct 1 2022,By weight,Low (%),9.08
+Jan 1 2023,By weight,Low (%),8.87
+Apr 1 2023,By weight,Low (%),8.8
+Jul 1 2023,By weight,Low (%),8.9
+Oct 1 2023,By weight,Low (%),9.31
+Jan 1 2024,By weight,Low (%),9.09
+Apr 1 2024,By weight,Low (%),8.74
+Jan 1 2022,By weight,Normal (%),90.42
+Apr 1 2022,By weight,Normal (%),91.12
+Jul 1 2022,By weight,Normal (%),90.88
+Oct 1 2022,By weight,Normal (%),90.92
+Jan 1 2023,By weight,Normal (%),91.13
+Apr 1 2023,By weight,Normal (%),91.2
+Jul 1 2023,By weight,Normal (%),91.1
+Oct 1 2023,By weight,Normal (%),90.69
+Jan 1 2024,By weight,Normal (%),90.91
+Apr 1 2024,By weight,Normal (%),91.26
+Jan 1 2022,By Medicaid,Medicaid (%),56.07
+Apr 1 2022,By Medicaid,Medicaid (%),55.46
+Jul 1 2022,By Medicaid,Medicaid (%),56.92
+Oct 1 2022,By Medicaid,Medicaid (%),58.4
+Jan 1 2023,By Medicaid,Medicaid (%),58.13
+Apr 1 2023,By Medicaid,Medicaid (%),56.26
+Jul 1 2023,By Medicaid,Medicaid (%),56.87
+Oct 1 2023,By Medicaid,Medicaid (%),57.95
+Jan 1 2024,By Medicaid,Medicaid (%),57.6
+Apr 1 2024,By Medicaid,Medicaid (%),55.42
+Jan 1 2022,By Medicaid,non-Medicaid (%),43.93
+Apr 1 2022,By Medicaid,non-Medicaid (%),44.54
+Jul 1 2022,By Medicaid,non-Medicaid (%),43.08
+Oct 1 2022,By Medicaid,non-Medicaid (%),41.6
+Jan 1 2023,By Medicaid,non-Medicaid (%),41.87
+Apr 1 2023,By Medicaid,non-Medicaid (%),43.74
+Jul 1 2023,By Medicaid,non-Medicaid (%),43.13
+Oct 1 2023,By Medicaid,non-Medicaid (%),42.05
+Jan 1 2024,By Medicaid,non-Medicaid (%),42.4
+Apr 1 2024,By Medicaid,non-Medicaid (%),44.58
