@@ -29,3 +29,153 @@ Jul 1 2023,By maternal age,20 to 29 years,9011
 Oct 1 2023,By maternal age,20 to 29 years,9169
 Jan 1 2024,By maternal age,20 to 29 years,8917
 Apr 1 2024,By maternal age,20 to 29 years,8574
+Jan 1 2022,By maternal age,30 to 39 years,12950
+Apr 1 2022,By maternal age,30 to 39 years,13535
+Jul 1 2022,By maternal age,30 to 39 years,14065
+Oct 1 2022,By maternal age,30 to 39 years,14236
+Jan 1 2023,By maternal age,30 to 39 years,12662
+Apr 1 2023,By maternal age,30 to 39 years,13584
+Jul 1 2023,By maternal age,30 to 39 years,13888
+Oct 1 2023,By maternal age,30 to 39 years,13888
+Jan 1 2024,By maternal age,30 to 39 years,13226
+Apr 1 2024,By maternal age,30 to 39 years,13658
+Jan 1 2022,By maternal age,40+ years,1714
+Apr 1 2022,By maternal age,40+ years,1833
+Jul 1 2022,By maternal age,40+ years,1830
+Oct 1 2022,By maternal age,40+ years,2008
+Jan 1 2023,By maternal age,40+ years,1783
+Apr 1 2023,By maternal age,40+ years,1840
+Jul 1 2023,By maternal age,40+ years,1847
+Oct 1 2023,By maternal age,40+ years,1883
+Jan 1 2024,By maternal age,40+ years,1868
+Apr 1 2024,By maternal age,40+ years,1804
+Jan 1 2022,By borough,Manhattan,3156
+Apr 1 2022,By borough,Manhattan,3307
+Jul 1 2022,By borough,Manhattan,3338
+Oct 1 2022,By borough,Manhattan,3288
+Jan 1 2023,By borough,Manhattan,3033
+Apr 1 2023,By borough,Manhattan,3411
+Jul 1 2023,By borough,Manhattan,3345
+Oct 1 2023,By borough,Manhattan,3438
+Jan 1 2024,By borough,Manhattan,3384
+Apr 1 2024,By borough,Manhattan,3604
+Jan 1 2022,By borough,Bronx,3733
+Apr 1 2022,By borough,Bronx,3762
+Jul 1 2022,By borough,Bronx,4042
+Oct 1 2022,By borough,Bronx,4069
+Jan 1 2023,By borough,Bronx,3620
+Apr 1 2023,By borough,Bronx,3665
+Jul 1 2023,By borough,Bronx,3826
+Oct 1 2023,By borough,Bronx,3872
+Jan 1 2024,By borough,Bronx,3641
+Apr 1 2024,By borough,Bronx,3637
+Jan 1 2022,By borough,Brooklyn,7924
+Apr 1 2022,By borough,Brooklyn,8002
+Jul 1 2022,By borough,Brooklyn,8218
+Oct 1 2022,By borough,Brooklyn,8660
+Jan 1 2023,By borough,Brooklyn,7774
+Apr 1 2023,By borough,Brooklyn,7809
+Jul 1 2023,By borough,Brooklyn,8254
+Oct 1 2023,By borough,Brooklyn,8433
+Jan 1 2024,By borough,Brooklyn,8173
+Apr 1 2024,By borough,Brooklyn,7836
+Jan 1 2022,By borough,Queens,4788
+Apr 1 2022,By borough,Queens,5064
+Jul 1 2022,By borough,Queens,5266
+Oct 1 2022,By borough,Queens,5245
+Jan 1 2023,By borough,Queens,4775
+Apr 1 2023,By borough,Queens,5121
+Jul 1 2023,By borough,Queens,5291
+Oct 1 2023,By borough,Queens,5232
+Jan 1 2024,By borough,Queens,5024
+Apr 1 2024,By borough,Queens,4925
+Jan 1 2022,By borough,Staten Island,1154
+Apr 1 2022,By borough,Staten Island,1223
+Jul 1 2022,By borough,Staten Island,1249
+Oct 1 2022,By borough,Staten Island,1260
+Jan 1 2023,By borough,Staten Island,1162
+Apr 1 2023,By borough,Staten Island,1190
+Jul 1 2023,By borough,Staten Island,1225
+Oct 1 2023,By borough,Staten Island,1209
+Jan 1 2024,By borough,Staten Island,1168
+Apr 1 2024,By borough,Staten Island,1234
+Jan 1 2022,By borough,Non-NYC resident,2975
+Apr 1 2022,By borough,Non-NYC resident,3099
+Jul 1 2022,By borough,Non-NYC resident,3262
+Oct 1 2022,By borough,Non-NYC resident,3372
+Jan 1 2023,By borough,Non-NYC resident,2984
+Apr 1 2023,By borough,Non-NYC resident,3067
+Jul 1 2023,By borough,Non-NYC resident,3335
+Oct 1 2023,By borough,Non-NYC resident,3315
+Jan 1 2024,By borough,Non-NYC resident,3122
+Apr 1 2024,By borough,Non-NYC resident,3311
+Jan 1 2022,By borough,Unknown,1
+Apr 1 2022,By borough,Unknown,0
+Jul 1 2022,By borough,Unknown,1
+Oct 1 2022,By borough,Unknown,1
+Jan 1 2023,By borough,Unknown,1
+Apr 1 2023,By borough,Unknown,0
+Jul 1 2023,By borough,Unknown,2
+Oct 1 2023,By borough,Unknown,0
+Jan 1 2024,By borough,Unknown,1
+Apr 1 2024,By borough,Unknown,0
+Jan 1 2022,By race,White,8498
+Apr 1 2022,By race,White,9021
+Jul 1 2022,By race,White,9001
+Oct 1 2022,By race,White,9248
+Jan 1 2023,By race,White,8376
+Apr 1 2023,By race,White,8833
+Jul 1 2023,By race,White,9124
+Oct 1 2023,By race,White,9258
+Jan 1 2024,By race,White,8300
+Apr 1 2024,By race,White,8440
+Jan 1 2022,By race,Black,4258
+Apr 1 2022,By race,Black,4134
+Jul 1 2022,By race,Black,4406
+Oct 1 2022,By race,Black,4509
+Jan 1 2023,By race,Black,3994
+Apr 1 2023,By race,Black,3964
+Jul 1 2023,By race,Black,4209
+Oct 1 2023,By race,Black,4235
+Jan 1 2024,By race,Black,3699
+Apr 1 2024,By race,Black,3657
+Jan 1 2022,By race,Asian/PI,3585
+Apr 1 2022,By race,Asian/PI,3790
+Jul 1 2022,By race,Asian/PI,3749
+Oct 1 2022,By race,Asian/PI,3888
+Jan 1 2023,By race,Asian/PI,3537
+Apr 1 2023,By race,Asian/PI,3505
+Jul 1 2023,By race,Asian/PI,3662
+Oct 1 2023,By race,Asian/PI,3663
+Jan 1 2024,By race,Asian/PI,3507
+Apr 1 2024,By race,Asian/PI,3561
+Jan 1 2022,By race,Hispanic,6905
+Apr 1 2022,By race,Hispanic,7001
+Jul 1 2022,By race,Hispanic,7735
+Oct 1 2022,By race,Hispanic,7623
+Jan 1 2023,By race,Hispanic,6900
+Apr 1 2023,By race,Hispanic,7366
+Jul 1 2023,By race,Hispanic,7632
+Oct 1 2023,By race,Hispanic,7683
+Jan 1 2024,By race,Hispanic,7426
+Apr 1 2024,By race,Hispanic,7376
+Jan 1 2022,By race,Other,353
+Apr 1 2022,By race,Other,377
+Jul 1 2022,By race,Other,362
+Oct 1 2022,By race,Other,403
+Jan 1 2023,By race,Other,359
+Apr 1 2023,By race,Other,370
+Jul 1 2023,By race,Other,427
+Oct 1 2023,By race,Other,410
+Jan 1 2024,By race,Other,1340
+Apr 1 2024,By race,Other,1314
+Jan 1 2022,By race,Unknown,132
+Apr 1 2022,By race,Unknown,134
+Jul 1 2022,By race,Unknown,123
+Oct 1 2022,By race,Unknown,224
+Jan 1 2023,By race,Unknown,183
+Apr 1 2023,By race,Unknown,225
+Jul 1 2023,By race,Unknown,224
+Oct 1 2023,By race,Unknown,250
+Jan 1 2024,By race,Unknown,241
+Apr 1 2024,By race,Unknown,199
