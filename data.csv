@@ -537,3 +537,241 @@ Jul 1 2023,Deaths by age,85+,3578
 Oct 1 2023,Deaths by age,85+,4415
 Jan 1 2024,Deaths by age,85+,4591
 Apr 1 2024,Deaths by age,85+,3837
+Jan 1 2021,Deaths by cause,Alzheimer's,345
+Apr 1 2021,Deaths by cause,Alzheimer's,247
+Jul 1 2021,Deaths by cause,Alzheimer's,229
+Oct 1 2021,Deaths by cause,Alzheimer's,299
+Jan 1 2022,Deaths by cause,Alzheimer's,277
+Apr 1 2022,Deaths by cause,Alzheimer's,240
+Jul 1 2022,Deaths by cause,Alzheimer's,223
+Oct 1 2022,Deaths by cause,Alzheimer's,239
+Jan 1 2023,Deaths by cause,Alzheimer's,247
+Apr 1 2023,Deaths by cause,Alzheimer's,200
+Jul 1 2023,Deaths by cause,Alzheimer's,171
+Oct 1 2023,Deaths by cause,Alzheimer's,256
+Jan 1 2024,Deaths by cause,Alzheimer's,271
+Apr 1 2024,Deaths by cause,Alzheimer's,191
+Jan 1 2021,Deaths by cause,Malignant neoplasms,2780
+Apr 1 2021,Deaths by cause,Malignant neoplasms,2771
+Jul 1 2021,Deaths by cause,Malignant neoplasms,2922
+Oct 1 2021,Deaths by cause,Malignant neoplasms,3105
+Jan 1 2022,Deaths by cause,Malignant neoplasms,2808
+Apr 1 2022,Deaths by cause,Malignant neoplasms,2726
+Jul 1 2022,Deaths by cause,Malignant neoplasms,2952
+Oct 1 2022,Deaths by cause,Malignant neoplasms,2882
+Jan 1 2023,Deaths by cause,Malignant neoplasms,2792
+Apr 1 2023,Deaths by cause,Malignant neoplasms,2731
+Jul 1 2023,Deaths by cause,Malignant neoplasms,2834
+Oct 1 2023,Deaths by cause,Malignant neoplasms,2984
+Jan 1 2024,Deaths by cause,Malignant neoplasms,2958
+Apr 1 2024,Deaths by cause,Malignant neoplasms,2792
+Jan 1 2021,Deaths by cause,Chronic liver disease,145
+Apr 1 2021,Deaths by cause,Chronic liver disease,148
+Jul 1 2021,Deaths by cause,Chronic liver disease,152
+Oct 1 2021,Deaths by cause,Chronic liver disease,161
+Jan 1 2022,Deaths by cause,Chronic liver disease,141
+Apr 1 2022,Deaths by cause,Chronic liver disease,126
+Jul 1 2022,Deaths by cause,Chronic liver disease,181
+Oct 1 2022,Deaths by cause,Chronic liver disease,146
+Jan 1 2023,Deaths by cause,Chronic liver disease,139
+Apr 1 2023,Deaths by cause,Chronic liver disease,128
+Jul 1 2023,Deaths by cause,Chronic liver disease,124
+Oct 1 2023,Deaths by cause,Chronic liver disease,152
+Jan 1 2024,Deaths by cause,Chronic liver disease,143
+Apr 1 2024,Deaths by cause,Chronic liver disease,120
+Jan 1 2021,Deaths by cause,Chronic lower respiratory disease,372
+Apr 1 2021,Deaths by cause,Chronic lower respiratory disease,329
+Jul 1 2021,Deaths by cause,Chronic lower respiratory disease,326
+Oct 1 2021,Deaths by cause,Chronic lower respiratory disease,352
+Jan 1 2022,Deaths by cause,Chronic lower respiratory disease,335
+Apr 1 2022,Deaths by cause,Chronic lower respiratory disease,360
+Jul 1 2022,Deaths by cause,Chronic lower respiratory disease,323
+Oct 1 2022,Deaths by cause,Chronic lower respiratory disease,401
+Jan 1 2023,Deaths by cause,Chronic lower respiratory disease,405
+Apr 1 2023,Deaths by cause,Chronic lower respiratory disease,355
+Jul 1 2023,Deaths by cause,Chronic lower respiratory disease,345
+Oct 1 2023,Deaths by cause,Chronic lower respiratory disease,381
+Jan 1 2024,Deaths by cause,Chronic lower respiratory disease,379
+Apr 1 2024,Deaths by cause,Chronic lower respiratory disease,327
+Jan 1 2021,Deaths by cause,COVID-19,5057
+Apr 1 2021,Deaths by cause,COVID-19,1513
+Jul 1 2021,Deaths by cause,COVID-19,690
+Oct 1 2021,Deaths by cause,COVID-19,969
+Jan 1 2022,Deaths by cause,COVID-19,2941
+Apr 1 2022,Deaths by cause,COVID-19,310
+Jul 1 2022,Deaths by cause,COVID-19,477
+Oct 1 2022,Deaths by cause,COVID-19,666
+Jan 1 2023,Deaths by cause,COVID-19,438
+Apr 1 2023,Deaths by cause,COVID-19,68
+Jul 1 2023,Deaths by cause,COVID-19,136
+Oct 1 2023,Deaths by cause,COVID-19,207
+Jan 1 2024,Deaths by cause,COVID-19,319
+Apr 1 2024,Deaths by cause,COVID-19,61
+Jan 1 2021,Deaths by cause,Diabetes mellitus,507
+Apr 1 2021,Deaths by cause,Diabetes mellitus,407
+Jul 1 2021,Deaths by cause,Diabetes mellitus,353
+Oct 1 2021,Deaths by cause,Diabetes mellitus,447
+Jan 1 2022,Deaths by cause,Diabetes mellitus,453
+Apr 1 2022,Deaths by cause,Diabetes mellitus,386
+Jul 1 2022,Deaths by cause,Diabetes mellitus,411
+Oct 1 2022,Deaths by cause,Diabetes mellitus,516
+Jan 1 2023,Deaths by cause,Diabetes mellitus,466
+Apr 1 2023,Deaths by cause,Diabetes mellitus,364
+Jul 1 2023,Deaths by cause,Diabetes mellitus,358
+Oct 1 2023,Deaths by cause,Diabetes mellitus,432
+Jan 1 2024,Deaths by cause,Diabetes mellitus,444
+Apr 1 2024,Deaths by cause,Diabetes mellitus,374
+Jan 1 2021,Deaths by cause,Psychoactive substance use/poisoning,645
+Apr 1 2021,Deaths by cause,Psychoactive substance use/poisoning,653
+Jul 1 2021,Deaths by cause,Psychoactive substance use/poisoning,735
+Oct 1 2021,Deaths by cause,Psychoactive substance use/poisoning,711
+Jan 1 2022,Deaths by cause,Psychoactive substance use/poisoning,705
+Apr 1 2022,Deaths by cause,Psychoactive substance use/poisoning,722
+Jul 1 2022,Deaths by cause,Psychoactive substance use/poisoning,819
+Oct 1 2022,Deaths by cause,Psychoactive substance use/poisoning,879
+Jan 1 2023,Deaths by cause,Psychoactive substance use/poisoning,739
+Apr 1 2023,Deaths by cause,Psychoactive substance use/poisoning,812
+Jul 1 2023,Deaths by cause,Psychoactive substance use/poisoning,809
+Oct 1 2023,Deaths by cause,Psychoactive substance use/poisoning,746
+Jan 1 2024,Deaths by cause,Psychoactive substance use/poisoning,604
+Apr 1 2024,Deaths by cause,Psychoactive substance use/poisoning,400
+Jan 1 2021,Deaths by cause,Heart disease,4504
+Apr 1 2021,Deaths by cause,Heart disease,3921
+Jul 1 2021,Deaths by cause,Heart disease,3865
+Oct 1 2021,Deaths by cause,Heart disease,4278
+Jan 1 2022,Deaths by cause,Heart disease,4748
+Apr 1 2022,Deaths by cause,Heart disease,3829
+Jul 1 2022,Deaths by cause,Heart disease,3803
+Oct 1 2022,Deaths by cause,Heart disease,4426
+Jan 1 2023,Deaths by cause,Heart disease,4103
+Apr 1 2023,Deaths by cause,Heart disease,3722
+Jul 1 2023,Deaths by cause,Heart disease,3612
+Oct 1 2023,Deaths by cause,Heart disease,4325
+Jan 1 2024,Deaths by cause,Heart disease,4198
+Apr 1 2024,Deaths by cause,Heart disease,3621
+Jan 1 2021,Deaths by cause,Hypertension,352
+Apr 1 2021,Deaths by cause,Hypertension,286
+Jul 1 2021,Deaths by cause,Hypertension,296
+Oct 1 2021,Deaths by cause,Hypertension,349
+Jan 1 2022,Deaths by cause,Hypertension,328
+Apr 1 2022,Deaths by cause,Hypertension,261
+Jul 1 2022,Deaths by cause,Hypertension,301
+Oct 1 2022,Deaths by cause,Hypertension,351
+Jan 1 2023,Deaths by cause,Hypertension,301
+Apr 1 2023,Deaths by cause,Hypertension,311
+Jul 1 2023,Deaths by cause,Hypertension,293
+Oct 1 2023,Deaths by cause,Hypertension,331
+Jan 1 2024,Deaths by cause,Hypertension,346
+Apr 1 2024,Deaths by cause,Hypertension,258
+Jan 1 2021,Deaths by cause,Influenza/Pneumonia,428
+Apr 1 2021,Deaths by cause,Influenza/Pneumonia,338
+Jul 1 2021,Deaths by cause,Influenza/Pneumonia,405
+Oct 1 2021,Deaths by cause,Influenza/Pneumonia,457
+Jan 1 2022,Deaths by cause,Influenza/Pneumonia,411
+Apr 1 2022,Deaths by cause,Influenza/Pneumonia,347
+Jul 1 2022,Deaths by cause,Influenza/Pneumonia,340
+Oct 1 2022,Deaths by cause,Influenza/Pneumonia,477
+Jan 1 2023,Deaths by cause,Influenza/Pneumonia,426
+Apr 1 2023,Deaths by cause,Influenza/Pneumonia,338
+Jul 1 2023,Deaths by cause,Influenza/Pneumonia,316
+Oct 1 2023,Deaths by cause,Influenza/Pneumonia,384
+Jan 1 2024,Deaths by cause,Influenza/Pneumonia,483
+Apr 1 2024,Deaths by cause,Influenza/Pneumonia,300
+Jan 1 2021,Deaths by cause,Nephritis,181
+Apr 1 2021,Deaths by cause,Nephritis,159
+Jul 1 2021,Deaths by cause,Nephritis,168
+Oct 1 2021,Deaths by cause,Nephritis,183
+Jan 1 2022,Deaths by cause,Nephritis,172
+Apr 1 2022,Deaths by cause,Nephritis,162
+Jul 1 2022,Deaths by cause,Nephritis,167
+Oct 1 2022,Deaths by cause,Nephritis,215
+Jan 1 2023,Deaths by cause,Nephritis,208
+Apr 1 2023,Deaths by cause,Nephritis,178
+Jul 1 2023,Deaths by cause,Nephritis,157
+Oct 1 2023,Deaths by cause,Nephritis,211
+Jan 1 2024,Deaths by cause,Nephritis,191
+Apr 1 2024,Deaths by cause,Nephritis,133
+Jan 1 2021,Deaths by cause,Septicemia,186
+Apr 1 2021,Deaths by cause,Septicemia,214
+Jul 1 2021,Deaths by cause,Septicemia,234
+Oct 1 2021,Deaths by cause,Septicemia,243
+Jan 1 2022,Deaths by cause,Septicemia,234
+Apr 1 2022,Deaths by cause,Septicemia,238
+Jul 1 2022,Deaths by cause,Septicemia,266
+Oct 1 2022,Deaths by cause,Septicemia,293
+Jan 1 2023,Deaths by cause,Septicemia,271
+Apr 1 2023,Deaths by cause,Septicemia,225
+Jul 1 2023,Deaths by cause,Septicemia,268
+Oct 1 2023,Deaths by cause,Septicemia,275
+Jan 1 2024,Deaths by cause,Septicemia,261
+Apr 1 2024,Deaths by cause,Septicemia,230
+Jan 1 2021,Deaths by cause,Cerebrovascular disease,556
+Apr 1 2021,Deaths by cause,Cerebrovascular disease,522
+Jul 1 2021,Deaths by cause,Cerebrovascular disease,536
+Oct 1 2021,Deaths by cause,Cerebrovascular disease,535
+Jan 1 2022,Deaths by cause,Cerebrovascular disease,592
+Apr 1 2022,Deaths by cause,Cerebrovascular disease,504
+Jul 1 2022,Deaths by cause,Cerebrovascular disease,514
+Oct 1 2022,Deaths by cause,Cerebrovascular disease,565
+Jan 1 2023,Deaths by cause,Cerebrovascular disease,536
+Apr 1 2023,Deaths by cause,Cerebrovascular disease,520
+Jul 1 2023,Deaths by cause,Cerebrovascular disease,531
+Oct 1 2023,Deaths by cause,Cerebrovascular disease,614
+Jan 1 2024,Deaths by cause,Cerebrovascular disease,624
+Apr 1 2024,Deaths by cause,Cerebrovascular disease,559
+Jan 1 2021,Deaths by cause,Homicide,101
+Apr 1 2021,Deaths by cause,Homicide,129
+Jul 1 2021,Deaths by cause,Homicide,152
+Oct 1 2021,Deaths by cause,Homicide,130
+Jan 1 2022,Deaths by cause,Homicide,100
+Apr 1 2022,Deaths by cause,Homicide,111
+Jul 1 2022,Deaths by cause,Homicide,136
+Oct 1 2022,Deaths by cause,Homicide,107
+Jan 1 2023,Deaths by cause,Homicide,93
+Apr 1 2023,Deaths by cause,Homicide,114
+Jul 1 2023,Deaths by cause,Homicide,110
+Oct 1 2023,Deaths by cause,Homicide,89
+Jan 1 2024,Deaths by cause,Homicide,80
+Apr 1 2024,Deaths by cause,Homicide,83
+Jan 1 2021,Deaths by cause,Suicide,152
+Apr 1 2021,Deaths by cause,Suicide,134
+Jul 1 2021,Deaths by cause,Suicide,140
+Oct 1 2021,Deaths by cause,Suicide,137
+Jan 1 2022,Deaths by cause,Suicide,145
+Apr 1 2022,Deaths by cause,Suicide,170
+Jul 1 2022,Deaths by cause,Suicide,141
+Oct 1 2022,Deaths by cause,Suicide,145
+Jan 1 2023,Deaths by cause,Suicide,138
+Apr 1 2023,Deaths by cause,Suicide,127
+Jul 1 2023,Deaths by cause,Suicide,151
+Oct 1 2023,Deaths by cause,Suicide,130
+Jan 1 2024,Deaths by cause,Suicide,122
+Apr 1 2024,Deaths by cause,Suicide,120
+Jan 1 2021,Deaths by cause,Accidents,313
+Apr 1 2021,Deaths by cause,Accidents,316
+Jul 1 2021,Deaths by cause,Accidents,332
+Oct 1 2021,Deaths by cause,Accidents,366
+Jan 1 2022,Deaths by cause,Accidents,389
+Apr 1 2022,Deaths by cause,Accidents,304
+Jul 1 2022,Deaths by cause,Accidents,352
+Oct 1 2022,Deaths by cause,Accidents,416
+Jan 1 2023,Deaths by cause,Accidents,317
+Apr 1 2023,Deaths by cause,Accidents,342
+Jul 1 2023,Deaths by cause,Accidents,321
+Oct 1 2023,Deaths by cause,Accidents,371
+Jan 1 2024,Deaths by cause,Accidents,349
+Apr 1 2024,Deaths by cause,Accidents,336
+Jan 1 2021,Deaths by cause,Other,2747
+Apr 1 2021,Deaths by cause,Other,2519
+Jul 1 2021,Deaths by cause,Other,2532
+Oct 1 2021,Deaths by cause,Other,2785
+Jan 1 2022,Deaths by cause,Other,2874
+Apr 1 2022,Deaths by cause,Other,2456
+Jul 1 2022,Deaths by cause,Other,2595
+Oct 1 2022,Deaths by cause,Other,2966
+Jan 1 2023,Deaths by cause,Other,2851
+Apr 1 2023,Deaths by cause,Other,2554
+Jul 1 2023,Deaths by cause,Other,2588
+Oct 1 2023,Deaths by cause,Other,2887
+Jan 1 2024,Deaths by cause,Other,3219
+Apr 1 2024,Deaths by cause,Other,3159
