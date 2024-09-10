@@ -56,6 +56,17 @@ function drawChart(destination, metric, label, multi, tooltip) {
       subtitleFontSize: 13,
     },
     config: {
+      range: {
+        category: [
+          "#003f5c",
+          "#374c80",
+          "#7a5195",
+          "#bc5090",
+          "#ef5675",
+          "#ff764a",
+          "#ffa600"
+        ]
+    },
       view: { stroke: null },
       axisX: {
         labelAngle: 0,
