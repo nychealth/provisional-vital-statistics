@@ -175,6 +175,14 @@ birthChar.forEach((element) => {
   });
 });
 
+const careChar = document.querySelectorAll('.care');
+careChar.forEach((element) => {
+  element.addEventListener('click', function() {
+    careChar.forEach(el => el.classList.remove('highlight'));
+    this.classList.add('highlight');
+  });
+});
+
 const infantMort = document.querySelectorAll('.infantMort');
 infantMort.forEach((element) => {
   element.addEventListener('click', function() {
