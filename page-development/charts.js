@@ -156,6 +156,8 @@ function drawChart(destination, metric, label, multi, tooltip) {
 // INITIALIZE CHART DRAWS
 drawChart("#bbd", "Total births", "Number of births", false);
 
+drawChart('#bbc','By method','Percent of births',true)
+
 
 
 // EVENT LISTENERS FOR EACH CHART SECTION
