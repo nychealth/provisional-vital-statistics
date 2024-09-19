@@ -140,7 +140,7 @@ function drawChart(destination, metric, label, multi, tooltip) {
         mark: { type: "text", align: "left", dx: 5 },
         encoding: {
           x: { aggregate: "max", timeUnit: "quarteryear", field: "date" },
-          y: { aggregate: "max", field: "value", type: "quantitative" },
+          y: { aggregate: {"argmax": "date"}, field: "value", type: "quantitative" },
           text: { field: "submetric", type: "nominal" },
           color: { field: "submetric", type: "nominal" },
         },
