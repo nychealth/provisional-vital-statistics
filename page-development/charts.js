@@ -131,7 +131,7 @@ function drawChart(destination, metric, label, multi, tooltip) {
           color: { field: `${subSeries}`, type: "nominal", title: "" },
           tooltip: [
             { title: "Quarter", field: "date", timeUnit: "quarteryear" },
-            { title: "Births", field: "value", format: "," },
+            { title: `${label}`, field: "value", format: "," },
             { title: `${tooltip}`, field: `${tooltipField}` },
           ],
         },
@@ -154,9 +154,14 @@ function drawChart(destination, metric, label, multi, tooltip) {
 }
 
 // INITIALIZE CHART DRAWS
-drawChart("#bbd", "Total births", "Number of births", false);
+drawChart("#bbd", "Total births", "Births", false);
 
 drawChart('#bbc','By method','Percent of births',true)
+
+
+drawChart('#dim','IMR','Infant mortality rate (per 1,000 live births)',false)
+
+drawChart('#ddc','Deaths','Deaths',false)
 
 
 
