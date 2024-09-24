@@ -245,7 +245,7 @@ async function drawChart(destination, metric, label, multi, tooltip, schemaFlag 
         },
       },
       {
-        mark: { type: "text", align: "left", dx: 5 },
+        mark: { type: "text",align: "left", dx: -0, dy: 0 },
         encoding: {
           x: { aggregate: "max", timeUnit: "quarteryear", field: "date" },
           y: { aggregate: { "argmax": "date" }, field: "value", type: "quantitative" },
@@ -303,70 +303,82 @@ addClickListeners(document.querySelectorAll('.care'));
 addClickListeners(document.querySelectorAll('.infantMort'));
 addClickListeners(document.querySelectorAll('.mort'));
 
+// Function to toggle the visibility of the multiselect container
+function toggleMultiselect(show) {
+  const multiselectWrapper = document.getElementById('multiselectWrapper');
+  
+  if (show) {
+    multiselectWrapper.style.display = 'block'; // Show both title and buttons
+    generateButtons(); // Populate the multiselect
+  } else {
+    multiselectWrapper.style.display = 'none'; // Hide the multiselect container
+  }
+}
 
-// GENERATE CHECKBOXES FOR DEATH BY CAUSE DROPDOWN
-function generateCheckboxes() {
+
+// Generate buttons for Death by Cause, selecting the top 3 by highest total value
+function generateButtons() {
   fetch('../data.csv')
     .then(response => response.text())
     .then(csvText => {
       const parsedData = d3.csvParse(csvText);
       const deathsByCauseData = parsedData.filter(d => d.metric === "Deaths by cause");
-      const uniqueCauses = [...new Set(deathsByCauseData.map(d => d.submetric))];
-      const checkboxContainer = document.getElementById('checkboxContainer');
       
-      checkboxContainer.innerHTML = "";
-
-      uniqueCauses.forEach((cause, index) => {
-        const checkboxId = `cause${index + 1}`;
-        const checkbox = document.createElement('input');
-        checkbox.type = 'checkbox';
-        checkbox.id = checkboxId;
-        checkbox.value = cause;
-        checkbox.checked = index < 5; // Check first 5 causes by default
-        
-        const label = document.createElement('label');
-        label.htmlFor = checkboxId;
-        label.innerText = cause;
-
-        checkboxContainer.appendChild(checkbox);
-        checkboxContainer.appendChild(label);
-
-        // EVENT LISTENER TO UPDATE CHART BASED ON SELECTION
-        checkbox.addEventListener('change', function() {
-          const selectedCauses = getSelectedCauses();
-          drawChart('#ddc', 'Deaths', 'Deaths', true, "", 'alternative', selectedCauses); 
-        });
+      // Calculate total value for each cause
+      const causeTotals = {};
+      deathsByCauseData.forEach(d => {
+        if (!causeTotals[d.submetric]) {
+          causeTotals[d.submetric] = 0;
+        }
+        causeTotals[d.submetric] += +d.value; 
       });
 
-      // DRAW CHART WITH TOP 5 CAUSES OF DEATH
-      const initialSelection = uniqueCauses.slice(0, 5); 
-      drawChart('#ddc', 'Deaths', 'Deaths', true, "", 'alternative', initialSelection);
+      // Sort the causes by their total values and get the top 3
+      const topCauses = Object.keys(causeTotals)
+        .sort((a, b) => causeTotals[b] - causeTotals[a]) 
+        .slice(0, 3); // Take the top 3
+
+      const uniqueCauses = [...new Set(deathsByCauseData.map(d => d.submetric))];
+      const buttonContainer = document.getElementById('buttonContainer');
+      
+      buttonContainer.innerHTML = ""; 
+
+      uniqueCauses.forEach((cause) => {
+        const button = document.createElement('button');
+        button.textContent = cause;
+        button.setAttribute('data-cause', cause); 
+        button.classList.add('cause-button'); 
+
+        // Automatically select the top 3 causes by total value
+        if (topCauses.includes(cause)) {
+          button.classList.add('selected');
+        }
+
+        // Toggle button state when clicked
+        button.addEventListener('click', function () {
+          this.classList.toggle('selected');
+          updateChart();
+        });
+
+        buttonContainer.appendChild(button);
+      });
+
+      // Initial selection and chart draw
+      updateChart();
     });
 }
 
-// CHOOSE CAUSES BASED ON SELECTION
+// Get the selected causes from the buttons
 function getSelectedCauses() {
-  const checkboxes = document.querySelectorAll('#checkboxContainer input[type="checkbox"]');
-  return Array.from(checkboxes)
-    .filter(checkbox => checkbox.checked)
-    .map(checkbox => checkbox.value);
+  const selectedButtons = document.querySelectorAll('.cause-button.selected');
+  return Array.from(selectedButtons).map(button => button.getAttribute('data-cause'));
 }
 
-function toggleCauseDropdown(show) {
-  const dropdown = document.getElementById('causeDropdown');
-  dropdown.style.display = show ? 'inline-block' : 'none';
+// Update the chart based on selected causes
+function updateChart() {
+  const selectedCauses = getSelectedCauses();
+  drawChart('#ddc', 'Deaths', 'Deaths', true, "", 'alternative', selectedCauses);
 }
-
-document.querySelectorAll('.mort').forEach((element) => {
-  element.addEventListener('click', function(e) {
-    if (e.target.innerText.includes('Cause')) {
-      toggleCauseDropdown(true);
-      generateCheckboxes(); 
-    } else {
-      toggleCauseDropdown(false);
-    }
-  });
-});
 
 
 
