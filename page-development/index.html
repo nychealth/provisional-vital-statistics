@@ -66,6 +66,56 @@
         margin-top: 50px;
       }
 
+      /* Multiselect dropdown styles */
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 200px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        padding: 12px 16px;
+        z-index: 1;
+        max-height: 300px;
+        overflow-y: scroll;
+      }
+
+      .dropdown-content label {
+        display: block;
+        margin-bottom: 8px;
+      }
+
+      .dropdown-content input[type="checkbox"] {
+        margin-right: 10px;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+      .dropdown button {
+        border-radius: 5px;
+        font-size: 14px;
+        font-weight: 400 !important;
+        background-color: #eeeeee;
+        padding: 7px 20px;
+        color: #696969 !important;
+        box-shadow: 0 0 7px 2px rgba(0, 0, 0, 0, 07);
+        cursor: pointer;
+        display: inline-block;
+        text-align: center;
+       
+        text-decoration: none;
+      }
+
+      .dropdown button:hover {
+        background-color: #ddd;
+      }
+
     </style>
 
     <!--START-->
@@ -79,6 +129,8 @@
           <script src="https://cdn.jsdelivr.net/npm/vega@5/build-es5/vega.js"></script>
           <script src="https://cdn.jsdelivr.net/npm/vega-lite@4/build-es5/vega-lite.js"></script>
           <script src="https://cdn.jsdelivr.net/npm/vega-embed@6/build-es5/vega-embed.js"></script>
+          <script src="https://d3js.org/d3.v6.min.js"></script>
+
 
       <h1>Provisional Birth and Death Data</h1>
       <p>
@@ -146,7 +198,12 @@
         <a id="" onclick="drawChart('#ddc','Deaths by age','Deaths',true,'Age')" tabindex="0" class="togglebutton mort">Age group</a>
         <a id="" onclick="" tabindex="0" class="togglebutton mort">Race/ethnicity</a>
         <a id="" onclick="drawChart('#ddc','Deaths by gender','Deaths',true,'Sex')" tabindex="0" class="togglebutton mort">Sex</a>
-        <a id="" onclick="" tabindex="0" class="togglebutton mort">Cause ></a>
+     
+        <a id="" onclick="" tabindex="0" class="togglebutton mort">Cause</a>
+        <div class="dropdown" id="causeDropdown" style="display: none; margin-left: 10px;">
+          <button>Select Causes</button>
+          <div class="dropdown-content" id="checkboxContainer"></div>
+      </div>
       </div>
 
       <div class="vis drawn" id="ddc"></div>
