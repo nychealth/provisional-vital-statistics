@@ -141,84 +141,119 @@ async function drawChart(destination, metric, label, multi, tooltip, schemaFlag 
 
   // AlT SCHEMA
   const spec2 = {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "description": "",
-    "height": 250,
-    "width": "container",
-    "title": {
-      "text": label,
-      "subtitlePadding": 10,
-      "fontWeight": "normal",
-      "anchor": "start",
-      "fontSize": 12,
-      "font": "sans-serif",
-      "baseline": "top",
-      "dy": -10,
-      "subtitleFontSize": 13
+    $schema: "https://vega.github.io/schema/vega-lite/v5.json",
+    description: "",
+    height: 250,
+    width: "container",
+    title: {
+      text: label,
+      subtitlePadding: 10,
+      fontWeight: "normal",
+      anchor: "start",
+      fontSize: 12,
+      font: "sans-serif",
+      baseline: "top",
+      dy: -10,
+      subtitleFontSize: 13,
     },
-    "config": {
-      "view": { "stroke": null },
-      "axisX": {
-        "labelAngle": 0,
-        "grid": false,
-        "tickSize": {
-          "condition": {
-            "test": { "field": "value", "timeUnit": "quarter", "equal": 1 },
-            "value": 15
-          },
-          "value": 9
+    config: {
+      range: {
+        category: [
+          "#003f5c",
+          "#374c80",
+          "#7a5195",
+          "#bc5090",
+          "#ef5675",
+          "#ff764a",
+          "#ffa600"
+        ]
+    },
+    view: { stroke: null },
+    axisX: {
+      labelAngle: 0,
+      grid: false,
+      tickSize: {
+        condition: {
+          test: { field: "value", timeUnit: "quarter", equal: 1 },
+          value: 15,
         },
-        "tickWidth": {
-          "condition": {
-            "test": { "field": "value", "timeUnit": "quarter", "equal": 1 },
-            "value": 1.25
-          },
-          "value": 0.5
-        },
-        "labelExpr": "[quarter(datum.value) === 1 ? timeFormat(datum.value, '%Y') + ' Q' + quarter(datum.value) : 'Q' + quarter(datum.value)]"
+        value: 9,
       },
-      "axisY": { "tickCount": 2 },
-      "legend": {
-        "disable": true
-      }
+      tickWidth: {
+        condition: {
+          test: { field: "value", timeUnit: "quarter", equal: 1 },
+          value: 1.25,
+        },
+        value: 0.5,
+      },
+      labelExpr:
+        "[quarter(datum.value) === 1 ? timeFormat(datum.value, '%Y') + ' Q' + quarter(datum.value) : 'Q' + quarter(datum.value)]",
     },
-    "data": {
-      "url": "../data.csv",
-      "format": { "type": "csv" }
+    axisY: { tickCount: 2 },
+    legend: {
+      disable: true,
     },
-    "transform": [
+  },
+    data: {
+      url: "../data.csv",
+      format: { "type": "csv" }
+    },
+    transform: [
       {
-        "filter": {
-          "field": "metric",
-          "equal": "Deaths by cause"
+        filter: {
+          field: "metric",
+          equal: "Deaths by cause"
         }
       },
       {
-        "filter": {
-          "field": "submetric",
-          "oneOf": selectedCauses
+        filter: {
+          field: "submetric",
+          oneOf: selectedCauses
         }
       }
     ],    
     "layer": [
       {
-        "mark": "line",
-        "encoding": {
-          "x": { "field": "date", "type": "temporal", "title": "Date" },
-          "y": { "field": "value", "type": "quantitative", "title": "Deaths" },
-          "color": { "field": "submetric", "type": "nominal", "title": "Cause of Death" }
-        }
+        mark: { type: "area", color: fillColor },
+        encoding: {
+          x: { field: "date", type: "temporal" },
+          y: { field: "value", type: "quantitative" },
+        },
       },
       {
-        "mark": { "type": "text", "align": "left", "dx": 5 },
-        "encoding": {
-          "x": { "aggregate": "max", "field": "date", "type": "temporal" },
-          "y": { "aggregate": { "argmax": "date" }, "field": "value", "type": "quantitative" },
-          "text": { "field": "submetric", "type": "nominal" },
-          "color": { "field": "submetric", "type": "nominal" }
-        }
-      }
-    ]
+        mark: { type: "line", point: { filled: false, fill: "white" } },
+        encoding: {
+          x: {
+            timeUnit: "quarteryear",
+            field: "date",
+            title: "",
+            axis: { zindex: 1 },
+            scale: { padding: 30 },
+          },
+          y: {
+            field: "value",
+            type: "quantitative",
+            title: "",
+            axis: { zindex: 1 },
+          },
+          color: { field: `${subSeries}`, type: "nominal", title: "" },
+          tooltip: [
+            { title: "Quarter", field: "date", timeUnit: "quarteryear" },
+            { title: `${label}`, field: "value", format: "," },
+            { title: `${tooltip}`, field: `${tooltipField}` },
+          ],
+        },
+      },
+      {
+        mark: { type: "text", align: "left", dx: 5 },
+        encoding: {
+          x: { aggregate: "max", timeUnit: "quarteryear", field: "date" },
+          y: { aggregate: { "argmax": "date" }, field: "value", type: "quantitative" },
+          text: { field: "submetric", type: "nominal" },
+          color: { field: "submetric", type: "nominal" },
+        },
+      },
+    ],
   };
   
 
