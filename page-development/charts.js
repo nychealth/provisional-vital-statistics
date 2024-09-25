@@ -3,6 +3,7 @@
  Stuff to do in here:
     - Apply alt spec?
     - Remove actions before demoing
+    - Legend and hover for charts?
 */
 
 
