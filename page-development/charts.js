@@ -1,10 +1,7 @@
 
 /*
  Stuff to do in here:
-    - Add data to data file, one chart at a time
-    - Figure out padding so that the x-axis doesn't change based on label
-    - Add variable tickSize to x-axis legend so that Q1 is emphasized
-    - thicken stroke on hover
+    - Apply alt spec?
     - Remove actions before demoing
 */
 
@@ -508,11 +505,14 @@ function updateChart() {
             "encoding": {
         "x": {"field": "date"},
         "y": {"field": "value['value']"},
-        "text": {"field": "submetric", "type": "nominal"},
+        "text": {
+          "condition": {"param": "hover", "field": "submetric", "empty": false},
+          "value": ""
+        },
         "color": {"field": "submetric", "type": "nominal"}
 
       },
-      "mark": {"type": "text", "align": "right", "dx": -8}
+      "mark": {"type": "text", "align": "left", "dx": -8, "dy": -15}
     }
   ]
 }
