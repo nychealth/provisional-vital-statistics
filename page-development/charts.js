@@ -27,9 +27,11 @@ async function drawChart(destination, metric, label, multi, tooltip, schemaFlag 
   let tooltipLabel = tooltip ? tooltip : "";
   let tooltipField = tooltip ? "submetric" : "";
 
-  // To do: if multi === true, then fillLayer is the below, else fillLayer = null
-  let fillLayer   = multi === true ? {"mark": {"type": "area", "color": "#f5f5f5", "tooltip": false}} : ''
+  // Variations between single-series and multi-series spec properties
+  let fillLayer   = multi === false ? [{"mark": {"type": "area", "color": "#f5f5f5", "tooltip": false}}] : []
   let legend      = multi === true ? {"columns": 4, "labelFontSize": 10, "symbolSize": 80} : {"disable": true}
+  let color       = multi === true ? {"condition": {"param": "hover","field": "submetric","type": "nominal","legend": {"orient": "bottom", "title": null, "labelLimit": 1000}
+},"value": "gray"} : {}
 
   // HOVER SCHEMA
   var spec1 = {
@@ -107,9 +109,11 @@ async function drawChart(destination, metric, label, multi, tooltip, schemaFlag 
         "title": "",
         "axis": {"zindex": 1}
       },
+      "color": color,
       "opacity": {"condition": {"param": "hover", "value": 1}, "value": 0.35}
     },
     "layer": [
+      ...fillLayer,
       {
         "description": "Transparent layer to easier trigger hover",
         "params": [
