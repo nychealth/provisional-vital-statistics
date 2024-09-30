@@ -27,8 +27,141 @@ async function drawChart(destination, metric, label, multi, tooltip, schemaFlag 
   let tooltipLabel = tooltip ? tooltip : "";
   let tooltipField = tooltip ? "submetric" : "";
 
-  // DEFAULT SCHEMA
+  // To do: if multi === true, then fillLayer is the below, else fillLayer = null
+  let fillLayer   = multi === true ? {"mark": {"type": "area", "color": "#f5f5f5", "tooltip": false}} : ''
+  let legend      = multi === true ? {"columns": 4, "labelFontSize": 10, "symbolSize": 80} : {"disable": true}
+
+  // HOVER SCHEMA
   var spec1 = {
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "",
+    "height": 250,
+    "width": "container",
+    "title": {
+      "text": label,
+      "subtitlePadding": 10,
+      "fontWeight": "normal",
+      "anchor": "start",
+      "fontSize": 12,
+      "font": "sans-serif",
+      "baseline": "top",
+      "dy": -10,
+      "subtitleFontSize": 13
+    },
+    "config": {
+      "range": {
+        "category": [
+          "#003f5c",
+          "#374c80",
+          "#7a5195",
+          "#bc5090",
+          "#ef5675",
+          "#ff764a",
+          "#ffa600"
+        ]
+      },
+      "view": {"stroke": null},
+      "axisX": {
+        "labelAngle": 0,
+        "grid": false,
+        "tickSize": {
+          "condition": {
+            "test": {"field": "value", "timeUnit": "quarter", "equal": 1},
+            "value": 15
+          },
+          "value": 9
+        },
+        "tickWidth": {
+          "condition": {
+            "test": {"field": "value", "timeUnit": "quarter", "equal": 1},
+            "value": 1.25
+          },
+          "value": 0.5
+        },
+        "labelExpr": "[quarter(datum.value) === 1 ? timeFormat(datum.value, '%Y') + ' Q' + quarter(datum.value) : 'Q' + quarter(datum.value)]"
+      },
+      "axisY": {"tickCount": 3, "orient": "left"},
+      "legend": legend
+    },
+    "data": {
+      "url": "../data.csv"
+    },
+    "transform": [
+      { "filter": `datum.metric === '${metric}'` },
+      {
+        "calculate": "format(datum.value, ',') + ' per 100,000 adults'",
+        "as": "valueWithDisplay"
+      }
+    ],
+    "encoding": {
+      "x": {
+        "timeUnit": "quarteryear",
+        "field": "date",
+        "title": "",
+        "axis": {"zindex": 1},
+        "scale": {"padding": 30}
+      },
+      "y": {
+        "field": "value",
+        "type": "quantitative",
+        "title": "",
+        "axis": {"zindex": 1}
+      },
+      "opacity": {"condition": {"param": "hover", "value": 1}, "value": 0.35}
+    },
+    "layer": [
+      {
+        "description": "Transparent layer to easier trigger hover",
+        "params": [
+          {
+            "name": "hover",
+            "select": {
+              "type": "point",
+              "fields": ["submetric"],
+              "on": "pointerover"
+            }
+          }
+        ],
+        "mark": {"type": "line", "stroke": "transparent", "strokeWidth": 15}
+      },
+      {
+        "mark": {"type": "line", "point": {"size": 70}},
+        "encoding": {
+          "tooltip": [
+            { "title": "Quarter", "field": "date", "timeUnit": "quarteryear" },
+            { "title": `${label}`, "field": "value", "format": "," },
+            { "title": `${tooltip}`, "field": `${tooltipField}` },
+          ]
+        }
+      },
+      {
+        "transform": [
+          {
+            "aggregate": [
+              {"op": "argmin", "field": "date", "as": "value"},
+              {"op": "min", "field": "date", "as": "date"}
+            ],
+            "groupby": ["submetric"]
+          }
+        ],
+        "encoding": {
+          "x": {"field": "date"},
+          "y": {"field": "value['value']"},
+          "text": {
+            "condition": {"param": "hover", "field": "submetric", "empty": false},
+            "value": ""
+          },
+          "color": {"field": "submetric", "type": "nominal"}
+        },
+        "mark": {"type": "text", "align": "left", "dx": -8, "dy": -15}
+      }
+    ]
+  }
+
+  console.log(spec1)
+
+  // DEFAULT SCHEMA
+  var oldSpec1 = {
     $schema: "https://vega.github.io/schema/vega-lite/v5.json",
     description: "",
     height: 250,
