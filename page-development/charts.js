@@ -403,6 +403,7 @@ async function drawChart(destination, metric, label, multi, tooltip, schemaFlag 
   } catch (error) {
     console.log('Error embedding chart:', error);
   }
+
 }
 
 
@@ -452,6 +453,7 @@ function toggleMultiselect(show) {
   } else {
     multiselectWrapper.style.display = 'none'; // Hide the multiselect container
   }
+
 }
 
 
