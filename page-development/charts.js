@@ -421,6 +421,7 @@ chartConfigs.forEach(({ destination, metric, label, multi, schemaFlag }) => {
 
 
 
+
 // FUNCTIONALISED EVENT LISTENER 
 
 function addClickListeners(elements) {
