@@ -222,7 +222,7 @@ async function drawChart(destination, metric, label, multi, tooltip, schemaFlag 
         "zindex": 0, 
         "gridDash": [2,2]
       },
-      "legend": {"columns": 6, "labelFontSize": 10, "symbolSize": 80}
+      "legend": {"columns": 4, "labelFontSize": 10, "symbolSize": 80}
     },
     "data": {
       "url": "../data.csv"
@@ -430,5 +430,5 @@ function getSelectedCauses() {
 // Update the chart based on selected causes
 function updateChart() {
   const selectedCauses = getSelectedCauses();
-  drawChart('#ddc', 'Deaths', 'Deaths', true, "", 'alternative', selectedCauses);
+  drawChart('#ddc', 'Deaths', 'Deaths', true, "Cause", 'alternative', selectedCauses);
 }
