@@ -23,8 +23,8 @@ async function drawChart(destination, metric, label, multi, tooltip, schemaFlag 
   // INITIALIZE VARIABLES
   let fillColor = multi === false ? "#f3f3f3" : "#f3f3f300";
   let subSeries = multi === false ? "" : "submetric";
-  let tooltipLabel = tooltip ? tooltip : "";
-  let tooltipField = tooltip ? "submetric" : "";
+  // let tooltipLabel = tooltip ? tooltip : "";
+  // let tooltipField = tooltip ? "submetric" : "";
 
   // Variations between single-series and multi-series spec properties
   let fillLayer   = multi === false ? [{"mark": {"type": "area", "color": "#e9e9e950", "tooltip": false}}] : []
@@ -32,61 +32,89 @@ async function drawChart(destination, metric, label, multi, tooltip, schemaFlag 
   let color       = multi === true ? {"condition": {"param": "hover","field": "submetric","type": "nominal","legend": {"orient": "bottom", "title": null, "labelLimit": 1000}
 },"value": "gray"} : {}
 
+  // COMMON ELEMENTS OF SCHEMAE
+  var title = {
+    "text": label,
+    "subtitlePadding": 10,
+    "fontWeight": "normal",
+    "anchor": "start",
+    "fontSize": 12,
+    "font": "sans-serif",
+    "baseline": "top",
+    "dy": -10,
+    "subtitleFontSize": 13
+  }
+
+  var partialConfig = {
+    "range": {
+    "category": [
+      "#003f5c",
+      "#ff764a",
+      "#374c80",
+      "#ffa600",
+      "#7a5195",
+      "#bc5090",
+      "#ef5675"
+    ]
+  },
+  "view": {"stroke": null},
+  "axisX": {
+    "labelAngle": 0,
+    "grid": false,
+    "tickSize": {
+      "condition": {
+        "test": {"field": "value", "timeUnit": "quarter", "equal": 1},
+        "value": 15
+      },
+      "value": 9
+    },
+    "tickWidth": {
+      "condition": {
+        "test": {"field": "value", "timeUnit": "quarter", "equal": 1},
+        "value": 1.25
+      },
+      "value": 0.5
+    },
+    "labelExpr": "[quarter(datum.value) === 1 ? timeFormat(datum.value, '%Y') + ' Q' + quarter(datum.value) : 'Q' + quarter(datum.value)]"
+  },
+  "axisY": {
+    "tickCount": 3, 
+    "orient": "left",
+    "zindex": 0, 
+    "gridDash": [2,2]
+  }}
+
+  var tooltipContent = [
+    { "title": "Quarter", "field": "date", "timeUnit": "quarteryear" },
+    { "title": `${label}`, "field": "value", "format": "," }
+  ]
+
+  var encoding = {
+    "x": {
+      "timeUnit": "quarteryear",
+      "field": "date",
+      "title": "",
+      "axis": {"zindex": 1},
+      "scale": {"padding": 30}
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "title": ""
+    },
+    "color": color,
+    "opacity": {"condition": {"param": "hover", "value": 1}, "value": 0.35}
+  }
+
   // DEFAULT: HOVER SCHEMA
   var spec1 = {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "description": "",
     "height": 250,
     "width": "container",
-    "title": {
-      "text": label,
-      "subtitlePadding": 10,
-      "fontWeight": "normal",
-      "anchor": "start",
-      "fontSize": 12,
-      "font": "sans-serif",
-      "baseline": "top",
-      "dy": -10,
-      "subtitleFontSize": 13
-    },
+    "title": title,
     "config": {
-      "range": {
-        "category": [
-          "#003f5c",
-          "#ff764a",
-          "#374c80",
-          "#ffa600",
-          "#7a5195",
-          "#bc5090",
-          "#ef5675"
-        ]
-      },
-      "view": {"stroke": null},
-      "axisX": {
-        "labelAngle": 0,
-        "grid": false,
-        "tickSize": {
-          "condition": {
-            "test": {"field": "value", "timeUnit": "quarter", "equal": 1},
-            "value": 15
-          },
-          "value": 9
-        },
-        "tickWidth": {
-          "condition": {
-            "test": {"field": "value", "timeUnit": "quarter", "equal": 1},
-            "value": 1.25
-          },
-          "value": 0.5
-        },
-        "labelExpr": "[quarter(datum.value) === 1 ? timeFormat(datum.value, '%Y') + ' Q' + quarter(datum.value) : 'Q' + quarter(datum.value)]"
-      },
-      "axisY": {
-        "tickCount": 3, 
-        "orient": "left",
-        "zindex": 0, 
-        "gridDash": [2,2]
-      },
+      ...partialConfig,
       "legend": legend
     },
     "data": {
@@ -99,22 +127,7 @@ async function drawChart(destination, metric, label, multi, tooltip, schemaFlag 
         "as": "valueWithDisplay"
       }
     ],
-    "encoding": {
-      "x": {
-        "timeUnit": "quarteryear",
-        "field": "date",
-        "title": "",
-        "axis": {"zindex": 1},
-        "scale": {"padding": 30}
-      },
-      "y": {
-        "field": "value",
-        "type": "quantitative",
-        "title": ""
-      },
-      "color": color,
-      "opacity": {"condition": {"param": "hover", "value": 1}, "value": 0.35}
-    },
+    "encoding": encoding,
     "layer": [
       ...fillLayer,
       {
@@ -134,11 +147,7 @@ async function drawChart(destination, metric, label, multi, tooltip, schemaFlag 
       {
         "mark": {"type": "line", "point": {"size": 70}},
         "encoding": {
-          "tooltip": [
-            { "title": "Quarter", "field": "date", "timeUnit": "quarteryear" },
-            { "title": `${label}`, "field": "value", "format": "," },
-            { "title": `${tooltip}`, "field": `${tooltipField}` },
-          ]
+          "tooltip": tooltipContent
         }
       },
       {
@@ -165,7 +174,6 @@ async function drawChart(destination, metric, label, multi, tooltip, schemaFlag 
     ]
   }
 
-  console.log(spec1)
 
   // AlT SCHEMA - FOR MULTISELECT DEATH CAUSES CHART
   const spec2 = {
@@ -173,55 +181,9 @@ async function drawChart(destination, metric, label, multi, tooltip, schemaFlag 
     "description": "",
     "height": 250,
     "width": "container",
-    "title": {
-      "text": label,
-      "subtitlePadding": 10,
-      "fontWeight": "normal",
-      "anchor": "start",
-      "fontSize": 12,
-      "font": "sans-serif",
-      "baseline": "top",
-      "dy": -10,
-      "subtitleFontSize": 13
-    },
+    "title": title,
     "config": {
-      "range": {
-        "category": [
-          "#003f5c",
-          "#374c80",
-          "#7a5195",
-          "#bc5090",
-          "#ef5675",
-          "#ff764a",
-          "#ffa600"
-        ]
-      },
-      "view": {"stroke": null},
-      "axisX": {
-        "labelAngle": 0,
-        "grid": false,
-        "tickSize": {
-          "condition": {
-            "test": {"field": "value", "timeUnit": "quarter", "equal": 1},
-            "value": 15
-          },
-          "value": 9
-        },
-        "tickWidth": {
-          "condition": {
-            "test": {"field": "value", "timeUnit": "quarter", "equal": 1},
-            "value": 1.25
-          },
-          "value": 0.5
-        },
-        "labelExpr": "[quarter(datum.value) === 1 ? timeFormat(datum.value, '%Y') + ' Q' + quarter(datum.value) : 'Q' + quarter(datum.value)]"
-      },
-      "axisY": {
-        "tickCount": 3, 
-        "orient": "left",
-        "zindex": 0, 
-        "gridDash": [2,2]
-      },
+      ...partialConfig,
       "legend": {"columns": 4, "labelFontSize": 10, "symbolSize": 80}
     },
     "data": {
@@ -241,22 +203,7 @@ async function drawChart(destination, metric, label, multi, tooltip, schemaFlag 
         }
       }
     ],  
-    "encoding": {
-      "x": {
-        "timeUnit": "quarteryear",
-        "field": "date",
-        "title": "",
-        "axis": {"zindex": 1},
-        "scale": {"padding": 30}
-      },
-      "y": {
-        "field": "value",
-        "type": "quantitative",
-        "title": ""
-      },
-      "color": color,
-      "opacity": {"condition": {"param": "hover", "value": 1}, "value": 0.35}
-    },
+    "encoding": encoding,
     "layer": [
       {
         "description": "Transparent layer to trigger hover more easily",
@@ -275,11 +222,7 @@ async function drawChart(destination, metric, label, multi, tooltip, schemaFlag 
       {
         "mark": {"type": "line", "point": {"size": 70}},
         "encoding": {
-          "tooltip": [
-            { "title": "Quarter", "field": "date", "timeUnit": "quarteryear" },
-            { "title": `${label}`, "field": "value", "format": "," },
-            { "title": `${tooltip}`, "field": `${tooltipField}` },
-          ]
+          "tooltip": tooltipContent
         }
       },
       {
@@ -324,10 +267,10 @@ async function drawChart(destination, metric, label, multi, tooltip, schemaFlag 
 // CREATE CHART CONFIGS
 
 const chartConfigs = [
-  { destination: '#bbd', metric: 'Total births', label: 'Births', multi: false, schemaFlag: "default" },
-  { destination: '#bbc', metric: 'By method', label: 'Percent of births', multi: true, schemaFlag: "default" },
-  { destination: '#dim', metric: 'IMR', label: 'Infant mortality rate (per 1,000 live births)', multi: false, schemaFlag: "default" },
-  { destination: '#ddc', metric: 'Deaths', label: 'Deaths', multi: false, schemaFlag: "alternative"  },
+  { destination: '#bbd', metric: 'Total births', label: 'Births',  multi: false, tooltip: 'Group', schemaFlag: "default" },
+  { destination: '#bbc', metric: 'By method', label: 'Percent of births', multi: true, tooltip: 'Method', schemaFlag: "default" },
+  { destination: '#dim', metric: 'IMR', label: 'Infant mortality rate (per 1,000 live births)', multi: false, tooltip: 'Group', schemaFlag: "default" },
+  { destination: '#ddc', metric: 'Deaths', label: 'Deaths', multi: false, tooltip: 'Group', schemaFlag: "alternative"  },
 ];
 
 // INITIALIZE CHART DRAWS
