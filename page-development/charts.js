@@ -27,12 +27,12 @@ async function drawChart(destination, metric, label, multi, tooltip, schemaFlag 
   let tooltipField = tooltip ? "submetric" : "";
 
   // Variations between single-series and multi-series spec properties
-  let fillLayer   = multi === false ? [{"mark": {"type": "area", "color": "#f5f5f5", "tooltip": false}}] : []
+  let fillLayer   = multi === false ? [{"mark": {"type": "area", "color": "#e9e9e950", "tooltip": false}}] : []
   let legend      = multi === true ? {"columns": 5, "labelFontSize": 10, "symbolSize": 80} : {"disable": true}
   let color       = multi === true ? {"condition": {"param": "hover","field": "submetric","type": "nominal","legend": {"orient": "bottom", "title": null, "labelLimit": 1000}
 },"value": "gray"} : {}
 
-  // HOVER SCHEMA
+  // DEFAULT: HOVER SCHEMA
   var spec1 = {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "description": "",
@@ -81,7 +81,12 @@ async function drawChart(destination, metric, label, multi, tooltip, schemaFlag 
         },
         "labelExpr": "[quarter(datum.value) === 1 ? timeFormat(datum.value, '%Y') + ' Q' + quarter(datum.value) : 'Q' + quarter(datum.value)]"
       },
-      "axisY": {"tickCount": 3, "orient": "left"},
+      "axisY": {
+        "tickCount": 3, 
+        "orient": "left",
+        "zindex": 0, 
+        "gridDash": [2,2]
+      },
       "legend": legend
     },
     "data": {
@@ -105,8 +110,7 @@ async function drawChart(destination, metric, label, multi, tooltip, schemaFlag 
       "y": {
         "field": "value",
         "type": "quantitative",
-        "title": "",
-        "axis": {"zindex": 1}
+        "title": ""
       },
       "color": color,
       "opacity": {"condition": {"param": "hover", "value": 1}, "value": 0.35}
@@ -114,7 +118,7 @@ async function drawChart(destination, metric, label, multi, tooltip, schemaFlag 
     "layer": [
       ...fillLayer,
       {
-        "description": "Transparent layer to easier trigger hover",
+        "description": "Transparent layer to trigger hover more easily",
         "params": [
           {
             "name": "hover",
@@ -163,7 +167,7 @@ async function drawChart(destination, metric, label, multi, tooltip, schemaFlag 
 
   console.log(spec1)
 
-  // DEFAULT SCHEMA
+  // PREVIOUS DEFAULT SCHEMA
   var oldSpec1 = {
     $schema: "https://vega.github.io/schema/vega-lite/v5.json",
     description: "",
