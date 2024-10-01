@@ -1,8 +1,8 @@
 /*
  Stuff to do in here:
-    - Apply alt spec to multi-chart
-    - Remove actions before demoing
     - Await UTD data
+    - Consider view-specific show/hide functionality for explanatory copy
+    - Add proper copy
 */
 
 
@@ -53,12 +53,12 @@ async function drawChart(destination, metric, label, multi, tooltip, schemaFlag 
       "range": {
         "category": [
           "#003f5c",
+          "#ff764a",
           "#374c80",
+          "#ffa600",
           "#7a5195",
           "#bc5090",
-          "#ef5675",
-          "#ff764a",
-          "#ffa600"
+          "#ef5675"
         ]
       },
       "view": {"stroke": null},
@@ -311,7 +311,7 @@ async function drawChart(destination, metric, label, multi, tooltip, schemaFlag 
 
   try {
     // RUN VEGA EMBED
-    await vegaEmbed(destination, chosenSpec, { actions: true });
+    await vegaEmbed(destination, chosenSpec, { actions: false });
   } catch (error) {
     console.log('Error embedding chart:', error);
   }
