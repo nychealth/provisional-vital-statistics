@@ -78,10 +78,12 @@ async function drawChart(destination, metric, label, multi, tooltip, schemaFlag 
     "labelExpr": "[quarter(datum.value) === 1 ? timeFormat(datum.value, '%Y') + ' Q' + quarter(datum.value) : 'Q' + quarter(datum.value)]"
   },
   "axisY": {
+    "domain": false,
+    "ticks": false,
     "tickCount": 3, 
     "orient": "left",
     "zindex": 0, 
-    "gridDash": [2,2]
+    "gridDash": [2]
   }}
 
   var tooltipContent = [
