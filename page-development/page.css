@@ -117,3 +117,7 @@ background-color: #f9f9f9; */
 .hide {
   display: none;
 }
+
+.vis-parent {
+    height: 400px;
+}
