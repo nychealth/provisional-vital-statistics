@@ -1,9 +1,8 @@
-
 /*
  Stuff to do in here:
-    - Apply alt spec?
-    - Remove actions before demoing
-    - Legend and hover for charts?
+    - Await UTD data
+    - Consider view-specific show/hide functionality for explanatory copy
+    - Add proper copy
 */
 
 
@@ -24,245 +23,244 @@ async function drawChart(destination, metric, label, multi, tooltip, schemaFlag 
   // INITIALIZE VARIABLES
   let fillColor = multi === false ? "#f3f3f3" : "#f3f3f300";
   let subSeries = multi === false ? "" : "submetric";
-  let tooltipLabel = tooltip ? tooltip : "";
-  let tooltipField = tooltip ? "submetric" : "";
+  // let tooltipLabel = tooltip ? tooltip : "";
+  // let tooltipField = tooltip ? "submetric" : "";
 
-  // DEFAULT SCHEMA
-  var spec1 = {
-    $schema: "https://vega.github.io/schema/vega-lite/v5.json",
-    description: "",
-    height: 250,
-    width: "container",
-    title: {
-      text: label,
-      subtitlePadding: 10,
-      fontWeight: "normal",
-      anchor: "start",
-      fontSize: 12,
-      font: "sans-serif",
-      baseline: "top",
-      dy: -10,
-      subtitleFontSize: 13,
-    },
-    config: {
-      range: {
-        category: [
-          "#003f5c",
-          "#374c80",
-          "#7a5195",
-          "#bc5090",
-          "#ef5675",
-          "#ff764a",
-          "#ffa600"
-        ]
-    },
-      view: { stroke: null },
-      axisX: {
-        labelAngle: 0,
-        grid: false,
-        tickSize: {
-          condition: {
-            test: { field: "value", timeUnit: "quarter", equal: 1 },
-            value: 15,
-          },
-          value: 9,
-        },
-        tickWidth: {
-          condition: {
-            test: { field: "value", timeUnit: "quarter", equal: 1 },
-            value: 1.25,
-          },
-          value: 0.5,
-        },
-        labelExpr:
-          "[quarter(datum.value) === 1 ? timeFormat(datum.value, '%Y') + ' Q' + quarter(datum.value) : 'Q' + quarter(datum.value)]",
-      },
-      axisY: { tickCount: 2 },
-      legend: {
-        disable: true,
-      },
-    },
-    data: {
-      url: "../data.csv",
-    },
-    transform: [
-      { filter: `datum.metric === '${metric}'` },
-      {
-        calculate:
-          "quarter(datum.date) === 1 ? year(datum.date) : 'Q' + quarter(datum.date)",
-        as: "axisLabel",
-      },
-    ],
-    layer: [
-      {
-        mark: { type: "area", color: fillColor },
-        encoding: {
-          x: { field: "date", type: "temporal" },
-          y: { field: "value", type: "quantitative" },
-        },
-      },
-      {
-        mark: { type: "line", point: { filled: false, fill: "white" } },
-        encoding: {
-          x: {
-            timeUnit: "quarteryear",
-            field: "date",
-            title: "",
-            axis: { zindex: 1 },
-            scale: { padding: 30 },
-          },
-          y: {
-            field: "value",
-            type: "quantitative",
-            title: "",
-            axis: { zindex: 1 },
-          },
-          color: { field: `${subSeries}`, type: "nominal", title: "" },
-          tooltip: [
-            { title: "Quarter", field: "date", timeUnit: "quarteryear" },
-            { title: `${label}`, field: "value", format: "," },
-            { title: `${tooltip}`, field: `${tooltipField}` },
-          ],
-        },
-      },
-      {
-        mark: { type: "text", align: "left", dx: 5 },
-        encoding: {
-          x: { aggregate: "max", timeUnit: "quarteryear", field: "date" },
-          y: { aggregate: { "argmax": "date" }, field: "value", type: "quantitative" },
-          text: { field: "submetric", type: "nominal" },
-          color: { field: "submetric", type: "nominal" },
-        },
-      },
-    ],
-  };
+  // Variations between single-series and multi-series spec properties
+  let fillLayer   = multi === false ? [{"mark": {"type": "area", "color": "#e9e9e950", "tooltip": false}}] : []
+  let legend      = multi === true ? {"columns": 6, "labelFontSize": 10, "symbolSize": 80} : {"disable": true}
+  let color       = multi === true ? {"condition": {"param": "hover","field": "submetric","type": "nominal","legend": {"orient": "bottom", "title": null, "labelLimit": 1000}
+},"value": "gray"} : {}
 
-  // AlT SCHEMA
-  const spec2 = {
-    $schema: "https://vega.github.io/schema/vega-lite/v5.json",
-    description: "",
-    height: 250,
-    width: "container",
-    title: {
-      text: label,
-      subtitlePadding: 10,
-      fontWeight: "normal",
-      anchor: "start",
-      fontSize: 12,
-      font: "sans-serif",
-      baseline: "top",
-      dy: -10,
-      subtitleFontSize: 13,
-    },
-    config: {
-      range: {
-        category: [
-          "#003f5c",
-          "#374c80",
-          "#7a5195",
-          "#bc5090",
-          "#ef5675",
-          "#ff764a",
-          "#ffa600"
-        ]
-    },
-    view: { stroke: null },
-    axisX: {
-      labelAngle: 0,
-      grid: false,
-      tickSize: {
-        condition: {
-          test: { field: "value", timeUnit: "quarter", equal: 1 },
-          value: 15,
-        },
-        value: 9,
-      },
-      tickWidth: {
-        condition: {
-          test: { field: "value", timeUnit: "quarter", equal: 1 },
-          value: 1.25,
-        },
-        value: 0.5,
-      },
-      labelExpr:
-        "[quarter(datum.value) === 1 ? timeFormat(datum.value, '%Y') + ' Q' + quarter(datum.value) : 'Q' + quarter(datum.value)]",
-    },
-    axisY: { tickCount: 2 },
-    legend: {
-      disable: true,
-    },
+  // COMMON ELEMENTS OF SCHEMAE
+  var title = {
+    "text": label,
+    "subtitlePadding": 10,
+    "fontWeight": "normal",
+    "anchor": "start",
+    "fontSize": 12,
+    "font": "sans-serif",
+    "baseline": "top",
+    "dy": -10,
+    "subtitleFontSize": 13
+  }
+
+  var partialConfig = {
+    "range": {
+    "category": [
+      "#003f5c",
+      "#ff764a",
+      "#374c80",
+      "#ffa600",
+      "#7a5195",
+      "#bc5090",
+      "#ef5675"
+    ]
   },
-    data: {
-      url: "../data.csv",
-      format: { "type": "csv" }
+  "view": {"stroke": null},
+  "axisX": {
+    "labelAngle": 0,
+    "grid": false,
+    "tickSize": {
+      "condition": {
+        "test": {"field": "value", "timeUnit": "quarter", "equal": 1},
+        "value": 15
+      },
+      "value": 9
     },
-    transform: [
+    "tickWidth": {
+      "condition": {
+        "test": {"field": "value", "timeUnit": "quarter", "equal": 1},
+        "value": 1.25
+      },
+      "value": 0.5
+    },
+    "labelExpr": "[quarter(datum.value) === 1 ? timeFormat(datum.value, '%Y') + ' Q' + quarter(datum.value) : 'Q' + quarter(datum.value)]"
+  },
+  "axisY": {
+    "domain": false,
+    "ticks": false,
+    "tickCount": 3, 
+    "orient": "left",
+    "zindex": 0, 
+    "gridDash": [2]
+  }}
+
+  var tooltipContent = [
+    { "title": "Quarter", "field": "date", "timeUnit": "quarteryear" },
+    { "title": `${label}`, "field": "value", "format": "," }
+  ]
+
+  var encoding = {
+    "x": {
+      "timeUnit": "quarteryear",
+      "field": "date",
+      "title": "",
+      "axis": {"zindex": 1},
+      "scale": {"padding": 30}
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "title": ""
+    },
+    "color": color,
+    "opacity": {"condition": {"param": "hover", "value": 1}, "value": 0.35}
+  }
+
+  // DEFAULT: HOVER SCHEMA
+  var spec1 = {
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "",
+    "height": 250,
+    "width": "container",
+    "title": title,
+    "config": {
+      ...partialConfig,
+      "legend": legend
+    },
+    "data": {
+      "url": "../data.csv"
+    },
+    "transform": [
+      { "filter": `datum.metric === '${metric}'` },
       {
-        filter: {
-          field: "metric",
-          equal: "Deaths by cause"
+        "calculate": "format(datum.value, ',') + ' per 100,000 adults'",
+        "as": "valueWithDisplay"
+      }
+    ],
+    "encoding": encoding,
+    "layer": [
+      ...fillLayer,
+      {
+        "description": "Transparent layer to trigger hover more easily",
+        "params": [
+          {
+            "name": "hover",
+            "select": {
+              "type": "point",
+              "fields": ["submetric"],
+              "on": "pointerover"
+            }
+          }
+        ],
+        "mark": {"type": "line", "stroke": "transparent", "strokeWidth": 15}
+      },
+      {
+        "mark": {"type": "line", "point": {"size": 70}},
+        "encoding": {
+          "tooltip": tooltipContent
         }
       },
       {
-        filter: {
-          field: "submetric",
-          oneOf: selectedCauses
+        "transform": [
+          {
+            "aggregate": [
+              {"op": "argmin", "field": "date", "as": "value"},
+              {"op": "min", "field": "date", "as": "date"}
+            ],
+            "groupby": ["submetric"]
+          }
+        ],
+        "encoding": {
+          "x": {"field": "date"},
+          "y": {"field": "value['value']"},
+          "text": {
+            "condition": {"param": "hover", "field": "submetric", "empty": false},
+            "value": ""
+          },
+          "color": {"field": "submetric", "type": "nominal"}
+        },
+        "mark": {"type": "text", "align": "left", "dx": -8, "dy": -15}
+      }
+    ]
+  }
+
+
+  // AlT SCHEMA - FOR MULTISELECT DEATH CAUSES CHART
+  const spec2 = {
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "",
+    "height": 250,
+    "width": "container",
+    "title": title,
+    "config": {
+      ...partialConfig,
+      "legend": {"columns": 4, "labelFontSize": 10, "symbolSize": 80}
+    },
+    "data": {
+      "url": "../data.csv"
+    },
+    "transform": [
+      {
+        "filter": {
+          "field": "metric",
+          "equal": "Deaths by cause"
+        }
+      },
+      {
+        "filter": {
+          "field": "submetric",
+          "oneOf": selectedCauses
         }
       }
-    ],    
+    ],  
+    "encoding": encoding,
     "layer": [
       {
-        mark: { type: "area", color: fillColor },
-        encoding: {
-          x: { field: "date", type: "temporal" },
-          y: { field: "value", type: "quantitative" },
-        },
+        "description": "Transparent layer to trigger hover more easily",
+        "params": [
+          {
+            "name": "hover",
+            "select": {
+              "type": "point",
+              "fields": ["submetric"],
+              "on": "pointerover"
+            }
+          }
+        ],
+        "mark": {"type": "line", "stroke": "transparent", "strokeWidth": 15}
       },
       {
-        mark: { type: "line", point: { filled: false, fill: "white" } },
-        encoding: {
-          x: {
-            timeUnit: "quarteryear",
-            field: "date",
-            title: "",
-            axis: { zindex: 1 },
-            scale: { padding: 30 },
-          },
-          y: {
-            field: "value",
-            type: "quantitative",
-            title: "",
-            axis: { zindex: 1 },
-          },
-          color: { field: `${subSeries}`, type: "nominal", title: "" },
-          tooltip: [
-            { title: "Quarter", field: "date", timeUnit: "quarteryear" },
-            { title: `${label}`, field: "value", format: "," },
-            { title: `${tooltip}`, field: `${tooltipField}` },
-          ],
-        },
+        "mark": {"type": "line", "point": {"size": 70}},
+        "encoding": {
+          "tooltip": tooltipContent
+        }
       },
       {
-        mark: { type: "text",align: "left", dx: -0, dy: 0 },
-        encoding: {
-          x: { aggregate: "max", timeUnit: "quarteryear", field: "date" },
-          y: { aggregate: { "argmax": "date" }, field: "value", type: "quantitative" },
-          text: { field: "submetric", type: "nominal" },
-          color: { field: "submetric", type: "nominal" },
+        "transform": [
+          {
+            "aggregate": [
+              {"op": "argmin", "field": "date", "as": "value"},
+              {"op": "min", "field": "date", "as": "date"}
+            ],
+            "groupby": ["submetric"]
+          }
+        ],
+        "encoding": {
+          "x": {"field": "date"},
+          "y": {"field": "value['value']"},
+          "text": {
+            "condition": {"param": "hover", "field": "submetric", "empty": false},
+            "value": ""
+          },
+          "color": {"field": "submetric", "type": "nominal"}
         },
-      },
-    ],
-  };
+        "mark": {"type": "text", "align": "left", "dx": -8, "dy": -15}
+      }
+    ]
+  }
   
 
   const chosenSpec = schemaFlag === "alternative" ? spec2 : spec1;
 
   try {
     // RUN VEGA EMBED
-    await vegaEmbed(destination, chosenSpec, { actions: true });
+    await vegaEmbed(destination, chosenSpec, { actions: false });
   } catch (error) {
     console.log('Error embedding chart:', error);
   }
+
 }
 
 
@@ -271,16 +269,17 @@ async function drawChart(destination, metric, label, multi, tooltip, schemaFlag 
 // CREATE CHART CONFIGS
 
 const chartConfigs = [
-  { destination: '#bbd', metric: 'Total births', label: 'Births', multi: false, schemaFlag: "default" },
-  { destination: '#bbc', metric: 'By method', label: 'Percent of births', multi: true, schemaFlag: "default" },
-  { destination: '#dim', metric: 'IMR', label: 'Infant mortality rate (per 1,000 live births)', multi: false, schemaFlag: "default" },
-  { destination: '#ddc', metric: 'Deaths', label: 'Deaths', multi: false, schemaFlag: "alternative"  },
+  { destination: '#bbd', metric: 'Total births', label: 'Births',  multi: false, tooltip: 'Group', schemaFlag: "default" },
+  { destination: '#bbc', metric: 'By method', label: 'Percent of births', multi: true, tooltip: 'Method', schemaFlag: "default" },
+  { destination: '#dim', metric: 'IMR', label: 'Infant mortality rate (per 1,000 live births)', multi: false, tooltip: 'Group', schemaFlag: "default" },
+  { destination: '#ddc', metric: 'Deaths', label: 'Deaths', multi: false, tooltip: 'Group', schemaFlag: "alternative"  },
 ];
 
 // INITIALIZE CHART DRAWS
 chartConfigs.forEach(({ destination, metric, label, multi, schemaFlag }) => {
   drawChart(destination, metric, label, multi, schemaFlag);
 });
+
 
 
 
@@ -311,6 +310,7 @@ function toggleMultiselect(show) {
   } else {
     multiselectWrapper.style.display = 'none'; // Hide the multiselect container
   }
+
 }
 
 
@@ -375,148 +375,5 @@ function getSelectedCauses() {
 // Update the chart based on selected causes
 function updateChart() {
   const selectedCauses = getSelectedCauses();
-  drawChart('#ddc', 'Deaths', 'Deaths', true, "", 'alternative', selectedCauses);
+  drawChart('#ddc', 'Deaths', 'Deaths', true, "Cause", 'alternative', selectedCauses);
 }
-
-
-
-/* ALT SPEC WITH BETTER HOVER & LABELLING? (NOT FUNCTIONALIZED)
-{
-  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "",
-  "height": 250,
-  "width": "container",
-  "title": {
-    "text": "Births, by maternal age",
-    "subtitlePadding": 10,
-    "fontWeight": "normal",
-    "anchor": "start",
-    "fontSize": 12,
-    "font": "sans-serif",
-    "baseline": "top",
-    "dy": -10,
-    "subtitleFontSize": 13
-  },
-  "config": {
-    "range": {
-      "category": [
-        "#003f5c",
-        "#374c80",
-        "#7a5195",
-        "#bc5090",
-        "#ef5675",
-        "#ff764a",
-        "#ffa600"
-      ]
-    },
-    "view": {"stroke": null},
-    "axisX": {
-      "labelAngle": 0,
-      "grid": false,
-      "tickSize": {
-        "condition": {
-          "test": {"field": "value", "timeUnit": "quarter", "equal": 1},
-          "value": 15
-        },
-        "value": 9
-      },
-      "tickWidth": {
-        "condition": {
-          "test": {"field": "value", "timeUnit": "quarter", "equal": 1},
-          "value": 1.25
-        },
-        "value": 0.5
-      },
-      "labelExpr": "[quarter(datum.value) === 1 ? timeFormat(datum.value, '%Y') + ' Q' + quarter(datum.value) : 'Q' + quarter(datum.value)]"
-    },
-    "axisY": {
-      "tickCount": 3,
-      "orient": "right"
-      // "offset": 50
-      },
-    "legend": {"disable": true}
-  },
-  "data": {
-    "url": "https://gist.githubusercontent.com/mmontesanonyc/97dcb574a506a596da437c34a0f6257f/raw/00fe25c603d4e9977e0a743f06cdbf5d734fe443/ovs.csv"
-  },
-  "transform": [
-        {"filter": "datum.metric === 'By maternal age'"},
-    {
-      "calculate": "format(datum.value, ',') + ' per 100,000 adults'",
-      "as": "valueWithDisplay"
-    },
-    
-  ],
-  "encoding": {
-        "x": {
-          "timeUnit": "quarteryear",
-          "field": "date",
-          "title": "",
-          "axis": {"zindex": 1},
-          "scale": {"padding": 30}
-        },
-        "y": {
-          "field": "value",
-          "type": "quantitative",
-          "title": "",
-          "axis": {"zindex": 1}
-        },
-    "color": {
-      "condition": {
-        "param": "hover",
-        "field": "submetric",
-        "type": "nominal",
-        "legend": null
-      },
-      "value": "gray"
-    },
-    "opacity": {"condition": {"param": "hover", "value": 1}, "value": 0.35},
-        "tooltip": [
-          {"title": "Quarter", "field": "date", "timeUnit": "quarteryear"},
-          {"title": "Births", "field": "value", "format": ","},
-          {"title": "Group", "field": "submetric"}
-        ]
-  },
-  "layer": [
-    {
-      "description": "Transparent layer to easier trigger hover",
-      "params": [
-        {
-          "name": "hover",
-          "select": {
-            "type": "point",
-            "fields": ["submetric"],
-            "on": "pointerover"
-          }
-        }
-      ],
-      "mark": {"type": "line", "stroke": "transparent", "strokeWidth": 10}
-    },
-    {"mark": {"type": "line", "point": {"size": 70}}},
-    {
-            "transform": [
-        {
-          "aggregate": [
-            {"op": "argmin", "field": "date", "as": "value"},
-            {"op": "min", "field": "date", "as": "date"}
-          ],
-          "groupby": ["submetric"]
-        }
-      ],
-            "encoding": {
-        "x": {"field": "date"},
-        "y": {"field": "value['value']"},
-        "text": {
-          "condition": {"param": "hover", "field": "submetric", "empty": false},
-          "value": ""
-        },
-        "color": {"field": "submetric", "type": "nominal"}
-
-      },
-      "mark": {"type": "text", "align": "left", "dx": -8, "dy": -15}
-    }
-  ]
-}
-
-
-*/

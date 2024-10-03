@@ -5,144 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Demo page</title>
+
+    <link rel="stylesheet" href="page.css">
+
   </head>
 
   <body>
-    <style>
-      #contentContainer {
-        max-width: 700px;
-        margin: auto;
-        font-family: Helvetica, Arial, sans-serif;
-        font-size: 16px;
-        line-height: 20px;
-      }
-
-      /*for toggler buttons */
-      .togglebutton {
-        border-radius: 5px;
-        font-size: 14px;
-        font-weight: 400 !important;
-        background-color: #eeeeee;
-        padding: 7px 20px;
-        color: #696969 !important;
-        box-shadow: 0 0 7px 2px rgba(0, 0, 0, 0, 07);
-        cursor: pointer;
-        display: inline-block;
-        text-align: center;
-        height: 20px !important;
-        text-decoration: none;
-      }
-
-      .togglebutton:hover {
-        background-color: #bce3ff;
-        text-decoration: none;
-      }
-
-      .highlight {
-        background-color: #275e84 !important;
-        color: #ffffff !important;
-        font-weight: 600 !important;
-      }
-
-      .vis {
-        width: 100%;
-        height: 300px;
-        border: 1px solid darkgray;
-        margin: 10px 0px;
-      }
-
-      .drawn {
-        border: 0px!important;
-      }
-
-      .callout {
-        border-left: 8px solid lightgray;
-        padding: 8px;
-        font-size: 14px;
-        background-color: #fbfbfb80;
-      }
-
-      .spacer {
-        margin-top: 50px;
-      }
-
-      
-  /* Flexbox layout to align chart and buttons */
-.chart-multiselect-container {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-}
-
-#ddc {
-  flex-grow: 1; /* Ensure the chart takes up the remaining space */
-  width: calc(100% - 220px); /* Account for the width of the button container */
-}
-
-.multiselect-title {
-  font-size: 12px;
-  margin-bottom: 10px;
-  text-align: center;
-  display: block;
-}
-
-.multiselect-wrapper {
-  width: 150px;
-}
-
-.scrollable-button-container {
-  width: 100%;
-  height: 150px;
-  overflow-y: auto;
-  border: 1px solid #ddd;
-  padding: 10px;
-  background-color: #f9f9f9;
-}
-
-.scrollable-button-container button {
-  display: block;
-  width: 100%; /* Make each button take up the full width */
-  font-size: 10px; /* Smaller text size */
-  margin-bottom: 5px;
-  padding: 5px;
-  background-color: #f3f3f3; /* Default background color */
-  border: 1px solid #ccc;
-  cursor: pointer;
-  text-align: left;
-}
-
-.scrollable-button-container button.selected {
-  background-color: #275e84;
-  color: white;
-}
-
-
-
-    </style>
 
     <!--START-->
     <div id="contentContainer">
           <!-- Import vega dependencies that are compatible with IE11-->
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.6.11/core.js"></script>
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.8.7/polyfill.js"></script>
-          <script src="https://vega.github.io/vega/assets/promise.min.js"></script>
-          <script src="https://vega.github.io/vega/assets/symbol.min.js"></script>
-          <script src="https://vega.github.io/vega/assets/fetch.min.js"></script>
-          <script src="https://cdn.jsdelivr.net/npm/vega@5/build-es5/vega.js"></script>
-          <script src="https://cdn.jsdelivr.net/npm/vega-lite@4/build-es5/vega-lite.js"></script>
-          <script src="https://cdn.jsdelivr.net/npm/vega-embed@6/build-es5/vega-embed.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+          <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+          <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
           <script src="https://d3js.org/d3.v6.min.js"></script>
 
 
       <h1>Provisional Birth and Death Data</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.
-        Aliquam ni hendrerit urna. Pellentesque sit amet sapien tringilla, matus
-        ligula consectetur, ultrices maurls. Maecenas vitae mattis tellus. Nulam
-        quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna
-        interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum
-        sit amet.
-      </p>
+      <p>The Health Department collects data on every birth and death that happens in New York City. These data, called Vital Statistics, provide a fundamental understanding of birth trends, death trends, and population health in New York City.</p>
+      <p>The data on this page are <strong>provisional data</strong>, which means that the numbers here might change as the Health Department continues to process the data. Publishing provisional data allows the Health Department to release data faster, while it undergoes additional processing like review, cleaning, and finalization. <a href="https://www.nyc.gov/site/doh/data/data-sets/vital-statistics-data.page">Final data are published in the Annual Summary of Vital Statistics</a>.  <a href="">Final data are also available online atEpiquery</a>.</p>
+
+
       <p>Jump to:</p>
       <ul>
         <li><a href="#birthbydemog">Births by demographics</a></li>
@@ -153,7 +36,10 @@
 
 
       </ul>
-      <h2>Birth data</h2>
+
+      <h2 class="spacer">Birth data</h2>
+      <p>Data on births come from birth certificates. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.
+        Aliquam ni hendrerit urna.</p>
       <h3 id="birthbydemog">Births by demographics</h3>
       <div class="choice">
         <a id="" onclick="drawChart('#bbd','Total births','Births',false)" tabindex="0" class="togglebutton byDemog highlight">Total</a>
@@ -162,7 +48,9 @@
         <a id="" onclick="drawChart('#bbd','By race','Births',true,'Race/ethnicity')" tabindex="0" class="togglebutton byDemog">Race/ethnicity</a>
       </div>
 
+      <div class="vis-parent">
       <div class="vis drawn" id="bbd"></div>
+      </div>
 
       <div class="callout">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.
@@ -179,7 +67,9 @@
         <a id="" onclick="drawChart('#bbc','By Medicaid','Percent of births',true,'Coverage')" tabindex="0" class="togglebutton birthChar">Coverage</a>
       </div>
 
+      <div class="vis-parent">
       <div class="vis drawn" id="bbc"></div>
+      </div>
 
       <h3 class="spacer" id="carechar">Care characteristics</h3>
       <div class="choice">
@@ -189,11 +79,15 @@
         <a id="" onclick="" tabindex="0" class="togglebutton care">Breastfeeding</a>
       </div>
 
+      <div class="vis-parent">
       <div class="vis" id="bcc"></div>
+      </div>
 
       <hr class="spacer">
 
       <h2 class="spacer">Death data</h2>
+      <p>Data on deaths come from death certificates. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.
+        Aliquam ni hendrerit urna.</p>
       <h3 id="infantmort">Infant mortality</h3>
       <div class="choice">
         <a id="" onclick="drawChart('#dim','IMR','Infant mortality rate (per 1,000 live births)',false)" tabindex="0" class="togglebutton infantMort highlight">Overall</a>
@@ -202,7 +96,9 @@
         <a id="" onclick="" tabindex="0" class="togglebutton infantMort">Race/ethnicity</a>
       </div>
 
+      <div class="vis-parent">
       <div class="vis drawn" id="dim"></div>
+      </div>
 
       <h3 class="spacer" id="deaths">Deaths by demographics and causes</h3>
       <div class="choice">
@@ -210,27 +106,37 @@
         <a id="" onclick="drawChart('#ddc','Deaths by age','Deaths',true,'Age'); toggleMultiselect(false)" tabindex="0" class="togglebutton mort">Age group</a>
         <a id="" onclick="drawChart('#ddc','Deaths by gender','Deaths',true,'Sex'); toggleMultiselect(false)" tabindex="0" class="togglebutton mort">Sex</a>
         <a id="" onclick="drawChart('#ddc','Deaths by race','Deaths',true,'Race'); toggleMultiselect(false)" tabindex="0" class="togglebutton mort">Race/ethnicity</a>
-        <a id="" onclick="toggleMultiselect(true)" tabindex="0" class="togglebutton mort">Cause</a>
+        <a id="" onclick="toggleMultiselect(true)" tabindex="0" class="togglebutton mort causebutton">Cause</a>
       </div>
 
       <div class="chart-multiselect-container">
         <div class="vis drawn" id="ddc"></div>
         <div class="multiselect-wrapper" id="multiselectWrapper" style="display: none;">
-          <h4 class="multiselect-title" id="multiTitle" >Select Causes of Death</h4>
           <div class="scrollable-button-container" id="buttonContainer" ></div>
-    </div>
+      </div>
       </div>
 
-
       <h2 class="spacer">More resources</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.
-        Aliquam ni hendrerit urna. Pellentesque sit amet sapien tringilla, matus
-        ligula consectetur, ultrices maurls. Maecenas vitae mattis tellus. Nulam
-        quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna
-        interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum
-        sit amet.
+      <p>All data here are provisional, which means that they are not finalized and are subject to change. Data on births and deaths can take months or years to be finalized as additional details are reported, deaths are investigated by the Office of Chief Medical Examiner, and results from autopsy or toxicology results are completed. Once data are finalized, Health Department staff spend time processing and analyzing the data. Typically, data are finalized about two years after the end of a reporting year.</p>
+        
+      <p>These provisional data are released to provide more timely information on births and deaths in NYC. When using or disseminating these data, we recommend flagging them as provisional and subject to change.</p>
+
+      <p><a href="https://www.github.com/nychealth/provisional-births-and-deaths">Download these data at our Github repository</a>:
+        <ul>
+          <li><a href="">Data</a></li>
+          <li><a href="">Tables</a></li>
+          <li><a href="">Documentation and notes</a></li>
+        </ul>
+        </p>
+
+      <p>Explore <a href="https://a816-health.nyc.gov/hdi/epiquery/">finalized birth and death data on Epiquery</a>:
+        <ul>
+          <li><a href="https://a816-health.nyc.gov/hdi/epiquery/visualizations?PageType=ps&PopulationSource=Birth">Births</a></li>
+          <li><a href="https://a816-health.nyc.gov/hdi/epiquery/visualizations?PageType=ps&PopulationSource=IMR">Infant mortality</a></li>
+          <li><a href="https://a816-health.nyc.gov/hdi/epiquery/visualizations?PageType=ps&PopulationSource=Death">Deaths</a></li>
+        </ul>
       </p>
+
     </div>
 
     <script src="charts.js" defer></script>
