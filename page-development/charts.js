@@ -2,9 +2,11 @@
  Stuff to do in here:
     - Await UTD data
     - Add proper copy
+    - Figure out tooltip, label
 */
 
-let dataSource = '../data-utd.csv'
+// Declare data source
+let dataSource = '../data.csv'
 
 // MAIN CHART-DRAWING FUNCTION
 async function drawChart(destination, metric, label, multi, tooltip, schemaFlag = "default", selectedCauses = []) {
@@ -14,7 +16,7 @@ async function drawChart(destination, metric, label, multi, tooltip, schemaFlag 
             - metric is a string that filters the data: eg, 'Total births' or 'By maternal age'
             - label is a string that determines the chart's subtitle/y-axis label
             - multi is a true/false: false sets fill, true inserts the 'color' mark property on encoding
-            - tooltip is a string that determines the label in the tooltip
+            - tooltip is a string that determines the label in the tooltip (NO LONGER USED?)
             - schemaFlag (optional) is a string that determines which schema to use. Defaults to "default".
             - selectedCauses: array of selected causes for dynamic filtering.
 
@@ -276,16 +278,16 @@ async function drawChart(destination, metric, label, multi, tooltip, schemaFlag 
 // CREATE CHART CONFIGS
 
 const chartConfigs = [
-  { destination: '#bbd', metric: 'Total births', label: 'Births',  multi: false, tooltip: 'Group', schemaFlag: "default" },
-  { destination: '#bbc', metric: 'Births by method', label: 'Percent of births', multi: true, tooltip: 'Method', schemaFlag: "default" },
-  { destination: '#bcc', metric: 'Pre-pregnancy diabetes', label: 'Label TK', multi: false, tooltip: 'Tooltip TK', schemaFlag: "default" },
-  { destination: '#dim', metric: 'Total IMR', label: 'Infant mortality rate (per 1,000 live births)', multi: false, tooltip: 'Group', schemaFlag: "default" },
-  { destination: '#ddc', metric: 'Total deaths', label: 'Deaths', multi: false, tooltip: 'Group', schemaFlag: "alternative"  },
+  { destination: '#bbd', metric: 'Total births', label: 'Births',  multi: false, tooltip: "", schemaFlag: "default" },
+  { destination: '#bbc', metric: 'Births by method', label: 'Percent of births', multi: true, tooltip: "", schemaFlag: "default" },
+  { destination: '#bcc', metric: 'Pre-pregnancy diabetes', label: 'Label TK', multi: false, tooltip: "", schemaFlag: "default" },
+  { destination: '#dim', metric: 'Total IMR', label: 'Infant mortality rate (per 1,000 live births)', multi: false, tooltip: "", schemaFlag: "default" },
+  { destination: '#ddc', metric: 'Total deaths', label: 'Deaths', multi: false, tooltip: "", schemaFlag: "default"  },
 ];
 
 // INITIALIZE CHART DRAWS
-chartConfigs.forEach(({ destination, metric, label, multi, schemaFlag }) => {
-  drawChart(destination, metric, label, multi, schemaFlag);
+chartConfigs.forEach(({ destination, metric, label, multi, tooltip, schemaFlag }) => {
+  drawChart(destination, metric, label, multi, tooltip, schemaFlag);
 });
 
 
