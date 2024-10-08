@@ -1,23 +1,21 @@
 /*
  Stuff to do in here:
-    - Figure out tooltip removal issue
     - Add conditional for Percent - to format axisY
     - Await proper copy
-
 */
 
 // Declare data source
 let dataSource = '../data.csv'
 
 // MAIN CHART-DRAWING FUNCTION
-async function drawChart(destination, metric, label, multi, tooltip, schemaFlag = "default", selectedCauses = []) {
+async function drawChart(destination, metric, label, multi, schemaFlag = "default", selectedCauses = []) {
+  
   /*
         Arguments:
             - destination: the ID of the vis container
             - metric is a string that filters the data: eg, 'Total births' or 'By maternal age'
             - label is a string that determines the chart's subtitle/y-axis label
             - multi is a true/false: false sets fill, true inserts the 'color' mark property on encoding
-            - tooltip is a string that determines the label in the tooltip (NO LONGER USED?)
             - schemaFlag (optional) is a string that determines which schema to use. Defaults to "default".
             - selectedCauses: array of selected causes for dynamic filtering.
 
@@ -299,8 +297,8 @@ const chartConfigs = [
 ];
 
 // INITIALIZE CHART DRAWS
-chartConfigs.forEach(({ destination, metric, label, multi, tooltip, schemaFlag }) => {
-  drawChart(destination, metric, label, multi, tooltip, schemaFlag);
+chartConfigs.forEach(({ destination, metric, label, multi, schemaFlag }) => {
+  drawChart(destination, metric, label, multi, schemaFlag);
 });
 
 
@@ -398,6 +396,6 @@ function getSelectedCauses() {
 // Update the chart based on selected causes
 function updateChart() {
   const selectedCauses = getSelectedCauses();
-  drawChart('#ddc', 'Deaths by cause', 'Deaths', true, "Cause", 'alternative', selectedCauses);
+  drawChart('#ddc', 'Deaths by cause', 'Deaths', true, 'alternative', selectedCauses);
   // document.getElementById('deaths-by-cause').classList.remove('hide')
 }
