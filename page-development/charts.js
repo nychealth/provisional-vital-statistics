@@ -1,5 +1,5 @@
 /*
- Stuff to do in here:
+ TO DO LIST:
     - Add conditional for Percent - to format axisY
     - Await proper copy
 */
@@ -269,10 +269,21 @@ async function drawChart(destination, metric, label, multi, schemaFlag = "defaul
 
   try {
     // RUN VEGA EMBED
-    await vegaEmbed(destination, chosenSpec, { actions: true });
+    await vegaEmbed(destination, chosenSpec, {actions: false });
   } catch (error) {
     console.log('Error embedding chart:', error);
   }
+
+  /* ACTIONS ALTERNATIVES
+  {
+      actions: {
+        export: { png: true, svg: true },
+        source: false,  
+        compiled: false, 
+        editor: true 
+      }
+    }
+  */
 
   // Show/hide content for each section based on button click
   let copyHolders = "." + (destination + '-copy').slice(1)     // copy holders all have a class of ${destination}-copy
