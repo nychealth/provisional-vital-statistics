@@ -1,7 +1,6 @@
 /*
  Stuff to do in here:
     - Await UTD data
-    - Consider view-specific show/hide functionality for explanatory copy
     - Add proper copy
 */
 
@@ -261,6 +260,13 @@ async function drawChart(destination, metric, label, multi, tooltip, schemaFlag 
     console.log('Error embedding chart:', error);
   }
 
+  // Show/hide content for each section based on button click
+  let copyHolders = "." + (destination + '-copy').slice(1)     // copy holders all have a class of ${destination}-copy
+  let viewCopy = metric.toLowerCase().replace(/\s+/g, '-');    // copy holders all have an id of {$metric} (lower case, with - instead of space)
+  let viewCopyHolders = document.querySelectorAll(copyHolders) // get all copy holders for this chart section
+  viewCopyHolders.forEach(child => child.classList.add('hide')) // hide all of them
+  document.getElementById(viewCopy).classList.remove('hide')   // show the one selected
+
 }
 
 
@@ -375,5 +381,6 @@ function getSelectedCauses() {
 // Update the chart based on selected causes
 function updateChart() {
   const selectedCauses = getSelectedCauses();
-  drawChart('#ddc', 'Deaths', 'Deaths', true, "Cause", 'alternative', selectedCauses);
+  drawChart('#ddc', 'Deaths by cause', 'Deaths', true, "Cause", 'alternative', selectedCauses);
+  // document.getElementById('deaths-by-cause').classList.remove('hide')
 }
