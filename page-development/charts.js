@@ -173,7 +173,7 @@ async function drawChart(destination, metric, label, multi, tooltip, schemaFlag 
           },
           "color": {"field": "submetric", "type": "nominal"}
         },
-        "mark": {"type": "text", "align": "left", "dx": -8, "dy": -15}
+        "mark": {"type": "text", "align": "left", "dx": -8, "dy": -15,"fontSize": 12, "fontWeight": "bold"}
       }
     ]
   }
@@ -248,7 +248,7 @@ async function drawChart(destination, metric, label, multi, tooltip, schemaFlag 
           },
           "color": {"field": "submetric", "type": "nominal"}
         },
-        "mark": {"type": "text", "align": "left", "dx": -8, "dy": -15}
+        "mark": {"type": "text", "align": "left", "dx": -8, "dy": -15,"fontSize": 12, "fontWeight": "bold"}
       }
     ]
   }
