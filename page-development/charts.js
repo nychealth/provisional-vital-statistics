@@ -1,8 +1,9 @@
 /*
  Stuff to do in here:
-    - Await UTD data
-    - Add proper copy
-    - Figure out tooltip, label
+    - Figure out tooltip removal issue
+    - Add conditional for Percent - to format axisY
+    - Await proper copy
+
 */
 
 // Declare data source
@@ -90,7 +91,7 @@ async function drawChart(destination, metric, label, multi, tooltip, schemaFlag 
 
   var tooltipContent = [
     { "title": "Quarter", "field": "date", "timeUnit": "quarteryear" },
-    { "title": `${label}`, "field": "value", "format": "," }
+    { "title": `${label}`, "field": "valueWithDisplay" }
   ]
 
   var encoding = {
@@ -127,7 +128,11 @@ async function drawChart(destination, metric, label, multi, tooltip, schemaFlag 
     "transform": [
       { "filter": `datum.metric === '${metric}'` },
       {
-        "calculate": "format(datum.value, ',') + ' per 100,000 adults'",
+        "calculate": "datum.display === 'Percent' ? '%' : (datum.display === 'Number' ? '' : datum.display)",
+        "as": "formattedDisplay"
+      },
+      {
+        "calculate": "format(datum.value, ',') + ' ' + datum.formattedDisplay",
         "as": "valueWithDisplay"
       }
     ],
@@ -205,6 +210,14 @@ async function drawChart(destination, metric, label, multi, tooltip, schemaFlag 
           "field": "submetric",
           "oneOf": selectedCauses
         }
+      },
+      {
+        "calculate": "datum.display === 'Percent' ? ' %' : (datum.display === 'Number' ? '' : datum.display)",
+        "as": "formattedDisplay"
+      },
+      {
+        "calculate": "format(datum.value, ',') + ' ' + datum.formattedDisplay",
+        "as": "valueWithDisplay"
       }
     ],  
     "encoding": encoding,
@@ -258,7 +271,7 @@ async function drawChart(destination, metric, label, multi, tooltip, schemaFlag 
 
   try {
     // RUN VEGA EMBED
-    await vegaEmbed(destination, chosenSpec, { actions: false });
+    await vegaEmbed(destination, chosenSpec, { actions: true });
   } catch (error) {
     console.log('Error embedding chart:', error);
   }
@@ -280,8 +293,8 @@ async function drawChart(destination, metric, label, multi, tooltip, schemaFlag 
 const chartConfigs = [
   { destination: '#bbd', metric: 'Total births', label: 'Births',  multi: false, tooltip: "", schemaFlag: "default" },
   { destination: '#bbc', metric: 'Births by method', label: 'Percent of births', multi: true, tooltip: "", schemaFlag: "default" },
-  { destination: '#bcc', metric: 'Pre-pregnancy diabetes', label: 'Label TK', multi: false, tooltip: "", schemaFlag: "default" },
-  { destination: '#dim', metric: 'Total IMR', label: 'Infant mortality rate (per 1,000 live births)', multi: false, tooltip: "", schemaFlag: "default" },
+  { destination: '#bcc', metric: 'Pre-pregnancy diabetes', label: 'Mothers with pre-pregnancy diabetes', multi: false, tooltip: "", schemaFlag: "default" },
+  { destination: '#dim', metric: 'Total IMR', label: 'Infant mortality rate', multi: false, tooltip: "", schemaFlag: "default" },
   { destination: '#ddc', metric: 'Total deaths', label: 'Deaths', multi: false, tooltip: "", schemaFlag: "default"  },
 ];
 
