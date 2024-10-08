@@ -4,6 +4,7 @@
     - Add proper copy
 */
 
+let dataSource = '../data-utd.csv'
 
 // MAIN CHART-DRAWING FUNCTION
 async function drawChart(destination, metric, label, multi, tooltip, schemaFlag = "default", selectedCauses = []) {
@@ -119,7 +120,7 @@ async function drawChart(destination, metric, label, multi, tooltip, schemaFlag 
       "legend": legend
     },
     "data": {
-      "url": "../data.csv"
+      "url": dataSource
     },
     "transform": [
       { "filter": `datum.metric === '${metric}'` },
@@ -188,7 +189,7 @@ async function drawChart(destination, metric, label, multi, tooltip, schemaFlag 
       "legend": {"columns": 4, "labelFontSize": 10, "symbolSize": 80}
     },
     "data": {
-      "url": "../data.csv"
+      "url": dataSource
     },
     "transform": [
       {
@@ -276,9 +277,10 @@ async function drawChart(destination, metric, label, multi, tooltip, schemaFlag 
 
 const chartConfigs = [
   { destination: '#bbd', metric: 'Total births', label: 'Births',  multi: false, tooltip: 'Group', schemaFlag: "default" },
-  { destination: '#bbc', metric: 'By method', label: 'Percent of births', multi: true, tooltip: 'Method', schemaFlag: "default" },
-  { destination: '#dim', metric: 'IMR', label: 'Infant mortality rate (per 1,000 live births)', multi: false, tooltip: 'Group', schemaFlag: "default" },
-  { destination: '#ddc', metric: 'Deaths', label: 'Deaths', multi: false, tooltip: 'Group', schemaFlag: "alternative"  },
+  { destination: '#bbc', metric: 'Births by method', label: 'Percent of births', multi: true, tooltip: 'Method', schemaFlag: "default" },
+  { destination: '#bcc', metric: 'Pre-pregnancy diabetes', label: 'Label TK', multi: false, tooltip: 'Tooltip TK', schemaFlag: "default" },
+  { destination: '#dim', metric: 'Total IMR', label: 'Infant mortality rate (per 1,000 live births)', multi: false, tooltip: 'Group', schemaFlag: "default" },
+  { destination: '#ddc', metric: 'Total deaths', label: 'Deaths', multi: false, tooltip: 'Group', schemaFlag: "alternative"  },
 ];
 
 // INITIALIZE CHART DRAWS
@@ -322,7 +324,7 @@ function toggleMultiselect(show) {
 
 // Generate buttons for Death by Cause, selecting the top 3 by highest total value
 function generateButtons() {
-  fetch('../data.csv')
+  fetch(dataSource)
     .then(response => response.text())
     .then(csvText => {
       const parsedData = d3.csvParse(csvText);
