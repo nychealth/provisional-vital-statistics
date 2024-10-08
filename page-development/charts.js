@@ -10,22 +10,17 @@ let dataSource = '../data.csv'
 // MAIN CHART-DRAWING FUNCTION
 async function drawChart(destination, metric, label, multi, schemaFlag = "default", selectedCauses = []) {
   
-  /*
-        Arguments:
+  /*  Arguments passed into drawChart function:
             - destination: the ID of the vis container
             - metric is a string that filters the data: eg, 'Total births' or 'By maternal age'
             - label is a string that determines the chart's subtitle/y-axis label
             - multi is a true/false: false sets fill, true inserts the 'color' mark property on encoding
             - schemaFlag (optional) is a string that determines which schema to use. Defaults to "default".
-            - selectedCauses: array of selected causes for dynamic filtering.
-
-   */
+            - selectedCauses: array of selected causes for dynamic filtering. */
 
   // INITIALIZE VARIABLES
   let fillColor = multi === false ? "#f3f3f3" : "#f3f3f300";
   let subSeries = multi === false ? "" : "submetric";
-  // let tooltipLabel = tooltip ? tooltip : "";
-  // let tooltipField = tooltip ? "submetric" : "";
 
   // Variations between single-series and multi-series spec properties
   let fillLayer   = multi === false ? [{"mark": {"type": "area", "color": "#e9e9e950", "tooltip": false}}] : []
@@ -89,7 +84,8 @@ async function drawChart(destination, metric, label, multi, schemaFlag = "defaul
 
   var tooltipContent = [
     { "title": "Quarter", "field": "date", "timeUnit": "quarteryear" },
-    { "title": `${label}`, "field": "valueWithDisplay" }
+    { "title": `${label}`, "field": "valueWithDisplay" },
+    { "title": "Group", "field": "submetric"}
   ]
 
   var encoding = {
