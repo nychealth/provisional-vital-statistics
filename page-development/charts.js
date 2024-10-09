@@ -2,6 +2,7 @@
  TO DO LIST:
     - Add conditional for Percent - to format axisY
     - Await proper copy
+    - Order legends
 */
 
 // Declare data source
@@ -21,6 +22,9 @@ async function drawChart(destination, metric, label, multi, schemaFlag = "defaul
   // INITIALIZE VARIABLES
   let fillColor = multi === false ? "#f3f3f3" : "#f3f3f300";
   let subSeries = multi === false ? "" : "submetric";
+
+  // CREATE ARRAY OF SUBMETRICS TO PASS INTO SPEC.ENCODING.COLOR.SCALE.DOMAIN
+  let groups = [];
 
   // Variations between single-series and multi-series spec properties
   let fillLayer   = multi === false ? [{"mark": {"type": "area", "color": "#e9e9e950", "tooltip": false}}] : []
@@ -46,11 +50,11 @@ async function drawChart(destination, metric, label, multi, schemaFlag = "defaul
     "category": [
       "#003f5c",
       "#ff764a",
-      "#374c80",
-      "#ffa600",
       "#7a5195",
+      "#ffa600",
+      "#ef5675",
       "#bc5090",
-      "#ef5675"
+      "#374c80"
     ]
   },
   "view": {"stroke": null},
@@ -265,7 +269,7 @@ async function drawChart(destination, metric, label, multi, schemaFlag = "defaul
 
   try {
     // RUN VEGA EMBED
-    await vegaEmbed(destination, chosenSpec, {actions: false });
+    await vegaEmbed(destination, chosenSpec, {actions: true });
   } catch (error) {
     console.log('Error embedding chart:', error);
   }
