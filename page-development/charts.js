@@ -39,7 +39,7 @@ async function drawChart(destination, metric, label, multi, schemaFlag = "defaul
             - schemaFlag (optional) is a string that determines which schema to use. Defaults to "default".
 
             - selectedCauses: array of selected causes for dynamic filtering.
-
+ */
 
   // INITIALIZE VARIABLES
   let fillColor = multi === false ? "#f3f3f3" : "#f3f3f300";
