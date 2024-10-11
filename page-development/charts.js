@@ -299,6 +299,12 @@ async function drawChart(destination, metric, label, multi, tooltip, schemaFlag 
   } catch (error) {
     console.log('Error embedding chart:', error);
   }
+   // Show/hide content for each section based on button click
+   let copyHolders = "." + (destination + '-copy').slice(1)     // copy holders all have a class of ${destination}-copy
+   let viewCopy = metric.toLowerCase().replace(/\s+/g, '-');    // copy holders all have an id of {$metric} (lower case, with - instead of space)
+   let viewCopyHolders = document.querySelectorAll(copyHolders) // get all copy holders for this chart section
+   viewCopyHolders.forEach(child => child.classList.add('hide')) // hide all of them
+   document.getElementById(viewCopy).classList.remove('hide')   // show the one selected
 }
 
 // CREATE CHART CONFIGS
