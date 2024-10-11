@@ -104,23 +104,46 @@ var partialConfig = {
 
   const colorRange = partialConfig.range.category;
 
-  let color = multi === true ? {
-    "condition": {
-      "param": "hover",
-      "field": "submetric",
-      "type": "nominal",
-      "legend": {
-        "orient": "bottom", 
-        "title": null, 
-        "labelLimit": 1000
+  let color;
+  if (metric === "Deaths by cause") {
+    color = {
+      "condition": {
+        "param": "hover",
+        "field": "submetric",
+        "type": "nominal",
+        "legend": {
+          "orient": "bottom", 
+          "title": null, 
+          "labelLimit": 1000,
+          "values": selectedCauses  // Filter the legend to only show selected causes for this chart
+        },
+        "scale": {
+          "domain": selectedCauses.length > 0 ? selectedCauses : sortedSubmetrics,  // Use selected causes if any, otherwise default
+          "range": colorRange  
+        }
       },
-      "scale": {
-        "domain": sortedSubmetrics,  
-        "range": colorRange  
-      }
-    },
-    "value": "gray"
-  } : {}
+      "value": "gray"
+    }
+  } else {
+    // Default color scale for other charts
+    color = multi === true ? {
+      "condition": {
+        "param": "hover",
+        "field": "submetric",
+        "type": "nominal",
+        "legend": {
+          "orient": "bottom", 
+          "title": null, 
+          "labelLimit": 1000
+        },
+        "scale": {
+          "domain": sortedSubmetrics,  
+          "range": colorRange  
+        }
+      },
+      "value": "gray"
+    } : {}
+  }
 
   var title = {
     "text": label,
