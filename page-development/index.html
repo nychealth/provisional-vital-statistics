@@ -33,9 +33,14 @@
         <li><a href="#carechar">Care characteristics</a></li>
         <li><a href="#infantmort">Infant mortality</a></li>
         <li><a href="#death-section">Deaths by demographic and cause</a></li>
-
-
       </ul>
+
+      <div class="callout">
+        <p><strong>Callout box:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.
+        Aliquam ni hendrerit urna. Maecenas vitae mattis tellus. Nulam quis
+        imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna
+        interdum eu.</p>
+      </div>
 
       <h2 class="spacer">Birth data</h2>
       <p>Data on births come from birth certificates. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.
@@ -43,9 +48,9 @@
       <h3 id="birthbydemog">Births by demographics</h3>
       <div class="choice">
         <a id="" onclick="drawChart('#bbd','Total births','Births',false)" tabindex="0" class="togglebutton byDemog highlight">Total</a>
-        <a id="" onclick="drawChart('#bbd','By maternal age','Births',true,'Age group')" tabindex="0" class="togglebutton byDemog">Maternal age</a>
-        <a id="" onclick="drawChart('#bbd','By borough','Births',true,'Residence')" tabindex="0" class="togglebutton byDemog">Borough</a>
-        <a id="" onclick="drawChart('#bbd','By race','Births',true,'Race/ethnicity')" tabindex="0" class="togglebutton byDemog">Race/ethnicity</a>
+        <a id="" onclick="drawChart('#bbd','Births by maternal age','Births',true,'Age group')" tabindex="0" class="togglebutton byDemog">Maternal age</a>
+        <a id="" onclick="drawChart('#bbd','Births by borough','Births',true,'Residence')" tabindex="0" class="togglebutton byDemog">Borough</a>
+        <a id="" onclick="drawChart('#bbd','Births by maternal race/ethnicity','Births',true,'Race/ethnicity')" tabindex="0" class="togglebutton byDemog">Race/ethnicity</a>
       </div>
 
       <div class="vis-parent">
@@ -56,51 +61,44 @@
           Copy for total births
         </div>
 
-        <div id="by-maternal-age" class="bbd-copy">
+        <div id="births-by-maternal-age" class="bbd-copy">
           Copy for by maternal age
         </div>
 
-        <div id="by-borough" class="bbd-copy">
+        <div id="births-by-borough" class="bbd-copy">
           Copy for by borough
         </div>
 
-        <div id="by-race" class="bbd-copy">
+        <div id="births-by-maternal-race/ethnicity" class="bbd-copy">
           Copy for by race/ethnicity.
         </div>
 
 
-      <div class="callout">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.
-        Aliquam ni hendrerit urna. Maecenas vitae mattis tellus. Nulam quis
-        imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna
-        interdum eu.
-      </div>
-
       <h3 class="spacer" id="birthchar">Birth characteristics</h3>
       <div class="choice">
-        <a id="" onclick="drawChart('#bbc','By method','Percent of births',true)" tabindex="0" class="togglebutton birthChar highlight">Method</a>
-        <a id="" onclick="drawChart('#bbc','By term','Percent of births',true,'Term')" tabindex="0" class="togglebutton birthChar">Term</a>
-        <a id="" onclick="drawChart('#bbc','By weight','Percent of births',true,'Birthweight')" tabindex="0" class="togglebutton birthChar">Birth weight</a>
-        <a id="" onclick="drawChart('#bbc','By Medicaid','Percent of births',true,'Coverage')" tabindex="0" class="togglebutton birthChar">Coverage</a>
+        <a id="" onclick="drawChart('#bbc','Births by method','Percent of births',true)" tabindex="0" class="togglebutton birthChar highlight">Method</a>
+        <a id="" onclick="drawChart('#bbc','Births by term','Percent of births',true,'Term')" tabindex="0" class="togglebutton birthChar">Term</a>
+        <a id="" onclick="drawChart('#bbc','Births by birthweight','Percent of births',true,'Birthweight')" tabindex="0" class="togglebutton birthChar">Birth weight</a>
+        <a id="" onclick="drawChart('#bbc','Births by coverage','Percent of births',true,'Coverage')" tabindex="0" class="togglebutton birthChar">Coverage</a>
       </div>
 
       <div class="vis-parent">
       <div class="vis drawn" id="bbc"></div>
       </div>
 
-      <div id="by-method" class="bbc-copy">
+      <div id="births-by-method" class="bbc-copy">
         method copy
       </div>
 
-      <div id="by-term" class="bbc-copy">
+      <div id="births-by-term" class="bbc-copy">
         term copy
       </div>
 
-      <div id="by-weight" class="bbc-copy">
+      <div id="births-by-birthweight" class="bbc-copy">
         weight copy
       </div>
 
-      <div id="by-medicaid" class="bbc-copy">
+      <div id="births-by-coverage" class="bbc-copy">
         coverage copy.
       </div>
 
@@ -109,15 +107,33 @@
 
       <h3 class="spacer" id="carechar">Care characteristics</h3>
       <div class="choice">
-        <a id="" onclick="" tabindex="0" class="togglebutton care highlight">Pre-pregnancy diabetes</a>
-        <a id="" onclick="" tabindex="0" class="togglebutton care">Pre-pregnancy hypertension</a>
-        <a id="" onclick="" tabindex="0" class="togglebutton care">Prenatal care</a>
-        <a id="" onclick="" tabindex="0" class="togglebutton care">Breastfeeding</a>
+        <a id="" onclick="drawChart('#bcc','Pre-pregnancy diabetes','Mothers with pre-pregnancy diabetes',false)" tabindex="0" class="togglebutton care highlight">Pre-pregnancy diabetes</a>
+        <a id="" onclick="drawChart('#bcc','Pre-pregnancy hypertension','Mothers with pre-pregnancy hypertension',false)" tabindex="0" class="togglebutton care">Pre-pregnancy hypertension</a>
+        <a id="" onclick="drawChart('#bcc','Prenatal care in first trimester','Prenatal care in 1st tri',false)" tabindex="0" class="togglebutton care">Prenatal care</a>
+        <a id="" onclick="drawChart('#bcc','Breastfed infants','Breastfed infants',false)" tabindex="0" class="togglebutton care">Breastfeeding</a>
       </div>
 
       <div class="vis-parent">
-      <div class="vis" id="bcc"></div>
+      <div class="vis drawn" id="bcc"></div>
       </div>
+
+      <div id="pre-pregnancy-diabetes" class="bcc-copy">
+        diabetes copy
+      </div>
+
+      <div id="pre-pregnancy-hypertension" class="bcc-copy">
+        hypertension copy
+      </div>
+
+      <div id="prenatal-care-in-first-trimester" class="bcc-copy">
+        prenatal care copy
+      </div>
+
+      <div id="breastfed-infants" class="bcc-copy">
+        breastfeeding copy
+      </div>
+
+
 
       <!-- Care char copy holders to go here -->
 
@@ -128,17 +144,17 @@
         Aliquam ni hendrerit urna.</p>
       <h3 id="infantmort">Infant mortality</h3>
       <div class="choice">
-        <a id="" onclick="drawChart('#dim','IMR','Infant mortality rate (per 1,000 live births)',false)" tabindex="0" class="togglebutton infantMort highlight">Overall</a>
-        <a id="" onclick="drawChart('#dim','IMR by age','Infant mortality rate (per 1,000 live births)',true,'Age')" tabindex="0" class="togglebutton infantMort">Age</a>
-        <a id="" onclick="drawChart('#dim','IMR by boro','Infant mortality rate (per 1,000 live births)',true,'Residence')" tabindex="0" class="togglebutton infantMort">Borough</a>
-        <a id="" onclick="" tabindex="0" class="togglebutton infantMort">Race/ethnicity</a>
+        <a id="" onclick="drawChart('#dim','Total IMR','Infant mortality rate',false)" tabindex="0" class="togglebutton infantMort highlight">Overall</a>
+        <a id="" onclick="drawChart('#dim','IMR by age','Infant mortality rate',true,'Age')" tabindex="0" class="togglebutton infantMort">Age</a>
+        <a id="" onclick="drawChart('#dim','IMR by borough','Infant mortality rate',true,'Residence')" tabindex="0" class="togglebutton infantMort">Borough</a>
+        <a id="" onclick="drawChart('#dim','IMR by race/ethnicity','Infant mortality rate',true,'Race/ethnicity')" tabindex="0" class="togglebutton infantMort">Race/ethnicity</a>
       </div>
 
       <div class="vis-parent">
       <div class="vis drawn" id="dim"></div>
       </div>
 
-      <div id="imr" class="dim-copy">
+      <div id="total-imr" class="dim-copy">
         imr copy
       </div>
 
@@ -146,21 +162,21 @@
         imr by age copy
       </div>
 
-      <div id="imr-by-boro" class="dim-copy">
+      <div id="imr-by-borough" class="dim-copy">
         imr by boro copy
       </div>
 
-      <div id="imr-by-race" class="dim-copy">
+      <div id="imr-by-race/ethnicity" class="dim-copy">
         imr by race copy
       </div>
 
 
       <h3 class="spacer" id="death-section">Deaths by demographics and causes</h3>
       <div class="choice">
-        <a id="" onclick="drawChart('#ddc','Deaths','Deaths',false); toggleMultiselect(false)" tabindex="0" class="togglebutton mort highlight">Total</a>
-        <a id="" onclick="drawChart('#ddc','Deaths by age','Deaths',true,'Age'); toggleMultiselect(false)" tabindex="0" class="togglebutton mort">Age group</a>
-        <a id="" onclick="drawChart('#ddc','Deaths by gender','Deaths',true,'Sex'); toggleMultiselect(false)" tabindex="0" class="togglebutton mort">Sex</a>
-        <a id="" onclick="drawChart('#ddc','Deaths by race','Deaths',true,'Race'); toggleMultiselect(false)" tabindex="0" class="togglebutton mort">Race/ethnicity</a>
+        <a id="" onclick="drawChart('#ddc','Total deaths','Deaths',false); toggleMultiselect(false)" tabindex="0" class="togglebutton mort highlight">Total</a>
+        <a id="" onclick="drawChart('#ddc','Deaths by age','Deaths',true); toggleMultiselect(false)" tabindex="0" class="togglebutton mort">Age group</a>
+        <a id="" onclick="drawChart('#ddc','Deaths by sex','Deaths',true); toggleMultiselect(false)" tabindex="0" class="togglebutton mort">Sex</a>
+        <a id="" onclick="drawChart('#ddc','Deaths by race/ethnicity','Deaths',true); toggleMultiselect(false)" tabindex="0" class="togglebutton mort">Race/ethnicity</a>
         <a id="" onclick="toggleMultiselect(true)" tabindex="0" class="togglebutton mort causebutton">Cause</a>
       </div>
 
@@ -174,7 +190,7 @@
     </div>
 
 
-      <div id="deaths" class="ddc-copy">
+      <div id="total-deaths" class="ddc-copy">
         deaths copy
       </div>
 
@@ -182,11 +198,11 @@
         deaths age copy
       </div>
 
-      <div id="deaths-by-gender" class="ddc-copy">
+      <div id="deaths-by-sex" class="ddc-copy">
         deaths sex copy
       </div>
 
-      <div id="deaths-by-race" class="ddc-copy">
+      <div id="deaths-by-race/ethnicity" class="ddc-copy">
         deaths race copy
       </div>
 
