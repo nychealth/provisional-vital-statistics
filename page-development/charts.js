@@ -1,4 +1,5 @@
 /*
+
  TO DO LIST:
     - Add conditional for Percent - to format axisY
     - Await proper copy
@@ -23,9 +24,6 @@ function sortSubmetrics(data) {
   // RETURN COMBINED SORTED ARRAY WITH NON NUMERIC VALUES FIRST
   return [...nonNumeric, ...numeric];
 }
-
-
-*/
 
 // Declare data source
 let dataSource = '../data.csv'
@@ -322,6 +320,7 @@ var partialConfig = {
     console.log('Error embedding chart:', error);
   }
 
+
   /* ACTIONS ALTERNATIVES
   {
       actions: {
@@ -442,6 +441,7 @@ function getSelectedCauses() {
 // UPDATE CHART BASED ON SELECTED BUTTONS
 function updateChart() {
   const selectedCauses = getSelectedCauses();
+
   drawChart('#ddc', 'Deaths by cause', 'Deaths', true, 'alternative', selectedCauses);
   // document.getElementById('deaths-by-cause').classList.remove('hide')
 }
