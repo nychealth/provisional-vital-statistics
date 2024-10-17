@@ -148,3 +148,29 @@ background-color: #f9f9f9; */
   ::-webkit-scrollbar-thumb:hover {
       background: #275e84;
   }
+
+  .comparison-badge {
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 10px;
+  }
+
+  .print {
+    font-weight: bold;
+    color: #545454;
+  }
+
+  .less-than {
+    background-color: blue;
+    color: white
+  }
+
+  .more-than {
+    background-color: purple;
+    color: white
+  }
+
+  .same-as {
+    background-color: #424242;
+    color: white;
+  }
