@@ -123,6 +123,10 @@ background-color: #f9f9f9; */
     height: 400px;
 }
 
+.copy-wrapper {
+  height: 100px;
+}
+
     /* SCROLLBAR */
 
     /* width */
