@@ -159,16 +159,6 @@ Jul 1 2023,Births by maternal race/ethnicity,Other/Unknown,651,Number
 Oct 1 2023,Births by maternal race/ethnicity,Other/Unknown,660,Number
 Jan 1 2024,Births by maternal race/ethnicity,Other/Unknown,1581,Number
 Apr 1 2024,Births by maternal race/ethnicity,Other/Unknown,1514,Number
-Jan 1 2022,Births by method,Cesarean,32.80,Percent
-Apr 1 2022,Births by method,Cesarean,32.38,Percent
-Jul 1 2022,Births by method,Cesarean,32.74,Percent
-Oct 1 2022,Births by method,Cesarean,32.52,Percent
-Jan 1 2023,Births by method,Cesarean,32.66,Percent
-Apr 1 2023,Births by method,Cesarean,32.52,Percent
-Jul 1 2023,Births by method,Cesarean,32.73,Percent
-Oct 1 2023,Births by method,Cesarean,32.73,Percent
-Jan 1 2024,Births by method,Cesarean,32.47,Percent
-Apr 1 2024,Births by method,Cesarean,32.83,Percent
 Jan 1 2022,Births by method,Vaginal,64.28,Percent
 Apr 1 2022,Births by method,Vaginal,64.76,Percent
 Jul 1 2022,Births by method,Vaginal,64.54,Percent
@@ -179,6 +169,16 @@ Jul 1 2023,Births by method,Vaginal,64.44,Percent
 Oct 1 2023,Births by method,Vaginal,64.51,Percent
 Jan 1 2024,Births by method,Vaginal,64.72,Percent
 Apr 1 2024,Births by method,Vaginal,64.37,Percent
+Jan 1 2022,Births by method,Cesarean,32.80,Percent
+Apr 1 2022,Births by method,Cesarean,32.38,Percent
+Jul 1 2022,Births by method,Cesarean,32.74,Percent
+Oct 1 2022,Births by method,Cesarean,32.52,Percent
+Jan 1 2023,Births by method,Cesarean,32.66,Percent
+Apr 1 2023,Births by method,Cesarean,32.52,Percent
+Jul 1 2023,Births by method,Cesarean,32.73,Percent
+Oct 1 2023,Births by method,Cesarean,32.73,Percent
+Jan 1 2024,Births by method,Cesarean,32.47,Percent
+Apr 1 2024,Births by method,Cesarean,32.83,Percent
 Jan 1 2022,Births by method,VBAC,2.92,Percent
 Apr 1 2022,Births by method,VBAC,2.86,Percent
 Jul 1 2022,Births by method,VBAC,2.72,Percent
