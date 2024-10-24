@@ -389,26 +389,6 @@ Jul 1 2023,IMR by borough,Staten Island,3.10,"per 1,000 live births"
 Oct 1 2023,IMR by borough,Staten Island,4.18,"per 1,000 live births"
 Jan 1 2024,IMR by borough,Staten Island,3.76,"per 1,000 live births"
 Apr 1 2024,IMR by borough,Staten Island,3.93,"per 1,000 live births"
-Jan 1 2022,IMR by race/ethnicity,White,2.00,"per 1,000 live births"
-Apr 1 2022,IMR by race/ethnicity,White,2.20,"per 1,000 live births"
-Jul 1 2022,IMR by race/ethnicity,White,2.30,"per 1,000 live births"
-Oct 1 2022,IMR by race/ethnicity,White,2.70,"per 1,000 live births"
-Jan 1 2023,IMR by race/ethnicity,White,2.70,"per 1,000 live births"
-Apr 1 2023,IMR by race/ethnicity,White,2.40,"per 1,000 live births"
-Jul 1 2023,IMR by race/ethnicity,White,2.10,"per 1,000 live births"
-Oct 1 2023,IMR by race/ethnicity,White,2.00,"per 1,000 live births"
-Jan 1 2024,IMR by race/ethnicity,White,2.00,"per 1,000 live births"
-Apr 1 2024,IMR by race/ethnicity,White,2.40,"per 1,000 live births"
-Jan 1 2022,IMR by race/ethnicity,Black,8.10,"per 1,000 live births"
-Apr 1 2022,IMR by race/ethnicity,Black,7.80,"per 1,000 live births"
-Jul 1 2022,IMR by race/ethnicity,Black,8.30,"per 1,000 live births"
-Oct 1 2022,IMR by race/ethnicity,Black,7.60,"per 1,000 live births"
-Jan 1 2023,IMR by race/ethnicity,Black,7.70,"per 1,000 live births"
-Apr 1 2023,IMR by race/ethnicity,Black,7.80,"per 1,000 live births"
-Jul 1 2023,IMR by race/ethnicity,Black,7.80,"per 1,000 live births"
-Oct 1 2023,IMR by race/ethnicity,Black,8.00,"per 1,000 live births"
-Jan 1 2024,IMR by race/ethnicity,Black,7.60,"per 1,000 live births"
-Apr 1 2024,IMR by race/ethnicity,Black,7.50,"per 1,000 live births"
 Jan 1 2022,IMR by race/ethnicity,Asian/PI,2.80,"per 1,000 live births"
 Apr 1 2022,IMR by race/ethnicity,Asian/PI,2.50,"per 1,000 live births"
 Jul 1 2022,IMR by race/ethnicity,Asian/PI,1.90,"per 1,000 live births"
@@ -419,6 +399,16 @@ Jul 1 2023,IMR by race/ethnicity,Asian/PI,2.90,"per 1,000 live births"
 Oct 1 2023,IMR by race/ethnicity,Asian/PI,2.60,"per 1,000 live births"
 Jan 1 2024,IMR by race/ethnicity,Asian/PI,3.10,"per 1,000 live births"
 Apr 1 2024,IMR by race/ethnicity,Asian/PI,2.80,"per 1,000 live births"
+Jan 1 2022,IMR by race/ethnicity,Black,8.10,"per 1,000 live births"
+Apr 1 2022,IMR by race/ethnicity,Black,7.80,"per 1,000 live births"
+Jul 1 2022,IMR by race/ethnicity,Black,8.30,"per 1,000 live births"
+Oct 1 2022,IMR by race/ethnicity,Black,7.60,"per 1,000 live births"
+Jan 1 2023,IMR by race/ethnicity,Black,7.70,"per 1,000 live births"
+Apr 1 2023,IMR by race/ethnicity,Black,7.80,"per 1,000 live births"
+Jul 1 2023,IMR by race/ethnicity,Black,7.80,"per 1,000 live births"
+Oct 1 2023,IMR by race/ethnicity,Black,8.00,"per 1,000 live births"
+Jan 1 2024,IMR by race/ethnicity,Black,7.60,"per 1,000 live births"
+Apr 1 2024,IMR by race/ethnicity,Black,7.50,"per 1,000 live births"
 Jan 1 2022,IMR by race/ethnicity,Hispanic,4.10,"per 1,000 live births"
 Apr 1 2022,IMR by race/ethnicity,Hispanic,4.50,"per 1,000 live births"
 Jul 1 2022,IMR by race/ethnicity,Hispanic,4.90,"per 1,000 live births"
@@ -429,6 +419,16 @@ Jul 1 2023,IMR by race/ethnicity,Hispanic,4.20,"per 1,000 live births"
 Oct 1 2023,IMR by race/ethnicity,Hispanic,4.60,"per 1,000 live births"
 Jan 1 2024,IMR by race/ethnicity,Hispanic,4.70,"per 1,000 live births"
 Apr 1 2024,IMR by race/ethnicity,Hispanic,4.40,"per 1,000 live births"
+Jan 1 2022,IMR by race/ethnicity,White,2.00,"per 1,000 live births"
+Apr 1 2022,IMR by race/ethnicity,White,2.20,"per 1,000 live births"
+Jul 1 2022,IMR by race/ethnicity,White,2.30,"per 1,000 live births"
+Oct 1 2022,IMR by race/ethnicity,White,2.70,"per 1,000 live births"
+Jan 1 2023,IMR by race/ethnicity,White,2.70,"per 1,000 live births"
+Apr 1 2023,IMR by race/ethnicity,White,2.40,"per 1,000 live births"
+Jul 1 2023,IMR by race/ethnicity,White,2.10,"per 1,000 live births"
+Oct 1 2023,IMR by race/ethnicity,White,2.00,"per 1,000 live births"
+Jan 1 2024,IMR by race/ethnicity,White,2.00,"per 1,000 live births"
+Apr 1 2024,IMR by race/ethnicity,White,2.40,"per 1,000 live births"
 Jan 1 2022,IMR by race/ethnicity,Other/Unknown,10.10,"per 1,000 live births"
 Apr 1 2022,IMR by race/ethnicity,Other/Unknown,11.80,"per 1,000 live births"
 Jul 1 2022,IMR by race/ethnicity,Other/Unknown,12.20,"per 1,000 live births"
@@ -688,26 +688,6 @@ Jul 1 2023,Deaths by cause,Suicide,151,Number
 Oct 1 2023,Deaths by cause,Suicide,130,Number
 Jan 1 2024,Deaths by cause,Suicide,122,Number
 Apr 1 2024,Deaths by cause,Suicide,123,Number
-Jan 1 2022,Deaths by race/ethnicity,White,6756,Number
-Apr 1 2022,Deaths by race/ethnicity,White,5167,Number
-Jul 1 2022,Deaths by race/ethnicity,White,5207,Number
-Oct 1 2022,Deaths by race/ethnicity,White,6045,Number
-Jan 1 2023,Deaths by race/ethnicity,White,5639,Number
-Apr 1 2023,Deaths by race/ethnicity,White,4897,Number
-Jul 1 2023,Deaths by race/ethnicity,White,4866,Number
-Oct 1 2023,Deaths by race/ethnicity,White,5357,Number
-Jan 1 2024,Deaths by race/ethnicity,White,5582,Number
-Apr 1 2024,Deaths by race/ethnicity,White,4634,Number
-Jan 1 2022,Deaths by race/ethnicity,Black,4773,Number
-Apr 1 2022,Deaths by race/ethnicity,Black,3570,Number
-Jul 1 2022,Deaths by race/ethnicity,Black,3908,Number
-Oct 1 2022,Deaths by race/ethnicity,Black,4285,Number
-Jan 1 2023,Deaths by race/ethnicity,Black,3722,Number
-Apr 1 2023,Deaths by race/ethnicity,Black,3484,Number
-Jul 1 2023,Deaths by race/ethnicity,Black,3461,Number
-Oct 1 2023,Deaths by race/ethnicity,Black,3865,Number
-Jan 1 2024,Deaths by race/ethnicity,Black,3817,Number
-Apr 1 2024,Deaths by race/ethnicity,Black,3494,Number
 Jan 1 2022,Deaths by race/ethnicity,Asian/PI,1747,Number
 Apr 1 2022,Deaths by race/ethnicity,Asian/PI,1288,Number
 Jul 1 2022,Deaths by race/ethnicity,Asian/PI,1372,Number
@@ -718,6 +698,16 @@ Jul 1 2023,Deaths by race/ethnicity,Asian/PI,1161,Number
 Oct 1 2023,Deaths by race/ethnicity,Asian/PI,1449,Number
 Jan 1 2024,Deaths by race/ethnicity,Asian/PI,1352,Number
 Apr 1 2024,Deaths by race/ethnicity,Asian/PI,1251,Number
+Jan 1 2022,Deaths by race/ethnicity,Black,4773,Number
+Apr 1 2022,Deaths by race/ethnicity,Black,3570,Number
+Jul 1 2022,Deaths by race/ethnicity,Black,3908,Number
+Oct 1 2022,Deaths by race/ethnicity,Black,4285,Number
+Jan 1 2023,Deaths by race/ethnicity,Black,3722,Number
+Apr 1 2023,Deaths by race/ethnicity,Black,3484,Number
+Jul 1 2023,Deaths by race/ethnicity,Black,3461,Number
+Oct 1 2023,Deaths by race/ethnicity,Black,3865,Number
+Jan 1 2024,Deaths by race/ethnicity,Black,3817,Number
+Apr 1 2024,Deaths by race/ethnicity,Black,3494,Number
 Jan 1 2022,Deaths by race/ethnicity,Hispanic,3898,Number
 Apr 1 2022,Deaths by race/ethnicity,Hispanic,2892,Number
 Jul 1 2022,Deaths by race/ethnicity,Hispanic,3108,Number
@@ -728,6 +718,16 @@ Jul 1 2023,Deaths by race/ethnicity,Hispanic,2937,Number
 Oct 1 2023,Deaths by race/ethnicity,Hispanic,3303,Number
 Jan 1 2024,Deaths by race/ethnicity,Hispanic,3296,Number
 Apr 1 2024,Deaths by race/ethnicity,Hispanic,2909,Number
+Jan 1 2022,Deaths by race/ethnicity,White,6756,Number
+Apr 1 2022,Deaths by race/ethnicity,White,5167,Number
+Jul 1 2022,Deaths by race/ethnicity,White,5207,Number
+Oct 1 2022,Deaths by race/ethnicity,White,6045,Number
+Jan 1 2023,Deaths by race/ethnicity,White,5639,Number
+Apr 1 2023,Deaths by race/ethnicity,White,4897,Number
+Jul 1 2023,Deaths by race/ethnicity,White,4866,Number
+Oct 1 2023,Deaths by race/ethnicity,White,5357,Number
+Jan 1 2024,Deaths by race/ethnicity,White,5582,Number
+Apr 1 2024,Deaths by race/ethnicity,White,4634,Number
 Jan 1 2022,Deaths by race/ethnicity,Other/Unknown,479,Number
 Apr 1 2022,Deaths by race/ethnicity,Other/Unknown,335,Number
 Jul 1 2022,Deaths by race/ethnicity,Other/Unknown,406,Number
