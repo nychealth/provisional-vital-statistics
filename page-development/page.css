@@ -58,6 +58,7 @@
 
 .causebutton {
   float: right;
+  padding: 3px 35px;
 }
 
 .choice {
@@ -104,7 +105,7 @@ background-color: #f9f9f9; */
   margin-bottom: 5px;
   padding: 5px;
   background-color: #f3f3f3; /* Default background color */
-  border: 1px solid #ccc;
+  border: 0px solid #ccc;
   cursor: pointer;
   text-align: left;
 }
@@ -141,10 +142,10 @@ background-color: #f9f9f9; */
 
   /* Handle */
   ::-webkit-scrollbar-thumb {
-      background: #275e84;
+      background: #97B1C3;
   }
 
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-      background: #275e84;
+    background: #97B1C3;
   }
