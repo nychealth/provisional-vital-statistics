@@ -1,11 +1,3 @@
-/*
-
- TO DO LIST:
-    - Add conditional for Percent - to format axisY
-    - Await proper copy
-    - Order legends
-*/
-
 // DETECT IF SUBMETRIC STARTS WITH NUMERIC VALUE
 function isNonNumeric(value) {
   return isNaN(parseInt(value.charAt(0)));
@@ -18,7 +10,7 @@ function sortSubmetrics(data) {
   const nonNumeric = submetrics.filter(isNonNumeric);
   const numeric = submetrics.filter(d => !isNonNumeric(d));
 
-  nonNumeric.sort();
+  // nonNumeric.sort();
   numeric.sort((a, b) => a.localeCompare(b, undefined, { numeric: true }));
 
   // RETURN COMBINED SORTED ARRAY WITH NON NUMERIC VALUES FIRST
@@ -338,7 +330,7 @@ var partialConfig = {
 
   try {
     // RUN VEGA EMBED
-    await vegaEmbed(destination, chosenSpec, {actions: true });
+    await vegaEmbed(destination, chosenSpec, {actions: false });
   } catch (error) {
     console.log('Error embedding chart:', error);
   }

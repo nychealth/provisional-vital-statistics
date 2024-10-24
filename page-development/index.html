@@ -22,8 +22,8 @@
 
 
       <h1>Provisional Birth and Death Data</h1>
-      <p>The Health Department collects data on every birth and death that happens in New York City. These data, called Vital Statistics, provide a fundamental understanding of birth trends, death trends, and population health in New York City.</p>
-      <p>The data on this page are <strong>provisional data</strong>, which means that the numbers here might change as the Health Department continues to process the data. Publishing provisional data allows the Health Department to release data faster, while it undergoes additional processing like review, cleaning, and finalization. <a href="https://www.nyc.gov/site/doh/data/data-sets/vital-statistics-data.page">Final data are published in the Annual Summary of Vital Statistics</a>.  <a href="">Final data are also available online atEpiquery</a>.</p>
+      <p>The Health Department collects data on every birth and death that happens in New York City. These data, called vital statistics, provide a fundamental understanding of birth trends, death trends, and population health in New York City.</p>
+      <p>The data on this page are <strong>provisional data</strong>, which means that the numbers may change as the Health Department continues to process the data. Publishing provisional data allows the Health Department to release data faster, while it undergoes additional processing like quality review and finalization. <a href="https://www.nyc.gov/site/doh/data/data-sets/vital-statistics-data.page">Final data are published in the Annual Summary of Vital Statistics</a>.  <a href="">Final data are also available online at EpiQuery</a>.</p>
 
 
       <p>Jump to:</p>
@@ -35,15 +35,15 @@
         <li><a href="#death-section">Deaths by demographic and cause</a></li>
       </ul>
 
-      <div class="callout">
+      <div class="callout hide">
         <p><strong>Callout box:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.
         Aliquam ni hendrerit urna. Maecenas vitae mattis tellus. Nulam quis
         imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna
         interdum eu.</p>
       </div>
 
-      <h2 class="spacer">Birth data</h2>
-      <p>Data on births come from birth certificates.</p>
+      <h2 class="spacer">Birth Data</h2>
+      <p>Data on births come from birth certificates. The three birth sections below include quarterly provisional data on demographics, birth characteristics, and health/care characteristics.</p>
       <h3 id="birthbydemog">Births by demographics</h3>
       <div class="choice">
         <a id="" onclick="drawChart('#bbd','Total births','Births',false)" tabindex="0" class="togglebutton byDemog highlight">Total</a>
@@ -57,19 +57,19 @@
       </div>
 
         <div id="total-births" class="bbd-copy">
-          Copy for total births
         </div>
 
         <div id="births-by-maternal-age" class="bbd-copy">
-          Copy for by maternal age
+          These counts of births by maternal age show how many births happened different age group. Counts (the number of events) don't take into account the population size of each group, so don't allow for fair comparisons between groups: the group with the most births may not have the highest birth rate. Fluctuations in counts do not necessarily indicate a meaningful trend. 
         </div>
 
         <div id="births-by-borough" class="bbd-copy">
-          Births are recorded by the place of the mother's residence. The Health Department tracks all births that happen in New York City, even to non-residents.
+          These counts of births by borough of residence show  how many births happened for residence of each borough. Counts (the number of events) don't take into account the population size of each group, so don't allow for fair comparisons between groups: the borough with the most births may not have the highest birth rate. Fluctuations in counts do not necessarily indicate a meaningful trend. 
+    
         </div>
 
         <div id="births-by-maternal-race/ethnicity" class="bbd-copy">
-          Birth data are presented as counts (numbers); differences by race/ethnicity are in part due to differences in the underlying population sizes, so these can't be directly compared to each other. 
+          These counts of births by maternal race/ethnicity show how many births happened in each racial/ethnic group. Counts (the number of events) don't take into account the population size of each group, so don't allow for fair comparisons between groups: the group with the most births may not have the highest birth rate. Fluctuations in counts do not necessarily indicate a meaningful trend. 
         </div>
 
 
@@ -86,19 +86,19 @@
       </div>
 
       <div id="births-by-method" class="bbc-copy">
-        Birth methods include vaginal births, cesareans (c-sections), and vaginal birth after cesarean (VBAC), when somebody gives birth vaginally after having previously delivered via c-section.  
+        Birth methods include vaginal births, cesareans (c-sections), and vaginal birth after cesarean (VBAC), when somebody gives birth vaginally after having previously delivered via c-section.
       </div>
 
       <div id="births-by-term" class="bbc-copy">
-        Normal term is 37 weeks of pregnancy. Pre-term births happen from 32 to 37 weeks of pregnancy, and very pre-term births happen before 32 weeks of pregnancy.
+        Term births are those when the baby is 37 weeks of gestation or older. Pre-term births are when the baby is less than 37 weeks of gestation. A subset of pre-term births are very pre-term births, which are when the baby is less than 32 weeks of gestation at time of birth.
       </div>
 
       <div id="births-by-birthweight" class="bbc-copy">
-        Normal birth weight is defined as XXXX. Low is under XXXX, and very low is under YYYY. 
+        Normal birthweights include 2,500 grams and above (about 5.5 pounds). Babies are considered low birthweight if they weigh less than 2,500 grams. A subset of low birthweight babies are considered very low birthweight, at less than 1,500 grams.
       </div>
 
       <div id="births-by-coverage" class="bbc-copy">
-        Coverage copy, something about Medicaid vs non-Medicaid coverage.
+        Births are categorized as covered by Medicaid, or non-Medicaid. 
       </div>
 
 
@@ -117,19 +117,19 @@
       </div>
 
       <div id="pre-pregnancy-diabetes" class="bcc-copy">
-        Pre-pregnancy diabetes...
+      Pre-pregnancy diabetes can be a risk factor for adverse birth outcomes.
       </div>
 
       <div id="pre-pregnancy-hypertension" class="bcc-copy">
-        Pre-pregnancy hypertension...
+      Pre-pregnancy hypertension can be a risk factor for adverse birth outcomes. 
       </div>
 
       <div id="prenatal-care-in-first-trimester" class="bcc-copy">
-        Prenatal care from the first trimester something something healthier.
+      Receiving prenatal care in the first trimester can be a protective factor against adverse birth outcomes. 
       </div>
 
       <div id="breastfed-infants" class="bcc-copy">
-        Percent of babies that are breastfed, something something health. Though some people cannot breastfeed and this is normal, the more babies that do, the better for health.
+      Breastfeeding can benefit the health of mothers/parents and babies. 
       </div>
 
 
@@ -138,8 +138,8 @@
 
       <hr class="spacer">
 
-      <h2 class="spacer">Death data</h2>
-      <p>Data on deaths come from death certificates. The Health Department tracks information about all deaths that occur in New York City, even among people who are not residents of NYC.</p>
+      <h2 class="spacer">Death Data</h2>
+      <p>Data on deaths come from death certificates. The Health Department tracks information about all deaths that occur in New York City, even among people who are not residents of NYC. The two death sections below include quarterly provisional data on infant mortality and deaths among all ages, with details on demographics and causes of death.</p>
       <h3 id="infantmort">Infant mortality</h3>
       <div class="choice">
         <a id="" onclick="drawChart('#dim','Total IMR','Infant mortality rate',false)" tabindex="0" class="togglebutton infantMort highlight">Overall</a>
@@ -153,23 +153,23 @@
       </div>
 
       <div id="total-imr" class="dim-copy">
-        Infant mortality data are presented as rates per 1,000 live births. 
+        Infant mortality rates are the number of infant deaths (less than 1 year of age) per 1,000 live births. Due to the small number of infant deaths, rates are prone to fluctuations and may not show trends.  
       </div>
 
       <div id="imr-by-age" class="dim-copy">
-        Neonatal means within the first 4 weeks of life. Post-neonatal means after 4 weeks but within a year of life.
+        Infant mortality rates are the number of infant deaths (less than 1 year of age) per 1,000 live births. Infants are classified as neonatal if they are less than 28 days old. They are classified as post-neonatal if they are at least 28 days old but less than one year old. Due to the small number of infant deaths, rates are prone to fluctuations and may not show trends. 
       </div>
 
       <div id="imr-by-borough" class="dim-copy">
-        By borough of residence. [smoothed?]
+        Infant mortality rates are the number of infant deaths (less than 1 year of age) per 1,000 live births. Due to the small number of infant deaths, rates are prone to fluctuations and may not show trends.  
       </div>
 
       <div id="imr-by-race/ethnicity" class="dim-copy">
-        IMR by race. [smoothed?]
+        Infant mortality rates are the number of infant deaths (less than 1 year of age) per 1,000 live births. Due to the small number of infant deaths, rates are prone to fluctuations and may not show trends.  
       </div>
 
 
-      <h3 class="spacer" id="death-section">Deaths by demographics and causes</h3>
+      <h3 class="spacer" id="death-section">Deaths by demographics and cause</h3>
       <div class="choice">
         <a id="" onclick="drawChart('#ddc','Total deaths','Deaths',false); toggleMultiselect(false)" tabindex="0" class="togglebutton mort highlight">Total</a>
         <a id="" onclick="drawChart('#ddc','Deaths by age','Deaths',true); toggleMultiselect(false)" tabindex="0" class="togglebutton mort">Age group</a>
@@ -189,32 +189,30 @@
 
 
       <div id="total-deaths" class="ddc-copy">
-        deaths copy
       </div>
 
       <div id="deaths-by-age" class="ddc-copy">
-        Like much other data on this page, deaths are presented as counts (numbers). That means that because of differences in the population of each age group, these numbers aren't directly comparable to each other. 
+        Counts (the number of events) don't take into account the population size of each group, so don't allow for fair comparisons between groups: the group with the most deaths may not have the highest death rate. Fluctuations in counts do not necessarily indicate a meaningful trend. 
       </div>
 
       <div id="deaths-by-sex" class="ddc-copy">
-        deaths sex copy
+        Counts (the number of events) don't take into account the population size of each group, so don't allow for fair comparisons between groups: the group with the most deaths may not have the highest death rate. Fluctuations in counts do not necessarily indicate a meaningful trend. 
       </div>
 
       <div id="deaths-by-race/ethnicity" class="ddc-copy">
-        Like much other data on this page, deaths are presented as counts (numbers). That means that because of differences in the population of each racial/ethnic group, these numbers aren't directly comparable to each other. 
-
+        Counts (the number of events) don't take into account the population size of each group, so don't allow for fair comparisons between groups: the group with the most deaths may not have the highest death rate. Fluctuations in counts do not necessarily indicate a meaningful trend. 
       </div>
 
       <div id="deaths-by-cause" class="ddc-copy">
-        Death data presented on this page (including data by causes) are data on all deaths that occur in NYC, even among non-residents.
+        Selected causes of death are shown above, including both leading causes of death as well as causes that are priorities for the Health Department. 
       </div>
 
       <hr>
 
-      <h2 class="spacer">More resources</h2>
-      <p>All data here are provisional, which means that they are not finalized and are subject to change. Data on births and deaths can take months or years to be finalized as additional details are reported, deaths are investigated by the Office of Chief Medical Examiner, and results from autopsy or toxicology results are completed. Once data are finalized, Health Department staff spend time processing and analyzing the data. Typically, data are finalized about two years after the end of a reporting year.</p>
+      <h2 class="spacer">Additional Resources</h2>
+      <p>All data here are provisional, which means that they are not finalized and are subject to change. Data on births and deaths can take months or years to be finalized as additional details are reported, deaths are investigated by the Office of Chief Medical Examiner, and results from autopsy or toxicology results are completed. Once data for a given year are complete, Health Department staff spend time processing and analyzing the data. Typically, data are finalized about two years after the end of a reporting year.</p>
         
-      <p>These provisional data are released to provide more timely information on births and deaths in NYC. When using or disseminating these data, we recommend flagging them as provisional and subject to change.</p>
+      <p>These provisional data are being released to provide more timely information on births and deaths in NYC. When using or disseminating these data, we recommend flagging them as provisional and subject to change.</p>
 
       <p><a href="https://www.github.com/nychealth/provisional-births-and-deaths">Download these data at our Github repository</a>:
         <ul>
@@ -231,6 +229,9 @@
           <li><a href="https://a816-health.nyc.gov/hdi/epiquery/visualizations?PageType=ps&PopulationSource=Death">Deaths</a></li>
         </ul>
       </p>
+
+      <p>The citywide HealthyNYC campaign for healthier, longer lives includes data on key health outcomes determined to be drivers of life expectancy, premature mortality, and persistent health inequities. Recent years of data reported on the HealthyNYC page are provisional in nature, but they will not match death counts presented here. HealthyNYC data are specific to NYC residents who died in NYC, as opposed to standard vital statistics reporting, which is based on occurrences in NYC, regardless of resident status. <a href="https://www.nyc.gov/site/doh/about/about-doh/healthynyc.page">Learn more and get data about HealthyNYC</a>.
+     </p>
 
     </div>
 
