@@ -54,15 +54,15 @@ async function drawChart(destination, metric, label, multi, schemaFlag = "defaul
   // COMMON ELEMENTS OF SCHEMA
 var partialConfig = {
     "range": {
-    "category": [
-      "#003f5c",
-      "#ff764a",
-      "#7a5195",
-      "#ffa600",
-      "#ef5675",
-      "#bc5090",
-      "#374c80"
-    ]
+      "category": [
+        "#003F5C",
+        "#FF8440",
+        "#7A4694",
+        "#FFA600",
+        "#EF5E4B",
+        "#BD4B86",
+        "#425280"
+            ]
   },
   "view": {"stroke": null},
   "axisX": {
