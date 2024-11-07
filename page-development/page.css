@@ -47,9 +47,14 @@
 
 .callout {
   border-left: 8px solid lightgray;
-  padding: 1px 8px;
+  padding: 1px 5px;
   font-size: 14px;
   background-color: #fbfbfb80;
+}
+
+.callout, p {
+  margin-top: .5rem;
+  margin-bottom: .5rem;
 }
 
 .spacer {
@@ -124,7 +129,7 @@ background-color: #f9f9f9; */
 }
 
 .copy-wrapper {
-  height: 100px;
+  height: 150px;
 }
 
     /* SCROLLBAR */
