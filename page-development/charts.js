@@ -36,7 +36,7 @@ async function drawChart(destination, metric, label, multi, schemaFlag = "defaul
   // INITIALIZE VARIABLES
   let fillColor = multi === false ? "#f3f3f3" : "#f3f3f300";
   let subSeries = multi === false ? "" : "submetric";
-  let fillLayer = multi === false ? [{"mark": {"type": "area", "color": "#e9e9e950", "tooltip": false}}] : [];
+  let fillLayer = multi === false ? [{"mark": {"type": "area", "color": "#f0f8ff85", "tooltip": false}}] : [];
   let legend = multi === true ? {"columns": 6, "labelFontSize": 10, "symbolSize": 80} : {"disable": true};
 
   // CREATE ARRAY OF SUBMETRICS TO PASS INTO SPEC.ENCODING.COLOR.SCALE.DOMAIN
@@ -54,15 +54,15 @@ async function drawChart(destination, metric, label, multi, schemaFlag = "defaul
   // COMMON ELEMENTS OF SCHEMA
 var partialConfig = {
     "range": {
-    "category": [
-      "#003f5c",
-      "#ff764a",
-      "#7a5195",
-      "#ffa600",
-      "#ef5675",
-      "#bc5090",
-      "#374c80"
-    ]
+      "category": [
+        "#003F5C",
+        "#FF8440",
+        "#7A4694",
+        "#FFA600",
+        "#EF5E4B",
+        "#BD4B86",
+        "#425280"
+            ]
   },
   "view": {"stroke": null},
   "axisX": {
