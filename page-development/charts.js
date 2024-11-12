@@ -453,10 +453,23 @@ function getSelectedCauses() {
   return Array.from(selectedButtons).map(button => button.getAttribute('data-cause'));
 }
 
+// DYNAMICALLY ADJUST MARGIN WHEN ALL CAUSES ARE CHOSEN
+function adjustMarginBasedOnCauses() {
+  const selectedCauses = getSelectedCauses(); 
+  const baseMargin = 20; 
+  const additionalMargin = selectedCauses.length * 5;
+  const totalMargin = baseMargin + additionalMargin;
+  
+  document.querySelector('.ddc-copy').style.marginTop = `${totalMargin}px`;
+}
+
+
 // UPDATE CHART BASED ON SELECTED BUTTONS
 function updateChart() {
   const selectedCauses = getSelectedCauses();
 
   drawChart('#ddc', 'Deaths by cause', 'Deaths', true, 'alternative', selectedCauses);
+  adjustMarginBasedOnCauses(); // Adjust margin based on selection
+
   // document.getElementById('deaths-by-cause').classList.remove('hide')
 }
