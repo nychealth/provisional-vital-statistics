@@ -29,10 +29,10 @@
       <p>Jump to:</p>
       <ul>
         <li><a href="#birthbydemog">Births by demographics</a></li>
-        <li><a href="#birthchar">Births characteristics</a></li>
+        <li><a href="#birthchar">Birth characteristics</a></li>
         <li><a href="#carechar">Care characteristics</a></li>
+        <li><a href="#death-section">Deaths</a></li>
         <li><a href="#infantmort">Infant mortality</a></li>
-        <li><a href="#death-section">Deaths by demographic and cause</a></li>
       </ul>
 
       <div class="callout hide">
@@ -143,42 +143,11 @@
 
 
 
-      <!-- Care char copy holders to go here -->
 
       <hr class="spacer">
 
       <h2 class="spacer">Death Data</h2>
       <p>Data on deaths come from death certificates. The Health Department tracks information about all deaths that occur in New York City, even among people who are not residents of NYC. The two death sections below include quarterly provisional data on infant mortality and deaths among all ages, with details on demographics and causes of death.</p>
-      <h3 id="infantmort">Infant mortality rates</h3>
-      <div class="choice">
-        <a id="" onclick="drawChart('#dim','Total IMR','Infant mortality rate',false)" tabindex="0" class="togglebutton infantMort highlight">Overall</a>
-        <a id="" onclick="drawChart('#dim','IMR by age','Infant mortality rate',true,'Age')" tabindex="0" class="togglebutton infantMort">Age</a>
-        <a id="" onclick="drawChart('#dim','IMR by borough','Infant mortality rate',true,'Residence')" tabindex="0" class="togglebutton infantMort">Borough</a>
-        <a id="" onclick="drawChart('#dim','IMR by race/ethnicity','Infant mortality rate',true,'Race/ethnicity')" tabindex="0" class="togglebutton infantMort">Race/ethnicity</a>
-      </div>
-
-      <div class="vis-parent">
-      <div class="vis drawn" id="dim"></div>
-      </div>
-
-      <div class="copy-wrapper">
-        <div id="total-imr" class="dim-copy">
-          <p>Infant mortality rates are the number of infant deaths (less than 1 year of age) per 1,000 live births. Due to the small number of infant deaths, rates are prone to fluctuations. All infant mortality data are shown as four-quarter rolling averages: one quarter's data averaged with the data from the three previous quarters.</p>
-        </div>
-  
-        <div id="imr-by-age" class="dim-copy">
-          <p>There is usually a higher neonatal infant mortality rate - deaths among infants less than 28 years old. Deaths are post-neonatal if the baby is at least 28 days old, but less than one year old. Due to the small number of infant deaths, rates are prone to fluctuations. All infant mortality data are shown as four-quarter rolling averages: one quarter's data averaged with the data from the three previous quarters.</p>
-        </div>
-  
-        <div id="imr-by-borough" class="dim-copy">
-          Due to the small number of infant deaths, rates are prone to fluctuations. All infant mortality data are shown as four-quarter rolling averages: one quarter's data averaged with the data from the three previous quarters.
-        </div>
-  
-        <div id="imr-by-race/ethnicity" class="dim-copy">
-          Due to the small number of infant deaths, rates are prone to fluctuations. All infant mortality data are shown as four-quarter rolling averages: one quarter's data averaged with the data from the three previous quarters.
-        </div>
-      </div>
-
 
       <h3 class="spacer" id="death-section">Deaths</h3>
       <div class="choice">
@@ -220,6 +189,39 @@
       </div>
     </div>
 
+    <h3 id="infantmort">Infant mortality rates</h3>
+    <div class="choice">
+      <a id="" onclick="drawChart('#dim','Total IMR','Infant mortality rate',false)" tabindex="0" class="togglebutton infantMort highlight">Overall</a>
+      <a id="" onclick="drawChart('#dim','IMR by age','Infant mortality rate',true,'Age')" tabindex="0" class="togglebutton infantMort">Age</a>
+      <a id="" onclick="drawChart('#dim','IMR by borough','Infant mortality rate',true,'Residence')" tabindex="0" class="togglebutton infantMort">Borough</a>
+      <a id="" onclick="drawChart('#dim','IMR by race/ethnicity','Infant mortality rate',true,'Race/ethnicity')" tabindex="0" class="togglebutton infantMort">Race/ethnicity</a>
+    </div>
+
+    <div class="vis-parent">
+    <div class="vis drawn" id="dim"></div>
+    </div>
+
+    <div class="copy-wrapper">
+      <div id="total-imr" class="dim-copy">
+        <p>Infant mortality rates are the number of infant deaths (less than 1 year of age) per 1,000 live births. Due to the small number of infant deaths, rates are prone to fluctuations. All infant mortality data are shown as four-quarter rolling averages: one quarter's data averaged with the data from the three previous quarters.</p>
+      </div>
+
+      <div id="imr-by-age" class="dim-copy">
+        <p>There is usually a higher neonatal infant mortality rate - deaths among infants less than 28 years old. Deaths are post-neonatal if the baby is at least 28 days old, but less than one year old. Due to the small number of infant deaths, rates are prone to fluctuations. All infant mortality data are shown as four-quarter rolling averages: one quarter's data averaged with the data from the three previous quarters.</p>
+      </div>
+
+      <div id="imr-by-borough" class="dim-copy">
+        Due to the small number of infant deaths, rates are prone to fluctuations. All infant mortality data are shown as four-quarter rolling averages: one quarter's data averaged with the data from the three previous quarters.
+      </div>
+
+      <div id="imr-by-race/ethnicity" class="dim-copy">
+        Due to the small number of infant deaths, rates are prone to fluctuations. All infant mortality data are shown as four-quarter rolling averages: one quarter's data averaged with the data from the three previous quarters.
+      </div>
+    </div>
+
+    <p><a href="https://www.nyc.gov/site/doh/about/about-doh/healthynyc.page">Data on maternal mortality are available at HealthyNYC</a>.</p>
+
+
 
       <hr>
 
@@ -230,9 +232,9 @@
 
       <p><a href="https://www.github.com/nychealth/provisional-births-and-deaths">Download these data at our Github repository</a>:
         <ul>
-          <li><a href="">Data</a></li>
-          <li><a href="">Tables</a></li>
-          <li><a href="">Documentation and notes</a></li>
+          <li><a href="https://github.com/nychealth/provisional-vital-statistics/blob/main/data.csv">Data</a></li>
+          <li><a href="https://github.com/nychealth/provisional-vital-statistics/tree/main/data-tables">Tables</a></li>
+          <li><a href="https://github.com/nychealth/provisional-vital-statistics">Documentation and notes</a></li>
         </ul>
         </p>
 
