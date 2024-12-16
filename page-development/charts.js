@@ -330,7 +330,7 @@ var partialConfig = {
 
   try {
     // RUN VEGA EMBED
-    await vegaEmbed(destination, chosenSpec, {actions: true });
+    await vegaEmbed(destination, chosenSpec, {actions: false });
   } catch (error) {
     console.log('Error embedding chart:', error);
   }
