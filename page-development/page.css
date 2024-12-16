@@ -159,3 +159,12 @@ background-color: #f9f9f9; */
   ::-webkit-scrollbar-thumb:hover {
     background: #97B1C3;
   }
+
+  .sr-only {
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+    }
