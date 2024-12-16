@@ -1,4 +1,4 @@
-﻿date,metric,submetric,value,display
+date,metric,submetric,value,display
 Jan 1 2022,Total births,Total,23731,Number
 Apr 1 2022,Total births,Total,24457,Number
 Jul 1 2022,Total births,Total,25376,Number
@@ -49,96 +49,66 @@ Jul 1 2023,Births by maternal age,40+,1847,Number
 Oct 1 2023,Births by maternal age,40+,1883,Number
 Jan 1 2024,Births by maternal age,40+,1868,Number
 Apr 1 2024,Births by maternal age,40+,1805,Number
-Jan 1 2022,Births by borough,Bronx,3733,Number
-Apr 1 2022,Births by borough,Bronx,3762,Number
-Jul 1 2022,Births by borough,Bronx,4042,Number
-Oct 1 2022,Births by borough,Bronx,4069,Number
-Jan 1 2023,Births by borough,Bronx,3620,Number
-Apr 1 2023,Births by borough,Bronx,3665,Number
-Jul 1 2023,Births by borough,Bronx,3826,Number
-Oct 1 2023,Births by borough,Bronx,3872,Number
-Jan 1 2024,Births by borough,Bronx,3641,Number
-Apr 1 2024,Births by borough,Bronx,3640,Number
-Jan 1 2022,Births by borough,Brooklyn,7924,Number
-Apr 1 2022,Births by borough,Brooklyn,8002,Number
-Jul 1 2022,Births by borough,Brooklyn,8218,Number
-Oct 1 2022,Births by borough,Brooklyn,8660,Number
-Jan 1 2023,Births by borough,Brooklyn,7774,Number
-Apr 1 2023,Births by borough,Brooklyn,7809,Number
-Jul 1 2023,Births by borough,Brooklyn,8254,Number
-Oct 1 2023,Births by borough,Brooklyn,8433,Number
-Jan 1 2024,Births by borough,Brooklyn,8173,Number
-Apr 1 2024,Births by borough,Brooklyn,7838,Number
-Jan 1 2022,Births by borough,Manhattan,3156,Number
-Apr 1 2022,Births by borough,Manhattan,3307,Number
-Jul 1 2022,Births by borough,Manhattan,3338,Number
-Oct 1 2022,Births by borough,Manhattan,3288,Number
-Jan 1 2023,Births by borough,Manhattan,3033,Number
-Apr 1 2023,Births by borough,Manhattan,3411,Number
-Jul 1 2023,Births by borough,Manhattan,3345,Number
-Oct 1 2023,Births by borough,Manhattan,3438,Number
-Jan 1 2024,Births by borough,Manhattan,3384,Number
-Apr 1 2024,Births by borough,Manhattan,3605,Number
-Jan 1 2022,Births by borough,Queens,4788,Number
-Apr 1 2022,Births by borough,Queens,5064,Number
-Jul 1 2022,Births by borough,Queens,5266,Number
-Oct 1 2022,Births by borough,Queens,5245,Number
-Jan 1 2023,Births by borough,Queens,4775,Number
-Apr 1 2023,Births by borough,Queens,5121,Number
-Jul 1 2023,Births by borough,Queens,5291,Number
-Oct 1 2023,Births by borough,Queens,5232,Number
-Jan 1 2024,Births by borough,Queens,5025,Number
-Apr 1 2024,Births by borough,Queens,4925,Number
-Jan 1 2022,Births by borough,Staten Island,1154,Number
-Apr 1 2022,Births by borough,Staten Island,1223,Number
-Jul 1 2022,Births by borough,Staten Island,1249,Number
-Oct 1 2022,Births by borough,Staten Island,1260,Number
-Jan 1 2023,Births by borough,Staten Island,1162,Number
-Apr 1 2023,Births by borough,Staten Island,1190,Number
-Jul 1 2023,Births by borough,Staten Island,1225,Number
-Oct 1 2023,Births by borough,Staten Island,1209,Number
-Jan 1 2024,Births by borough,Staten Island,1168,Number
-Apr 1 2024,Births by borough,Staten Island,1235,Number
-Jan 1 2022,Births by borough,Non-NYC Residents,2975,Number
-Apr 1 2022,Births by borough,Non-NYC Residents,3099,Number
-Jul 1 2022,Births by borough,Non-NYC Residents,3262,Number
-Oct 1 2022,Births by borough,Non-NYC Residents,3372,Number
-Jan 1 2023,Births by borough,Non-NYC Residents,2984,Number
-Apr 1 2023,Births by borough,Non-NYC Residents,3067,Number
-Jul 1 2023,Births by borough,Non-NYC Residents,3335,Number
-Oct 1 2023,Births by borough,Non-NYC Residents,3315,Number
-Jan 1 2024,Births by borough,Non-NYC Residents,3122,Number
-Apr 1 2024,Births by borough,Non-NYC Residents,3313,Number
-Jan 1 2022,Births by maternal race/ethnicity,Asian/PI,3585,Number
-Apr 1 2022,Births by maternal race/ethnicity,Asian/PI,3790,Number
-Jul 1 2022,Births by maternal race/ethnicity,Asian/PI,3749,Number
-Oct 1 2022,Births by maternal race/ethnicity,Asian/PI,3888,Number
-Jan 1 2023,Births by maternal race/ethnicity,Asian/PI,3537,Number
-Apr 1 2023,Births by maternal race/ethnicity,Asian/PI,3505,Number
-Jul 1 2023,Births by maternal race/ethnicity,Asian/PI,3662,Number
-Oct 1 2023,Births by maternal race/ethnicity,Asian/PI,3663,Number
-Jan 1 2024,Births by maternal race/ethnicity,Asian/PI,3507,Number
-Apr 1 2024,Births by maternal race/ethnicity,Asian/PI,3561,Number
-Jan 1 2022,Births by maternal race/ethnicity,Black,4258,Number
-Apr 1 2022,Births by maternal race/ethnicity,Black,4134,Number
-Jul 1 2022,Births by maternal race/ethnicity,Black,4406,Number
-Oct 1 2022,Births by maternal race/ethnicity,Black,4509,Number
-Jan 1 2023,Births by maternal race/ethnicity,Black,3994,Number
-Apr 1 2023,Births by maternal race/ethnicity,Black,3964,Number
-Jul 1 2023,Births by maternal race/ethnicity,Black,4209,Number
-Oct 1 2023,Births by maternal race/ethnicity,Black,4235,Number
-Jan 1 2024,Births by maternal race/ethnicity,Black,3699,Number
-Apr 1 2024,Births by maternal race/ethnicity,Black,3660,Number
-Jan 1 2022,Births by maternal race/ethnicity,Hispanic,6905,Number
-Apr 1 2022,Births by maternal race/ethnicity,Hispanic,7001,Number
-Jul 1 2022,Births by maternal race/ethnicity,Hispanic,7735,Number
-Oct 1 2022,Births by maternal race/ethnicity,Hispanic,7623,Number
-Jan 1 2023,Births by maternal race/ethnicity,Hispanic,6900,Number
-Apr 1 2023,Births by maternal race/ethnicity,Hispanic,7366,Number
-Jul 1 2023,Births by maternal race/ethnicity,Hispanic,7632,Number
-Oct 1 2023,Births by maternal race/ethnicity,Hispanic,7683,Number
-Jan 1 2024,Births by maternal race/ethnicity,Hispanic,7426,Number
-Apr 1 2024,Births by maternal race/ethnicity,Hispanic,7377,Number
+Jan 1 2022,Births by borough�,Bronx,3733,Number
+Apr 1 2022,Births by borough�,Bronx,3762,Number
+Jul 1 2022,Births by borough�,Bronx,4042,Number
+Oct 1 2022,Births by borough�,Bronx,4069,Number
+Jan 1 2023,Births by borough�,Bronx,3620,Number
+Apr 1 2023,Births by borough�,Bronx,3665,Number
+Jul 1 2023,Births by borough�,Bronx,3826,Number
+Oct 1 2023,Births by borough�,Bronx,3872,Number
+Jan 1 2024,Births by borough�,Bronx,3641,Number
+Apr 1 2024,Births by borough�,Bronx,3640,Number
+Jan 1 2022,Births by borough�,Brooklyn,7924,Number
+Apr 1 2022,Births by borough�,Brooklyn,8002,Number
+Jul 1 2022,Births by borough�,Brooklyn,8218,Number
+Oct 1 2022,Births by borough�,Brooklyn,8660,Number
+Jan 1 2023,Births by borough�,Brooklyn,7774,Number
+Apr 1 2023,Births by borough�,Brooklyn,7809,Number
+Jul 1 2023,Births by borough�,Brooklyn,8254,Number
+Oct 1 2023,Births by borough�,Brooklyn,8433,Number
+Jan 1 2024,Births by borough�,Brooklyn,8173,Number
+Apr 1 2024,Births by borough�,Brooklyn,7838,Number
+Jan 1 2022,Births by borough�,Manhattan,3156,Number
+Apr 1 2022,Births by borough�,Manhattan,3307,Number
+Jul 1 2022,Births by borough�,Manhattan,3338,Number
+Oct 1 2022,Births by borough�,Manhattan,3288,Number
+Jan 1 2023,Births by borough�,Manhattan,3033,Number
+Apr 1 2023,Births by borough�,Manhattan,3411,Number
+Jul 1 2023,Births by borough�,Manhattan,3345,Number
+Oct 1 2023,Births by borough�,Manhattan,3438,Number
+Jan 1 2024,Births by borough�,Manhattan,3384,Number
+Apr 1 2024,Births by borough�,Manhattan,3605,Number
+Jan 1 2022,Births by borough�,Queens,4788,Number
+Apr 1 2022,Births by borough�,Queens,5064,Number
+Jul 1 2022,Births by borough�,Queens,5266,Number
+Oct 1 2022,Births by borough�,Queens,5245,Number
+Jan 1 2023,Births by borough�,Queens,4775,Number
+Apr 1 2023,Births by borough�,Queens,5121,Number
+Jul 1 2023,Births by borough�,Queens,5291,Number
+Oct 1 2023,Births by borough�,Queens,5232,Number
+Jan 1 2024,Births by borough�,Queens,5025,Number
+Apr 1 2024,Births by borough�,Queens,4925,Number
+Jan 1 2022,Births by borough�,Staten Island,1154,Number
+Apr 1 2022,Births by borough�,Staten Island,1223,Number
+Jul 1 2022,Births by borough�,Staten Island,1249,Number
+Oct 1 2022,Births by borough�,Staten Island,1260,Number
+Jan 1 2023,Births by borough�,Staten Island,1162,Number
+Apr 1 2023,Births by borough�,Staten Island,1190,Number
+Jul 1 2023,Births by borough�,Staten Island,1225,Number
+Oct 1 2023,Births by borough�,Staten Island,1209,Number
+Jan 1 2024,Births by borough�,Staten Island,1168,Number
+Apr 1 2024,Births by borough�,Staten Island,1235,Number
+Jan 1 2022,Births by borough�,Non-NYC Residents,2975,Number
+Apr 1 2022,Births by borough�,Non-NYC Residents,3099,Number
+Jul 1 2022,Births by borough�,Non-NYC Residents,3262,Number
+Oct 1 2022,Births by borough�,Non-NYC Residents,3372,Number
+Jan 1 2023,Births by borough�,Non-NYC Residents,2984,Number
+Apr 1 2023,Births by borough�,Non-NYC Residents,3067,Number
+Jul 1 2023,Births by borough�,Non-NYC Residents,3335,Number
+Oct 1 2023,Births by borough�,Non-NYC Residents,3315,Number
+Jan 1 2024,Births by borough�,Non-NYC Residents,3122,Number
+Apr 1 2024,Births by borough�,Non-NYC Residents,3313,Number
 Jan 1 2022,Births by maternal race/ethnicity,White,8498,Number
 Apr 1 2022,Births by maternal race/ethnicity,White,9021,Number
 Jul 1 2022,Births by maternal race/ethnicity,White,9001,Number
@@ -149,6 +119,36 @@ Jul 1 2023,Births by maternal race/ethnicity,White,9124,Number
 Oct 1 2023,Births by maternal race/ethnicity,White,9258,Number
 Jan 1 2024,Births by maternal race/ethnicity,White,8301,Number
 Apr 1 2024,Births by maternal race/ethnicity,White,8444,Number
+Jan 1 2022,Births by maternal race/ethnicity,Black,4258,Number
+Apr 1 2022,Births by maternal race/ethnicity,Black,4134,Number
+Jul 1 2022,Births by maternal race/ethnicity,Black,4406,Number
+Oct 1 2022,Births by maternal race/ethnicity,Black,4509,Number
+Jan 1 2023,Births by maternal race/ethnicity,Black,3994,Number
+Apr 1 2023,Births by maternal race/ethnicity,Black,3964,Number
+Jul 1 2023,Births by maternal race/ethnicity,Black,4209,Number
+Oct 1 2023,Births by maternal race/ethnicity,Black,4235,Number
+Jan 1 2024,Births by maternal race/ethnicity,Black,3699,Number
+Apr 1 2024,Births by maternal race/ethnicity,Black,3660,Number
+Jan 1 2022,Births by maternal race/ethnicity,Asian/PI,3585,Number
+Apr 1 2022,Births by maternal race/ethnicity,Asian/PI,3790,Number
+Jul 1 2022,Births by maternal race/ethnicity,Asian/PI,3749,Number
+Oct 1 2022,Births by maternal race/ethnicity,Asian/PI,3888,Number
+Jan 1 2023,Births by maternal race/ethnicity,Asian/PI,3537,Number
+Apr 1 2023,Births by maternal race/ethnicity,Asian/PI,3505,Number
+Jul 1 2023,Births by maternal race/ethnicity,Asian/PI,3662,Number
+Oct 1 2023,Births by maternal race/ethnicity,Asian/PI,3663,Number
+Jan 1 2024,Births by maternal race/ethnicity,Asian/PI,3507,Number
+Apr 1 2024,Births by maternal race/ethnicity,Asian/PI,3561,Number
+Jan 1 2022,Births by maternal race/ethnicity,Hispanic,6905,Number
+Apr 1 2022,Births by maternal race/ethnicity,Hispanic,7001,Number
+Jul 1 2022,Births by maternal race/ethnicity,Hispanic,7735,Number
+Oct 1 2022,Births by maternal race/ethnicity,Hispanic,7623,Number
+Jan 1 2023,Births by maternal race/ethnicity,Hispanic,6900,Number
+Apr 1 2023,Births by maternal race/ethnicity,Hispanic,7366,Number
+Jul 1 2023,Births by maternal race/ethnicity,Hispanic,7632,Number
+Oct 1 2023,Births by maternal race/ethnicity,Hispanic,7683,Number
+Jan 1 2024,Births by maternal race/ethnicity,Hispanic,7426,Number
+Apr 1 2024,Births by maternal race/ethnicity,Hispanic,7377,Number
 Jan 1 2022,Births by maternal race/ethnicity,Other/Unknown,485,Number
 Apr 1 2022,Births by maternal race/ethnicity,Other/Unknown,511,Number
 Jul 1 2022,Births by maternal race/ethnicity,Other/Unknown,485,Number
@@ -159,16 +159,6 @@ Jul 1 2023,Births by maternal race/ethnicity,Other/Unknown,651,Number
 Oct 1 2023,Births by maternal race/ethnicity,Other/Unknown,660,Number
 Jan 1 2024,Births by maternal race/ethnicity,Other/Unknown,1581,Number
 Apr 1 2024,Births by maternal race/ethnicity,Other/Unknown,1514,Number
-Jan 1 2022,Births by method,Vaginal,64.28,Percent
-Apr 1 2022,Births by method,Vaginal,64.76,Percent
-Jul 1 2022,Births by method,Vaginal,64.54,Percent
-Oct 1 2022,Births by method,Vaginal,64.48,Percent
-Jan 1 2023,Births by method,Vaginal,64.42,Percent
-Apr 1 2023,Births by method,Vaginal,64.69,Percent
-Jul 1 2023,Births by method,Vaginal,64.44,Percent
-Oct 1 2023,Births by method,Vaginal,64.51,Percent
-Jan 1 2024,Births by method,Vaginal,64.72,Percent
-Apr 1 2024,Births by method,Vaginal,64.37,Percent
 Jan 1 2022,Births by method,Cesarean,32.80,Percent
 Apr 1 2022,Births by method,Cesarean,32.38,Percent
 Jul 1 2022,Births by method,Cesarean,32.74,Percent
@@ -179,6 +169,16 @@ Jul 1 2023,Births by method,Cesarean,32.73,Percent
 Oct 1 2023,Births by method,Cesarean,32.73,Percent
 Jan 1 2024,Births by method,Cesarean,32.47,Percent
 Apr 1 2024,Births by method,Cesarean,32.83,Percent
+Jan 1 2022,Births by method,Vaginal,64.28,Percent
+Apr 1 2022,Births by method,Vaginal,64.76,Percent
+Jul 1 2022,Births by method,Vaginal,64.54,Percent
+Oct 1 2022,Births by method,Vaginal,64.48,Percent
+Jan 1 2023,Births by method,Vaginal,64.42,Percent
+Apr 1 2023,Births by method,Vaginal,64.69,Percent
+Jul 1 2023,Births by method,Vaginal,64.44,Percent
+Oct 1 2023,Births by method,Vaginal,64.51,Percent
+Jan 1 2024,Births by method,Vaginal,64.72,Percent
+Apr 1 2024,Births by method,Vaginal,64.37,Percent
 Jan 1 2022,Births by method,VBAC,2.92,Percent
 Apr 1 2022,Births by method,VBAC,2.86,Percent
 Jul 1 2022,Births by method,VBAC,2.72,Percent
@@ -339,86 +339,56 @@ Jul 1 2023,IMR by age,Post-neonatal,1.47,"per 1,000 live births"
 Oct 1 2023,IMR by age,Post-neonatal,1.48,"per 1,000 live births"
 Jan 1 2024,IMR by age,Post-neonatal,1.48,"per 1,000 live births"
 Apr 1 2024,IMR by age,Post-neonatal,1.45,"per 1,000 live births"
-Jan 1 2022,IMR by borough,Bronx,5.00,"per 1,000 live births"
-Apr 1 2022,IMR by borough,Bronx,5.04,"per 1,000 live births"
-Jul 1 2022,IMR by borough,Bronx,5.15,"per 1,000 live births"
-Oct 1 2022,IMR by borough,Bronx,5.79,"per 1,000 live births"
-Jan 1 2023,IMR by borough,Bronx,5.94,"per 1,000 live births"
-Apr 1 2023,IMR by borough,Bronx,6.04,"per 1,000 live births"
-Jul 1 2023,IMR by borough,Bronx,5.86,"per 1,000 live births"
-Oct 1 2023,IMR by borough,Bronx,4.94,"per 1,000 live births"
-Jan 1 2024,IMR by borough,Bronx,4.60,"per 1,000 live births"
-Apr 1 2024,IMR by borough,Bronx,4.07,"per 1,000 live births"
-Jan 1 2022,IMR by borough,Brooklyn,3.03,"per 1,000 live births"
-Apr 1 2022,IMR by borough,Brooklyn,3.13,"per 1,000 live births"
-Jul 1 2022,IMR by borough,Brooklyn,3.42,"per 1,000 live births"
-Oct 1 2022,IMR by borough,Brooklyn,3.33,"per 1,000 live births"
-Jan 1 2023,IMR by borough,Brooklyn,3.46,"per 1,000 live births"
-Apr 1 2023,IMR by borough,Brooklyn,3.39,"per 1,000 live births"
-Jul 1 2023,IMR by borough,Brooklyn,3.11,"per 1,000 live births"
-Oct 1 2023,IMR by borough,Brooklyn,3.44,"per 1,000 live births"
-Jan 1 2024,IMR by borough,Brooklyn,3.34,"per 1,000 live births"
-Apr 1 2024,IMR by borough,Brooklyn,3.52,"per 1,000 live births"
-Jan 1 2022,IMR by borough,Manhattan,2.35,"per 1,000 live births"
-Apr 1 2022,IMR by borough,Manhattan,2.75,"per 1,000 live births"
-Jul 1 2022,IMR by borough,Manhattan,2.51,"per 1,000 live births"
-Oct 1 2022,IMR by borough,Manhattan,2.43,"per 1,000 live births"
-Jan 1 2023,IMR by borough,Manhattan,2.70,"per 1,000 live births"
-Apr 1 2023,IMR by borough,Manhattan,2.52,"per 1,000 live births"
-Jul 1 2023,IMR by borough,Manhattan,2.75,"per 1,000 live births"
-Oct 1 2023,IMR by borough,Manhattan,3.02,"per 1,000 live births"
-Jan 1 2024,IMR by borough,Manhattan,2.87,"per 1,000 live births"
-Apr 1 2024,IMR by borough,Manhattan,2.98,"per 1,000 live births"
-Jan 1 2022,IMR by borough,Queens,4.20,"per 1,000 live births"
-Apr 1 2022,IMR by borough,Queens,4.12,"per 1,000 live births"
-Jul 1 2022,IMR by borough,Queens,4.13,"per 1,000 live births"
-Oct 1 2022,IMR by borough,Queens,3.94,"per 1,000 live births"
-Jan 1 2023,IMR by borough,Queens,3.78,"per 1,000 live births"
-Apr 1 2023,IMR by borough,Queens,3.53,"per 1,000 live births"
-Jul 1 2023,IMR by borough,Queens,3.77,"per 1,000 live births"
-Oct 1 2023,IMR by borough,Queens,4.06,"per 1,000 live births"
-Jan 1 2024,IMR by borough,Queens,4.26,"per 1,000 live births"
-Apr 1 2024,IMR by borough,Queens,4.30,"per 1,000 live births"
-Jan 1 2022,IMR by borough,Staten Island,5.55,"per 1,000 live births"
-Apr 1 2022,IMR by borough,Staten Island,5.45,"per 1,000 live births"
-Jul 1 2022,IMR by borough,Staten Island,5.79,"per 1,000 live births"
-Oct 1 2022,IMR by borough,Staten Island,4.55,"per 1,000 live births"
-Jan 1 2023,IMR by borough,Staten Island,4.50,"per 1,000 live births"
-Apr 1 2023,IMR by borough,Staten Island,4.11,"per 1,000 live births"
-Jul 1 2023,IMR by borough,Staten Island,3.10,"per 1,000 live births"
-Oct 1 2023,IMR by borough,Staten Island,4.18,"per 1,000 live births"
-Jan 1 2024,IMR by borough,Staten Island,3.76,"per 1,000 live births"
-Apr 1 2024,IMR by borough,Staten Island,3.93,"per 1,000 live births"
-Jan 1 2022,IMR by race/ethnicity,Asian/PI,2.80,"per 1,000 live births"
-Apr 1 2022,IMR by race/ethnicity,Asian/PI,2.50,"per 1,000 live births"
-Jul 1 2022,IMR by race/ethnicity,Asian/PI,1.90,"per 1,000 live births"
-Oct 1 2022,IMR by race/ethnicity,Asian/PI,1.90,"per 1,000 live births"
-Jan 1 2023,IMR by race/ethnicity,Asian/PI,2.30,"per 1,000 live births"
-Apr 1 2023,IMR by race/ethnicity,Asian/PI,2.80,"per 1,000 live births"
-Jul 1 2023,IMR by race/ethnicity,Asian/PI,2.90,"per 1,000 live births"
-Oct 1 2023,IMR by race/ethnicity,Asian/PI,2.60,"per 1,000 live births"
-Jan 1 2024,IMR by race/ethnicity,Asian/PI,3.10,"per 1,000 live births"
-Apr 1 2024,IMR by race/ethnicity,Asian/PI,2.80,"per 1,000 live births"
-Jan 1 2022,IMR by race/ethnicity,Black,8.10,"per 1,000 live births"
-Apr 1 2022,IMR by race/ethnicity,Black,7.80,"per 1,000 live births"
-Jul 1 2022,IMR by race/ethnicity,Black,8.30,"per 1,000 live births"
-Oct 1 2022,IMR by race/ethnicity,Black,7.60,"per 1,000 live births"
-Jan 1 2023,IMR by race/ethnicity,Black,7.70,"per 1,000 live births"
-Apr 1 2023,IMR by race/ethnicity,Black,7.80,"per 1,000 live births"
-Jul 1 2023,IMR by race/ethnicity,Black,7.80,"per 1,000 live births"
-Oct 1 2023,IMR by race/ethnicity,Black,8.00,"per 1,000 live births"
-Jan 1 2024,IMR by race/ethnicity,Black,7.60,"per 1,000 live births"
-Apr 1 2024,IMR by race/ethnicity,Black,7.50,"per 1,000 live births"
-Jan 1 2022,IMR by race/ethnicity,Hispanic,4.10,"per 1,000 live births"
-Apr 1 2022,IMR by race/ethnicity,Hispanic,4.50,"per 1,000 live births"
-Jul 1 2022,IMR by race/ethnicity,Hispanic,4.90,"per 1,000 live births"
-Oct 1 2022,IMR by race/ethnicity,Hispanic,4.90,"per 1,000 live births"
-Jan 1 2023,IMR by race/ethnicity,Hispanic,4.50,"per 1,000 live births"
-Apr 1 2023,IMR by race/ethnicity,Hispanic,4.50,"per 1,000 live births"
-Jul 1 2023,IMR by race/ethnicity,Hispanic,4.20,"per 1,000 live births"
-Oct 1 2023,IMR by race/ethnicity,Hispanic,4.60,"per 1,000 live births"
-Jan 1 2024,IMR by race/ethnicity,Hispanic,4.70,"per 1,000 live births"
-Apr 1 2024,IMR by race/ethnicity,Hispanic,4.40,"per 1,000 live births"
+Jan 1 2022,IMR by boro,Bronx,5.00,"per 1,000 live births"
+Apr 1 2022,IMR by boro,Bronx,5.04,"per 1,000 live births"
+Jul 1 2022,IMR by boro,Bronx,5.15,"per 1,000 live births"
+Oct 1 2022,IMR by boro,Bronx,5.79,"per 1,000 live births"
+Jan 1 2023,IMR by boro,Bronx,5.94,"per 1,000 live births"
+Apr 1 2023,IMR by boro,Bronx,6.04,"per 1,000 live births"
+Jul 1 2023,IMR by boro,Bronx,5.86,"per 1,000 live births"
+Oct 1 2023,IMR by boro,Bronx,4.94,"per 1,000 live births"
+Jan 1 2024,IMR by boro,Bronx,4.60,"per 1,000 live births"
+Apr 1 2024,IMR by boro,Bronx,4.07,"per 1,000 live births"
+Jan 1 2022,IMR by boro,Brooklyn,3.03,"per 1,000 live births"
+Apr 1 2022,IMR by boro,Brooklyn,3.13,"per 1,000 live births"
+Jul 1 2022,IMR by boro,Brooklyn,3.42,"per 1,000 live births"
+Oct 1 2022,IMR by boro,Brooklyn,3.33,"per 1,000 live births"
+Jan 1 2023,IMR by boro,Brooklyn,3.46,"per 1,000 live births"
+Apr 1 2023,IMR by boro,Brooklyn,3.39,"per 1,000 live births"
+Jul 1 2023,IMR by boro,Brooklyn,3.11,"per 1,000 live births"
+Oct 1 2023,IMR by boro,Brooklyn,3.44,"per 1,000 live births"
+Jan 1 2024,IMR by boro,Brooklyn,3.34,"per 1,000 live births"
+Apr 1 2024,IMR by boro,Brooklyn,3.52,"per 1,000 live births"
+Jan 1 2022,IMR by boro,Manhattan,2.35,"per 1,000 live births"
+Apr 1 2022,IMR by boro,Manhattan,2.75,"per 1,000 live births"
+Jul 1 2022,IMR by boro,Manhattan,2.51,"per 1,000 live births"
+Oct 1 2022,IMR by boro,Manhattan,2.43,"per 1,000 live births"
+Jan 1 2023,IMR by boro,Manhattan,2.70,"per 1,000 live births"
+Apr 1 2023,IMR by boro,Manhattan,2.52,"per 1,000 live births"
+Jul 1 2023,IMR by boro,Manhattan,2.75,"per 1,000 live births"
+Oct 1 2023,IMR by boro,Manhattan,3.02,"per 1,000 live births"
+Jan 1 2024,IMR by boro,Manhattan,2.87,"per 1,000 live births"
+Apr 1 2024,IMR by boro,Manhattan,2.98,"per 1,000 live births"
+Jan 1 2022,IMR by boro,Queens,4.20,"per 1,000 live births"
+Apr 1 2022,IMR by boro,Queens,4.12,"per 1,000 live births"
+Jul 1 2022,IMR by boro,Queens,4.13,"per 1,000 live births"
+Oct 1 2022,IMR by boro,Queens,3.94,"per 1,000 live births"
+Jan 1 2023,IMR by boro,Queens,3.78,"per 1,000 live births"
+Apr 1 2023,IMR by boro,Queens,3.53,"per 1,000 live births"
+Jul 1 2023,IMR by boro,Queens,3.77,"per 1,000 live births"
+Oct 1 2023,IMR by boro,Queens,4.06,"per 1,000 live births"
+Jan 1 2024,IMR by boro,Queens,4.26,"per 1,000 live births"
+Apr 1 2024,IMR by boro,Queens,4.30,"per 1,000 live births"
+Jan 1 2022,IMR by boro,Staten Island,5.55,"per 1,000 live births"
+Apr 1 2022,IMR by boro,Staten Island,5.45,"per 1,000 live births"
+Jul 1 2022,IMR by boro,Staten Island,5.79,"per 1,000 live births"
+Oct 1 2022,IMR by boro,Staten Island,4.55,"per 1,000 live births"
+Jan 1 2023,IMR by boro,Staten Island,4.50,"per 1,000 live births"
+Apr 1 2023,IMR by boro,Staten Island,4.11,"per 1,000 live births"
+Jul 1 2023,IMR by boro,Staten Island,3.10,"per 1,000 live births"
+Oct 1 2023,IMR by boro,Staten Island,4.18,"per 1,000 live births"
+Jan 1 2024,IMR by boro,Staten Island,3.76,"per 1,000 live births"
+Apr 1 2024,IMR by boro,Staten Island,3.93,"per 1,000 live births"
 Jan 1 2022,IMR by race/ethnicity,White,2.00,"per 1,000 live births"
 Apr 1 2022,IMR by race/ethnicity,White,2.20,"per 1,000 live births"
 Jul 1 2022,IMR by race/ethnicity,White,2.30,"per 1,000 live births"
@@ -429,6 +399,46 @@ Jul 1 2023,IMR by race/ethnicity,White,2.10,"per 1,000 live births"
 Oct 1 2023,IMR by race/ethnicity,White,2.00,"per 1,000 live births"
 Jan 1 2024,IMR by race/ethnicity,White,2.00,"per 1,000 live births"
 Apr 1 2024,IMR by race/ethnicity,White,2.40,"per 1,000 live births"
+Jan 1 2022,IMR by race/ethnicity,Black,8.10,"per 1,000 live births"
+Apr 1 2022,IMR by race/ethnicity,Black,7.80,"per 1,000 live births"
+Jul 1 2022,IMR by race/ethnicity,Black,8.30,"per 1,000 live births"
+Oct 1 2022,IMR by race/ethnicity,Black,7.60,"per 1,000 live births"
+Jan 1 2023,IMR by race/ethnicity,Black,7.70,"per 1,000 live births"
+Apr 1 2023,IMR by race/ethnicity,Black,7.80,"per 1,000 live births"
+Jul 1 2023,IMR by race/ethnicity,Black,7.80,"per 1,000 live births"
+Oct 1 2023,IMR by race/ethnicity,Black,8.00,"per 1,000 live births"
+Jan 1 2024,IMR by race/ethnicity,Black,7.60,"per 1,000 live births"
+Apr 1 2024,IMR by race/ethnicity,Black,7.50,"per 1,000 live births"
+Jan 1 2022,IMR by race/ethnicity,Asian/PI,2.80,"per 1,000 live births"
+Apr 1 2022,IMR by race/ethnicity,Asian/PI,2.50,"per 1,000 live births"
+Jul 1 2022,IMR by race/ethnicity,Asian/PI,1.90,"per 1,000 live births"
+Oct 1 2022,IMR by race/ethnicity,Asian/PI,1.90,"per 1,000 live births"
+Jan 1 2023,IMR by race/ethnicity,Asian/PI,2.30,"per 1,000 live births"
+Apr 1 2023,IMR by race/ethnicity,Asian/PI,2.80,"per 1,000 live births"
+Jul 1 2023,IMR by race/ethnicity,Asian/PI,2.90,"per 1,000 live births"
+Oct 1 2023,IMR by race/ethnicity,Asian/PI,2.60,"per 1,000 live births"
+Jan 1 2024,IMR by race/ethnicity,Asian/PI,3.10,"per 1,000 live births"
+Apr 1 2024,IMR by race/ethnicity,Asian/PI,2.80,"per 1,000 live births"
+Jan 1 2022,IMR by race/ethnicity,Hispanic,4.10,"per 1,000 live births"
+Apr 1 2022,IMR by race/ethnicity,Hispanic,4.50,"per 1,000 live births"
+Jul 1 2022,IMR by race/ethnicity,Hispanic,4.90,"per 1,000 live births"
+Oct 1 2022,IMR by race/ethnicity,Hispanic,4.90,"per 1,000 live births"
+Jan 1 2023,IMR by race/ethnicity,Hispanic,4.50,"per 1,000 live births"
+Apr 1 2023,IMR by race/ethnicity,Hispanic,4.50,"per 1,000 live births"
+Jul 1 2023,IMR by race/ethnicity,Hispanic,4.20,"per 1,000 live births"
+Oct 1 2023,IMR by race/ethnicity,Hispanic,4.60,"per 1,000 live births"
+Jan 1 2024,IMR by race/ethnicity,Hispanic,4.70,"per 1,000 live births"
+Apr 1 2024,IMR by race/ethnicity,Hispanic,4.40,"per 1,000 live births"
+Jan 1 2022,IMR by race/ethnicity,Other/Unknown,10.10,"per 1,000 live births"
+Apr 1 2022,IMR by race/ethnicity,Other/Unknown,11.80,"per 1,000 live births"
+Jul 1 2022,IMR by race/ethnicity,Other/Unknown,12.20,"per 1,000 live births"
+Oct 1 2022,IMR by race/ethnicity,Other/Unknown,12.80,"per 1,000 live births"
+Jan 1 2023,IMR by race/ethnicity,Other/Unknown,15.20,"per 1,000 live births"
+Apr 1 2023,IMR by race/ethnicity,Other/Unknown,14.70,"per 1,000 live births"
+Jul 1 2023,IMR by race/ethnicity,Other/Unknown,15.30,"per 1,000 live births"
+Oct 1 2023,IMR by race/ethnicity,Other/Unknown,15.10,"per 1,000 live births"
+Jan 1 2024,IMR by race/ethnicity,Other/Unknown,12.00,"per 1,000 live births"
+Apr 1 2024,IMR by race/ethnicity,Other/Unknown,8.90,"per 1,000 live births"
 Jan 1 2022,Total deaths,Total,17653,Number
 Apr 1 2022,Total deaths,Total,13252,Number
 Jul 1 2022,Total deaths,Total,14001,Number
@@ -618,6 +628,7 @@ Apr 1 2023,Deaths by cause,Drug-related,812,Number
 Jul 1 2023,Deaths by cause,Drug-related,809,Number
 Oct 1 2023,Deaths by cause,Drug-related,746,Number
 Jan 1 2024,Deaths by cause,Drug-related,626,Number
+Apr 1 2024,Deaths by cause,Drug-related,466,Number
 Jan 1 2022,Deaths by cause,Homicide,100,Number
 Apr 1 2022,Deaths by cause,Homicide,111,Number
 Jul 1 2022,Deaths by cause,Homicide,136,Number
@@ -678,36 +689,6 @@ Jul 1 2023,Deaths by cause,Suicide,151,Number
 Oct 1 2023,Deaths by cause,Suicide,130,Number
 Jan 1 2024,Deaths by cause,Suicide,122,Number
 Apr 1 2024,Deaths by cause,Suicide,123,Number
-Jan 1 2022,Deaths by race/ethnicity,Asian/PI,1747,Number
-Apr 1 2022,Deaths by race/ethnicity,Asian/PI,1288,Number
-Jul 1 2022,Deaths by race/ethnicity,Asian/PI,1372,Number
-Oct 1 2022,Deaths by race/ethnicity,Asian/PI,1499,Number
-Jan 1 2023,Deaths by race/ethnicity,Asian/PI,1258,Number
-Apr 1 2023,Deaths by race/ethnicity,Asian/PI,1149,Number
-Jul 1 2023,Deaths by race/ethnicity,Asian/PI,1161,Number
-Oct 1 2023,Deaths by race/ethnicity,Asian/PI,1449,Number
-Jan 1 2024,Deaths by race/ethnicity,Asian/PI,1352,Number
-Apr 1 2024,Deaths by race/ethnicity,Asian/PI,1251,Number
-Jan 1 2022,Deaths by race/ethnicity,Black,4773,Number
-Apr 1 2022,Deaths by race/ethnicity,Black,3570,Number
-Jul 1 2022,Deaths by race/ethnicity,Black,3908,Number
-Oct 1 2022,Deaths by race/ethnicity,Black,4285,Number
-Jan 1 2023,Deaths by race/ethnicity,Black,3722,Number
-Apr 1 2023,Deaths by race/ethnicity,Black,3484,Number
-Jul 1 2023,Deaths by race/ethnicity,Black,3461,Number
-Oct 1 2023,Deaths by race/ethnicity,Black,3865,Number
-Jan 1 2024,Deaths by race/ethnicity,Black,3817,Number
-Apr 1 2024,Deaths by race/ethnicity,Black,3494,Number
-Jan 1 2022,Deaths by race/ethnicity,Hispanic,3898,Number
-Apr 1 2022,Deaths by race/ethnicity,Hispanic,2892,Number
-Jul 1 2022,Deaths by race/ethnicity,Hispanic,3108,Number
-Oct 1 2022,Deaths by race/ethnicity,Hispanic,3407,Number
-Jan 1 2023,Deaths by race/ethnicity,Hispanic,3063,Number
-Apr 1 2023,Deaths by race/ethnicity,Hispanic,2868,Number
-Jul 1 2023,Deaths by race/ethnicity,Hispanic,2937,Number
-Oct 1 2023,Deaths by race/ethnicity,Hispanic,3303,Number
-Jan 1 2024,Deaths by race/ethnicity,Hispanic,3296,Number
-Apr 1 2024,Deaths by race/ethnicity,Hispanic,2909,Number
 Jan 1 2022,Deaths by race/ethnicity,White,6756,Number
 Apr 1 2022,Deaths by race/ethnicity,White,5167,Number
 Jul 1 2022,Deaths by race/ethnicity,White,5207,Number
@@ -718,6 +699,36 @@ Jul 1 2023,Deaths by race/ethnicity,White,4866,Number
 Oct 1 2023,Deaths by race/ethnicity,White,5357,Number
 Jan 1 2024,Deaths by race/ethnicity,White,5582,Number
 Apr 1 2024,Deaths by race/ethnicity,White,4634,Number
+Jan 1 2022,Deaths by race/ethnicity,Black,4773,Number
+Apr 1 2022,Deaths by race/ethnicity,Black,3570,Number
+Jul 1 2022,Deaths by race/ethnicity,Black,3908,Number
+Oct 1 2022,Deaths by race/ethnicity,Black,4285,Number
+Jan 1 2023,Deaths by race/ethnicity,Black,3722,Number
+Apr 1 2023,Deaths by race/ethnicity,Black,3484,Number
+Jul 1 2023,Deaths by race/ethnicity,Black,3461,Number
+Oct 1 2023,Deaths by race/ethnicity,Black,3865,Number
+Jan 1 2024,Deaths by race/ethnicity,Black,3817,Number
+Apr 1 2024,Deaths by race/ethnicity,Black,3494,Number
+Jan 1 2022,Deaths by race/ethnicity,Asian/PI,1747,Number
+Apr 1 2022,Deaths by race/ethnicity,Asian/PI,1288,Number
+Jul 1 2022,Deaths by race/ethnicity,Asian/PI,1372,Number
+Oct 1 2022,Deaths by race/ethnicity,Asian/PI,1499,Number
+Jan 1 2023,Deaths by race/ethnicity,Asian/PI,1258,Number
+Apr 1 2023,Deaths by race/ethnicity,Asian/PI,1149,Number
+Jul 1 2023,Deaths by race/ethnicity,Asian/PI,1161,Number
+Oct 1 2023,Deaths by race/ethnicity,Asian/PI,1449,Number
+Jan 1 2024,Deaths by race/ethnicity,Asian/PI,1352,Number
+Apr 1 2024,Deaths by race/ethnicity,Asian/PI,1251,Number
+Jan 1 2022,Deaths by race/ethnicity,Hispanic,3898,Number
+Apr 1 2022,Deaths by race/ethnicity,Hispanic,2892,Number
+Jul 1 2022,Deaths by race/ethnicity,Hispanic,3108,Number
+Oct 1 2022,Deaths by race/ethnicity,Hispanic,3407,Number
+Jan 1 2023,Deaths by race/ethnicity,Hispanic,3063,Number
+Apr 1 2023,Deaths by race/ethnicity,Hispanic,2868,Number
+Jul 1 2023,Deaths by race/ethnicity,Hispanic,2937,Number
+Oct 1 2023,Deaths by race/ethnicity,Hispanic,3303,Number
+Jan 1 2024,Deaths by race/ethnicity,Hispanic,3296,Number
+Apr 1 2024,Deaths by race/ethnicity,Hispanic,2909,Number
 Jan 1 2022,Deaths by race/ethnicity,Other/Unknown,479,Number
 Apr 1 2022,Deaths by race/ethnicity,Other/Unknown,335,Number
 Jul 1 2022,Deaths by race/ethnicity,Other/Unknown,406,Number
