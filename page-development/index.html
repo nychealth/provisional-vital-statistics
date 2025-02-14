@@ -23,23 +23,18 @@
 
       <h1>Provisional Birth and Death Data</h1>
       <p>The NYC Health Department collects data on every birth and death that happens in New York City. These data, called vital statistics, provide a fundamental understanding of birth trends, death trends, and population health in New York City.</p>
-      <p>The data on this page are <strong>provisional data</strong>, which means that the numbers may change as the Health Department continues to process the data. Publishing provisional data allows the Health Department to share data faster, beforee it is finalized. 
+      <p>The data on this page are <strong>provisional data</strong>, which means that the numbers may change as the Health Department continues to process the data. Publishing provisional data allows the Health Department to share data faster, before it is finalized. 
       <p>Final data are available in the Annual Summary of <a href="https://www.nyc.gov/site/doh/data/data-sets/vital-statistics-data.page">Vital Statistics</a> and  on<a href="https://a816-health.nyc.gov/hdi/epiquery/">EpiQuery</a>.</p>  
       
 
 
-      <p>Go to:</p>
-      <ul>
-        <li><a href="#birthbydemog">Births by demographics</a></li>
-        <li><a href="#birthchar">Birth characteristics</a></li>
-        <li><a href="#carechar">Care characteristics</a></li>
-        <li><a href="#death-section">Deaths</a></li>
-        <li><a href="#infantmort">Infant mortality</a></li>
-      </ul>
+      <p>Go to:<br><a href="#birthbydemog">Births by Demographics</a> | <a href="#birthchar">Birth Characteristics</a> | <a href="#carechar">Care Characteristics</a> | <a href="#death-section">Deaths</a> | <a href="#infantmort">Infant Mortality</a>
+      </p>
+
 
       <h2 class="spacer">Birth Data</h2>
       <p>Data on births come from birth certificates. The three birth sections below include quarterly provisional data on demographics, birth characteristics, and care characteristics.</p>
-      <h3 id="birthbydemog">Births by demographics</h3>
+      <h3 id="birthbydemog">Births by Demographics</h3>
 
       <div class="choice" aria-hidden="true">
         <a id="" onclick="drawChart('#bbd','Total births','Births',false)" tabindex="0" class="togglebutton byDemog highlight">Total</a>
@@ -89,7 +84,7 @@
       </div>
 
 
-      <h3 class="spacer" id="birthchar">Birth characteristics</h3>
+      <h3 class="spacer" id="birthchar">Birth Characteristics</h3>
       <div class="choice" aria-hidden="true">
         <a id="" onclick="drawChart('#bbc','Births by method','Percent of births',true)" tabindex="0" class="togglebutton birthChar highlight">Method</a>
         <a id="" onclick="drawChart('#bbc','Births by term','Percent of births',true,'Term')" tabindex="0" class="togglebutton birthChar">Term</a>
@@ -139,7 +134,7 @@
 
 
 
-      <h3 class="spacer" id="carechar">Care characteristics</h3>
+      <h3 class="spacer" id="carechar">Care Characteristics</h3>
       <p>These indicators of health and care provided during pregnancy or after birth are key to understanding birth outcomes. Knowing more about predictors of poor birth outcomes that may lead to infant death can help providers and families advocate for their patients.</p>
       <div class="choice" aria-hidden="true">
         <a id="" onclick="drawChart('#bcc','Pre-pregnancy diabetes','Mothers with pre-pregnancy diabetes',false)" tabindex="0" class="togglebutton care highlight">Pre-pregnancy diabetes</a>
@@ -262,7 +257,7 @@
       </div>
     </div>
 
-    <h3 id="infantmort">Infant mortality rates</h3>
+    <h3 id="infantmort">Infant Mortality Rates</h3>
     <div class="choice" aria-hidden="true">
       <a id="" onclick="drawChart('#dim','Total IMR','Infant mortality rate',false)" tabindex="0" class="togglebutton infantMort highlight">Overall</a>
       <a id="" onclick="drawChart('#dim','IMR by age','Infant mortality rate',true,'Age')" tabindex="0" class="togglebutton infantMort">Age</a>
