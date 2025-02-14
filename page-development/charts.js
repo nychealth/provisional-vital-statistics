@@ -188,6 +188,7 @@ var partialConfig = {
     },
     "transform": [
       { "filter": `datum.metric === '${metric}'` },
+
       {
         "calculate": "datum.display === 'Percent' ? '%' : (datum.display === 'Number' ? '' : datum.display)",
         "as": "formattedDisplay"
@@ -228,7 +229,8 @@ var partialConfig = {
               {"op": "min", "field": "date", "as": "date"}
             ],
             "groupby": ["submetric"]
-          }
+          },
+          { "filter": "datum.value !== null && datum.value !== '' && datum.value !== 'null'" }
         ],
         "encoding": {
           "x": {"field": "date"},
@@ -271,6 +273,7 @@ var partialConfig = {
           "oneOf": selectedCauses
         }
       },
+      { "filter": "datum.value !== null && datum.value !== '' && datum.value !== 'null'" },
       {
         "calculate": "datum.display === 'Percent' ? ' %' : (datum.display === 'Number' ? '' : datum.display)",
         "as": "formattedDisplay"
@@ -310,7 +313,7 @@ var partialConfig = {
               {"op": "min", "field": "date", "as": "date"}
             ],
             "groupby": ["submetric"]
-          }
+          },
         ],
         "encoding": {
           "x": {"field": "date"},
