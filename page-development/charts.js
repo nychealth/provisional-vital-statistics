@@ -18,7 +18,7 @@ function sortSubmetrics(data) {
 }
 
 // Declare data source
-let dataSource = '../data.csv'
+let dataSource = 'https://raw.githubusercontent.com/nychealth/provisional-vital-statistics/refs/heads/main/data.csv'
 
 // MAIN CHART-DRAWING FUNCTION
 async function drawChart(destination, metric, label, multi, schemaFlag = "default", selectedCauses = []) {
@@ -43,7 +43,7 @@ async function drawChart(destination, metric, label, multi, schemaFlag = "defaul
   let groups = [];
 
   let data;
-  await fetch('../data.csv')
+  await fetch(dataSource)
     .then(response => response.text())
     .then(csvText => {
       data = d3.csvParse(csvText).filter(d => d.metric === metric);
