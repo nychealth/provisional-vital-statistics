@@ -24,7 +24,7 @@
       <h1>Provisional Birth and Death Data</h1>
       <p>The NYC Health Department collects data on every birth and death that happens in New York City. These data, called vital statistics, provide a fundamental understanding of birth trends, death trends, and population health in New York City.</p>
       <p>The data on this page are <strong>provisional data</strong>, which means that the numbers may change as the Health Department continues to process the data. Publishing provisional data allows the Health Department to share data faster, before it is finalized. 
-      <p>Final data are available in the Annual Summary of <a href="https://www.nyc.gov/site/doh/data/data-sets/vital-statistics-data.page">Vital Statistics</a> and  on<a href="https://a816-health.nyc.gov/hdi/epiquery/">EpiQuery</a>.</p>  
+      <p>Final data are available in the Annual Summary of <a href="https://www.nyc.gov/site/doh/data/data-sets/vital-statistics-data.page">Vital Statistics</a> and  on <a href="https://a816-health.nyc.gov/hdi/epiquery/">EpiQuery</a>.</p>  
       
 
 
@@ -68,7 +68,8 @@
         <div id="births-by-borough" class="bbd-copy">
           <h3 class="sr-only">Births by borough</h3>
 
-          <p>These counts of births by borough show how many births happened for residents of each borough. Counts (the number of events) don't take into account the population size of each group, so don't allow for fair comparisons between groups: the borough with the most births may not have the highest birth rate. Fluctuations in counts do not necessarily indicate a meaningful trend.</p>
+          <p>These counts (the number of events) of births by borough age show how many births happened for residents of each borough. Counts should not be used to make comparisons between groups, since the population sizes are not the same. For example, the group with the most births may not have the highest birth rate. Fluctuations in counts do not necessarily show a meaningful trend</p>
+
           <div class="sr-only">
             <div style="min-height:572px" id="datawrapper-vis-psdoC"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/psdoC/embed.js" charset="utf-8" data-target="#datawrapper-vis-psdoC"></script><noscript><img src="https://datawrapper.dwcdn.net/psdoC/full.png" alt="" /></noscript></div>
           </div>
@@ -76,7 +77,8 @@
 
         <div id="births-by-maternal-race/ethnicity" class="bbd-copy">
           <h3 class="sr-only">Births by maternal race/ethnicity</h3>
-          <p>These counts of births by maternal race/ethnicity show how many births happened in each racial/ethnic group. Counts (the number of events) don't take into account the population size of each group, so don't allow for fair comparisons between groups: the group with the most births may not have the highest birth rate. Fluctuations in counts do not necessarily indicate a meaningful trend.</p>
+          <p>These counts (the number of events) of births by borough age show how many births happened in each racial/ethnic group. Counts should not be used to make comparisons between groups, since the population sizes are not the same. For example, the group with the most births may not have the highest birth rate. Fluctuations in counts do not necessarily show a meaningful trend</p>
+
           <div class="sr-only">
             <div style="min-height:554px" id="datawrapper-vis-WbY8e"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/WbY8e/embed.js" charset="utf-8" data-target="#datawrapper-vis-WbY8e"></script><noscript><img src="https://datawrapper.dwcdn.net/WbY8e/full.png" alt="" /></noscript></div>
           </div>
@@ -135,7 +137,7 @@
 
 
       <h3 class="spacer" id="carechar">Care Characteristics</h3>
-      <p>These indicators of health and care provided during pregnancy or after birth are key to understanding birth outcomes. Knowing more about predictors of poor birth outcomes that may lead to infant death can help providers and families advocate for their patients.</p>
+      <p>These indicators of health and care provided during pregnancy or after birth are key to understanding birth outcomes.</p>
       <div class="choice" aria-hidden="true">
         <a id="" onclick="drawChart('#bcc','Pre-pregnancy diabetes','Mothers with pre-pregnancy diabetes',false)" tabindex="0" class="togglebutton care highlight">Pre-pregnancy diabetes</a>
         <a id="" onclick="drawChart('#bcc','Pre-pregnancy hypertension','Mothers with pre-pregnancy hypertension',false)" tabindex="0" class="togglebutton care">Pre-pregnancy hypertension</a>
@@ -158,7 +160,7 @@
         </div>
     
           <div id="pre-pregnancy-hypertension" class="bcc-copy">
-            <h3 class="sr-only">Pre-pregnancy hpyertension</h3>
+            <h3 class="sr-only">Pre-pregnancy hypertension</h3>
 
             <p>Usually, under 3% of mothers have pre-pregnancy hypertension, which can be a risk factor for poor birth outcomes.</p>
             <div class="sr-only">
@@ -169,7 +171,7 @@
           <div id="prenatal-care-in-first-trimester" class="bcc-copy">
             <h3 class="sr-only">Prenatal care in the first trimester</h3>
 
-            <p>About 70% of mothers receive prenatal care starting in the first trimester. This can be a protective factor against adverse birth outcomes. </p>
+            <p>About 70% of mothers receive prenatal care starting in the first trimester. This can be a protective factor against poor birth outcomes. </p>
             <div class="sr-only">
               <div style="min-height:394px" id="datawrapper-vis-pvVhj"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/pvVhj/embed.js" charset="utf-8" data-target="#datawrapper-vis-pvVhj"></script><noscript><img src="https://datawrapper.dwcdn.net/pvVhj/full.png" alt="" /></noscript></div>
             </div>
@@ -191,7 +193,7 @@
       <hr class="spacer">
 
       <h2 class="spacer">Death Data</h2>
-      <p>Data on deaths come from death certificates. The Health Department tracks information about all deaths that occur in New York City, even among people who are not residents of NYC. The two death sections below include quarterly provisional data on infant mortality and deaths among all ages, with details on demographics and causes of death.</p>
+      <p>Data on deaths come from death certificates. The Health Department collects information about all deaths that occur in New York City, even among people who are not residents of NYC. The two death sections below include quarterly provisional data on infant mortality and deaths among all ages, with details on demographics and causes of death.</p>
 
       <h3 class="spacer" id="death-section">Deaths</h3>
       <div class="choice" aria-hidden="true">
@@ -223,7 +225,9 @@
       <div id="deaths-by-age" class="ddc-copy">
         <h3 class="sr-only">Deaths by age</h3>
 
-        <p>Counts (the number of events) don't take into account the population size of each group, so don't allow for fair comparisons between groups: the group with the most deaths may not have the highest death rate. Fluctuations in counts do not necessarily indicate a meaningful trend.</p>
+        <p>Counts should not be used to make comparisons between groups, since the population sizes are not the same. For example, the group with the most deaths may not have the highest death rate. Fluctuations in counts do not necessarily show a meaningful trend.</p> 
+
+
         <div class="sr-only">
           <div style="min-height:382px" id="datawrapper-vis-HwHyB"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/HwHyB/embed.js" charset="utf-8" data-target="#datawrapper-vis-HwHyB"></script><noscript><img src="https://datawrapper.dwcdn.net/HwHyB/full.png" alt="" /></noscript></div>
         </div>
@@ -232,7 +236,7 @@
       <div id="deaths-by-sex" class="ddc-copy">
         <h3 class="sr-only">Deaths by sex</h3>
 
-        <p>Counts (the number of events) don't take into account the population size of each group, so don't allow for fair comparisons between groups: the group with the most deaths may not have the highest death rate. Fluctuations in counts do not necessarily indicate a meaningful trend. </p>
+        <p>Counts should not be used to make comparisons between groups, since the population sizes are not the same. For example, the group with the most deaths may not have the highest death rate. Fluctuations in counts do not necessarily show a meaningful trend.</p> 
         <div class="sr-only">
           <div style="min-height:286px" id="datawrapper-vis-9zBNA"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/9zBNA/embed.js" charset="utf-8" data-target="#datawrapper-vis-9zBNA"></script><noscript><img src="https://datawrapper.dwcdn.net/9zBNA/full.png" alt="" /></noscript></div>
         </div>
@@ -241,7 +245,7 @@
       <div id="deaths-by-race/ethnicity" class="ddc-copy">
         <h3 class="sr-only">Deaths by race/ethnicity</h3>
 
-        <p>Counts (the number of events) don't take into account the population size of each group, so don't allow for fair comparisons between groups: the group with the most deaths may not have the highest death rate. Fluctuations in counts do not necessarily indicate a meaningful trend. </p>
+        <p>Counts should not be used to make comparisons between groups, since the population sizes are not the same. For example, the group with the most deaths may not have the highest death rate. Fluctuations in counts do not necessarily show a meaningful trend.</p> 
         <div class="sr-only">
           <div style="min-height:382px" id="datawrapper-vis-tbeue"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/tbeue/embed.js" charset="utf-8" data-target="#datawrapper-vis-tbeue"></script><noscript><img src="https://datawrapper.dwcdn.net/tbeue/full.png" alt="" /></noscript></div>
         </div>
@@ -258,6 +262,7 @@
     </div>
 
     <h3 id="infantmort">Infant Mortality Rates</h3>
+    <p>Infant mortality rates differ based on the age of the infant.</p>
     <div class="choice" aria-hidden="true">
       <a id="" onclick="drawChart('#dim','Total IMR','Infant mortality rate',false)" tabindex="0" class="togglebutton infantMort highlight">Overall</a>
       <a id="" onclick="drawChart('#dim','IMR by age','Infant mortality rate',true,'Age')" tabindex="0" class="togglebutton infantMort">Age</a>
@@ -289,7 +294,7 @@
         </div>
       </div>
 
-      <div id="imr-by-boro" class="dim-copy">
+      <div id="imr-by-borough" class="dim-copy">
         <h3 class="sr-only">Infant mortality by borough</h3>
 
         <p>Due to the small number of infant deaths, rates can fluctuate. All infant mortality data are shown as four-quarter rolling averages, meaning one quarter's data is averaged with the data from the three previous quarters.</p>
@@ -324,7 +329,7 @@
         </p>
 
 
-      <p>Explore finalized birth and death data on <a href="https://a816-health.nyc.gov/hdi/epiquery/">Epiquery</a>:
+      <p>Explore finalized birth and death data on <a href="https://a816-health.nyc.gov/hdi/epiquery/">EpiQuery</a>:
         <ul>
           <li><a href="https://a816-health.nyc.gov/hdi/epiquery/visualizations?PageType=ps&PopulationSource=Birth">Births</a></li>
           <li><a href="https://a816-health.nyc.gov/hdi/epiquery/visualizations?PageType=ps&PopulationSource=IMR">Infant mortality</a></li>
@@ -334,13 +339,13 @@
       
       <h2 class="spacer">More Information</h2>
       <ul>
-        <li>Vital Statistics Offerings</li>
-        <li><a href="https://www.nyc.gov/site/doh/data/data-sets/vital-statistics-data-archive.page">and Death Historical Data</a></li>
+        <li><a href="https://www.nyc.gov/site/doh/data/data-sets/vital-statistics-data.page">Vital Statistics Data</a></li>
+        <li><a href="https://www.nyc.gov/site/doh/data/data-sets/vital-statistics-data-archive.page">Birth and Death Historical Data</a></li>
         <li><a href="https://www.nyc.gov/site/doh/data/data-sets/cause-of-death-quality.page">Cause of Death Quality</a></li>
         <li><a href="https://www.nyc.gov/site/doh/data/data-sets/training-and-resources.page">Trainings and resources</a></li>
         <li><a href="https://www.nyc.gov/site/doh/about/about-doh/healthynyc.page">HealthyNYC: New York City's Campaign for Healtheir, Longer Lives</a>
           <ul>
-            <li><strong>Note:</strong> Recent years of data reported for HealthyNYC are provisional in nature, but they will not exactly match death counts presented here. HealthyNYC data are specific to NYC residents who died in NYC, as opposed to the data presented here, which is based on occurrences in NYC regardless of resident status.</li>
+            <li><strong>Note:</strong> Recent years of data reported for HealthyNYC are provisional as well, and they often will not match the death counts presented here. HealthyNYC data are specific to NYC residents who died in NYC, whereas data presented here are based on occurrences in NYC regardless of resident status.</li>
           </ul>
         </li>
 
