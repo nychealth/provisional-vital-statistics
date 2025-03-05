@@ -27,9 +27,15 @@ All data on the “Provisional Birth and Death Data” page are provisional, and
 
 Reported causes of death are coded using the National Center for Health Statistics (NCHS) automated coding software package, SuperMICAR, which classifies conditions according to the International Classification of Diseases, 10th Revision (ICD-10), published by the World Health Organization. A single underlying cause is assigned based on the reported chain of events leading to death. Standardized codes enable for national and international comparisons. Causes of death that cannot be coded by SuperMICAR are investigated and coded by nosologists.
 
+The number of overdose deaths reported on this page are counting all drug-related deaths. These numbers will differ slightly from other reports that list deaths due to accidental drug poisoning only.
+
 ### Smoothing of Infant Mortality Data
 
 To account for random variations due to the small number of infant deaths, infant mortality rates are presented as a moving average. This average uses data from four quarters: the current quarter and the prior three quarters.
+
+### Race and Ethnicity Groups
+
+Provisional vital statistics data are presented by race and ethnicity for the largest racial and ethnic groups in NYC. Smaller groups, such as the American Indian & Alaska Native (AI/AN) group, fall within the “Other” category. Small counts in these groups would require suppression of data to protect confidentiality, and trends would lack interpretability. Additionally, in birth and death data, the AI/AN group is prone to underreporting and misclassification.
 
 ### Definitions of Selected Variables
 - **Infant mortality rate**: Number of infant deaths (less than 1 year of age) per 1,000 live births.
