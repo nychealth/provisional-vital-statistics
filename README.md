@@ -35,7 +35,9 @@ To account for random variations due to the small number of infant deaths, infan
 
 ### Race and Ethnicity Groups
 
-Provisional vital statistics data are presented by race and ethnicity for the largest racial and ethnic groups in NYC. Smaller groups, such as the American Indian & Alaska Native (AI/AN) group, fall within the “Other” category. Small counts in these groups would require suppression of data to protect confidentiality, and trends would lack interpretability. Additionally, in birth and death data, the AI/AN group is prone to underreporting and misclassification.
+Provisional vital statistics data are presented by race and ethnicity for the largest racial and ethnic groups in NYC. Racial and ethnic groups with small group sizes are categorized as “Other” to protect confidentiality and ensure more accurate interpretability. This commonly occurs with some groups, such as the American Indian & Alaska Native (AI/AN) group, resulting in a lack of representation in vital statistics data. We acknowledge this lack of representation is inequitable, and we are developing methods to ensure more inclusive representation. Overall, in birth and death data, the AI/AN group is prone to underreporting and misclassification. 
+ 
+The ”Other” group includes non-Hispanic AI/AN, non-Hispanic multiple races, non-Hispanic other races, and unknown race.
 
 ### Definitions of Selected Variables
 - **Infant mortality rate**: Number of infant deaths (less than 1 year of age) per 1,000 live births.
