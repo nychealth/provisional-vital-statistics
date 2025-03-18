@@ -41,6 +41,26 @@ async function drawChart(destination, metric, label, multi, schemaFlag = "defaul
 
   // CREATE ARRAY OF SUBMETRICS TO PASS INTO SPEC.ENCODING.COLOR.SCALE.DOMAIN
   let groups = [];
+  
+
+  // ADD EXTRA SPACING FOR R/E 
+  let extraPadding = (metric.toLowerCase().includes("race/ethnicity") || metric.toLowerCase().includes("race")) ? "60px" : "20px";
+  let chartContainer = document.querySelector(destination)?.closest(".vis-parent");
+
+  if (chartContainer) {
+    chartContainer.style.marginBottom = extraPadding;
+  }
+  // R/E SUBTITLE
+  let note = "";
+  if (metric.toLowerCase().includes("race/ethnicity") || metric.toLowerCase().includes("race")) {
+    note = [
+      "*To protect privacy, small counts among groups such as the American Indian & Alaska Native group are rolled up in the 'Other' group.",
+      "We acknowledge this lack of representation in the data is inequitable, and we are committed to developing methods for ensuring ",
+      "more inclusive, equitable representation."
+  ];
+  
+  }
+
 
   let data;
   await fetch(dataSource)
@@ -139,14 +159,19 @@ var partialConfig = {
 
   var title = {
     "text": label,
-    "subtitlePadding": 10,
     "fontWeight": "normal",
     "anchor": "start",
     "fontSize": 12,
     "font": "sans-serif",
     "baseline": "top",
     "dy": -10,
-    "subtitleFontSize": 13
+    "subtitle": note,  
+    "subtitleFontStyle": "italic",
+    "subtitleColor": "#A0A0A0", 
+    "subtitleFontSize": 11.5,
+    "subtitleLineHeight": 13,   
+    "subtitleLimit": 100,       
+    "subtitlePadding": 10
   }
 
   var tooltipContent = [
