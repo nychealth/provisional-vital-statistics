@@ -44,12 +44,15 @@ async function drawChart(destination, metric, label, multi, schemaFlag = "defaul
   
 
   // ADD EXTRA SPACING FOR R/E 
-  let extraPadding = (metric.toLowerCase().includes("race/ethnicity") || metric.toLowerCase().includes("race")) ? "60px" : "20px";
+  /*
+  let extraPadding = (metric.toLowerCase().includes("race/ethnicity") || metric.toLowerCase().includes("race")) ? "20px" : "20px";
   let chartContainer = document.querySelector(destination)?.closest(".vis-parent");
 
   if (chartContainer) {
     chartContainer.style.marginBottom = extraPadding;
   }
+  */
+  
   // R/E SUBTITLE
   let note = "";
   if (metric.toLowerCase().includes("race/ethnicity") || metric.toLowerCase().includes("race")) {
@@ -165,7 +168,6 @@ var partialConfig = {
     "font": "sans-serif",
     "baseline": "top",
     "dy": -10,
-    "subtitle": note,  
     "subtitleFontStyle": "italic",
     "subtitleColor": "#A0A0A0", 
     "subtitleFontSize": 11.5,
@@ -201,7 +203,7 @@ var partialConfig = {
   var spec1 = {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "description": "",
-    "height": 250,
+    "height": 275,
     "width": "container",
     "title": title,
     "config": {
@@ -479,6 +481,7 @@ function generateButtons() {
 function getSelectedCauses() {
   const selectedButtons = document.querySelectorAll('.cause-button.selected');
   return Array.from(selectedButtons).map(button => button.getAttribute('data-cause'));
+
 }
 
 // DYNAMICALLY ADJUST MARGIN WHEN ALL CAUSES ARE CHOSEN
@@ -491,10 +494,25 @@ function adjustMarginBasedOnCauses() {
   document.querySelector('.ddc-copy').style.marginTop = `${totalMargin}px`;
 }
 
+// ADD DEATHS - DRUG-RELATED FOOTNOTE ONLY IF CAUSE IS SELECTED
+
 
 // UPDATE CHART BASED ON SELECTED BUTTONS
 function updateChart() {
   const selectedCauses = getSelectedCauses();
+  console.log('selected causes:')
+  console.log(selectedCauses)
+
+  // show/hide drug-related note
+  var holder = document.getElementById('drugNote')
+  // holder.classList.add('hide')
+
+  if (selectedCauses.includes('Drug-related')) {
+    console.log('REMOViNG')
+    holder.classList.remove('hide')
+  } else {
+    holder.classList.add('hide')
+  }
 
   drawChart('#ddc', 'Deaths by cause', 'Deaths', true, 'alternative', selectedCauses);
   adjustMarginBasedOnCauses(); // Adjust margin based on selection

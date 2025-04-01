@@ -14,8 +14,13 @@
 
         <!--START-->
         <div id="contentContainer">
-          <!-- CSS in repo -->
+          <!-- CSS in repo           -->
           <link rel="stylesheet" href="https://nychealth.github.io/provisional-vital-statistics/page-development/page.css">
+
+
+          <!-- Local CSS
+            <link rel="stylesheet" href="page.css">
+          -->
 
           <!-- Import vega dependencies that are compatible with IE11-->
           <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
@@ -31,7 +36,7 @@
       
 
 
-      <p>Go to:<br><a href="#birthbydemog">Births by Demographics</a> | <a href="#birthchar">Birth Characteristics</a> | <a href="#carechar">Care Characteristics</a> | <a href="#death-section">Deaths</a> | <a href="#infantmort">Infant Mortality</a>
+      <p><strong>Go to:</strong><br><a href="#birthbydemog">Births by Demographics</a> | <a href="#birthchar">Birth Characteristics</a> | <a href="#carechar">Care Characteristics</a> | <a href="#death-section">Deaths</a> | <a href="#infantmort">Infant Mortality</a>
       </p>
 
 
@@ -71,7 +76,7 @@
         <div id="births-by-borough" class="bbd-copy">
           <h3 class="sr-only">Births by borough</h3>
 
-          <p>These counts (the number of events) of births by borough age show how many births happened for residents of each borough. Counts should not be used to make comparisons between groups, since the population sizes are not the same. For example, the group with the most births may not have the highest birth rate. Fluctuations in counts do not necessarily show a meaningful trend</p>
+          <p>These counts (the number of events) of births by borough show how many births happened for residents of each borough. Counts should not be used to make comparisons between groups, since the population sizes are not the same. For example, the group with the most births may not have the highest birth rate. Fluctuations in counts do not necessarily show a meaningful trend.</p>
 
           <div class="sr-only">
             <div style="min-height:572px" id="datawrapper-vis-psdoC"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/psdoC/embed.js" charset="utf-8" data-target="#datawrapper-vis-psdoC"></script><noscript><img src="https://datawrapper.dwcdn.net/psdoC/full.png" alt="" /></noscript></div>
@@ -80,7 +85,10 @@
 
         <div id="births-by-maternal-race/ethnicity" class="bbd-copy">
           <h3 class="sr-only">Births by maternal race/ethnicity</h3>
-          <p>These counts (the number of events) of births by borough age show how many births happened in each racial/ethnic group. Counts should not be used to make comparisons between groups, since the population sizes are not the same. For example, the group with the most births may not have the highest birth rate. Fluctuations in counts do not necessarily show a meaningful trend</p>
+          <div class="callout">To protect privacy, small counts among groups such as the American Indian & Alaska Native group are rolled up in the 'Other' group. We acknowledge this lack of representation in the data is inequitable, and we are committed to developing methods for ensuring more inclusive, equitable representation.
+          </div>
+
+          <p>These counts (the number of events) of births by maternal race/ethnicity show how many births happened in each racial/ethnic group. Counts should not be used to make comparisons between groups, since the population sizes are not the same. For example, the group with the most births may not have the highest birth rate. Fluctuations in counts do not necessarily show a meaningful trend.</p>
 
           <div class="sr-only">
             <div style="min-height:554px" id="datawrapper-vis-WbY8e"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/WbY8e/embed.js" charset="utf-8" data-target="#datawrapper-vis-WbY8e"></script><noscript><img src="https://datawrapper.dwcdn.net/WbY8e/full.png" alt="" /></noscript></div>
@@ -121,7 +129,7 @@
   
         <div id="births-by-birthweight" class="bbc-copy">
           <h3 class="sr-only">Births by birthweight</h3>
-          <p>About 90% of babies born in NYC have a normal birthweight â€” 2,500 grams and above, which is about 5.5 pounds. Babies are considered low birthweight if they weigh less than 2,500 grams. A subset of low birthweight babies are considered very low birthweight, at less than 1,500 grams, or 3.3 pounds.</p>
+          <p>About 90% of babies born in NYC have a normal birthweight&mdash;2,500 grams and above, which is about 5.5 pounds. Babies are considered low birthweight if they weigh less than 2,500 grams. A subset of low birthweight babies are considered very low birthweight, at less than 1,500 grams, or 3.3 pounds.</p>
           <div class="sr-only">
 
           </div>
@@ -247,7 +255,8 @@
 
       <div id="deaths-by-race/ethnicity" class="ddc-copy">
         <h3 class="sr-only">Deaths by race/ethnicity</h3>
-
+        <div class="callout">To protect privacy, small counts among groups such as the American Indian & Alaska Native group are rolled up in the 'Other' group. We acknowledge this lack of representation in the data is inequitable, and we are committed to developing methods for ensuring more inclusive, equitable representation.
+        </div>
         <p>Counts should not be used to make comparisons between groups, since the population sizes are not the same. For example, the group with the most deaths may not have the highest death rate. Fluctuations in counts do not necessarily show a meaningful trend.</p> 
         <div class="sr-only">
           <div style="min-height:382px" id="datawrapper-vis-tbeue"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/tbeue/embed.js" charset="utf-8" data-target="#datawrapper-vis-tbeue"></script><noscript><img src="https://datawrapper.dwcdn.net/tbeue/full.png" alt="" /></noscript></div>
@@ -256,8 +265,12 @@
 
       <div id="deaths-by-cause" class="ddc-copy">
         <h3 class="sr-only">Deaths by cause</h3>
+        <div class="callout hide" id="drugNote">
+          The number of overdose deaths reported on this page are counting all drug-related deaths. These numbers will differ slightly from <a href="https://www.nyc.gov/site/doh/health/health-topics/alcohol-and-drug-use-data.page">other reports</a> that list deaths due to accidental drug poisoning only.
+        </div>
 
-        <p>Selected causes of death are shown above, including both leading causes of death as well as causes that are priorities for the Health Department.</p>
+        <p>Selected causes of death are shown above, including both leading causes of death as well as causes that are priorities for the Health Department. </p>
+
         <div class="sr-only">
           <div style="min-height:418px" id="datawrapper-vis-D4eSj"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/D4eSj/embed.js" charset="utf-8" data-target="#datawrapper-vis-D4eSj"></script><noscript><img src="https://datawrapper.dwcdn.net/D4eSj/full.png" alt="" /></noscript></div>
         </div>
@@ -290,7 +303,7 @@
       <div id="imr-by-age" class="dim-copy">
         <h3 class="sr-only">Infant mortality by age</h3>
 
-        <p>There is usually a higher neonatal infant mortality rate â€” deaths among infants less than 28 days old. Deaths are post-neonatal if the baby is at least 28 days old but less than 1 year old. Due to the small number of infant deaths, rates can fluctuate. All infant mortality data are shown as four-quarter rolling averages, meaning one quarter's data is averaged with the data from the three previous quarters.</p>
+        <p>There is usually a higher neonatal infant mortality rate&mdash;deaths among infants less than 28 days old. Deaths are post-neonatal if the baby is at least 28 days old but less than 1 year old. Due to the small number of infant deaths, rates can fluctuate. All infant mortality data are shown as four-quarter rolling averages, meaning one quarter's data is averaged with the data from the three previous quarters.</p>
         <div class="sr-only">
           <div style="min-height:394px" id="datawrapper-vis-bTK6E"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/bTK6E/embed.js" charset="utf-8" data-target="#datawrapper-vis-bTK6E"></script><noscript><img src="https://datawrapper.dwcdn.net/bTK6E/full.png" alt="" /></noscript></div>
         </div>
@@ -307,6 +320,8 @@
 
       <div id="imr-by-race/ethnicity" class="dim-copy">
         <h3 class="sr-only">Infant mortality by race/ethnicity</h3>
+        <div class="callout">To protect privacy, small counts among groups such as the American Indian & Alaska Native group are not reported. We acknowledge this lack of representation in the data is inequitable, and we are committed to developing methods for ensuring more inclusive, equitable representation.
+        </div>
 
         <p>Due to the small number of infant deaths, rates can fluctuate. All infant mortality data are shown as four-quarter rolling averages, meaning one quarter's data is averaged with the data from the three previous quarters.</p>
         <div class="sr-only">
@@ -356,8 +371,13 @@
 
     </div>
 
-    <!-- JS in repo -->
+    <!-- JS in repo     -->
     <script src="https://nychealth.github.io/provisional-vital-statistics/page-development/charts.js" defer></script>
+
+
+    <!-- Local JS
+    <script src="charts.js" defer></script>
+     -->
 
     <!--END-->
   </body>
