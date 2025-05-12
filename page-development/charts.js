@@ -22,6 +22,18 @@ let dataSource = 'https://raw.githubusercontent.com/nychealth/provisional-vital-
 
 // MAIN CHART-DRAWING FUNCTION
 async function drawChart(destination, metric, label, multi, schemaFlag = "default", selectedCauses = []) {
+
+  console.log(label)
+
+  var isPercent;
+
+  if (label.includes('percent') || label.includes('Percent')) {
+    isPercent = "datum.value + '%'"
+  } else {
+    isPercent = "format(datum.value, ',.0f')"
+  }
+
+  console.log('is percent?', isPercent)
   
   /*  Arguments passed into drawChart function:
             - destination: the ID of the vis container
@@ -193,7 +205,10 @@ var partialConfig = {
     "y": {
       "field": "value",
       "type": "quantitative",
-      "title": ""
+      "title": "",
+      "axis": {
+        "labelExpr": isPercent
+      }
     },
     "color": color,
     "opacity": {"condition": {"param": "hover", "value": 1}, "value": 0.35}
@@ -390,7 +405,7 @@ var partialConfig = {
 const chartConfigs = [
   { destination: '#bbd', metric: 'Total births', label: 'Births',  multi: false, tooltip: "", schemaFlag: "default" },
   { destination: '#bbc', metric: 'Births by method', label: 'Percent of births', multi: true, tooltip: "", schemaFlag: "default" },
-  { destination: '#bcc', metric: 'Pre-pregnancy diabetes', label: 'Mothers with pre-pregnancy diabetes', multi: false, tooltip: "", schemaFlag: "default" },
+  { destination: '#bcc', metric: 'Pre-pregnancy diabetes', label: 'Percent of mothers with pre-pregnancy diabetes', multi: false, tooltip: "", schemaFlag: "default" },
   { destination: '#dim', metric: 'Total IMR', label: 'Infant mortality rate', multi: false, tooltip: "", schemaFlag: "default" },
   { destination: '#ddc', metric: 'Total deaths', label: 'Deaths', multi: false, tooltip: "", schemaFlag: "default"  },
 ];
