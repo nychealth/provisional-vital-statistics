@@ -23,8 +23,7 @@ let dataSource = 'https://raw.githubusercontent.com/nychealth/provisional-vital-
 // MAIN CHART-DRAWING FUNCTION
 async function drawChart(destination, metric, label, multi, schemaFlag = "default", selectedCauses = []) {
 
-  console.log(label)
-
+  // revise axis labels if data are percents
   var isPercent;
 
   if (label.includes('percent') || label.includes('Percent')) {
@@ -32,8 +31,6 @@ async function drawChart(destination, metric, label, multi, schemaFlag = "defaul
   } else {
     isPercent = "format(datum.value, ',.0f')"
   }
-
-  console.log('is percent?', isPercent)
   
   /*  Arguments passed into drawChart function:
             - destination: the ID of the vis container
