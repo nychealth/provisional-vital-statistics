@@ -403,7 +403,7 @@ const chartConfigs = [
   { destination: '#bbd', metric: 'Total births', label: 'Births',  multi: false, tooltip: "", schemaFlag: "default" },
   { destination: '#bbc', metric: 'Births by method', label: 'Percent of births', multi: true, tooltip: "", schemaFlag: "default" },
   { destination: '#bcc', metric: 'Pre-pregnancy diabetes', label: 'Percent of mothers with pre-pregnancy diabetes', multi: false, tooltip: "", schemaFlag: "default" },
-  { destination: '#dim', metric: 'Total IMR', label: 'Infant mortality rate', multi: false, tooltip: "", schemaFlag: "default" },
+  { destination: '#dim', metric: 'Total IMR', label: 'Infant deaths per 1,000 live births', multi: false, tooltip: "", schemaFlag: "default" },
   { destination: '#ddc', metric: 'Total deaths', label: 'Deaths', multi: false, tooltip: "", schemaFlag: "default"  },
 ];
 
