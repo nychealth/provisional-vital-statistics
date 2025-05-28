@@ -1,12 +1,12 @@
 # Provisional vital statistics data
-This repository contains data and documentation on births and deaths in New York City. [You can see a webpage with visualizations and descriptions of these data here](https://www.nyc.gov/site/doh/data/data-home.page) (URL TK). 
+This repository contains data and documentation on births and deaths in New York City. [You can see a webpage with visualizations and descriptions of these data here](https://www.nyc.gov/site/doh/data/data-sets/vital-statistics-data-provisional.page).
 
 ## Technical notes
 
 ### Repository content
 This repository contains:
 - `data.csv`: this file contains quarterly, provisional birth and death data for the most recent 10 quarters available, for all metrics and groups. This file feeds the visualizations on the [Provisional Birth And Death Data webpage](https://www.nyc.gov/site/doh/data/data-sets/vital-statistics-data-provisional.page).
-- `all-data.csv` (forthcoming): this file contains quarterly, provisional birth and death data since Q1, 2022, for all metrics and groups. While the webpage and `data.csv` include only the most recent 10 quarters of data, this file contains older data outside of this rolling window.
+- `data_archive.csv`: this file contains quarterly, provisional birth and death data since Q1, 2022, for all metrics and groups. While the webpage and `data.csv` include only the most recent 10 quarters of data, this file contains older data outside of this rolling window.
 - `/data-tables`: this folder contains individual data tables for the data available in `data.csv`
 - `/page-development`: this folder contains page code for the [Provisional Birth And Death Data webpage](https://www.nyc.gov/site/doh/data/data-sets/vital-statistics-data-provisional.page)
 
