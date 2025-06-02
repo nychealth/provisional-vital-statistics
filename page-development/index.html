@@ -150,10 +150,10 @@
       <h3 class="spacer" id="carechar">Care Characteristics</h3>
       <p>These indicators of health and care provided during pregnancy or after birth are key to understanding birth outcomes.</p>
       <div class="choice" aria-hidden="true">
-        <a id="" onclick="drawChart('#bcc','Pre-pregnancy diabetes','Mothers with pre-pregnancy diabetes',false)" tabindex="0" class="togglebutton care highlight">Pre-pregnancy diabetes</a>
-        <a id="" onclick="drawChart('#bcc','Pre-pregnancy hypertension','Mothers with pre-pregnancy hypertension',false)" tabindex="0" class="togglebutton care">Pre-pregnancy hypertension</a>
-        <a id="" onclick="drawChart('#bcc','Prenatal care in first trimester','Prenatal care started in 1st trimester',false)" tabindex="0" class="togglebutton care">Prenatal care</a>
-        <a id="" onclick="drawChart('#bcc','Breastfed infants','Breastfed infants',false)" tabindex="0" class="togglebutton care">Breastfeeding</a>
+        <a id="" onclick="drawChart('#bcc','Pre-pregnancy diabetes','Percent of mothers with pre-pregnancy diabetes',false)" tabindex="0" class="togglebutton care highlight">Pre-pregnancy diabetes</a>
+        <a id="" onclick="drawChart('#bcc','Pre-pregnancy hypertension','Percent of mothers with pre-pregnancy hypertension',false)" tabindex="0" class="togglebutton care">Pre-pregnancy hypertension</a>
+        <a id="" onclick="drawChart('#bcc','Prenatal care in first trimester','Percent of mothers with prenatal care started in 1st trimester',false)" tabindex="0" class="togglebutton care">Prenatal care</a>
+        <a id="" onclick="drawChart('#bcc','Breastfed infants','Percent of infants breastfed',false)" tabindex="0" class="togglebutton care">Breastfeeding</a>
       </div>
 
       <div class="vis-parent" aria-hidden="true">
@@ -227,7 +227,7 @@
     <div class="copy-wrapper">
       <div id="total-deaths" class="ddc-copy">
         <h3 class="sr-only">Total deaths</h3>
-        <p>Usually, there are about 15,000 deaths in New York City each quarter, with a slight seasonal pattern.</p>
+        <p>Usually, there are about 15,000 deaths in New York City each quarter, with a slight seasonal pattern, typically lowest in Q1 and highest in Q4.</p>
         <div class="sr-only">
           <div style="min-height:286px" id="datawrapper-vis-fNmDg"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/fNmDg/embed.js" charset="utf-8" data-target="#datawrapper-vis-fNmDg"></script><noscript><img src="https://datawrapper.dwcdn.net/fNmDg/full.png" alt="" /></noscript></div>
         </div>
@@ -279,10 +279,10 @@
 
     <h3 id="infantmort">Infant Mortality Rates</h3>
     <div class="choice" aria-hidden="true">
-      <a id="" onclick="drawChart('#dim','Total IMR','Infant mortality rate',false)" tabindex="0" class="togglebutton infantMort highlight">Overall</a>
-      <a id="" onclick="drawChart('#dim','IMR by age','Infant mortality rate',true,'Age')" tabindex="0" class="togglebutton infantMort">Age</a>
-      <a id="" onclick="drawChart('#dim','IMR by borough','Infant mortality rate',true,'Residence')" tabindex="0" class="togglebutton infantMort">Borough</a>
-      <a id="" onclick="drawChart('#dim','IMR by race/ethnicity','Infant mortality rate',true,'Race/ethnicity')" tabindex="0" class="togglebutton infantMort">Race/ethnicity</a>
+      <a id="" onclick="drawChart('#dim','Total IMR','Infant deaths per 1,000 live births',false)" tabindex="0" class="togglebutton infantMort highlight">Overall</a>
+      <a id="" onclick="drawChart('#dim','IMR by age','Infant deaths per 1,000 live births',true,'Age')" tabindex="0" class="togglebutton infantMort">Age</a>
+      <a id="" onclick="drawChart('#dim','IMR by borough','Infant deaths per 1,000 live births',true,'Residence')" tabindex="0" class="togglebutton infantMort">Borough</a>
+      <a id="" onclick="drawChart('#dim','IMR by race/ethnicity','Infant deaths per 1,000 live births',true,'Race/ethnicity')" tabindex="0" class="togglebutton infantMort">Race/ethnicity</a>
     </div>
 
     <div class="vis-parent" aria-hidden="true">
@@ -371,13 +371,13 @@
 
     </div>
 
-    <!-- JS in repo     -->
+
     <script src="https://nychealth.github.io/provisional-vital-statistics/page-development/charts.js" defer></script>
 
 
-    <!-- Local JS
+     <!-- 
     <script src="charts.js" defer></script>
-     -->
+      -->
 
     <!--END-->
   </body>
