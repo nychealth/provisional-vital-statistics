@@ -1,5 +1,4 @@
 date,metric,submetric,value,display
-Jul 1 2022,Total births,Total,25376,Number
 Oct 1 2022,Total births,Total,25895,Number
 Jan 1 2023,Total births,Total,23349,Number
 Apr 1 2023,Total births,Total,24263,Number
@@ -9,7 +8,7 @@ Jan 1 2024,Total births,Total,24518,Number
 Apr 1 2024,Total births,Total,24559,Number
 Jul 1 2024,Total births,Total,25713,Number
 Oct 1 2024,Total births,Total,25423,Number
-Jul 1 2022,Births by maternal age,Under 20,537,Number
+Jan 1 2025,Total births,Total,24031,Number
 Oct 1 2022,Births by maternal age,Under 20,518,Number
 Jan 1 2023,Births by maternal age,Under 20,483,Number
 Apr 1 2023,Births by maternal age,Under 20,513,Number
@@ -19,7 +18,7 @@ Jan 1 2024,Births by maternal age,Under 20,502,Number
 Apr 1 2024,Births by maternal age,Under 20,512,Number
 Jul 1 2024,Births by maternal age,Under 20,527,Number
 Oct 1 2024,Births by maternal age,Under 20,508,Number
-Jul 1 2022,Births by maternal age,20 to 29,8944,Number
+Jan 1 2025,Births by maternal age,Under 20,498,Number
 Oct 1 2022,Births by maternal age,20 to 29,9133,Number
 Jan 1 2023,Births by maternal age,20 to 29,8421,Number
 Apr 1 2023,Births by maternal age,20 to 29,8326,Number
@@ -29,7 +28,7 @@ Jan 1 2024,Births by maternal age,20 to 29,8916,Number
 Apr 1 2024,Births by maternal age,20 to 29,8579,Number
 Jul 1 2024,Births by maternal age,20 to 29,8907,Number
 Oct 1 2024,Births by maternal age,20 to 29,8993,Number
-Jul 1 2022,Births by maternal age,30 to 39,14065,Number
+Jan 1 2025,Births by maternal age,20 to 29,8477,Number
 Oct 1 2022,Births by maternal age,30 to 39,14236,Number
 Jan 1 2023,Births by maternal age,30 to 39,12662,Number
 Apr 1 2023,Births by maternal age,30 to 39,13584,Number
@@ -39,7 +38,7 @@ Jan 1 2024,Births by maternal age,30 to 39,13232,Number
 Apr 1 2024,Births by maternal age,30 to 39,13663,Number
 Jul 1 2024,Births by maternal age,30 to 39,14477,Number
 Oct 1 2024,Births by maternal age,30 to 39,13989,Number
-Jul 1 2022,Births by maternal age,40+,1830,Number
+Jan 1 2025,Births by maternal age,30 to 39,13246,Number
 Oct 1 2022,Births by maternal age,40+,2008,Number
 Jan 1 2023,Births by maternal age,40+,1783,Number
 Apr 1 2023,Births by maternal age,40+,1840,Number
@@ -49,7 +48,7 @@ Jan 1 2024,Births by maternal age,40+,1868,Number
 Apr 1 2024,Births by maternal age,40+,1805,Number
 Jul 1 2024,Births by maternal age,40+,1802,Number
 Oct 1 2024,Births by maternal age,40+,1933,Number
-Jul 1 2022,Births by borough,Bronx,4042,Number
+Jan 1 2025,Births by maternal age,40+,1810,Number
 Oct 1 2022,Births by borough,Bronx,4069,Number
 Jan 1 2023,Births by borough,Bronx,3620,Number
 Apr 1 2023,Births by borough,Bronx,3665,Number
@@ -59,7 +58,7 @@ Jan 1 2024,Births by borough,Bronx,3638,Number
 Apr 1 2024,Births by borough,Bronx,3640,Number
 Jul 1 2024,Births by borough,Bronx,3923,Number
 Oct 1 2024,Births by borough,Bronx,3784,Number
-Jul 1 2022,Births by borough,Brooklyn,8218,Number
+Jan 1 2025,Births by borough,Bronx,3592,Number
 Oct 1 2022,Births by borough,Brooklyn,8660,Number
 Jan 1 2023,Births by borough,Brooklyn,7774,Number
 Apr 1 2023,Births by borough,Brooklyn,7809,Number
@@ -69,7 +68,7 @@ Jan 1 2024,Births by borough,Brooklyn,8173,Number
 Apr 1 2024,Births by borough,Brooklyn,7841,Number
 Jul 1 2024,Births by borough,Brooklyn,8057,Number
 Oct 1 2024,Births by borough,Brooklyn,8275,Number
-Jul 1 2022,Births by borough,Manhattan,3338,Number
+Jan 1 2025,Births by borough,Brooklyn,8008,Number
 Oct 1 2022,Births by borough,Manhattan,3288,Number
 Jan 1 2023,Births by borough,Manhattan,3033,Number
 Apr 1 2023,Births by borough,Manhattan,3411,Number
@@ -79,7 +78,7 @@ Jan 1 2024,Births by borough,Manhattan,3385,Number
 Apr 1 2024,Births by borough,Manhattan,3603,Number
 Jul 1 2024,Births by borough,Manhattan,3623,Number
 Oct 1 2024,Births by borough,Manhattan,3554,Number
-Jul 1 2022,Births by borough,Queens,5266,Number
+Jan 1 2025,Births by borough,Manhattan,3371,Number
 Oct 1 2022,Births by borough,Queens,5245,Number
 Jan 1 2023,Births by borough,Queens,4775,Number
 Apr 1 2023,Births by borough,Queens,5121,Number
@@ -89,7 +88,7 @@ Jan 1 2024,Births by borough,Queens,5021,Number
 Apr 1 2024,Births by borough,Queens,4922,Number
 Jul 1 2024,Births by borough,Queens,5353,Number
 Oct 1 2024,Births by borough,Queens,5185,Number
-Jul 1 2022,Births by borough,Staten Island,1249,Number
+Jan 1 2025,Births by borough,Queens,4870,Number
 Oct 1 2022,Births by borough,Staten Island,1260,Number
 Jan 1 2023,Births by borough,Staten Island,1162,Number
 Apr 1 2023,Births by borough,Staten Island,1190,Number
@@ -99,7 +98,7 @@ Jan 1 2024,Births by borough,Staten Island,1169,Number
 Apr 1 2024,Births by borough,Staten Island,1235,Number
 Jul 1 2024,Births by borough,Staten Island,1249,Number
 Oct 1 2024,Births by borough,Staten Island,1242,Number
-Jul 1 2022,Births by borough,Non-NYC Residents,3262,Number
+Jan 1 2025,Births by borough,Staten Island,1140,Number
 Oct 1 2022,Births by borough,Non-NYC Residents,3372,Number
 Jan 1 2023,Births by borough,Non-NYC Residents,2984,Number
 Apr 1 2023,Births by borough,Non-NYC Residents,3067,Number
@@ -109,7 +108,7 @@ Jan 1 2024,Births by borough,Non-NYC Residents,3131,Number
 Apr 1 2024,Births by borough,Non-NYC Residents,3318,Number
 Jul 1 2024,Births by borough,Non-NYC Residents,3506,Number
 Oct 1 2024,Births by borough,Non-NYC Residents,3383,Number
-Jul 1 2022,Births by maternal race/ethnicity,Asian/PI,3749,Number
+Jan 1 2025,Births by borough,Non-NYC Residents,3046,Number
 Oct 1 2022,Births by maternal race/ethnicity,Asian/PI,3888,Number
 Jan 1 2023,Births by maternal race/ethnicity,Asian/PI,3537,Number
 Apr 1 2023,Births by maternal race/ethnicity,Asian/PI,3505,Number
@@ -119,7 +118,7 @@ Jan 1 2024,Births by maternal race/ethnicity,Asian/PI,3580,Number
 Apr 1 2024,Births by maternal race/ethnicity,Asian/PI,3578,Number
 Jul 1 2024,Births by maternal race/ethnicity,Asian/PI,3809,Number
 Oct 1 2024,Births by maternal race/ethnicity,Asian/PI,3996,Number
-Jul 1 2022,Births by maternal race/ethnicity,Black,4406,Number
+Jan 1 2025,Births by maternal race/ethnicity,Asian/PI,3660,Number
 Oct 1 2022,Births by maternal race/ethnicity,Black,4509,Number
 Jan 1 2023,Births by maternal race/ethnicity,Black,3994,Number
 Apr 1 2023,Births by maternal race/ethnicity,Black,3964,Number
@@ -129,7 +128,7 @@ Jan 1 2024,Births by maternal race/ethnicity,Black,3898,Number
 Apr 1 2024,Births by maternal race/ethnicity,Black,3862,Number
 Jul 1 2024,Births by maternal race/ethnicity,Black,4082,Number
 Oct 1 2024,Births by maternal race/ethnicity,Black,4046,Number
-Jul 1 2022,Births by maternal race/ethnicity,Hispanic,7735,Number
+Jan 1 2025,Births by maternal race/ethnicity,Black,3711,Number
 Oct 1 2022,Births by maternal race/ethnicity,Hispanic,7623,Number
 Jan 1 2023,Births by maternal race/ethnicity,Hispanic,6900,Number
 Apr 1 2023,Births by maternal race/ethnicity,Hispanic,7366,Number
@@ -139,7 +138,7 @@ Jan 1 2024,Births by maternal race/ethnicity,Hispanic,7420,Number
 Apr 1 2024,Births by maternal race/ethnicity,Hispanic,7372,Number
 Jul 1 2024,Births by maternal race/ethnicity,Hispanic,7836,Number
 Oct 1 2024,Births by maternal race/ethnicity,Hispanic,7543,Number
-Jul 1 2022,Births by maternal race/ethnicity,White,9001,Number
+Jan 1 2025,Births by maternal race/ethnicity,Hispanic,7088,Number
 Oct 1 2022,Births by maternal race/ethnicity,White,9248,Number
 Jan 1 2023,Births by maternal race/ethnicity,White,8376,Number
 Apr 1 2023,Births by maternal race/ethnicity,White,8833,Number
@@ -149,7 +148,7 @@ Jan 1 2024,Births by maternal race/ethnicity,White,8959,Number
 Apr 1 2024,Births by maternal race/ethnicity,White,9122,Number
 Jul 1 2024,Births by maternal race/ethnicity,White,9271,Number
 Oct 1 2024,Births by maternal race/ethnicity,White,9118,Number
-Jul 1 2022,Births by maternal race/ethnicity,Other/Unknown,485,Number
+Jan 1 2025,Births by maternal race/ethnicity,White,8891,Number
 Oct 1 2022,Births by maternal race/ethnicity,Other/Unknown,627,Number
 Jan 1 2023,Births by maternal race/ethnicity,Other/Unknown,542,Number
 Apr 1 2023,Births by maternal race/ethnicity,Other/Unknown,595,Number
@@ -159,7 +158,7 @@ Jan 1 2024,Births by maternal race/ethnicity,Other/Unknown,661,Number
 Apr 1 2024,Births by maternal race/ethnicity,Other/Unknown,625,Number
 Jul 1 2024,Births by maternal race/ethnicity,Other/Unknown,715,Number
 Oct 1 2024,Births by maternal race/ethnicity,Other/Unknown,720,Number
-Jul 1 2022,Births by method,Cesarean,32.74,Percent
+Jan 1 2025,Births by maternal race/ethnicity,Other/Unknown,681,Number
 Oct 1 2022,Births by method,Cesarean,32.52,Percent
 Jan 1 2023,Births by method,Cesarean,32.66,Percent
 Apr 1 2023,Births by method,Cesarean,32.52,Percent
@@ -169,7 +168,7 @@ Jan 1 2024,Births by method,Cesarean,32.47,Percent
 Apr 1 2024,Births by method,Cesarean,32.82,Percent
 Jul 1 2024,Births by method,Cesarean,32.76,Percent
 Oct 1 2024,Births by method,Cesarean,33.01,Percent
-Jul 1 2022,Births by method,Vaginal,64.54,Percent
+Jan 1 2025,Births by method,Cesarean,33.23,Percent
 Oct 1 2022,Births by method,Vaginal,64.48,Percent
 Jan 1 2023,Births by method,Vaginal,64.42,Percent
 Apr 1 2023,Births by method,Vaginal,64.69,Percent
@@ -179,7 +178,7 @@ Jan 1 2024,Births by method,Vaginal,64.72,Percent
 Apr 1 2024,Births by method,Vaginal,64.38,Percent
 Jul 1 2024,Births by method,Vaginal,64.38,Percent
 Oct 1 2024,Births by method,Vaginal,64.05,Percent
-Jul 1 2022,Births by method,VBAC,2.72,Percent
+Jan 1 2025,Births by method,Vaginal,63.68,Percent
 Oct 1 2022,Births by method,VBAC,3,Percent
 Jan 1 2023,Births by method,VBAC,2.92,Percent
 Apr 1 2023,Births by method,VBAC,2.79,Percent
@@ -189,7 +188,7 @@ Jan 1 2024,Births by method,VBAC,2.82,Percent
 Apr 1 2024,Births by method,VBAC,2.8,Percent
 Jul 1 2024,Births by method,VBAC,2.85,Percent
 Oct 1 2024,Births by method,VBAC,2.95,Percent
-Jul 1 2022,Births by term,Very Pre-term,1.48,Percent
+Jan 1 2025,Births by method,VBAC,3.09,Percent
 Oct 1 2022,Births by term,Very Pre-term,1.43,Percent
 Jan 1 2023,Births by term,Very Pre-term,1.43,Percent
 Apr 1 2023,Births by term,Very Pre-term,1.32,Percent
@@ -199,7 +198,7 @@ Jan 1 2024,Births by term,Very Pre-term,1.45,Percent
 Apr 1 2024,Births by term,Very Pre-term,1.43,Percent
 Jul 1 2024,Births by term,Very Pre-term,1.3,Percent
 Oct 1 2024,Births by term,Very Pre-term,1.28,Percent
-Jul 1 2022,Births by term,Pre-term,9.64,Percent
+Jan 1 2025,Births by term,Very Pre-term,1.38,Percent
 Oct 1 2022,Births by term,Pre-term,9.67,Percent
 Jan 1 2023,Births by term,Pre-term,9.51,Percent
 Apr 1 2023,Births by term,Pre-term,9.32,Percent
@@ -209,7 +208,7 @@ Jan 1 2024,Births by term,Pre-term,9.8,Percent
 Apr 1 2024,Births by term,Pre-term,9.21,Percent
 Jul 1 2024,Births by term,Pre-term,8.95,Percent
 Oct 1 2024,Births by term,Pre-term,9.31,Percent
-Jul 1 2022,Births by term,Term,90.36,Percent
+Jan 1 2025,Births by term,Pre-term,9.79,Percent
 Oct 1 2022,Births by term,Term,90.33,Percent
 Jan 1 2023,Births by term,Term,90.49,Percent
 Apr 1 2023,Births by term,Term,90.68,Percent
@@ -219,7 +218,7 @@ Jan 1 2024,Births by term,Term,90.2,Percent
 Apr 1 2024,Births by term,Term,90.79,Percent
 Jul 1 2024,Births by term,Term,91.05,Percent
 Oct 1 2024,Births by term,Term,90.69,Percent
-Jul 1 2022,Births by birthweight,Very Low,1.37,Percent
+Jan 1 2025,Births by term,Term,90.21,Percent
 Oct 1 2022,Births by birthweight,Very Low,1.36,Percent
 Jan 1 2023,Births by birthweight,Very Low,1.35,Percent
 Apr 1 2023,Births by birthweight,Very Low,1.29,Percent
@@ -229,7 +228,7 @@ Jan 1 2024,Births by birthweight,Very Low,1.37,Percent
 Apr 1 2024,Births by birthweight,Very Low,1.42,Percent
 Jul 1 2024,Births by birthweight,Very Low,1.23,Percent
 Oct 1 2024,Births by birthweight,Very Low,1.23,Percent
-Jul 1 2022,Births by birthweight,Low,9.12,Percent
+Jan 1 2025,Births by birthweight,Very Low,1.37,Percent
 Oct 1 2022,Births by birthweight,Low,9.08,Percent
 Jan 1 2023,Births by birthweight,Low,8.87,Percent
 Apr 1 2023,Births by birthweight,Low,8.8,Percent
@@ -239,7 +238,7 @@ Jan 1 2024,Births by birthweight,Low,9.09,Percent
 Apr 1 2024,Births by birthweight,Low,8.73,Percent
 Jul 1 2024,Births by birthweight,Low,8.6,Percent
 Oct 1 2024,Births by birthweight,Low,8.89,Percent
-Jul 1 2022,Births by birthweight,Normal,90.87,Percent
+Jan 1 2025,Births by birthweight,Low,9.08,Percent
 Oct 1 2022,Births by birthweight,Normal,90.9,Percent
 Jan 1 2023,Births by birthweight,Normal,91.12,Percent
 Apr 1 2023,Births by birthweight,Normal,91.18,Percent
@@ -249,7 +248,7 @@ Jan 1 2024,Births by birthweight,Normal,90.88,Percent
 Apr 1 2024,Births by birthweight,Normal,91.26,Percent
 Jul 1 2024,Births by birthweight,Normal,91.39,Percent
 Oct 1 2024,Births by birthweight,Normal,91.1,Percent
-Jul 1 2022,Births by coverage,Medicaid,57,Percent
+Jan 1 2025,Births by birthweight,Normal,90.9,Percent
 Oct 1 2022,Births by coverage,Medicaid,58.58,Percent
 Jan 1 2023,Births by coverage,Medicaid,58.24,Percent
 Apr 1 2023,Births by coverage,Medicaid,56.37,Percent
@@ -259,7 +258,7 @@ Jan 1 2024,Births by coverage,Medicaid,58.23,Percent
 Apr 1 2024,Births by coverage,Medicaid,55.97,Percent
 Jul 1 2024,Births by coverage,Medicaid,55.61,Percent
 Oct 1 2024,Births by coverage,Medicaid,55.91,Percent
-Jul 1 2022,Births by coverage,Non-Medicaid,43,Percent
+Jan 1 2025,Births by coverage,Medicaid,54.7,Percent
 Oct 1 2022,Births by coverage,Non-Medicaid,41.42,Percent
 Jan 1 2023,Births by coverage,Non-Medicaid,41.76,Percent
 Apr 1 2023,Births by coverage,Non-Medicaid,43.63,Percent
@@ -269,7 +268,7 @@ Jan 1 2024,Births by coverage,Non-Medicaid,41.77,Percent
 Apr 1 2024,Births by coverage,Non-Medicaid,44.03,Percent
 Jul 1 2024,Births by coverage,Non-Medicaid,44.39,Percent
 Oct 1 2024,Births by coverage,Non-Medicaid,44.09,Percent
-Jul 1 2022,Pre-pregnancy diabetes,Pre-pregnancy diabetes,1.25,Percent
+Jan 1 2025,Births by coverage,Non-Medicaid,45.3,Percent
 Oct 1 2022,Pre-pregnancy diabetes,Pre-pregnancy diabetes,1.18,Percent
 Jan 1 2023,Pre-pregnancy diabetes,Pre-pregnancy diabetes,1.08,Percent
 Apr 1 2023,Pre-pregnancy diabetes,Pre-pregnancy diabetes,1.2,Percent
@@ -279,7 +278,7 @@ Jan 1 2024,Pre-pregnancy diabetes,Pre-pregnancy diabetes,1.25,Percent
 Apr 1 2024,Pre-pregnancy diabetes,Pre-pregnancy diabetes,1.33,Percent
 Jul 1 2024,Pre-pregnancy diabetes,Pre-pregnancy diabetes,1.28,Percent
 Oct 1 2024,Pre-pregnancy diabetes,Pre-pregnancy diabetes,1.17,Percent
-Jul 1 2022,Pre-pregnancy hypertension,Pre-pregnancy hypertension,2.71,Percent
+Jan 1 2025,Pre-pregnancy diabetes,Pre-pregnancy diabetes,1.18,Percent
 Oct 1 2022,Pre-pregnancy hypertension,Pre-pregnancy hypertension,2.58,Percent
 Jan 1 2023,Pre-pregnancy hypertension,Pre-pregnancy hypertension,2.76,Percent
 Apr 1 2023,Pre-pregnancy hypertension,Pre-pregnancy hypertension,2.96,Percent
@@ -289,7 +288,7 @@ Jan 1 2024,Pre-pregnancy hypertension,Pre-pregnancy hypertension,2.6,Percent
 Apr 1 2024,Pre-pregnancy hypertension,Pre-pregnancy hypertension,2.63,Percent
 Jul 1 2024,Pre-pregnancy hypertension,Pre-pregnancy hypertension,2.66,Percent
 Oct 1 2024,Pre-pregnancy hypertension,Pre-pregnancy hypertension,2.76,Percent
-Jul 1 2022,Prenatal care in first trimester,Prenatal care in first trimester,72.23,Percent
+Jan 1 2025,Pre-pregnancy hypertension,Pre-pregnancy hypertension,2.77,Percent
 Oct 1 2022,Prenatal care in first trimester,Prenatal care in first trimester,71.64,Percent
 Jan 1 2023,Prenatal care in first trimester,Prenatal care in first trimester,70.8,Percent
 Apr 1 2023,Prenatal care in first trimester,Prenatal care in first trimester,72.88,Percent
@@ -299,7 +298,7 @@ Jan 1 2024,Prenatal care in first trimester,Prenatal care in first trimester,69.
 Apr 1 2024,Prenatal care in first trimester,Prenatal care in first trimester,71.55,Percent
 Jul 1 2024,Prenatal care in first trimester,Prenatal care in first trimester,70.16,Percent
 Oct 1 2024,Prenatal care in first trimester,Prenatal care in first trimester,71.45,Percent
-Jul 1 2022,Breastfed infants,Breastfed infants,89.51,Percent
+Jan 1 2025,Prenatal care in first trimester,Prenatal care in first trimester,71.82,Percent
 Oct 1 2022,Breastfed infants,Breastfed infants,89.76,Percent
 Jan 1 2023,Breastfed infants,Breastfed infants,89.03,Percent
 Apr 1 2023,Breastfed infants,Breastfed infants,89.26,Percent
@@ -309,7 +308,7 @@ Jan 1 2024,Breastfed infants,Breastfed infants,87.53,Percent
 Apr 1 2024,Breastfed infants,Breastfed infants,87.69,Percent
 Jul 1 2024,Breastfed infants,Breastfed infants,87.58,Percent
 Oct 1 2024,Breastfed infants,Breastfed infants,87.58,Percent
-Jul 1 2022,Total deaths,Total,14001,Number
+Jan 1 2025,Breastfed infants,Breastfed infants,88,Percent
 Oct 1 2022,Total deaths,Total,15690,Number
 Jan 1 2023,Total deaths,Total,14470,Number
 Apr 1 2023,Total deaths,Total,13089,Number
@@ -319,7 +318,7 @@ Jan 1 2024,Total deaths,Total,14990,Number
 Apr 1 2024,Total deaths,Total,13070,Number
 Jul 1 2024,Total deaths,Total,13035,Number
 Oct 1 2024,Total deaths,Total,14168,Number
-Jul 1 2022,Deaths by age,Under 1,116,Number
+Jan 1 2025,Total deaths,Total,15214,Number
 Oct 1 2022,Deaths by age,Under 1,111,Number
 Jan 1 2023,Deaths by age,Under 1,101,Number
 Apr 1 2023,Deaths by age,Under 1,93,Number
@@ -328,8 +327,8 @@ Oct 1 2023,Deaths by age,Under 1,115,Number
 Jan 1 2024,Deaths by age,Under 1,107,Number
 Apr 1 2024,Deaths by age,Under 1,92,Number
 Jul 1 2024,Deaths by age,Under 1,92,Number
-Oct 1 2024,Deaths by age,Under 1,100,Number
-Jul 1 2022,Deaths by age,1 to 24,180,Number
+Oct 1 2024,Deaths by age,Under 1,101,Number
+Jan 1 2025,Deaths by age,Under 1,106,Number
 Oct 1 2022,Deaths by age,1 to 24,166,Number
 Jan 1 2023,Deaths by age,1 to 24,185,Number
 Apr 1 2023,Deaths by age,1 to 24,208,Number
@@ -339,7 +338,7 @@ Jan 1 2024,Deaths by age,1 to 24,198,Number
 Apr 1 2024,Deaths by age,1 to 24,159,Number
 Jul 1 2024,Deaths by age,1 to 24,196,Number
 Oct 1 2024,Deaths by age,1 to 24,149,Number
-Jul 1 2022,Deaths by age,25 to 44,940,Number
+Jan 1 2025,Deaths by age,1 to 24,150,Number
 Oct 1 2022,Deaths by age,25 to 44,1004,Number
 Jan 1 2023,Deaths by age,25 to 44,892,Number
 Apr 1 2023,Deaths by age,25 to 44,841,Number
@@ -349,7 +348,7 @@ Jan 1 2024,Deaths by age,25 to 44,842,Number
 Apr 1 2024,Deaths by age,25 to 44,783,Number
 Jul 1 2024,Deaths by age,25 to 44,804,Number
 Oct 1 2024,Deaths by age,25 to 44,778,Number
-Jul 1 2022,Deaths by age,45 to 64,2895,Number
+Jan 1 2025,Deaths by age,25 to 44,757,Number
 Oct 1 2022,Deaths by age,45 to 64,3065,Number
 Jan 1 2023,Deaths by age,45 to 64,2766,Number
 Apr 1 2023,Deaths by age,45 to 64,2713,Number
@@ -359,7 +358,7 @@ Jan 1 2024,Deaths by age,45 to 64,2774,Number
 Apr 1 2024,Deaths by age,45 to 64,2572,Number
 Jul 1 2024,Deaths by age,45 to 64,2442,Number
 Oct 1 2024,Deaths by age,45 to 64,2577,Number
-Jul 1 2022,Deaths by age,65 to 84,5916,Number
+Jan 1 2025,Deaths by age,45 to 64,2690,Number
 Oct 1 2022,Deaths by age,65 to 84,6627,Number
 Jan 1 2023,Deaths by age,65 to 84,6197,Number
 Apr 1 2023,Deaths by age,65 to 84,5538,Number
@@ -369,7 +368,7 @@ Jan 1 2024,Deaths by age,65 to 84,6486,Number
 Apr 1 2024,Deaths by age,65 to 84,5634,Number
 Jul 1 2024,Deaths by age,65 to 84,5701,Number
 Oct 1 2024,Deaths by age,65 to 84,6227,Number
-Jul 1 2022,Deaths by age,85+,3954,Number
+Jan 1 2025,Deaths by age,65 to 84,6695,Number
 Oct 1 2022,Deaths by age,85+,4717,Number
 Jan 1 2023,Deaths by age,85+,4329,Number
 Apr 1 2023,Deaths by age,85+,3696,Number
@@ -379,7 +378,7 @@ Jan 1 2024,Deaths by age,85+,4583,Number
 Apr 1 2024,Deaths by age,85+,3830,Number
 Jul 1 2024,Deaths by age,85+,3800,Number
 Oct 1 2024,Deaths by age,85+,4336,Number
-Jul 1 2022,Deaths by sex,Male,7352,Number
+Jan 1 2025,Deaths by age,85+,4804,Number
 Oct 1 2022,Deaths by sex,Male,8157,Number
 Jan 1 2023,Deaths by sex,Male,7410,Number
 Apr 1 2023,Deaths by sex,Male,6825,Number
@@ -388,8 +387,8 @@ Oct 1 2023,Deaths by sex,Male,7761,Number
 Jan 1 2024,Deaths by sex,Male,7655,Number
 Apr 1 2024,Deaths by sex,Male,6767,Number
 Jul 1 2024,Deaths by sex,Male,6797,Number
-Oct 1 2024,Deaths by sex,Male,7194,Number
-Jul 1 2022,Deaths by sex,Female,6649,Number
+Oct 1 2024,Deaths by sex,Male,7195,Number
+Jan 1 2025,Deaths by sex,Male,7713,Number
 Oct 1 2022,Deaths by sex,Female,7532,Number
 Jan 1 2023,Deaths by sex,Female,7060,Number
 Apr 1 2023,Deaths by sex,Female,6264,Number
@@ -399,7 +398,7 @@ Jan 1 2024,Deaths by sex,Female,7330,Number
 Apr 1 2024,Deaths by sex,Female,6301,Number
 Jul 1 2024,Deaths by sex,Female,6237,Number
 Oct 1 2024,Deaths by sex,Female,6972,Number
-Jul 1 2022,Deaths by race/ethnicity,Asian/PI,1372,Number
+Jan 1 2025,Deaths by sex,Female,7499,Number
 Oct 1 2022,Deaths by race/ethnicity,Asian/PI,1499,Number
 Jan 1 2023,Deaths by race/ethnicity,Asian/PI,1359,Number
 Apr 1 2023,Deaths by race/ethnicity,Asian/PI,1224,Number
@@ -408,8 +407,8 @@ Oct 1 2023,Deaths by race/ethnicity,Asian/PI,1541,Number
 Jan 1 2024,Deaths by race/ethnicity,Asian/PI,1506,Number
 Apr 1 2024,Deaths by race/ethnicity,Asian/PI,1352,Number
 Jul 1 2024,Deaths by race/ethnicity,Asian/PI,1292,Number
-Oct 1 2024,Deaths by race/ethnicity,Asian/PI,1478,Number
-Jul 1 2022,Deaths by race/ethnicity,Black,3908,Number
+Oct 1 2024,Deaths by race/ethnicity,Asian/PI,1479,Number
+Jan 1 2025,Deaths by race/ethnicity,Asian/PI,1667,Number
 Oct 1 2022,Deaths by race/ethnicity,Black,4285,Number
 Jan 1 2023,Deaths by race/ethnicity,Black,3889,Number
 Apr 1 2023,Deaths by race/ethnicity,Black,3626,Number
@@ -418,18 +417,18 @@ Oct 1 2023,Deaths by race/ethnicity,Black,4037,Number
 Jan 1 2024,Deaths by race/ethnicity,Black,4012,Number
 Apr 1 2024,Deaths by race/ethnicity,Black,3669,Number
 Jul 1 2024,Deaths by race/ethnicity,Black,3597,Number
-Oct 1 2024,Deaths by race/ethnicity,Black,3906,Number
-Jul 1 2022,Deaths by race/ethnicity,Hispanic,3108,Number
+Oct 1 2024,Deaths by race/ethnicity,Black,3907,Number
+Jan 1 2025,Deaths by race/ethnicity,Black,4120,Number
 Oct 1 2022,Deaths by race/ethnicity,Hispanic,3407,Number
 Jan 1 2023,Deaths by race/ethnicity,Hispanic,3069,Number
 Apr 1 2023,Deaths by race/ethnicity,Hispanic,2888,Number
 Jul 1 2023,Deaths by race/ethnicity,Hispanic,2951,Number
 Oct 1 2023,Deaths by race/ethnicity,Hispanic,3316,Number
-Jan 1 2024,Deaths by race/ethnicity,Hispanic,3311,Number
+Jan 1 2024,Deaths by race/ethnicity,Hispanic,3310,Number
 Apr 1 2024,Deaths by race/ethnicity,Hispanic,2913,Number
-Jul 1 2024,Deaths by race/ethnicity,Hispanic,2881,Number
+Jul 1 2024,Deaths by race/ethnicity,Hispanic,2882,Number
 Oct 1 2024,Deaths by race/ethnicity,Hispanic,3103,Number
-Jul 1 2022,Deaths by race/ethnicity,White,5207,Number
+Jan 1 2025,Deaths by race/ethnicity,Hispanic,3351,Number
 Oct 1 2022,Deaths by race/ethnicity,White,6045,Number
 Jan 1 2023,Deaths by race/ethnicity,White,5726,Number
 Apr 1 2023,Deaths by race/ethnicity,White,4959,Number
@@ -439,27 +438,27 @@ Jan 1 2024,Deaths by race/ethnicity,White,5677,Number
 Apr 1 2024,Deaths by race/ethnicity,White,4713,Number
 Jul 1 2024,Deaths by race/ethnicity,White,4821,Number
 Oct 1 2024,Deaths by race/ethnicity,White,5204,Number
-Jul 1 2022,Deaths by race/ethnicity,Other/Unknown,406,Number
+Jan 1 2025,Deaths by race/ethnicity,White,5584,Number
 Oct 1 2022,Deaths by race/ethnicity,Other/Unknown,454,Number
 Jan 1 2023,Deaths by race/ethnicity,Other/Unknown,427,Number
 Apr 1 2023,Deaths by race/ethnicity,Other/Unknown,392,Number
 Jul 1 2023,Deaths by race/ethnicity,Other/Unknown,386,Number
 Oct 1 2023,Deaths by race/ethnicity,Other/Unknown,453,Number
-Jan 1 2024,Deaths by race/ethnicity,Other/Unknown,484,Number
+Jan 1 2024,Deaths by race/ethnicity,Other/Unknown,485,Number
 Apr 1 2024,Deaths by race/ethnicity,Other/Unknown,423,Number
-Jul 1 2024,Deaths by race/ethnicity,Other/Unknown,444,Number
-Oct 1 2024,Deaths by race/ethnicity,Other/Unknown,477,Number
-Jul 1 2022,Deaths by cause,Accidents,352,Number
+Jul 1 2024,Deaths by race/ethnicity,Other/Unknown,443,Number
+Oct 1 2024,Deaths by race/ethnicity,Other/Unknown,475,Number
+Jan 1 2025,Deaths by race/ethnicity,Other/Unknown,492,Number
 Oct 1 2022,Deaths by cause,Accidents,416,Number
 Jan 1 2023,Deaths by cause,Accidents,317,Number
 Apr 1 2023,Deaths by cause,Accidents,342,Number
 Jul 1 2023,Deaths by cause,Accidents,321,Number
 Oct 1 2023,Deaths by cause,Accidents,375,Number
-Jan 1 2024,Deaths by cause,Accidents,363,Number
+Jan 1 2024,Deaths by cause,Accidents,365,Number
 Apr 1 2024,Deaths by cause,Accidents,371,Number
-Jul 1 2024,Deaths by cause,Accidents,335,Number
-Oct 1 2024,Deaths by cause,Accidents,357,Number
-Jul 1 2022,Deaths by cause,Alzheimer's,223,Number
+Jul 1 2024,Deaths by cause,Accidents,342,Number
+Oct 1 2024,Deaths by cause,Accidents,374,Number
+Jan 1 2025,Deaths by cause,Accidents,348,Number
 Oct 1 2022,Deaths by cause,Alzheimer's,239,Number
 Jan 1 2023,Deaths by cause,Alzheimer's,247,Number
 Apr 1 2023,Deaths by cause,Alzheimer's,200,Number
@@ -468,28 +467,28 @@ Oct 1 2023,Deaths by cause,Alzheimer's,256,Number
 Jan 1 2024,Deaths by cause,Alzheimer's,272,Number
 Apr 1 2024,Deaths by cause,Alzheimer's,195,Number
 Jul 1 2024,Deaths by cause,Alzheimer's,157,Number
-Oct 1 2024,Deaths by cause,Alzheimer's,233,Number
-Jul 1 2022,Deaths by cause,Cancer,2952,Number
+Oct 1 2024,Deaths by cause,Alzheimer's,234,Number
+Jan 1 2025,Deaths by cause,Alzheimer's,250,Number
 Oct 1 2022,Deaths by cause,Cancer,2882,Number
 Jan 1 2023,Deaths by cause,Cancer,2792,Number
 Apr 1 2023,Deaths by cause,Cancer,2731,Number
 Jul 1 2023,Deaths by cause,Cancer,2835,Number
 Oct 1 2023,Deaths by cause,Cancer,2984,Number
-Jan 1 2024,Deaths by cause,Cancer,2964,Number
+Jan 1 2024,Deaths by cause,Cancer,2965,Number
 Apr 1 2024,Deaths by cause,Cancer,2838,Number
-Jul 1 2024,Deaths by cause,Cancer,2958,Number
-Oct 1 2024,Deaths by cause,Cancer,2911,Number
-Jul 1 2022,Deaths by cause,Cerebrovascular Disease,514,Number
+Jul 1 2024,Deaths by cause,Cancer,2959,Number
+Oct 1 2024,Deaths by cause,Cancer,2912,Number
+Jan 1 2025,Deaths by cause,Cancer,2937,Number
 Oct 1 2022,Deaths by cause,Cerebrovascular Disease,565,Number
 Jan 1 2023,Deaths by cause,Cerebrovascular Disease,536,Number
 Apr 1 2023,Deaths by cause,Cerebrovascular Disease,520,Number
 Jul 1 2023,Deaths by cause,Cerebrovascular Disease,530,Number
 Oct 1 2023,Deaths by cause,Cerebrovascular Disease,614,Number
 Jan 1 2024,Deaths by cause,Cerebrovascular Disease,623,Number
-Apr 1 2024,Deaths by cause,Cerebrovascular Disease,568,Number
+Apr 1 2024,Deaths by cause,Cerebrovascular Disease,569,Number
 Jul 1 2024,Deaths by cause,Cerebrovascular Disease,495,Number
 Oct 1 2024,Deaths by cause,Cerebrovascular Disease,598,Number
-Jul 1 2022,Deaths by cause,Chronic liver disease,181,Number
+Jan 1 2025,Deaths by cause,Cerebrovascular Disease,599,Number
 Oct 1 2022,Deaths by cause,Chronic liver disease,146,Number
 Jan 1 2023,Deaths by cause,Chronic liver disease,139,Number
 Apr 1 2023,Deaths by cause,Chronic liver disease,128,Number
@@ -498,8 +497,8 @@ Oct 1 2023,Deaths by cause,Chronic liver disease,153,Number
 Jan 1 2024,Deaths by cause,Chronic liver disease,145,Number
 Apr 1 2024,Deaths by cause,Chronic liver disease,125,Number
 Jul 1 2024,Deaths by cause,Chronic liver disease,134,Number
-Oct 1 2024,Deaths by cause,Chronic liver disease,126,Number
-Jul 1 2022,Deaths by cause,CLRD,323,Number
+Oct 1 2024,Deaths by cause,Chronic liver disease,128,Number
+Jan 1 2025,Deaths by cause,Chronic liver disease,137,Number
 Oct 1 2022,Deaths by cause,CLRD,401,Number
 Jan 1 2023,Deaths by cause,CLRD,405,Number
 Apr 1 2023,Deaths by cause,CLRD,355,Number
@@ -508,8 +507,8 @@ Oct 1 2023,Deaths by cause,CLRD,381,Number
 Jan 1 2024,Deaths by cause,CLRD,380,Number
 Apr 1 2024,Deaths by cause,CLRD,334,Number
 Jul 1 2024,Deaths by cause,CLRD,343,Number
-Oct 1 2024,Deaths by cause,CLRD,367,Number
-Jul 1 2022,Deaths by cause,COVID-19,477,Number
+Oct 1 2024,Deaths by cause,CLRD,370,Number
+Jan 1 2025,Deaths by cause,CLRD,455,Number
 Oct 1 2022,Deaths by cause,COVID-19,666,Number
 Jan 1 2023,Deaths by cause,COVID-19,438,Number
 Apr 1 2023,Deaths by cause,COVID-19,68,Number
@@ -518,38 +517,38 @@ Oct 1 2023,Deaths by cause,COVID-19,207,Number
 Jan 1 2024,Deaths by cause,COVID-19,322,Number
 Apr 1 2024,Deaths by cause,COVID-19,62,Number
 Jul 1 2024,Deaths by cause,COVID-19,122,Number
-Oct 1 2024,Deaths by cause,COVID-19,57,Number
-Jul 1 2022,Deaths by cause,Diabetes,411,Number
+Oct 1 2024,Deaths by cause,COVID-19,58,Number
+Jan 1 2025,Deaths by cause,COVID-19,140,Number
 Oct 1 2022,Deaths by cause,Diabetes,516,Number
 Jan 1 2023,Deaths by cause,Diabetes,466,Number
 Apr 1 2023,Deaths by cause,Diabetes,364,Number
 Jul 1 2023,Deaths by cause,Diabetes,358,Number
 Oct 1 2023,Deaths by cause,Diabetes,433,Number
-Jan 1 2024,Deaths by cause,Diabetes,452,Number
+Jan 1 2024,Deaths by cause,Diabetes,453,Number
 Apr 1 2024,Deaths by cause,Diabetes,383,Number
-Jul 1 2024,Deaths by cause,Diabetes,392,Number
-Oct 1 2024,Deaths by cause,Diabetes,423,Number
-Jul 1 2022,Deaths by cause,Diseases of heart,3803,Number
+Jul 1 2024,Deaths by cause,Diabetes,395,Number
+Oct 1 2024,Deaths by cause,Diabetes,428,Number
+Jan 1 2025,Deaths by cause,Diabetes,471,Number
 Oct 1 2022,Deaths by cause,Diseases of heart,4426,Number
 Jan 1 2023,Deaths by cause,Diseases of heart,4103,Number
 Apr 1 2023,Deaths by cause,Diseases of heart,3722,Number
 Jul 1 2023,Deaths by cause,Diseases of heart,3612,Number
 Oct 1 2023,Deaths by cause,Diseases of heart,4329,Number
-Jan 1 2024,Deaths by cause,Diseases of heart,4236,Number
-Apr 1 2024,Deaths by cause,Diseases of heart,3759,Number
-Jul 1 2024,Deaths by cause,Diseases of heart,3807,Number
-Oct 1 2024,Deaths by cause,Diseases of heart,4153,Number
-Jul 1 2022,Deaths by cause,Drug-related,819,Number
+Jan 1 2024,Deaths by cause,Diseases of heart,4241,Number
+Apr 1 2024,Deaths by cause,Diseases of heart,3761,Number
+Jul 1 2024,Deaths by cause,Diseases of heart,3826,Number
+Oct 1 2024,Deaths by cause,Diseases of heart,4216,Number
+Jan 1 2025,Deaths by cause,Diseases of heart,4414,Number
 Oct 1 2022,Deaths by cause,Drug-related,879,Number
 Jan 1 2023,Deaths by cause,Drug-related,740,Number
 Apr 1 2023,Deaths by cause,Drug-related,812,Number
 Jul 1 2023,Deaths by cause,Drug-related,810,Number
 Oct 1 2023,Deaths by cause,Drug-related,750,Number
-Jan 1 2024,Deaths by cause,Drug-related,661,Number
-Apr 1 2024,Deaths by cause,Drug-related,583,Number
-Jul 1 2024,Deaths by cause,Drug-related,519,Number
-Oct 1 2024,Deaths by cause,Drug-related,,Number
-Jul 1 2022,Deaths by cause,Hypertension,301,Number
+Jan 1 2024,Deaths by cause,Drug-related,668,Number
+Apr 1 2024,Deaths by cause,Drug-related,591,Number
+Jul 1 2024,Deaths by cause,Drug-related,535,Number
+Oct 1 2024,Deaths by cause,Drug-related,447,Number
+Jan 1 2025,Deaths by cause,Drug-related,,Number
 Oct 1 2022,Deaths by cause,Hypertension,351,Number
 Jan 1 2023,Deaths by cause,Hypertension,301,Number
 Apr 1 2023,Deaths by cause,Hypertension,311,Number
@@ -559,7 +558,7 @@ Jan 1 2024,Deaths by cause,Hypertension,346,Number
 Apr 1 2024,Deaths by cause,Hypertension,260,Number
 Jul 1 2024,Deaths by cause,Hypertension,268,Number
 Oct 1 2024,Deaths by cause,Hypertension,291,Number
-Jul 1 2022,Deaths by cause,Homicide,136,Number
+Jan 1 2025,Deaths by cause,Hypertension,338,Number
 Oct 1 2022,Deaths by cause,Homicide,107,Number
 Jan 1 2023,Deaths by cause,Homicide,93,Number
 Apr 1 2023,Deaths by cause,Homicide,114,Number
@@ -567,9 +566,9 @@ Jul 1 2023,Deaths by cause,Homicide,110,Number
 Oct 1 2023,Deaths by cause,Homicide,89,Number
 Jan 1 2024,Deaths by cause,Homicide,85,Number
 Apr 1 2024,Deaths by cause,Homicide,86,Number
-Jul 1 2024,Deaths by cause,Homicide,106,Number
-Oct 1 2024,Deaths by cause,Homicide,99,Number
-Jul 1 2022,Deaths by cause,Influenza and pneumonia,340,Number
+Jul 1 2024,Deaths by cause,Homicide,108,Number
+Oct 1 2024,Deaths by cause,Homicide,103,Number
+Jan 1 2025,Deaths by cause,Homicide,61,Number
 Oct 1 2022,Deaths by cause,Influenza and pneumonia,477,Number
 Jan 1 2023,Deaths by cause,Influenza and pneumonia,426,Number
 Apr 1 2023,Deaths by cause,Influenza and pneumonia,338,Number
@@ -578,8 +577,8 @@ Oct 1 2023,Deaths by cause,Influenza and pneumonia,385,Number
 Jan 1 2024,Deaths by cause,Influenza and pneumonia,484,Number
 Apr 1 2024,Deaths by cause,Influenza and pneumonia,307,Number
 Jul 1 2024,Deaths by cause,Influenza and pneumonia,284,Number
-Oct 1 2024,Deaths by cause,Influenza and pneumonia,348,Number
-Jul 1 2022,Deaths by cause,Kidney disease,167,Number
+Oct 1 2024,Deaths by cause,Influenza and pneumonia,354,Number
+Jan 1 2025,Deaths by cause,Influenza and pneumonia,583,Number
 Oct 1 2022,Deaths by cause,Kidney disease,215,Number
 Jan 1 2023,Deaths by cause,Kidney disease,208,Number
 Apr 1 2023,Deaths by cause,Kidney disease,178,Number
@@ -589,7 +588,7 @@ Jan 1 2024,Deaths by cause,Kidney disease,191,Number
 Apr 1 2024,Deaths by cause,Kidney disease,135,Number
 Jul 1 2024,Deaths by cause,Kidney disease,186,Number
 Oct 1 2024,Deaths by cause,Kidney disease,205,Number
-Jul 1 2022,Deaths by cause,Septicemia,266,Number
+Jan 1 2025,Deaths by cause,Kidney disease,177,Number
 Oct 1 2022,Deaths by cause,Septicemia,293,Number
 Jan 1 2023,Deaths by cause,Septicemia,271,Number
 Apr 1 2023,Deaths by cause,Septicemia,225,Number
@@ -598,18 +597,18 @@ Oct 1 2023,Deaths by cause,Septicemia,275,Number
 Jan 1 2024,Deaths by cause,Septicemia,261,Number
 Apr 1 2024,Deaths by cause,Septicemia,231,Number
 Jul 1 2024,Deaths by cause,Septicemia,235,Number
-Oct 1 2024,Deaths by cause,Septicemia,312,Number
-Jul 1 2022,Deaths by cause,Suicide,141,Number
+Oct 1 2024,Deaths by cause,Septicemia,313,Number
+Jan 1 2025,Deaths by cause,Septicemia,295,Number
 Oct 1 2022,Deaths by cause,Suicide,145,Number
 Jan 1 2023,Deaths by cause,Suicide,138,Number
 Apr 1 2023,Deaths by cause,Suicide,127,Number
 Jul 1 2023,Deaths by cause,Suicide,151,Number
 Oct 1 2023,Deaths by cause,Suicide,131,Number
-Jan 1 2024,Deaths by cause,Suicide,123,Number
-Apr 1 2024,Deaths by cause,Suicide,133,Number
-Jul 1 2024,Deaths by cause,Suicide,137,Number
-Oct 1 2024,Deaths by cause,Suicide,131,Number
-Jul 1 2022,Total IMR,Total,4.24,"per 1,000 live births"
+Jan 1 2024,Deaths by cause,Suicide,124,Number
+Apr 1 2024,Deaths by cause,Suicide,134,Number
+Jul 1 2024,Deaths by cause,Suicide,139,Number
+Oct 1 2024,Deaths by cause,Suicide,134,Number
+Jan 1 2025,Deaths by cause,Suicide,123,Number
 Oct 1 2022,Total IMR,Total,4.29,"per 1,000 live births"
 Jan 1 2023,Total IMR,Total,4.31,"per 1,000 live births"
 Apr 1 2023,Total IMR,Total,4.26,"per 1,000 live births"
@@ -619,7 +618,7 @@ Jan 1 2024,Total IMR,Total,4.22,"per 1,000 live births"
 Apr 1 2024,Total IMR,Total,4.2,"per 1,000 live births"
 Jul 1 2024,Total IMR,Total,4.05,"per 1,000 live births"
 Oct 1 2024,Total IMR,Total,3.89,"per 1,000 live births"
-Jul 1 2022,IMR by age,Neonatal,2.64,"per 1,000 live births"
+Jan 1 2025,Total IMR,Total,3.9,"per 1,000 live births"
 Oct 1 2022,IMR by age,Neonatal,2.63,"per 1,000 live births"
 Jan 1 2023,IMR by age,Neonatal,2.64,"per 1,000 live births"
 Apr 1 2023,IMR by age,Neonatal,2.66,"per 1,000 live births"
@@ -629,7 +628,7 @@ Jan 1 2024,IMR by age,Neonatal,2.74,"per 1,000 live births"
 Apr 1 2024,IMR by age,Neonatal,2.73,"per 1,000 live births"
 Jul 1 2024,IMR by age,Neonatal,2.52,"per 1,000 live births"
 Oct 1 2024,IMR by age,Neonatal,2.46,"per 1,000 live births"
-Jul 1 2022,IMR by age,Post-neonatal,1.59,"per 1,000 live births"
+Jan 1 2025,IMR by age,Neonatal,2.47,"per 1,000 live births"
 Oct 1 2022,IMR by age,Post-neonatal,1.66,"per 1,000 live births"
 Jan 1 2023,IMR by age,Post-neonatal,1.67,"per 1,000 live births"
 Apr 1 2023,IMR by age,Post-neonatal,1.6,"per 1,000 live births"
@@ -639,7 +638,7 @@ Jan 1 2024,IMR by age,Post-neonatal,1.48,"per 1,000 live births"
 Apr 1 2024,IMR by age,Post-neonatal,1.46,"per 1,000 live births"
 Jul 1 2024,IMR by age,Post-neonatal,1.53,"per 1,000 live births"
 Oct 1 2024,IMR by age,Post-neonatal,1.43,"per 1,000 live births"
-Jul 1 2022,IMR by borough,Bronx,5.15,"per 1,000 live births"
+Jan 1 2025,IMR by age,Post-neonatal,1.43,"per 1,000 live births"
 Oct 1 2022,IMR by borough,Bronx,5.77,"per 1,000 live births"
 Jan 1 2023,IMR by borough,Bronx,5.94,"per 1,000 live births"
 Apr 1 2023,IMR by borough,Bronx,6.04,"per 1,000 live births"
@@ -649,7 +648,7 @@ Jan 1 2024,IMR by borough,Bronx,4.6,"per 1,000 live births"
 Apr 1 2024,IMR by borough,Bronx,4.14,"per 1,000 live births"
 Jul 1 2024,IMR by borough,Bronx,4.25,"per 1,000 live births"
 Oct 1 2024,IMR by borough,Bronx,4.27,"per 1,000 live births"
-Jul 1 2022,IMR by borough,Brooklyn,3.42,"per 1,000 live births"
+Jan 1 2025,IMR by borough,Bronx,4.23,"per 1,000 live births"
 Oct 1 2022,IMR by borough,Brooklyn,3.32,"per 1,000 live births"
 Jan 1 2023,IMR by borough,Brooklyn,3.46,"per 1,000 live births"
 Apr 1 2023,IMR by borough,Brooklyn,3.39,"per 1,000 live births"
@@ -659,7 +658,7 @@ Jan 1 2024,IMR by borough,Brooklyn,3.34,"per 1,000 live births"
 Apr 1 2024,IMR by borough,Brooklyn,3.52,"per 1,000 live births"
 Jul 1 2024,IMR by borough,Brooklyn,3.6,"per 1,000 live births"
 Oct 1 2024,IMR by borough,Brooklyn,3.28,"per 1,000 live births"
-Jul 1 2022,IMR by borough,Manhattan,2.51,"per 1,000 live births"
+Jan 1 2025,IMR by borough,Brooklyn,3.23,"per 1,000 live births"
 Oct 1 2022,IMR by borough,Manhattan,2.44,"per 1,000 live births"
 Jan 1 2023,IMR by borough,Manhattan,2.7,"per 1,000 live births"
 Apr 1 2023,IMR by borough,Manhattan,2.52,"per 1,000 live births"
@@ -669,7 +668,7 @@ Jan 1 2024,IMR by borough,Manhattan,2.87,"per 1,000 live births"
 Apr 1 2024,IMR by borough,Manhattan,2.98,"per 1,000 live births"
 Jul 1 2024,IMR by borough,Manhattan,2.56,"per 1,000 live births"
 Oct 1 2024,IMR by borough,Manhattan,2.82,"per 1,000 live births"
-Jul 1 2022,IMR by borough,Queens,4.13,"per 1,000 live births"
+Jan 1 2025,IMR by borough,Manhattan,2.97,"per 1,000 live births"
 Oct 1 2022,IMR by borough,Queens,3.93,"per 1,000 live births"
 Jan 1 2023,IMR by borough,Queens,3.78,"per 1,000 live births"
 Apr 1 2023,IMR by borough,Queens,3.53,"per 1,000 live births"
@@ -679,7 +678,7 @@ Jan 1 2024,IMR by borough,Queens,4.26,"per 1,000 live births"
 Apr 1 2024,IMR by borough,Queens,4.3,"per 1,000 live births"
 Jul 1 2024,IMR by borough,Queens,3.8,"per 1,000 live births"
 Oct 1 2024,IMR by borough,Queens,3.71,"per 1,000 live births"
-Jul 1 2022,IMR by borough,Staten Island,5.79,"per 1,000 live births"
+Jan 1 2025,IMR by borough,Queens,3.36,"per 1,000 live births"
 Oct 1 2022,IMR by borough,Staten Island,4.5,"per 1,000 live births"
 Jan 1 2023,IMR by borough,Staten Island,4.5,"per 1,000 live births"
 Apr 1 2023,IMR by borough,Staten Island,4.11,"per 1,000 live births"
@@ -689,37 +688,37 @@ Jan 1 2024,IMR by borough,Staten Island,3.76,"per 1,000 live births"
 Apr 1 2024,IMR by borough,Staten Island,3.93,"per 1,000 live births"
 Jul 1 2024,IMR by borough,Staten Island,3.7,"per 1,000 live births"
 Oct 1 2024,IMR by borough,Staten Island,3.06,"per 1,000 live births"
-Jul 1 2022,IMR by race/ethnicity,Asian/PI,1.85,"per 1,000 live births"
+Jan 1 2025,IMR by borough,Staten Island,2.68,"per 1,000 live births"
 Oct 1 2022,IMR by race/ethnicity,Asian/PI,1.93,"per 1,000 live births"
 Jan 1 2023,IMR by race/ethnicity,Asian/PI,2.34,"per 1,000 live births"
 Apr 1 2023,IMR by race/ethnicity,Asian/PI,2.93,"per 1,000 live births"
 Jul 1 2023,IMR by race/ethnicity,Asian/PI,3.08,"per 1,000 live births"
-Oct 1 2023,IMR by race/ethnicity,Asian/PI,2.67,"per 1,000 live births"
+Oct 1 2023,IMR by race/ethnicity,Asian/PI,2.71,"per 1,000 live births"
 Jan 1 2024,IMR by race/ethnicity,Asian/PI,3.05,"per 1,000 live births"
 Apr 1 2024,IMR by race/ethnicity,Asian/PI,2.76,"per 1,000 live births"
 Jul 1 2024,IMR by race/ethnicity,Asian/PI,2.73,"per 1,000 live births"
 Oct 1 2024,IMR by race/ethnicity,Asian/PI,2.81,"per 1,000 live births"
-Jul 1 2022,IMR by race/ethnicity,Black,8.32,"per 1,000 live births"
+Jan 1 2025,IMR by race/ethnicity,Asian/PI,2.06,"per 1,000 live births"
 Oct 1 2022,IMR by race/ethnicity,Black,7.63,"per 1,000 live births"
 Jan 1 2023,IMR by race/ethnicity,Black,7.75,"per 1,000 live births"
 Apr 1 2023,IMR by race/ethnicity,Black,7.82,"per 1,000 live births"
 Jul 1 2023,IMR by race/ethnicity,Black,8.04,"per 1,000 live births"
-Oct 1 2023,IMR by race/ethnicity,Black,8.28,"per 1,000 live births"
+Oct 1 2023,IMR by race/ethnicity,Black,8.41,"per 1,000 live births"
 Jan 1 2024,IMR by race/ethnicity,Black,7.85,"per 1,000 live births"
 Apr 1 2024,IMR by race/ethnicity,Black,7.71,"per 1,000 live births"
 Jul 1 2024,IMR by race/ethnicity,Black,6.9,"per 1,000 live births"
 Oct 1 2024,IMR by race/ethnicity,Black,6.42,"per 1,000 live births"
-Jul 1 2022,IMR by race/ethnicity,Hispanic,4.87,"per 1,000 live births"
+Jan 1 2025,IMR by race/ethnicity,Black,7.01,"per 1,000 live births"
 Oct 1 2022,IMR by race/ethnicity,Hispanic,4.89,"per 1,000 live births"
 Jan 1 2023,IMR by race/ethnicity,Hispanic,4.55,"per 1,000 live births"
 Apr 1 2023,IMR by race/ethnicity,Hispanic,4.46,"per 1,000 live births"
 Jul 1 2023,IMR by race/ethnicity,Hispanic,4.23,"per 1,000 live births"
-Oct 1 2023,IMR by race/ethnicity,Hispanic,4.64,"per 1,000 live births"
+Oct 1 2023,IMR by race/ethnicity,Hispanic,4.63,"per 1,000 live births"
 Jan 1 2024,IMR by race/ethnicity,Hispanic,4.75,"per 1,000 live births"
 Apr 1 2024,IMR by race/ethnicity,Hispanic,4.48,"per 1,000 live births"
 Jul 1 2024,IMR by race/ethnicity,Hispanic,4.42,"per 1,000 live births"
 Oct 1 2024,IMR by race/ethnicity,Hispanic,4.28,"per 1,000 live births"
-Jul 1 2022,IMR by race/ethnicity,White,2.28,"per 1,000 live births"
+Jan 1 2025,IMR by race/ethnicity,Hispanic,4.52,"per 1,000 live births"
 Oct 1 2022,IMR by race/ethnicity,White,2.68,"per 1,000 live births"
 Jan 1 2023,IMR by race/ethnicity,White,2.86,"per 1,000 live births"
 Apr 1 2023,IMR by race/ethnicity,White,2.59,"per 1,000 live births"
@@ -729,3 +728,4 @@ Jan 1 2024,IMR by race/ethnicity,White,1.96,"per 1,000 live births"
 Apr 1 2024,IMR by race/ethnicity,White,2.33,"per 1,000 live births"
 Jul 1 2024,IMR by race/ethnicity,White,2.43,"per 1,000 live births"
 Oct 1 2024,IMR by race/ethnicity,White,2.19,"per 1,000 live births"
+Jan 1 2025,IMR by race/ethnicity,White,2.28,"per 1,000 live births"
