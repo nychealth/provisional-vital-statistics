@@ -46,8 +46,9 @@ async function drawChart(destination, metric, label, multi, schemaFlag = "defaul
   let fillColor = multi === false ? "#f3f3f3" : "#f3f3f300";
   let subSeries = multi === false ? "" : "submetric";
   let fillLayer = multi === false ? [{"mark": {"type": "area", "color": "#f0f8ff85", "tooltip": false}}] : [];
-  let legend = multi === true ? {"columns": 6, "labelFontSize": 10, "labelFontWeight": "bold", "symbolType": "stroke", "labelColor": {"expr": "scale('color', datum.label)"}
-} : {"disable": true};
+  let legend = multi === true ? 
+      {"columns": 6, "labelFontSize": 10, "labelFontWeight": "bold", "symbolType": "stroke", "labelColor": {"expr": "scale('color', datum.label)"}} 
+      : {"disable": true};
 
   // CREATE ARRAY OF SUBMETRICS TO PASS INTO SPEC.ENCODING.COLOR.SCALE.DOMAIN
   let groups = [];
@@ -159,7 +160,8 @@ var partialConfig = {
         "legend": {
           "orient": "bottom", 
           "title": null, 
-          "labelLimit": 1000
+          "labelLimit": 1000,
+          "disable": true
         },
         "scale": {
           "domain": sortedSubmetrics,  
@@ -221,7 +223,7 @@ var partialConfig = {
     "title": title,
     "config": {
       ...partialConfig,
-      "legend": legend
+      "legend": {"disable": true}
     },
     "data": {
       "url": dataSource
@@ -262,129 +264,85 @@ var partialConfig = {
         }
       },
       {
-        "transform": [
-        {
-          "joinaggregate": [
-            {"op": "max", "field": "value", "as": "maxChartValue"}
-          ]
-        },
-        {
-          "aggregate": [
-            {"op": "argmax", "field": "date", "as": "enddate"},
-            {"op": "max", "field": "date", "as": "date"}
-          ],
-          "groupby": ["submetric"]
-        },
-        {"calculate": "toNumber(datum.enddate.maxChartValue)", "as": "maxChartValue"},
-        {"calculate": "datum.maxChartValue * 0.05", "as": "minSep"},
-        {
-          "calculate": "toNumber(datum.enddate.value)",
-          "as": "value"
-        },
-        {
-          "filter": "datum.value !== null && datum.value !== '' && datum.value !== 'null'"
-        },
-        {
-          "calculate": "replace(datum.submetric, /(.{8,}?)(\\s+)/g, '$1\\n')",
-          "as": "submetric"
-        },
-        {
-          "window": [
-            {"op": "lag", "field": "enddate['value']", "as": "prevVal1"}
-          ],
-          "sort": [{"field": "enddate['value']", "order": "ascending"}]
-        },
-      {
-        "calculate": "toNumber(datum.prevVal1)",
-        "as": "prevVal1"
-      },
-      {
-        "calculate": "datum.prevVal1 === null ? 0 : datum.value - datum.prevVal1",
-        "as": "valDif1"
-      },
-      {
-        "calculate": "datum.prevVal1 === null ? datum.value*.9 : (datum.valDif1 < datum.minSep ? datum.value + datum.minSep : datum.value)",
-        "as": "offset1"
-      },
-
-        {
-    "window": [
-      {"op": "lag", "field": "enddate['value']", "as": "prevVal2"}
+"transform": [
+  {
+    "joinaggregate": [
+      {"op": "max", "field": "value", "as": "maxChartValue"}
+    ]
+  },
+  {
+    "aggregate": [
+      {"op": "argmax", "field": "date", "as": "enddate"},
+      {"op": "max", "field": "date", "as": "date"}
     ],
-    "sort": [{"field": "enddate['value']", "order": "ascending"}]
+    "groupby": ["submetric"]
+  },
+  {"calculate": "toNumber(datum.enddate.maxChartValue)", "as": "maxChartValue"},
+  {"calculate": "datum.maxChartValue * 0.05", "as": "minSep"},
+  {"calculate": "toNumber(datum.enddate.value)", "as": "value"},
+  {
+    "filter": "datum.value !== null && datum.value !== '' && datum.value !== 'null'"
   },
   {
-    "calculate": "toNumber(datum.prevVal2)",
-    "as": "prevVal2"
+    "calculate": "replace(datum.submetric, /(.{8,}?)(\\s+)/g, '$1\\n')",
+    "as": "submetric"
   },
+
+  // --- Pass 1: baseline, reads from value ---
   {
-    "calculate": "datum.prevVal2 === null ? 0 : datum.value - datum.prevVal2",
-    "as": "valDif2"
+    "window": [{"op": "lag", "field": "value", "as": "prevVal1"}],
+    "sort": [{"field": "value", "order": "ascending"}]
   },
+  {"calculate": "toNumber(datum.prevVal1)", "as": "prevVal1"},
   {
-    "calculate": "datum.prevVal2 == null ? datum.value*.9 : (datum.valDif2 < datum.minSep ? datum.value + datum.minSep : datum.value)",
+    "calculate": "datum.prevVal1 === null ? datum.value * 0.95 : (datum.value - datum.prevVal1 < datum.minSep ? datum.prevVal1 + datum.minSep : datum.value)",
+    "as": "offset1"
+  },
+
+  // --- Pass 2: reads from offset1 ---
+  {
+    "window": [{"op": "lag", "field": "offset1", "as": "prevVal2"}],
+    "sort": [{"field": "offset1", "order": "ascending"}]
+  },
+  {"calculate": "toNumber(datum.prevVal2)", "as": "prevVal2"},
+  {
+    "calculate": "datum.prevVal2 === null ? datum.offset1 : (datum.offset1 - datum.prevVal2 < datum.minSep ? datum.prevVal2 + datum.minSep : datum.offset1)",
     "as": "offset2"
   },
 
-  // --- Third pass ---
+  // --- Pass 3: reads from offset2 ---
   {
-    "window": [
-      {"op": "lag", "field": "enddate['value']", "as": "prevVal3"}
-    ],
-    "sort": [{"field": "enddate['value']", "order": "ascending"}]
+    "window": [{"op": "lag", "field": "offset2", "as": "prevVal3"}],
+    "sort": [{"field": "offset2", "order": "ascending"}]
   },
+  {"calculate": "toNumber(datum.prevVal3)", "as": "prevVal3"},
   {
-    "calculate": "toNumber(datum.prevVal3)",
-    "as": "prevVal3"
-  },
-  {
-    "calculate": "datum.prevVal3 === null ? 0 : datum.value - datum.prevVal3",
-    "as": "valDif3"
-  },
-  {
-    "calculate": "datum.prevVal3 == null ? datum.value*.9 : (datum.valDif3 < datum.minSep ? datum.value + datum.minSep : datum.value)",
+    "calculate": "datum.prevVal3 === null ? datum.offset2 : (datum.offset2 - datum.prevVal3 < datum.minSep ? datum.prevVal3 + datum.minSep : datum.offset2)",
     "as": "offset3"
   },
+
+  // --- Pass 4: reads from offset3 ---
   {
-  "window": [
-    {"op": "lag", "field": "enddate['value']", "as": "prevVal4"}
-  ],
-  "sort": [{"field": "enddate['value']", "order": "ascending"}]
-},
-{
-  "calculate": "toNumber(datum.prevVal4)",
-  "as": "prevVal4"
-},
-{
-  "calculate": "datum.prevVal4 === null ? 0 : datum.value - datum.prevVal4",
-  "as": "valDif4"
-},
-{
-  "calculate": "datum.prevVal4 == null ? datum.value*.9 : (datum.valDif4 < datum.minSep ? datum.value + datum.minSep : datum.value)",
-  "as": "offset4"
-},
-
+    "window": [{"op": "lag", "field": "offset3", "as": "prevVal4"}],
+    "sort": [{"field": "offset3", "order": "ascending"}]
+  },
+  {"calculate": "toNumber(datum.prevVal4)", "as": "prevVal4"},
   {
-  "window": [
-    {"op": "lag", "field": "enddate['value']", "as": "prevVal5"}
-  ],
-  "sort": [{"field": "enddate['value']", "order": "ascending"}]
-},
-{
-  "calculate": "toNumber(datum.prevVal5)",
-  "as": "prevVal5"
-},
-{
-  "calculate": "datum.prevVal5 === null ? 0 : datum.value - datum.prevVal5",
-  "as": "valDif5"
-},
-{
-  "calculate": "datum.prevVal5 == null ? datum.value*.9 : (datum.valDif5 < datum.minSep ? datum.value + datum.minSep : datum.value)",
-  "as": "offset5"
-}
+    "calculate": "datum.prevVal4 === null ? datum.offset3 : (datum.offset3 - datum.prevVal4 < datum.minSep ? datum.prevVal4 + datum.minSep : datum.offset3)",
+    "as": "offset4"
+  },
 
-
-        ],
+  // --- Pass 5: reads from offset4 ---
+  {
+    "window": [{"op": "lag", "field": "offset4", "as": "prevVal5"}],
+    "sort": [{"field": "offset4", "order": "ascending"}]
+  },
+  {"calculate": "toNumber(datum.prevVal5)", "as": "prevVal5"},
+  {
+    "calculate": "datum.prevVal5 === null ? datum.offset4 : (datum.offset4 - datum.prevVal5 < datum.minSep ? datum.prevVal5 + datum.minSep : datum.offset4)",
+    "as": "offset5"
+  }
+],
         "encoding": {
           "x": {"field": "date"},
           "y": {"field": "offset5"},
@@ -392,7 +350,7 @@ var partialConfig = {
             "field": "submetric"
           },
           "tooltip": [],
-          "color": {"field": "submetric", "type": "nominal"}
+          "color": {"field": "submetric", "type": "nominal", "legend": null}
         },
         "mark": {"type": "text", "align": "left", "dx": 8, "dy": -5,"fontSize": 10, "fontWeight": "bold","lineBreak": "\n",}
       }
