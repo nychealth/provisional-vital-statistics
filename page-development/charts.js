@@ -264,91 +264,89 @@ var partialConfig = {
         }
       },
       {
-"transform": [
-  {
-    "joinaggregate": [
-      {"op": "max", "field": "value", "as": "maxChartValue"}
-    ]
-  },
-  {
-    "aggregate": [
-      {"op": "argmax", "field": "date", "as": "enddate"},
-      {"op": "max", "field": "date", "as": "date"}
-    ],
-    "groupby": ["submetric"]
-  },
-  {"calculate": "toNumber(datum.enddate.maxChartValue)", "as": "maxChartValue"},
-  {"calculate": "datum.maxChartValue * 0.05", "as": "minSep"},
-  {"calculate": "toNumber(datum.enddate.value)", "as": "value"},
-  {
-    "filter": "datum.value !== null && datum.value !== '' && datum.value !== 'null'"
-  },
-  {
-    "calculate": "replace(datum.submetric, /(.{8,}?)(\\s+)/g, '$1\\n')",
-    "as": "submetric"
-  },
+        "transform": [
+          {
+            "joinaggregate": [
+              {"op": "max", "field": "value", "as": "maxChartValue"}
+            ]
+          },
+          {
+            "aggregate": [
+              {"op": "argmax", "field": "date", "as": "enddate"},
+              {"op": "max", "field": "date", "as": "date"}
+            ],
+            "groupby": ["submetric"]
+          },
+          {"calculate": "toNumber(datum.enddate.maxChartValue)", "as": "maxChartValue"},
+          {"calculate": "datum.maxChartValue * 0.05", "as": "minSep"},
+          {"calculate": "toNumber(datum.enddate.value)", "as": "value"},
+          {
+            "filter": "datum.value !== null && datum.value !== '' && datum.value !== 'null'"
+          },
+          {
+            "calculate": "replace(datum.submetric, /(.{8,}?)(\\s+)/g, '$1\\n')",
+            "as": "submetric"
+          },
 
-  // --- Pass 1: baseline, reads from value ---
-  {
-    "window": [{"op": "lag", "field": "value", "as": "prevVal1"}],
-    "sort": [{"field": "value", "order": "ascending"}]
-  },
-  {"calculate": "toNumber(datum.prevVal1)", "as": "prevVal1"},
-  {
-    "calculate": "datum.prevVal1 === null ? datum.value * 0.95 : (datum.value - datum.prevVal1 < datum.minSep ? datum.prevVal1 + datum.minSep : datum.value)",
-    "as": "offset1"
-  },
+          // --- Pass 1: baseline, reads from value ---
+          {
+            "window": [{"op": "lag", "field": "value", "as": "prevVal1"}],
+            "sort": [{"field": "value", "order": "ascending"}]
+          },
+          {"calculate": "toNumber(datum.prevVal1)", "as": "prevVal1"},
+          {
+            "calculate": "datum.prevVal1 === null ? datum.value * 0.95 : (datum.value - datum.prevVal1 < datum.minSep ? datum.prevVal1 + datum.minSep : datum.value)",
+            "as": "offset1"
+          },
 
-  // --- Pass 2: reads from offset1 ---
-  {
-    "window": [{"op": "lag", "field": "offset1", "as": "prevVal2"}],
-    "sort": [{"field": "offset1", "order": "ascending"}]
-  },
-  {"calculate": "toNumber(datum.prevVal2)", "as": "prevVal2"},
-  {
-    "calculate": "datum.prevVal2 === null ? datum.offset1 : (datum.offset1 - datum.prevVal2 < datum.minSep ? datum.prevVal2 + datum.minSep : datum.offset1)",
-    "as": "offset2"
-  },
+          // --- Pass 2: reads from offset1 ---
+          {
+            "window": [{"op": "lag", "field": "offset1", "as": "prevVal2"}],
+            "sort": [{"field": "offset1", "order": "ascending"}]
+          },
+          {"calculate": "toNumber(datum.prevVal2)", "as": "prevVal2"},
+          {
+            "calculate": "datum.prevVal2 === null ? datum.offset1 : (datum.offset1 - datum.prevVal2 < datum.minSep ? datum.prevVal2 + datum.minSep : datum.offset1)",
+            "as": "offset2"
+          },
 
-  // --- Pass 3: reads from offset2 ---
-  {
-    "window": [{"op": "lag", "field": "offset2", "as": "prevVal3"}],
-    "sort": [{"field": "offset2", "order": "ascending"}]
-  },
-  {"calculate": "toNumber(datum.prevVal3)", "as": "prevVal3"},
-  {
-    "calculate": "datum.prevVal3 === null ? datum.offset2 : (datum.offset2 - datum.prevVal3 < datum.minSep ? datum.prevVal3 + datum.minSep : datum.offset2)",
-    "as": "offset3"
-  },
+          // --- Pass 3: reads from offset2 ---
+          {
+            "window": [{"op": "lag", "field": "offset2", "as": "prevVal3"}],
+            "sort": [{"field": "offset2", "order": "ascending"}]
+          },
+          {"calculate": "toNumber(datum.prevVal3)", "as": "prevVal3"},
+          {
+            "calculate": "datum.prevVal3 === null ? datum.offset2 : (datum.offset2 - datum.prevVal3 < datum.minSep ? datum.prevVal3 + datum.minSep : datum.offset2)",
+            "as": "offset3"
+          },
 
-  // --- Pass 4: reads from offset3 ---
-  {
-    "window": [{"op": "lag", "field": "offset3", "as": "prevVal4"}],
-    "sort": [{"field": "offset3", "order": "ascending"}]
-  },
-  {"calculate": "toNumber(datum.prevVal4)", "as": "prevVal4"},
-  {
-    "calculate": "datum.prevVal4 === null ? datum.offset3 : (datum.offset3 - datum.prevVal4 < datum.minSep ? datum.prevVal4 + datum.minSep : datum.offset3)",
-    "as": "offset4"
-  },
+          // --- Pass 4: reads from offset3 ---
+          {
+            "window": [{"op": "lag", "field": "offset3", "as": "prevVal4"}],
+            "sort": [{"field": "offset3", "order": "ascending"}]
+          },
+          {"calculate": "toNumber(datum.prevVal4)", "as": "prevVal4"},
+          {
+            "calculate": "datum.prevVal4 === null ? datum.offset3 : (datum.offset3 - datum.prevVal4 < datum.minSep ? datum.prevVal4 + datum.minSep : datum.offset3)",
+            "as": "offset4"
+          },
 
-  // --- Pass 5: reads from offset4 ---
-  {
-    "window": [{"op": "lag", "field": "offset4", "as": "prevVal5"}],
-    "sort": [{"field": "offset4", "order": "ascending"}]
-  },
-  {"calculate": "toNumber(datum.prevVal5)", "as": "prevVal5"},
-  {
-    "calculate": "datum.prevVal5 === null ? datum.offset4 : (datum.offset4 - datum.prevVal5 < datum.minSep ? datum.prevVal5 + datum.minSep : datum.offset4)",
-    "as": "offset5"
-  }
-],
+          // --- Pass 5: reads from offset4 ---
+          {
+            "window": [{"op": "lag", "field": "offset4", "as": "prevVal5"}],
+            "sort": [{"field": "offset4", "order": "ascending"}]
+          },
+          {"calculate": "toNumber(datum.prevVal5)", "as": "prevVal5"},
+          {
+            "calculate": "datum.prevVal5 === null ? datum.offset4 : (datum.offset4 - datum.prevVal5 < datum.minSep ? datum.prevVal5 + datum.minSep : datum.offset4)",
+            "as": "offset5"
+          }
+        ],
         "encoding": {
           "x": {"field": "date"},
           "y": {"field": "offset5"},
-          "text": {
-            "field": "submetric"
-          },
+          "text": multi ? { "field": "submetric" } : { "value": "" },
           "tooltip": [],
           "color": {"field": "submetric", "type": "nominal", "legend": null}
         },
