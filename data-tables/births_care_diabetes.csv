@@ -1,11 +1,11 @@
-Date,Pre-pregnancy diabetes
-Jul 1 2023,1.05
-Oct 1 2023,1.27
-Jan 1 2024,1.25
-Apr 1 2024,1.33
-Jul 1 2024,1.28
-Oct 1 2024,1.17
-Jan 1 2025,1.18
-Apr 1 2025,1.20
-Jul 1 2025,1.26
-Oct 1 2025,1.13
+Date,metric,submetric,value,display
+Oct 1 2023,Pre-pregnancy diabetes,Pre-pregnancy diabetes,1.27,Percent
+Jan 1 2024,Pre-pregnancy diabetes,Pre-pregnancy diabetes,1.25,Percent
+Apr 1 2024,Pre-pregnancy diabetes,Pre-pregnancy diabetes,1.33,Percent
+Jul 1 2024,Pre-pregnancy diabetes,Pre-pregnancy diabetes,1.28,Percent
+Oct 1 2024,Pre-pregnancy diabetes,Pre-pregnancy diabetes,1.17,Percent
+Jan 1 2025,Pre-pregnancy diabetes,Pre-pregnancy diabetes,1.18,Percent
+Apr 1 2025,Pre-pregnancy diabetes,Pre-pregnancy diabetes,1.20,Percent
+Jul 1 2025,Pre-pregnancy diabetes,Pre-pregnancy diabetes,1.26,Percent
+Oct 1 2025,Pre-pregnancy diabetes,Pre-pregnancy diabetes,1.13,Percent
+Jan 1 2026,Pre-pregnancy diabetes,Pre-pregnancy diabetes,1.21,Percent

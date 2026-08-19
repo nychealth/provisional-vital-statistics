@@ -1,11 +1,11 @@
-Date,Pre-pregnancy hypertension
-Jul 1 2023,2.81
-Oct 1 2023,2.72
-Jan 1 2024,2.60
-Apr 1 2024,2.63
-Jul 1 2024,2.66
-Oct 1 2024,2.76
-Jan 1 2025,2.78
-Apr 1 2025,2.85
-Jul 1 2025,2.67
-Oct 1 2025,2.52
+Date,metric,submetric,value,display
+Oct 1 2023,Pre-pregnancy hypertension,Pre-pregnancy hypertension,2.72,Percent
+Jan 1 2024,Pre-pregnancy hypertension,Pre-pregnancy hypertension,2.60,Percent
+Apr 1 2024,Pre-pregnancy hypertension,Pre-pregnancy hypertension,2.63,Percent
+Jul 1 2024,Pre-pregnancy hypertension,Pre-pregnancy hypertension,2.66,Percent
+Oct 1 2024,Pre-pregnancy hypertension,Pre-pregnancy hypertension,2.76,Percent
+Jan 1 2025,Pre-pregnancy hypertension,Pre-pregnancy hypertension,2.78,Percent
+Apr 1 2025,Pre-pregnancy hypertension,Pre-pregnancy hypertension,2.85,Percent
+Jul 1 2025,Pre-pregnancy hypertension,Pre-pregnancy hypertension,2.67,Percent
+Oct 1 2025,Pre-pregnancy hypertension,Pre-pregnancy hypertension,2.52,Percent
+Jan 1 2026,Pre-pregnancy hypertension,Pre-pregnancy hypertension,2.70,Percent

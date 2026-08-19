@@ -1,11 +1,21 @@
-Date,Neonatal,Post-neonatal
-Jul 1 2023,2.68,1.47
-Oct 1 2023,2.72,1.48
-Jan 1 2024,2.74,1.48
-Apr 1 2024,2.73,1.46
-Jul 1 2024,2.52,1.53
-Oct 1 2024,2.47,1.43
-Jan 1 2025,2.45,1.43
-Apr 1 2025,2.59,1.57
-Jul 1 2025,2.71,1.52
-Oct 1 2025,2.81,1.46
+Date,metric,submetric,value,display
+Oct 1 2023,IMR by age,Neonatal,2.72,"per 1,000 live births"
+Jan 1 2024,IMR by age,Neonatal,2.74,"per 1,000 live births"
+Apr 1 2024,IMR by age,Neonatal,2.73,"per 1,000 live births"
+Jul 1 2024,IMR by age,Neonatal,2.52,"per 1,000 live births"
+Oct 1 2024,IMR by age,Neonatal,2.47,"per 1,000 live births"
+Jan 1 2025,IMR by age,Neonatal,2.45,"per 1,000 live births"
+Apr 1 2025,IMR by age,Neonatal,2.59,"per 1,000 live births"
+Jul 1 2025,IMR by age,Neonatal,2.71,"per 1,000 live births"
+Oct 1 2025,IMR by age,Neonatal,2.8,"per 1,000 live births"
+Jan 1 2026,IMR by age,Neonatal,2.75,"per 1,000 live births"
+Oct 1 2023,IMR by age,Post-neonatal,1.48,"per 1,000 live births"
+Jan 1 2024,IMR by age,Post-neonatal,1.48,"per 1,000 live births"
+Apr 1 2024,IMR by age,Post-neonatal,1.46,"per 1,000 live births"
+Jul 1 2024,IMR by age,Post-neonatal,1.53,"per 1,000 live births"
+Oct 1 2024,IMR by age,Post-neonatal,1.43,"per 1,000 live births"
+Jan 1 2025,IMR by age,Post-neonatal,1.43,"per 1,000 live births"
+Apr 1 2025,IMR by age,Post-neonatal,1.57,"per 1,000 live births"
+Jul 1 2025,IMR by age,Post-neonatal,1.52,"per 1,000 live births"
+Oct 1 2025,IMR by age,Post-neonatal,1.46,"per 1,000 live births"
+Jan 1 2026,IMR by age,Post-neonatal,1.47,"per 1,000 live births"

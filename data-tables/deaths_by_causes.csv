@@ -1,11 +1,161 @@
-Date,Accidents,Alzheimer's,Cancer,Cerebrovascular Disease,Chronic liver disease,CLRD,COVID-19,Diabetes,Diseases of heart,Drug-related,Hypertension,Homicide,Influenza and pneumonia,Kidney disease,Septicemia,Suicide
-Jul 1 2023,321,171,2835,530,124,345,136,358,3612,810,293,110,316,157,269,151
-Oct 1 2023,375,256,2984,614,153,381,207,433,4329,750,331,89,385,211,275,131
-Jan 1 2024,366,272,2966,623,145,380,322,455,4243,668,346,85,484,190,261,124
-Apr 1 2024,372,195,2838,569,125,334,62,384,3764,602,260,88,308,135,231,135
-Jul 1 2024,342,157,2959,496,134,343,123,395,3830,540,268,111,284,186,235,140
-Oct 1 2024,383,234,2914,598,130,371,58,429,4229,460,291,107,355,205,313,136
-Jan 1 2025,380,250,2940,600,137,455,141,478,4471,479,338,68,590,177,295,129
-Apr 1 2025,303,188,2822,503,110,347,82,380,3773,461,301,86,307,172,278,135
-Jul 1 2025,339,204,2911,505,113,282,38,357,3578,405,264,90,281,217,281,127
-Oct 1 2025,227,178,2264,434,102,251,48,293,2999,,247,39,226,132,214,74
+date,metric,submetric,value,display
+Oct 1 2023,Deaths by cause,Accidents,375,Number
+Jan 1 2024,Deaths by cause,Accidents,366,Number
+Apr 1 2024,Deaths by cause,Accidents,372,Number
+Jul 1 2024,Deaths by cause,Accidents,342,Number
+Oct 1 2024,Deaths by cause,Accidents,383,Number
+Jan 1 2025,Deaths by cause,Accidents,388,Number
+Apr 1 2025,Deaths by cause,Accidents,316,Number
+Jul 1 2025,Deaths by cause,Accidents,352,Number
+Oct 1 2025,Deaths by cause,Accidents,357,Number
+Jan 1 2026,Deaths by cause,Accidents,359,Number
+Oct 1 2023,Deaths by cause,Alzheimer's,256,Number
+Jan 1 2024,Deaths by cause,Alzheimer's,272,Number
+Apr 1 2024,Deaths by cause,Alzheimer's,195,Number
+Jul 1 2024,Deaths by cause,Alzheimer's,157,Number
+Oct 1 2024,Deaths by cause,Alzheimer's,234,Number
+Jan 1 2025,Deaths by cause,Alzheimer's,250,Number
+Apr 1 2025,Deaths by cause,Alzheimer's,188,Number
+Jul 1 2025,Deaths by cause,Alzheimer's,204,Number
+Oct 1 2025,Deaths by cause,Alzheimer's,230,Number
+Jan 1 2026,Deaths by cause,Alzheimer's,247,Number
+Oct 1 2023,Deaths by cause,Cancer,2984,Number
+Jan 1 2024,Deaths by cause,Cancer,2966,Number
+Apr 1 2024,Deaths by cause,Cancer,2838,Number
+Jul 1 2024,Deaths by cause,Cancer,2959,Number
+Oct 1 2024,Deaths by cause,Cancer,2914,Number
+Jan 1 2025,Deaths by cause,Cancer,2942,Number
+Apr 1 2025,Deaths by cause,Cancer,2823,Number
+Jul 1 2025,Deaths by cause,Cancer,2914,Number
+Oct 1 2025,Deaths by cause,Cancer,2904,Number
+Jan 1 2026,Deaths by cause,Cancer,2937,Number
+Oct 1 2023,Deaths by cause,Cerebrovascular Disease,614,Number
+Jan 1 2024,Deaths by cause,Cerebrovascular Disease,623,Number
+Apr 1 2024,Deaths by cause,Cerebrovascular Disease,569,Number
+Jul 1 2024,Deaths by cause,Cerebrovascular Disease,496,Number
+Oct 1 2024,Deaths by cause,Cerebrovascular Disease,598,Number
+Jan 1 2025,Deaths by cause,Cerebrovascular Disease,599,Number
+Apr 1 2025,Deaths by cause,Cerebrovascular Disease,505,Number
+Jul 1 2025,Deaths by cause,Cerebrovascular Disease,506,Number
+Oct 1 2025,Deaths by cause,Cerebrovascular Disease,578,Number
+Jan 1 2026,Deaths by cause,Cerebrovascular Disease,605,Number
+Oct 1 2023,Deaths by cause,Chronic liver disease,153,Number
+Jan 1 2024,Deaths by cause,Chronic liver disease,145,Number
+Apr 1 2024,Deaths by cause,Chronic liver disease,125,Number
+Jul 1 2024,Deaths by cause,Chronic liver disease,134,Number
+Oct 1 2024,Deaths by cause,Chronic liver disease,130,Number
+Jan 1 2025,Deaths by cause,Chronic liver disease,137,Number
+Apr 1 2025,Deaths by cause,Chronic liver disease,110,Number
+Jul 1 2025,Deaths by cause,Chronic liver disease,114,Number
+Oct 1 2025,Deaths by cause,Chronic liver disease,139,Number
+Jan 1 2026,Deaths by cause,Chronic liver disease,149,Number
+Oct 1 2023,Deaths by cause,CLRD,381,Number
+Jan 1 2024,Deaths by cause,CLRD,380,Number
+Apr 1 2024,Deaths by cause,CLRD,334,Number
+Jul 1 2024,Deaths by cause,CLRD,343,Number
+Oct 1 2024,Deaths by cause,CLRD,371,Number
+Jan 1 2025,Deaths by cause,CLRD,456,Number
+Apr 1 2025,Deaths by cause,CLRD,347,Number
+Jul 1 2025,Deaths by cause,CLRD,285,Number
+Oct 1 2025,Deaths by cause,CLRD,343,Number
+Jan 1 2026,Deaths by cause,CLRD,381,Number
+Oct 1 2023,Deaths by cause,COVID-19,207,Number
+Jan 1 2024,Deaths by cause,COVID-19,322,Number
+Apr 1 2024,Deaths by cause,COVID-19,62,Number
+Jul 1 2024,Deaths by cause,COVID-19,123,Number
+Oct 1 2024,Deaths by cause,COVID-19,58,Number
+Jan 1 2025,Deaths by cause,COVID-19,141,Number
+Apr 1 2025,Deaths by cause,COVID-19,83,Number
+Jul 1 2025,Deaths by cause,COVID-19,39,Number
+Oct 1 2025,Deaths by cause,COVID-19,64,Number
+Jan 1 2026,Deaths by cause,COVID-19,54,Number
+Oct 1 2023,Deaths by cause,Diabetes,433,Number
+Jan 1 2024,Deaths by cause,Diabetes,455,Number
+Apr 1 2024,Deaths by cause,Diabetes,384,Number
+Jul 1 2024,Deaths by cause,Diabetes,395,Number
+Oct 1 2024,Deaths by cause,Diabetes,429,Number
+Jan 1 2025,Deaths by cause,Diabetes,478,Number
+Apr 1 2025,Deaths by cause,Diabetes,382,Number
+Jul 1 2025,Deaths by cause,Diabetes,361,Number
+Oct 1 2025,Deaths by cause,Diabetes,425,Number
+Jan 1 2026,Deaths by cause,Diabetes,438,Number
+Oct 1 2023,Deaths by cause,Diseases of heart,4329,Number
+Jan 1 2024,Deaths by cause,Diseases of heart,4243,Number
+Apr 1 2024,Deaths by cause,Diseases of heart,3764,Number
+Jul 1 2024,Deaths by cause,Diseases of heart,3830,Number
+Oct 1 2024,Deaths by cause,Diseases of heart,4229,Number
+Jan 1 2025,Deaths by cause,Diseases of heart,4491,Number
+Apr 1 2025,Deaths by cause,Diseases of heart,3797,Number
+Jul 1 2025,Deaths by cause,Diseases of heart,3647,Number
+Oct 1 2025,Deaths by cause,Diseases of heart,4206,Number
+Jan 1 2026,Deaths by cause,Diseases of heart,4345,Number
+Oct 1 2023,Deaths by cause,Drug-related,750,Number
+Jan 1 2024,Deaths by cause,Drug-related,668,Number
+Apr 1 2024,Deaths by cause,Drug-related,602,Number
+Jul 1 2024,Deaths by cause,Drug-related,540,Number
+Oct 1 2024,Deaths by cause,Drug-related,460,Number
+Jan 1 2025,Deaths by cause,Drug-related,498,Number
+Apr 1 2025,Deaths by cause,Drug-related,502,Number
+Jul 1 2025,Deaths by cause,Drug-related,508,Number
+Oct 1 2025,Deaths by cause,Drug-related,434,Number
+Jan 1 2026,Deaths by cause,Drug-related,,Number
+Oct 1 2023,Deaths by cause,Hypertension,331,Number
+Jan 1 2024,Deaths by cause,Hypertension,346,Number
+Apr 1 2024,Deaths by cause,Hypertension,260,Number
+Jul 1 2024,Deaths by cause,Hypertension,268,Number
+Oct 1 2024,Deaths by cause,Hypertension,291,Number
+Jan 1 2025,Deaths by cause,Hypertension,338,Number
+Apr 1 2025,Deaths by cause,Hypertension,301,Number
+Jul 1 2025,Deaths by cause,Hypertension,264,Number
+Oct 1 2025,Deaths by cause,Hypertension,338,Number
+Jan 1 2026,Deaths by cause,Hypertension,363,Number
+Oct 1 2023,Deaths by cause,Homicide,89,Number
+Jan 1 2024,Deaths by cause,Homicide,85,Number
+Apr 1 2024,Deaths by cause,Homicide,88,Number
+Jul 1 2024,Deaths by cause,Homicide,111,Number
+Oct 1 2024,Deaths by cause,Homicide,107,Number
+Jan 1 2025,Deaths by cause,Homicide,71,Number
+Apr 1 2025,Deaths by cause,Homicide,90,Number
+Jul 1 2025,Deaths by cause,Homicide,95,Number
+Oct 1 2025,Deaths by cause,Homicide,57,Number
+Jan 1 2026,Deaths by cause,Homicide,56,Number
+Oct 1 2023,Deaths by cause,Influenza and pneumonia,385,Number
+Jan 1 2024,Deaths by cause,Influenza and pneumonia,484,Number
+Apr 1 2024,Deaths by cause,Influenza and pneumonia,308,Number
+Jul 1 2024,Deaths by cause,Influenza and pneumonia,284,Number
+Oct 1 2024,Deaths by cause,Influenza and pneumonia,355,Number
+Jan 1 2025,Deaths by cause,Influenza and pneumonia,595,Number
+Apr 1 2025,Deaths by cause,Influenza and pneumonia,309,Number
+Jul 1 2025,Deaths by cause,Influenza and pneumonia,283,Number
+Oct 1 2025,Deaths by cause,Influenza and pneumonia,355,Number
+Jan 1 2026,Deaths by cause,Influenza and pneumonia,463,Number
+Oct 1 2023,Deaths by cause,Kidney disease,211,Number
+Jan 1 2024,Deaths by cause,Kidney disease,190,Number
+Apr 1 2024,Deaths by cause,Kidney disease,135,Number
+Jul 1 2024,Deaths by cause,Kidney disease,186,Number
+Oct 1 2024,Deaths by cause,Kidney disease,205,Number
+Jan 1 2025,Deaths by cause,Kidney disease,177,Number
+Apr 1 2025,Deaths by cause,Kidney disease,172,Number
+Jul 1 2025,Deaths by cause,Kidney disease,217,Number
+Oct 1 2025,Deaths by cause,Kidney disease,183,Number
+Jan 1 2026,Deaths by cause,Kidney disease,209,Number
+Oct 1 2023,Deaths by cause,Septicemia,275,Number
+Jan 1 2024,Deaths by cause,Septicemia,261,Number
+Apr 1 2024,Deaths by cause,Septicemia,231,Number
+Jul 1 2024,Deaths by cause,Septicemia,235,Number
+Oct 1 2024,Deaths by cause,Septicemia,313,Number
+Jan 1 2025,Deaths by cause,Septicemia,295,Number
+Apr 1 2025,Deaths by cause,Septicemia,278,Number
+Jul 1 2025,Deaths by cause,Septicemia,281,Number
+Oct 1 2025,Deaths by cause,Septicemia,298,Number
+Jan 1 2026,Deaths by cause,Septicemia,303,Number
+Oct 1 2023,Deaths by cause,Suicide,131,Number
+Jan 1 2024,Deaths by cause,Suicide,124,Number
+Apr 1 2024,Deaths by cause,Suicide,135,Number
+Jul 1 2024,Deaths by cause,Suicide,140,Number
+Oct 1 2024,Deaths by cause,Suicide,136,Number
+Jan 1 2025,Deaths by cause,Suicide,132,Number
+Apr 1 2025,Deaths by cause,Suicide,137,Number
+Jul 1 2025,Deaths by cause,Suicide,135,Number
+Oct 1 2025,Deaths by cause,Suicide,114,Number
+Jan 1 2026,Deaths by cause,Suicide,123,Number

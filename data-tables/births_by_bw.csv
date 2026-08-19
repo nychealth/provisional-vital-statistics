@@ -1,11 +1,31 @@
-Date,Very Low,Low,Normal
-Jul 1 2023,1.25,8.90,91.08
-Oct 1 2023,1.36,9.31,90.68
-Jan 1 2024,1.37,9.09,90.88
-Apr 1 2024,1.42,8.73,91.26
-Jul 1 2024,1.23,8.60,91.39
-Oct 1 2024,1.23,8.89,91.10
-Jan 1 2025,1.37,9.08,90.90
-Apr 1 2025,1.38,9.03,90.96
-Jul 1 2025,1.28,8.65,91.33
-Oct 1 2025,1.49,9.10,90.89
+date,metric,submetric,value,display
+Oct 1 2023,Births by birthweight,Very Low,1.36,Percent
+Jan 1 2024,Births by birthweight,Very Low,1.37,Percent
+Apr 1 2024,Births by birthweight,Very Low,1.42,Percent
+Jul 1 2024,Births by birthweight,Very Low,1.23,Percent
+Oct 1 2024,Births by birthweight,Very Low,1.23,Percent
+Jan 1 2025,Births by birthweight,Very Low,1.37,Percent
+Apr 1 2025,Births by birthweight,Very Low,1.38,Percent
+Jul 1 2025,Births by birthweight,Very Low,1.28,Percent
+Oct 1 2025,Births by birthweight,Very Low,1.49,Percent
+Jan 1 2026,Births by birthweight,Very Low,1.33,Percent
+Oct 1 2023,Births by birthweight,Low,9.31,Percent
+Jan 1 2024,Births by birthweight,Low,9.09,Percent
+Apr 1 2024,Births by birthweight,Low,8.73,Percent
+Jul 1 2024,Births by birthweight,Low,8.60,Percent
+Oct 1 2024,Births by birthweight,Low,8.89,Percent
+Jan 1 2025,Births by birthweight,Low,9.08,Percent
+Apr 1 2025,Births by birthweight,Low,9.03,Percent
+Jul 1 2025,Births by birthweight,Low,8.65,Percent
+Oct 1 2025,Births by birthweight,Low,9.10,Percent
+Jan 1 2026,Births by birthweight,Low,9.25,Percent
+Oct 1 2023,Births by birthweight,Normal,90.68,Percent
+Jan 1 2024,Births by birthweight,Normal,90.88,Percent
+Apr 1 2024,Births by birthweight,Normal,91.26,Percent
+Jul 1 2024,Births by birthweight,Normal,91.39,Percent
+Oct 1 2024,Births by birthweight,Normal,91.10,Percent
+Jan 1 2025,Births by birthweight,Normal,90.90,Percent
+Apr 1 2025,Births by birthweight,Normal,90.96,Percent
+Jul 1 2025,Births by birthweight,Normal,91.33,Percent
+Oct 1 2025,Births by birthweight,Normal,90.89,Percent
+Jan 1 2026,Births by birthweight,Normal,90.75,Percent

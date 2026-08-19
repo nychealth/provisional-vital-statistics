@@ -1,11 +1,11 @@
-date,IMR
-Jul 1 2023,4.15
-Oct 1 2023,4.21
-Jan 1 2024,4.22
-Apr 1 2024,4.20
-Jul 1 2024,4.05
-Oct 1 2024,3.90
-Jan 1 2025,3.88
-Apr 1 2025,4.16
-Jul 1 2025,4.22
-Oct 1 2025,4.27
+Date,metric,submetric,value,display
+Oct 1 2023,Total IMR,Total,4.21,"per 1,000 live births"
+Jan 1 2024,Total IMR,Total,4.22,"per 1,000 live births"
+Apr 1 2024,Total IMR,Total,4.2,"per 1,000 live births"
+Jul 1 2024,Total IMR,Total,4.05,"per 1,000 live births"
+Oct 1 2024,Total IMR,Total,3.9,"per 1,000 live births"
+Jan 1 2025,Total IMR,Total,3.88,"per 1,000 live births"
+Apr 1 2025,Total IMR,Total,4.16,"per 1,000 live births"
+Jul 1 2025,Total IMR,Total,4.22,"per 1,000 live births"
+Oct 1 2025,Total IMR,Total,4.26,"per 1,000 live births"
+Jan 1 2026,Total IMR,Total,4.22,"per 1,000 live births"

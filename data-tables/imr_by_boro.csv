@@ -1,11 +1,51 @@
-Date,Bronx,Brooklyn,Manhattan,Queens,Staten Island
-Jul 1 2023,5.86,3.11,2.75,3.77,3.10
-Oct 1 2023,4.94,3.44,3.02,4.06,4.18
-Jan 1 2024,4.60,3.34,2.87,4.26,3.76
-Apr 1 2024,4.14,3.52,2.98,4.30,3.93
-Jul 1 2024,4.25,3.60,2.56,3.80,3.70
-Oct 1 2024,4.34,3.28,2.82,3.71,3.06
-Jan 1 2025,4.28,3.45,2.97,3.30,2.47
-Apr 1 2025,4.64,3.62,3.01,3.81,2.29
-Jul 1 2025,4.53,3.58,3.06,4.12,2.49
-Oct 1 2025,4.68,3.65,2.84,4.37,1.69
+Date,metric,submetric,value,display
+Oct 1 2023,IMR by borough,Bronx,4.94,"per 1,000 live births"
+Jan 1 2024,IMR by borough,Bronx,4.6,"per 1,000 live births"
+Apr 1 2024,IMR by borough,Bronx,4.14,"per 1,000 live births"
+Jul 1 2024,IMR by borough,Bronx,4.25,"per 1,000 live births"
+Oct 1 2024,IMR by borough,Bronx,4.34,"per 1,000 live births"
+Jan 1 2025,IMR by borough,Bronx,4.35,"per 1,000 live births"
+Apr 1 2025,IMR by borough,Bronx,4.71,"per 1,000 live births"
+Jul 1 2025,IMR by borough,Bronx,4.6,"per 1,000 live births"
+Oct 1 2025,IMR by borough,Bronx,4.68,"per 1,000 live births"
+Jan 1 2026,IMR by borough,Bronx,4.58,"per 1,000 live births"
+Oct 1 2023,IMR by borough,Brooklyn,3.44,"per 1,000 live births"
+Jan 1 2024,IMR by borough,Brooklyn,3.34,"per 1,000 live births"
+Apr 1 2024,IMR by borough,Brooklyn,3.52,"per 1,000 live births"
+Jul 1 2024,IMR by borough,Brooklyn,3.6,"per 1,000 live births"
+Oct 1 2024,IMR by borough,Brooklyn,3.28,"per 1,000 live births"
+Jan 1 2025,IMR by borough,Brooklyn,3.45,"per 1,000 live births"
+Apr 1 2025,IMR by borough,Brooklyn,3.62,"per 1,000 live births"
+Jul 1 2025,IMR by borough,Brooklyn,3.58,"per 1,000 live births"
+Oct 1 2025,IMR by borough,Brooklyn,3.65,"per 1,000 live births"
+Jan 1 2026,IMR by borough,Brooklyn,3.59,"per 1,000 live births"
+Oct 1 2023,IMR by borough,Manhattan,3.02,"per 1,000 live births"
+Jan 1 2024,IMR by borough,Manhattan,2.87,"per 1,000 live births"
+Apr 1 2024,IMR by borough,Manhattan,2.98,"per 1,000 live births"
+Jul 1 2024,IMR by borough,Manhattan,2.56,"per 1,000 live births"
+Oct 1 2024,IMR by borough,Manhattan,2.82,"per 1,000 live births"
+Jan 1 2025,IMR by borough,Manhattan,2.97,"per 1,000 live births"
+Apr 1 2025,IMR by borough,Manhattan,3.01,"per 1,000 live births"
+Jul 1 2025,IMR by borough,Manhattan,3.06,"per 1,000 live births"
+Oct 1 2025,IMR by borough,Manhattan,2.84,"per 1,000 live births"
+Jan 1 2026,IMR by borough,Manhattan,2.87,"per 1,000 live births"
+Oct 1 2023,IMR by borough,Queens,4.06,"per 1,000 live births"
+Jan 1 2024,IMR by borough,Queens,4.26,"per 1,000 live births"
+Apr 1 2024,IMR by borough,Queens,4.3,"per 1,000 live births"
+Jul 1 2024,IMR by borough,Queens,3.8,"per 1,000 live births"
+Oct 1 2024,IMR by borough,Queens,3.71,"per 1,000 live births"
+Jan 1 2025,IMR by borough,Queens,3.25,"per 1,000 live births"
+Apr 1 2025,IMR by borough,Queens,3.76,"per 1,000 live births"
+Jul 1 2025,IMR by borough,Queens,4.06,"per 1,000 live births"
+Oct 1 2025,IMR by borough,Queens,4.32,"per 1,000 live births"
+Jan 1 2026,IMR by borough,Queens,4.69,"per 1,000 live births"
+Oct 1 2023,IMR by borough,Staten Island,4.18,"per 1,000 live births"
+Jan 1 2024,IMR by borough,Staten Island,3.76,"per 1,000 live births"
+Apr 1 2024,IMR by borough,Staten Island,3.93,"per 1,000 live births"
+Jul 1 2024,IMR by borough,Staten Island,3.7,"per 1,000 live births"
+Oct 1 2024,IMR by borough,Staten Island,3.06,"per 1,000 live births"
+Jan 1 2025,IMR by borough,Staten Island,2.47,"per 1,000 live births"
+Apr 1 2025,IMR by borough,Staten Island,2.29,"per 1,000 live births"
+Jul 1 2025,IMR by borough,Staten Island,2.49,"per 1,000 live births"
+Oct 1 2025,IMR by borough,Staten Island,1.69,"per 1,000 live births"
+Jan 1 2026,IMR by borough,Staten Island,1.91,"per 1,000 live births"

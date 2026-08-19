@@ -1,11 +1,51 @@
-Date,Asian/PI,Black,Hispanic,White,Other/Unknown
-Jul 1 2023,1233,3622,2951,4932,386
-Oct 1 2023,1541,4037,3316,5429,453
-Jan 1 2024,1506,4012,3310,5677,485
-Apr 1 2024,1352,3669,2913,4713,423
-Jul 1 2024,1293,3597,2882,4822,440
-Oct 1 2024,1479,3908,3105,5204,472
-Jan 1 2025,1669,4120,3349,5584,489
-Apr 1 2025,1393,3668,2936,4700,443
-Jul 1 2025,1351,3637,2830,4639,401
-Oct 1 2025,1224,2990,2472,4121,487
+date,metric,submetric,value,display
+Oct 1 2023,Deaths by race/ethnicity,Asian/PI,1541,Number
+Jan 1 2024,Deaths by race/ethnicity,Asian/PI,1506,Number
+Apr 1 2024,Deaths by race/ethnicity,Asian/PI,1352,Number
+Jul 1 2024,Deaths by race/ethnicity,Asian/PI,1293,Number
+Oct 1 2024,Deaths by race/ethnicity,Asian/PI,1479,Number
+Jan 1 2025,Deaths by race/ethnicity,Asian/PI,1669,Number
+Apr 1 2025,Deaths by race/ethnicity,Asian/PI,1393,Number
+Jul 1 2025,Deaths by race/ethnicity,Asian/PI,1351,Number
+Oct 1 2025,Deaths by race/ethnicity,Asian/PI,1523,Number
+Jan 1 2026,Deaths by race/ethnicity,Asian/PI,1663,Number
+Oct 1 2023,Deaths by race/ethnicity,Black,4037,Number
+Jan 1 2024,Deaths by race/ethnicity,Black,4012,Number
+Apr 1 2024,Deaths by race/ethnicity,Black,3669,Number
+Jul 1 2024,Deaths by race/ethnicity,Black,3597,Number
+Oct 1 2024,Deaths by race/ethnicity,Black,3908,Number
+Jan 1 2025,Deaths by race/ethnicity,Black,4119,Number
+Apr 1 2025,Deaths by race/ethnicity,Black,3671,Number
+Jul 1 2025,Deaths by race/ethnicity,Black,3638,Number
+Oct 1 2025,Deaths by race/ethnicity,Black,3897,Number
+Jan 1 2026,Deaths by race/ethnicity,Black,4001,Number
+Oct 1 2023,Deaths by race/ethnicity,Hispanic,3316,Number
+Jan 1 2024,Deaths by race/ethnicity,Hispanic,3310,Number
+Apr 1 2024,Deaths by race/ethnicity,Hispanic,2913,Number
+Jul 1 2024,Deaths by race/ethnicity,Hispanic,2882,Number
+Oct 1 2024,Deaths by race/ethnicity,Hispanic,3105,Number
+Jan 1 2025,Deaths by race/ethnicity,Hispanic,3348,Number
+Apr 1 2025,Deaths by race/ethnicity,Hispanic,2940,Number
+Jul 1 2025,Deaths by race/ethnicity,Hispanic,2830,Number
+Oct 1 2025,Deaths by race/ethnicity,Hispanic,3139,Number
+Jan 1 2026,Deaths by race/ethnicity,Hispanic,3260,Number
+Oct 1 2023,Deaths by race/ethnicity,White,5429,Number
+Jan 1 2024,Deaths by race/ethnicity,White,5677,Number
+Apr 1 2024,Deaths by race/ethnicity,White,4713,Number
+Jul 1 2024,Deaths by race/ethnicity,White,4822,Number
+Oct 1 2024,Deaths by race/ethnicity,White,5204,Number
+Jan 1 2025,Deaths by race/ethnicity,White,5583,Number
+Apr 1 2025,Deaths by race/ethnicity,White,4700,Number
+Jul 1 2025,Deaths by race/ethnicity,White,4641,Number
+Oct 1 2025,Deaths by race/ethnicity,White,5086,Number
+Jan 1 2026,Deaths by race/ethnicity,White,5379,Number
+Oct 1 2023,Deaths by race/ethnicity,Other/Unknown,453,Number
+Jan 1 2024,Deaths by race/ethnicity,Other/Unknown,485,Number
+Apr 1 2024,Deaths by race/ethnicity,Other/Unknown,423,Number
+Jul 1 2024,Deaths by race/ethnicity,Other/Unknown,440,Number
+Oct 1 2024,Deaths by race/ethnicity,Other/Unknown,472,Number
+Jan 1 2025,Deaths by race/ethnicity,Other/Unknown,491,Number
+Apr 1 2025,Deaths by race/ethnicity,Other/Unknown,437,Number
+Jul 1 2025,Deaths by race/ethnicity,Other/Unknown,399,Number
+Oct 1 2025,Deaths by race/ethnicity,Other/Unknown,505,Number
+Jan 1 2026,Deaths by race/ethnicity,Other/Unknown,473,Number

@@ -1,11 +1,11 @@
-Date,Births
-Jul 1 2023,25278
-Oct 1 2023,25499
-Jan 1 2024,24518
-Apr 1 2024,24560
-Jul 1 2024,25715
-Oct 1 2024,25425
-Jan 1 2025,24033
-Apr 1 2025,24375
-Jul 1 2025,25170
-Oct 1 2025,24376
+date,metric,submetric,value,display
+Oct 1 2023,Total births,Total,25499,Number
+Jan 1 2024,Total births,Total,24518,Number
+Apr 1 2024,Total births,Total,24560,Number
+Jul 1 2024,Total births,Total,25715,Number
+Oct 1 2024,Total births,Total,25425,Number
+Jan 1 2025,Total births,Total,24033,Number
+Apr 1 2025,Total births,Total,24375,Number
+Jul 1 2025,Total births,Total,25170,Number
+Oct 1 2025,Total births,Total,24376,Number
+Jan 1 2026,Total births,Total,23214,Number

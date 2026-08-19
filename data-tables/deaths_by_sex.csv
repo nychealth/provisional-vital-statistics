@@ -1,11 +1,21 @@
-date,Male,Female
-Jul 1 2023,7039,6085
-Oct 1 2023,7761,7015
-Jan 1 2024,7668,7322
-Apr 1 2024,6775,6294
-Jul 1 2024,6810,6224
-Oct 1 2024,7203,6965
-Jan 1 2025,7711,7499
-Apr 1 2025,6916,6222
-Jul 1 2025,6588,6269
-Oct 1 2025,5864,5428
+date,metric,submetric,value,display
+Oct 1 2023,Deaths by sex,Male,7761,Number
+Jan 1 2024,Deaths by sex,Male,7668,Number
+Apr 1 2024,Deaths by sex,Male,6775,Number
+Jul 1 2024,Deaths by sex,Male,6810,Number
+Oct 1 2024,Deaths by sex,Male,7203,Number
+Jan 1 2025,Deaths by sex,Male,7710,Number
+Apr 1 2025,Deaths by sex,Male,6917,Number
+Jul 1 2025,Deaths by sex,Male,6588,Number
+Oct 1 2025,Deaths by sex,Male,7305,Number
+Jan 1 2026,Deaths by sex,Male,7488,Number
+Oct 1 2023,Deaths by sex,Female,7015,Number
+Jan 1 2024,Deaths by sex,Female,7322,Number
+Apr 1 2024,Deaths by sex,Female,6294,Number
+Jul 1 2024,Deaths by sex,Female,6224,Number
+Oct 1 2024,Deaths by sex,Female,6965,Number
+Jan 1 2025,Deaths by sex,Female,7499,Number
+Apr 1 2025,Deaths by sex,Female,6222,Number
+Jul 1 2025,Deaths by sex,Female,6270,Number
+Oct 1 2025,Deaths by sex,Female,6845,Number
+Jan 1 2026,Deaths by sex,Female,7287,Number

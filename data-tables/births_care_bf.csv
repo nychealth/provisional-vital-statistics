@@ -1,11 +1,11 @@
-date,Breastfed infants
-Jul 1 2023,88.09
-Oct 1 2023,88.05
-Jan 1 2024,87.53
-Apr 1 2024,87.69
-Jul 1 2024,87.58
-Oct 1 2024,87.58
-Jan 1 2025,88.01
-Apr 1 2025,89.56
-Jul 1 2025,89.94
-Oct 1 2025,88.67
+date,metric,submetric,value,display
+Oct 1 2023,Breastfed infants,Breastfed infants,88.05,Percent
+Jan 1 2024,Breastfed infants,Breastfed infants,87.53,Percent
+Apr 1 2024,Breastfed infants,Breastfed infants,87.69,Percent
+Jul 1 2024,Breastfed infants,Breastfed infants,87.58,Percent
+Oct 1 2024,Breastfed infants,Breastfed infants,87.58,Percent
+Jan 1 2025,Breastfed infants,Breastfed infants,88.01,Percent
+Apr 1 2025,Breastfed infants,Breastfed infants,89.56,Percent
+Jul 1 2025,Breastfed infants,Breastfed infants,89.94,Percent
+Oct 1 2025,Breastfed infants,Breastfed infants,88.67,Percent
+Jan 1 2026,Breastfed infants,Breastfed infants,89.21,Percent

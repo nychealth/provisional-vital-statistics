@@ -1,11 +1,11 @@
-date,Prenatal care in first trimester
-Jul 1 2023,70.98
-Oct 1 2023,71.93
-Jan 1 2024,69.97
-Apr 1 2024,71.55
-Jul 1 2024,70.16
-Oct 1 2024,71.45
-Jan 1 2025,71.86
-Apr 1 2025,73.92
-Jul 1 2025,73.35
-Oct 1 2025,75.38
+date,metric,submetric,value,display
+Oct 1 2023,Prenatal care in first trimester,Prenatal care in first trimester,71.93,Percent
+Jan 1 2024,Prenatal care in first trimester,Prenatal care in first trimester,69.97,Percent
+Apr 1 2024,Prenatal care in first trimester,Prenatal care in first trimester,71.55,Percent
+Jul 1 2024,Prenatal care in first trimester,Prenatal care in first trimester,70.16,Percent
+Oct 1 2024,Prenatal care in first trimester,Prenatal care in first trimester,71.45,Percent
+Jan 1 2025,Prenatal care in first trimester,Prenatal care in first trimester,71.86,Percent
+Apr 1 2025,Prenatal care in first trimester,Prenatal care in first trimester,73.92,Percent
+Jul 1 2025,Prenatal care in first trimester,Prenatal care in first trimester,73.35,Percent
+Oct 1 2025,Prenatal care in first trimester,Prenatal care in first trimester,75.38,Percent
+Jan 1 2026,Prenatal care in first trimester,Prenatal care in first trimester,74.90,Percent

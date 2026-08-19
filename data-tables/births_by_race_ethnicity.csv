@@ -1,11 +1,51 @@
-Date,Asian/PI,Black,Hispanic,White,Other/Unknown
-Jul 1 2023,3662,4209,7632,9124,651
-Oct 1 2023,3663,4235,7683,9258,660
-Jan 1 2024,3580,3898,7420,8959,661
-Apr 1 2024,3578,3862,7372,9123,625
-Jul 1 2024,3809,4083,7837,9271,715
-Oct 1 2024,3996,4046,7543,9120,720
-Jan 1 2025,3660,3711,7087,8894,681
-Apr 1 2025,3593,3600,7083,9314,785
-Jul 1 2025,3602,3756,7479,9646,687
-Oct 1 2025,3683,3568,7004,9475,646
+date,metric,submetric,value,display
+Oct 1 2023,Births by maternal race/ethnicity,Asian/PI,3663,Number
+Jan 1 2024,Births by maternal race/ethnicity,Asian/PI,3580,Number
+Apr 1 2024,Births by maternal race/ethnicity,Asian/PI,3578,Number
+Jul 1 2024,Births by maternal race/ethnicity,Asian/PI,3809,Number
+Oct 1 2024,Births by maternal race/ethnicity,Asian/PI,3996,Number
+Jan 1 2025,Births by maternal race/ethnicity,Asian/PI,3660,Number
+Apr 1 2025,Births by maternal race/ethnicity,Asian/PI,3593,Number
+Jul 1 2025,Births by maternal race/ethnicity,Asian/PI,3602,Number
+Oct 1 2025,Births by maternal race/ethnicity,Asian/PI,3683,Number
+Jan 1 2026,Births by maternal race/ethnicity,Asian/PI,3555,Number
+Oct 1 2023,Births by maternal race/ethnicity,Black,4235,Number
+Jan 1 2024,Births by maternal race/ethnicity,Black,3898,Number
+Apr 1 2024,Births by maternal race/ethnicity,Black,3862,Number
+Jul 1 2024,Births by maternal race/ethnicity,Black,4083,Number
+Oct 1 2024,Births by maternal race/ethnicity,Black,4046,Number
+Jan 1 2025,Births by maternal race/ethnicity,Black,3711,Number
+Apr 1 2025,Births by maternal race/ethnicity,Black,3600,Number
+Jul 1 2025,Births by maternal race/ethnicity,Black,3756,Number
+Oct 1 2025,Births by maternal race/ethnicity,Black,3568,Number
+Jan 1 2026,Births by maternal race/ethnicity,Black,3438,Number
+Oct 1 2023,Births by maternal race/ethnicity,Hispanic,7683,Number
+Jan 1 2024,Births by maternal race/ethnicity,Hispanic,7420,Number
+Apr 1 2024,Births by maternal race/ethnicity,Hispanic,7372,Number
+Jul 1 2024,Births by maternal race/ethnicity,Hispanic,7837,Number
+Oct 1 2024,Births by maternal race/ethnicity,Hispanic,7543,Number
+Jan 1 2025,Births by maternal race/ethnicity,Hispanic,7087,Number
+Apr 1 2025,Births by maternal race/ethnicity,Hispanic,7083,Number
+Jul 1 2025,Births by maternal race/ethnicity,Hispanic,7479,Number
+Oct 1 2025,Births by maternal race/ethnicity,Hispanic,7004,Number
+Jan 1 2026,Births by maternal race/ethnicity,Hispanic,6661,Number
+Oct 1 2023,Births by maternal race/ethnicity,White,9258,Number
+Jan 1 2024,Births by maternal race/ethnicity,White,8959,Number
+Apr 1 2024,Births by maternal race/ethnicity,White,9123,Number
+Jul 1 2024,Births by maternal race/ethnicity,White,9271,Number
+Oct 1 2024,Births by maternal race/ethnicity,White,9120,Number
+Jan 1 2025,Births by maternal race/ethnicity,White,8894,Number
+Apr 1 2025,Births by maternal race/ethnicity,White,9314,Number
+Jul 1 2025,Births by maternal race/ethnicity,White,9646,Number
+Oct 1 2025,Births by maternal race/ethnicity,White,9475,Number
+Jan 1 2026,Births by maternal race/ethnicity,White,8939,Number
+Oct 1 2023,Births by maternal race/ethnicity,Other/Unknown,660,Number
+Jan 1 2024,Births by maternal race/ethnicity,Other/Unknown,661,Number
+Apr 1 2024,Births by maternal race/ethnicity,Other/Unknown,625,Number
+Jul 1 2024,Births by maternal race/ethnicity,Other/Unknown,715,Number
+Oct 1 2024,Births by maternal race/ethnicity,Other/Unknown,720,Number
+Jan 1 2025,Births by maternal race/ethnicity,Other/Unknown,681,Number
+Apr 1 2025,Births by maternal race/ethnicity,Other/Unknown,785,Number
+Jul 1 2025,Births by maternal race/ethnicity,Other/Unknown,687,Number
+Oct 1 2025,Births by maternal race/ethnicity,Other/Unknown,646,Number
+Jan 1 2026,Births by maternal race/ethnicity,Other/Unknown,621,Number

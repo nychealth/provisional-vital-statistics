@@ -1,11 +1,31 @@
-Date,Cesarean,Vaginal,VBAC
-Jul 1 2023,32.73,64.44,2.83
-Oct 1 2023,32.73,64.51,2.76
-Jan 1 2024,32.47,64.72,2.82
-Apr 1 2024,32.82,64.38,2.80
-Jul 1 2024,32.77,64.38,2.85
-Oct 1 2024,33.00,64.05,2.95
-Jan 1 2025,33.23,63.68,3.09
-Apr 1 2025,33.52,63.75,2.74
-Jul 1 2025,32.84,64.40,2.76
-Oct 1 2025,33.31,64.04,2.65
+date,metric,submetric,value,display
+Oct 1 2023,Births by method,Cesarean,32.73,Percent
+Jan 1 2024,Births by method,Cesarean,32.47,Percent
+Apr 1 2024,Births by method,Cesarean,32.82,Percent
+Jul 1 2024,Births by method,Cesarean,32.77,Percent
+Oct 1 2024,Births by method,Cesarean,33.00,Percent
+Jan 1 2025,Births by method,Cesarean,33.23,Percent
+Apr 1 2025,Births by method,Cesarean,33.52,Percent
+Jul 1 2025,Births by method,Cesarean,32.84,Percent
+Oct 1 2025,Births by method,Cesarean,33.31,Percent
+Jan 1 2026,Births by method,Cesarean,32.16,Percent
+Oct 1 2023,Births by method,Vaginal,64.51,Percent
+Jan 1 2024,Births by method,Vaginal,64.72,Percent
+Apr 1 2024,Births by method,Vaginal,64.38,Percent
+Jul 1 2024,Births by method,Vaginal,64.38,Percent
+Oct 1 2024,Births by method,Vaginal,64.05,Percent
+Jan 1 2025,Births by method,Vaginal,63.68,Percent
+Apr 1 2025,Births by method,Vaginal,63.75,Percent
+Jul 1 2025,Births by method,Vaginal,64.40,Percent
+Oct 1 2025,Births by method,Vaginal,64.04,Percent
+Jan 1 2026,Births by method,Vaginal,64.71,Percent
+Oct 1 2023,Births by method,VBAC,2.76,Percent
+Jan 1 2024,Births by method,VBAC,2.82,Percent
+Apr 1 2024,Births by method,VBAC,2.80,Percent
+Jul 1 2024,Births by method,VBAC,2.85,Percent
+Oct 1 2024,Births by method,VBAC,2.95,Percent
+Jan 1 2025,Births by method,VBAC,3.09,Percent
+Apr 1 2025,Births by method,VBAC,2.74,Percent
+Jul 1 2025,Births by method,VBAC,2.76,Percent
+Oct 1 2025,Births by method,VBAC,2.65,Percent
+Jan 1 2026,Births by method,VBAC,3.13,Percent
