@@ -1,5 +1,4 @@
 date,metric,submetric,value,display
-Oct 1 2023,Deaths by age,Under 1,115,Number
 Jan 1 2024,Deaths by age,Under 1,107,Number
 Apr 1 2024,Deaths by age,Under 1,92,Number
 Jul 1 2024,Deaths by age,Under 1,92,Number
@@ -8,8 +7,8 @@ Jan 1 2025,Deaths by age,Under 1,103,Number
 Apr 1 2025,Deaths by age,Under 1,119,Number
 Jul 1 2025,Deaths by age,Under 1,96,Number
 Oct 1 2025,Deaths by age,Under 1,99,Number
-Jan 1 2026,Deaths by age,Under 1,96,Number
-Oct 1 2023,Deaths by age,1 to 24,169,Number
+Jan 1 2026,Deaths by age,Under 1,95,Number
+Apr 1 2026,Deaths by age,Under 1,98,Number
 Jan 1 2024,Deaths by age,1 to 24,198,Number
 Apr 1 2024,Deaths by age,1 to 24,159,Number
 Jul 1 2024,Deaths by age,1 to 24,195,Number
@@ -19,7 +18,7 @@ Apr 1 2025,Deaths by age,1 to 24,147,Number
 Jul 1 2025,Deaths by age,1 to 24,150,Number
 Oct 1 2025,Deaths by age,1 to 24,130,Number
 Jan 1 2026,Deaths by age,1 to 24,140,Number
-Oct 1 2023,Deaths by age,25 to 44,871,Number
+Apr 1 2026,Deaths by age,1 to 24,150,Number
 Jan 1 2024,Deaths by age,25 to 44,842,Number
 Apr 1 2024,Deaths by age,25 to 44,783,Number
 Jul 1 2024,Deaths by age,25 to 44,804,Number
@@ -27,9 +26,9 @@ Oct 1 2024,Deaths by age,25 to 44,778,Number
 Jan 1 2025,Deaths by age,25 to 44,759,Number
 Apr 1 2025,Deaths by age,25 to 44,734,Number
 Jul 1 2025,Deaths by age,25 to 44,743,Number
-Oct 1 2025,Deaths by age,25 to 44,663,Number
-Jan 1 2026,Deaths by age,25 to 44,703,Number
-Oct 1 2023,Deaths by age,45 to 64,2891,Number
+Oct 1 2025,Deaths by age,25 to 44,664,Number
+Jan 1 2026,Deaths by age,25 to 44,704,Number
+Apr 1 2026,Deaths by age,25 to 44,670,Number
 Jan 1 2024,Deaths by age,45 to 64,2774,Number
 Apr 1 2024,Deaths by age,45 to 64,2572,Number
 Jul 1 2024,Deaths by age,45 to 64,2442,Number
@@ -37,9 +36,9 @@ Oct 1 2024,Deaths by age,45 to 64,2577,Number
 Jan 1 2025,Deaths by age,45 to 64,2694,Number
 Apr 1 2025,Deaths by age,45 to 64,2428,Number
 Jul 1 2025,Deaths by age,45 to 64,2439,Number
-Oct 1 2025,Deaths by age,45 to 64,2438,Number
-Jan 1 2026,Deaths by age,45 to 64,2526,Number
-Oct 1 2023,Deaths by age,65 to 84,6317,Number
+Oct 1 2025,Deaths by age,45 to 64,2436,Number
+Jan 1 2026,Deaths by age,45 to 64,2527,Number
+Apr 1 2026,Deaths by age,45 to 64,2284,Number
 Jan 1 2024,Deaths by age,65 to 84,6486,Number
 Apr 1 2024,Deaths by age,65 to 84,5634,Number
 Jul 1 2024,Deaths by age,65 to 84,5701,Number
@@ -47,9 +46,9 @@ Oct 1 2024,Deaths by age,65 to 84,6228,Number
 Jan 1 2025,Deaths by age,65 to 84,6700,Number
 Apr 1 2025,Deaths by age,65 to 84,5755,Number
 Jul 1 2025,Deaths by age,65 to 84,5686,Number
-Oct 1 2025,Deaths by age,65 to 84,6234,Number
-Jan 1 2026,Deaths by age,65 to 84,6618,Number
-Oct 1 2023,Deaths by age,85+,4413,Number
+Oct 1 2025,Deaths by age,65 to 84,6235,Number
+Jan 1 2026,Deaths by age,65 to 84,6620,Number
+Apr 1 2026,Deaths by age,65 to 84,5885,Number
 Jan 1 2024,Deaths by age,85+,4583,Number
 Apr 1 2024,Deaths by age,85+,3830,Number
 Jul 1 2024,Deaths by age,85+,3800,Number
@@ -58,4 +57,5 @@ Jan 1 2025,Deaths by age,85+,4804,Number
 Apr 1 2025,Deaths by age,85+,3958,Number
 Jul 1 2025,Deaths by age,85+,3745,Number
 Oct 1 2025,Deaths by age,85+,4586,Number
-Jan 1 2026,Deaths by age,85+,4692,Number
+Jan 1 2026,Deaths by age,85+,4694,Number
+Apr 1 2026,Deaths by age,85+,4094,Number

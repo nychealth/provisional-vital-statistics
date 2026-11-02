@@ -1,5 +1,4 @@
 date,metric,submetric,value,display
-Oct 1 2023,Births by term,Very Pre-term,1.41,Percent
 Jan 1 2024,Births by term,Very Pre-term,1.45,Percent
 Apr 1 2024,Births by term,Very Pre-term,1.43,Percent
 Jul 1 2024,Births by term,Very Pre-term,1.30,Percent
@@ -8,8 +7,8 @@ Jan 1 2025,Births by term,Very Pre-term,1.38,Percent
 Apr 1 2025,Births by term,Very Pre-term,1.43,Percent
 Jul 1 2025,Births by term,Very Pre-term,1.30,Percent
 Oct 1 2025,Births by term,Very Pre-term,1.47,Percent
-Jan 1 2026,Births by term,Very Pre-term,1.41,Percent
-Oct 1 2023,Births by term,Pre-term,9.57,Percent
+Jan 1 2026,Births by term,Very Pre-term,1.42,Percent
+Apr 1 2026,Births by term,Very Pre-term,1.21,Percent
 Jan 1 2024,Births by term,Pre-term,9.80,Percent
 Apr 1 2024,Births by term,Pre-term,9.21,Percent
 Jul 1 2024,Births by term,Pre-term,8.95,Percent
@@ -17,9 +16,9 @@ Oct 1 2024,Births by term,Pre-term,9.31,Percent
 Jan 1 2025,Births by term,Pre-term,9.79,Percent
 Apr 1 2025,Births by term,Pre-term,9.78,Percent
 Jul 1 2025,Births by term,Pre-term,9.41,Percent
-Oct 1 2025,Births by term,Pre-term,9.65,Percent
+Oct 1 2025,Births by term,Pre-term,9.66,Percent
 Jan 1 2026,Births by term,Pre-term,9.77,Percent
-Oct 1 2023,Births by term,Term,90.43,Percent
+Apr 1 2026,Births by term,Pre-term,9.46,Percent
 Jan 1 2024,Births by term,Term,90.20,Percent
 Apr 1 2024,Births by term,Term,90.79,Percent
 Jul 1 2024,Births by term,Term,91.05,Percent
@@ -27,5 +26,6 @@ Oct 1 2024,Births by term,Term,90.69,Percent
 Jan 1 2025,Births by term,Term,90.21,Percent
 Apr 1 2025,Births by term,Term,90.22,Percent
 Jul 1 2025,Births by term,Term,90.59,Percent
-Oct 1 2025,Births by term,Term,90.35,Percent
+Oct 1 2025,Births by term,Term,90.34,Percent
 Jan 1 2026,Births by term,Term,90.23,Percent
+Apr 1 2026,Births by term,Term,90.54,Percent

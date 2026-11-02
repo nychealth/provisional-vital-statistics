@@ -1,5 +1,4 @@
 Date,metric,submetric,value,display
-Oct 1 2023,Births by maternal age,Under 20,559,Number
 Jan 1 2024,Births by maternal age,Under 20,502,Number
 Apr 1 2024,Births by maternal age,Under 20,512,Number
 Jul 1 2024,Births by maternal age,Under 20,527,Number
@@ -9,7 +8,7 @@ Apr 1 2025,Births by maternal age,Under 20,423,Number
 Jul 1 2025,Births by maternal age,Under 20,457,Number
 Oct 1 2025,Births by maternal age,Under 20,388,Number
 Jan 1 2026,Births by maternal age,Under 20,378,Number
-Oct 1 2023,Births by maternal age,20 to 29,9169,Number
+Apr 1 2026,Births by maternal age,Under 20,394,Number
 Jan 1 2024,Births by maternal age,20 to 29,8916,Number
 Apr 1 2024,Births by maternal age,20 to 29,8580,Number
 Jul 1 2024,Births by maternal age,20 to 29,8907,Number
@@ -17,25 +16,26 @@ Oct 1 2024,Births by maternal age,20 to 29,8995,Number
 Jan 1 2025,Births by maternal age,20 to 29,8476,Number
 Apr 1 2025,Births by maternal age,20 to 29,8305,Number
 Jul 1 2025,Births by maternal age,20 to 29,8672,Number
-Oct 1 2025,Births by maternal age,20 to 29,8365,Number
-Jan 1 2026,Births by maternal age,20 to 29,7847,Number
-Oct 1 2023,Births by maternal age,30 to 39,13888,Number
+Oct 1 2025,Births by maternal age,20 to 29,8366,Number
+Jan 1 2026,Births by maternal age,20 to 29,7848,Number
+Apr 1 2026,Births by maternal age,20 to 29,7854,Number
 Jan 1 2024,Births by maternal age,30 to 39,13232,Number
 Apr 1 2024,Births by maternal age,30 to 39,13663,Number
 Jul 1 2024,Births by maternal age,30 to 39,14479,Number
 Oct 1 2024,Births by maternal age,30 to 39,13990,Number
-Jan 1 2025,Births by maternal age,30 to 39,13249,Number
+Jan 1 2025,Births by maternal age,30 to 39,13250,Number
 Apr 1 2025,Births by maternal age,30 to 39,13718,Number
-Jul 1 2025,Births by maternal age,30 to 39,14148,Number
+Jul 1 2025,Births by maternal age,30 to 39,14151,Number
 Oct 1 2025,Births by maternal age,30 to 39,13701,Number
-Jan 1 2026,Births by maternal age,30 to 39,13236,Number
-Oct 1 2023,Births by maternal age,40+,1883,Number
+Jan 1 2026,Births by maternal age,30 to 39,13240,Number
+Apr 1 2026,Births by maternal age,30 to 39,13643,Number
 Jan 1 2024,Births by maternal age,40+,1868,Number
 Apr 1 2024,Births by maternal age,40+,1805,Number
 Jul 1 2024,Births by maternal age,40+,1802,Number
 Oct 1 2024,Births by maternal age,40+,1932,Number
-Jan 1 2025,Births by maternal age,40+,1810,Number
+Jan 1 2025,Births by maternal age,40+,1809,Number
 Apr 1 2025,Births by maternal age,40+,1929,Number
 Jul 1 2025,Births by maternal age,40+,1893,Number
-Oct 1 2025,Births by maternal age,40+,1922,Number
-Jan 1 2026,Births by maternal age,40+,1753,Number
+Oct 1 2025,Births by maternal age,40+,1923,Number
+Jan 1 2026,Births by maternal age,40+,1754,Number
+Apr 1 2026,Births by maternal age,40+,1989,Number
