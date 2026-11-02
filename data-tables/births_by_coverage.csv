@@ -1,5 +1,4 @@
 date,metric,submetric,value,display
-Oct 1 2023,Births by coverage,Medicaid,58.12,Percent
 Jan 1 2024,Births by coverage,Medicaid,58.24,Percent
 Apr 1 2024,Births by coverage,Medicaid,56.21,Percent
 Jul 1 2024,Births by coverage,Medicaid,55.92,Percent
@@ -9,7 +8,7 @@ Apr 1 2025,Births by coverage,Medicaid,53.06,Percent
 Jul 1 2025,Births by coverage,Medicaid,52.72,Percent
 Oct 1 2025,Births by coverage,Medicaid,50.86,Percent
 Jan 1 2026,Births by coverage,Medicaid,50.96,Percent
-Oct 1 2023,Births by coverage,Non-Medicaid,41.88,Percent
+Apr 1 2026,Births by coverage,Medicaid,49.55,Percent
 Jan 1 2024,Births by coverage,Non-Medicaid,41.76,Percent
 Apr 1 2024,Births by coverage,Non-Medicaid,43.79,Percent
 Jul 1 2024,Births by coverage,Non-Medicaid,44.08,Percent
@@ -19,3 +18,4 @@ Apr 1 2025,Births by coverage,Non-Medicaid,46.94,Percent
 Jul 1 2025,Births by coverage,Non-Medicaid,47.28,Percent
 Oct 1 2025,Births by coverage,Non-Medicaid,49.14,Percent
 Jan 1 2026,Births by coverage,Non-Medicaid,49.04,Percent
+Apr 1 2026,Births by coverage,Non-Medicaid,50.45,Percent

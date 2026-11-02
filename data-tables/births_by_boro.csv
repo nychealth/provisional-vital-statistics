@@ -1,61 +1,61 @@
 date,metric,submetric,value,display
-Oct 1 2023,Births by borough,Bronx,3872,Number
 Jan 1 2024,Births by borough,Bronx,3638,Number
 Apr 1 2024,Births by borough,Bronx,3640,Number
 Jul 1 2024,Births by borough,Bronx,3924,Number
 Oct 1 2024,Births by borough,Bronx,3784,Number
-Jan 1 2025,Births by borough,Bronx,3590,Number
+Jan 1 2025,Births by borough,Bronx,3589,Number
 Apr 1 2025,Births by borough,Bronx,3570,Number
-Jul 1 2025,Births by borough,Bronx,3853,Number
+Jul 1 2025,Births by borough,Bronx,3852,Number
 Oct 1 2025,Births by borough,Bronx,3532,Number
 Jan 1 2026,Births by borough,Bronx,3467,Number
-Oct 1 2023,Births by borough,Brooklyn,8433,Number
+Apr 1 2026,Births by borough,Bronx,3479,Number
 Jan 1 2024,Births by borough,Brooklyn,8177,Number
 Apr 1 2024,Births by borough,Brooklyn,7839,Number
 Jul 1 2024,Births by borough,Brooklyn,8061,Number
 Oct 1 2024,Births by borough,Brooklyn,8277,Number
-Jan 1 2025,Births by borough,Brooklyn,8009,Number
-Apr 1 2025,Births by borough,Brooklyn,7957,Number
-Jul 1 2025,Births by borough,Brooklyn,8142,Number
-Oct 1 2025,Births by borough,Brooklyn,8235,Number
-Jan 1 2026,Births by borough,Brooklyn,7735,Number
-Oct 1 2023,Births by borough,Manhattan,3438,Number
+Jan 1 2025,Births by borough,Brooklyn,8011,Number
+Apr 1 2025,Births by borough,Brooklyn,7958,Number
+Jul 1 2025,Births by borough,Brooklyn,8145,Number
+Oct 1 2025,Births by borough,Brooklyn,8236,Number
+Jan 1 2026,Births by borough,Brooklyn,7740,Number
+Apr 1 2026,Births by borough,Brooklyn,7700,Number
 Jan 1 2024,Births by borough,Manhattan,3385,Number
 Apr 1 2024,Births by borough,Manhattan,3603,Number
 Jul 1 2024,Births by borough,Manhattan,3623,Number
 Oct 1 2024,Births by borough,Manhattan,3553,Number
 Jan 1 2025,Births by borough,Manhattan,3371,Number
 Apr 1 2025,Births by borough,Manhattan,3401,Number
-Jul 1 2025,Births by borough,Manhattan,3400,Number
-Oct 1 2025,Births by borough,Manhattan,3229,Number
+Jul 1 2025,Births by borough,Manhattan,3399,Number
+Oct 1 2025,Births by borough,Manhattan,3230,Number
 Jan 1 2026,Births by borough,Manhattan,3229,Number
-Oct 1 2023,Births by borough,Queens,5232,Number
+Apr 1 2026,Births by borough,Manhattan,3434,Number
 Jan 1 2024,Births by borough,Queens,5017,Number
 Apr 1 2024,Births by borough,Queens,4924,Number
 Jul 1 2024,Births by borough,Queens,5351,Number
 Oct 1 2024,Births by borough,Queens,5185,Number
-Jan 1 2025,Births by borough,Queens,4873,Number
-Apr 1 2025,Births by borough,Queens,4816,Number
-Jul 1 2025,Births by borough,Queens,5053,Number
+Jan 1 2025,Births by borough,Queens,4871,Number
+Apr 1 2025,Births by borough,Queens,4815,Number
+Jul 1 2025,Births by borough,Queens,5052,Number
 Oct 1 2025,Births by borough,Queens,4939,Number
-Jan 1 2026,Births by borough,Queens,4612,Number
-Oct 1 2023,Births by borough,Staten Island,1209,Number
+Jan 1 2026,Births by borough,Queens,4613,Number
+Apr 1 2026,Births by borough,Queens,4662,Number
 Jan 1 2024,Births by borough,Staten Island,1169,Number
 Apr 1 2024,Births by borough,Staten Island,1235,Number
 Jul 1 2024,Births by borough,Staten Island,1249,Number
 Oct 1 2024,Births by borough,Staten Island,1242,Number
 Jan 1 2025,Births by borough,Staten Island,1140,Number
 Apr 1 2025,Births by borough,Staten Island,1164,Number
-Jul 1 2025,Births by borough,Staten Island,1273,Number
+Jul 1 2025,Births by borough,Staten Island,1274,Number
 Oct 1 2025,Births by borough,Staten Island,1162,Number
 Jan 1 2026,Births by borough,Staten Island,1112,Number
-Oct 1 2023,Births by borough,Non-NYC Residents,3315,Number
+Apr 1 2026,Births by borough,Staten Island,1134,Number
 Jan 1 2024,Births by borough,Non-NYC Residents,3131,Number
 Apr 1 2024,Births by borough,Non-NYC Residents,3319,Number
 Jul 1 2024,Births by borough,Non-NYC Residents,3505,Number
 Oct 1 2024,Births by borough,Non-NYC Residents,3384,Number
-Jan 1 2025,Births by borough,Non-NYC Residents,3047,Number
+Jan 1 2025,Births by borough,Non-NYC Residents,3048,Number
 Apr 1 2025,Births by borough,Non-NYC Residents,3463,Number
-Jul 1 2025,Births by borough,Non-NYC Residents,3447,Number
+Jul 1 2025,Births by borough,Non-NYC Residents,3449,Number
 Oct 1 2025,Births by borough,Non-NYC Residents,3278,Number
 Jan 1 2026,Births by borough,Non-NYC Residents,3056,Number
+Apr 1 2026,Births by borough,Non-NYC Residents,3470,Number
